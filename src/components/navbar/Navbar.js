@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { DropDown } from "./dropDown";
+import { NavBarModal } from "./NavBarModal";
+
 import OutsideClickHandler from "react-outside-click-handler";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
-  const [dropDownContent, showDropDownContent] = useState(false);
-  const [dropDown, setDropDown] = useState("none");
+  const [dropDownContent, setDropDownContent] = useState("none");
+  const [dropDown, showDropDown] = useState(false);
 
   const changeNavbar = () => {
     console.log(window.scrollY);
@@ -23,8 +26,8 @@ export const Navbar = () => {
   return (
     <OutsideClickHandler
       onOutsideClick={() => {
-        setDropDown("none");
-        showDropDownContent(false);
+        showDropDown(false);
+        setDropDownContent("none");
       }}
     >
       <div className={navbar ? "navbar active" : "navbar"}>
@@ -47,13 +50,27 @@ export const Navbar = () => {
           <div className="navbar-large">
             <div className="navigation">
               <div className="navigation-link">
-                <p>Home</p>
+                <Link
+                  to="/"
+                  onClick={() => {
+                    setDropDownContent("none");
+                    showDropDown(false);
+                  }}
+                >
+                  {" "}
+                  <p>Home</p>
+                </Link>
               </div>
               <div
                 className="navigation-link"
                 onClick={() => {
-                  setDropDown("projects");
-                  showDropDownContent(true);
+                  if (dropDownContent !== "projects") {
+                    setDropDownContent("projects");
+                    showDropDown(true);
+                  } else {
+                    setDropDownContent("none");
+                    showDropDown(false);
+                  }
                 }}
               >
                 <p>Projects</p>
@@ -61,7 +78,7 @@ export const Navbar = () => {
                   className="fa fa-chevron-down"
                   aria-hidden="true"
                   style={
-                    dropDown === "projects"
+                    dropDownContent === "projects"
                       ? { transform: "rotate(180deg)" }
                       : { transform: "rotate(0deg)" }
                   }
@@ -71,8 +88,13 @@ export const Navbar = () => {
               <div
                 className="navigation-link"
                 onClick={() => {
-                  setDropDown("services");
-                  showDropDownContent(true);
+                  if (dropDownContent !== "services") {
+                    setDropDownContent("services");
+                    showDropDown(true);
+                  } else {
+                    setDropDownContent("none");
+                    showDropDown(false);
+                  }
                 }}
               >
                 <p>Services</p>
@@ -81,7 +103,7 @@ export const Navbar = () => {
                   className="fa fa-chevron-down"
                   aria-hidden="true"
                   style={
-                    dropDown === "services"
+                    dropDownContent === "services"
                       ? { transform: "rotate(180deg)" }
                       : { transform: "rotate(0deg)" }
                   }
@@ -90,8 +112,13 @@ export const Navbar = () => {
               <div
                 className="navigation-link"
                 onClick={() => {
-                  setDropDown("about");
-                  showDropDownContent(true);
+                  if (dropDownContent !== "about") {
+                    setDropDownContent("about");
+                    showDropDown(true);
+                  } else {
+                    setDropDownContent("none");
+                    showDropDown(false);
+                  }
                 }}
               >
                 <p>About</p>
@@ -99,7 +126,7 @@ export const Navbar = () => {
                   className="fa fa-chevron-down"
                   aria-hidden="true"
                   style={
-                    dropDown === "about"
+                    dropDownContent === "about"
                       ? { transform: "rotate(180deg)" }
                       : { transform: "rotate(0deg)" }
                   }
@@ -108,7 +135,7 @@ export const Navbar = () => {
               <div></div>
             </div>
 
-            {dropDownContent && (
+            {dropDown && (
               <div
                 className={
                   navbar ? "drop-down-content active" : "drop-down-content"
@@ -127,11 +154,17 @@ export const Navbar = () => {
             </button>
           </div>
 
-          <div className="navbar-menu-sm">
+          <div
+            className="navbar-menu-sm"
+            onClick={() => {
+              showDropDown(true);
+            }}
+          >
             <i className="fa fa-bars" aria-hidden="true"></i>
           </div>
         </div>
       </div>
+      <NavBarModal dropDown={dropDown} showDropDown={showDropDown} />
     </OutsideClickHandler>
   );
 };
