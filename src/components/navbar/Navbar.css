@@ -9,6 +9,7 @@
   align-items: center;
   background-color: white;
   transition: all 300ms ease-in-out;
+  z-index: 10;
 }
 .navbar a {
   color: black;
@@ -98,10 +99,11 @@
 }
 .navbar.active {
   background-color: var(--primary-color);
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.904);
   color: white;
   color: var(--primary-color);
   height: 80px;
+  z-index: 10;
 }
 
 @media only screen and (min-width: 600px) {

@@ -1,6 +1,8 @@
 import React from "react";
 import "./showcase.css";
+import { useEffect, useRef } from "react";
 import pic1 from "./Saly-36.png";
+import Lottie from "lottie-web";
 
 export const Showcase = () => {
   return (
@@ -16,6 +18,7 @@ export const Showcase = () => {
           </h1>
           <h1 style={{ fontWeight: "500" }}>and development</h1>
         </div>
+        <div className="showcase-lottie">hello</div>
         <div className="showcase-cta">
           <button className="btn btn-secondary">
             See Portfolio{" "}
