@@ -5,6 +5,17 @@ import pic1 from "./Saly-36.png";
 import Lottie from "lottie-web";
 
 export const Showcase = () => {
+  const container = useRef(null);
+  useEffect(() => {
+    Lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: require("./showcase.json"),
+    });
+  }, []);
+
   return (
     <div className="container">
       <div className="showcase-container">
@@ -18,7 +29,7 @@ export const Showcase = () => {
           </h1>
           <h1 style={{ fontWeight: "500" }}>and development</h1>
         </div>
-        <div className="showcase-lottie">hello</div>
+        <div className="showcase-lottie" ref={container}></div>
         <div className="showcase-cta">
           <button className="btn btn-secondary">
             See Portfolio{" "}
