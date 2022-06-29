@@ -26,14 +26,16 @@
 .small {
   display: flex;
 }
-.large {
+.large-container {
   display: none;
 }
 .text {
   display: flex;
   flex-direction: column;
 }
-
+.showcase-text-button {
+  display: none;
+}
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -49,14 +51,15 @@
 @media only screen and (min-width: 700px) {
   .showcase-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
     /* border: 2px solid green; */
-    height: calc(80vh - 100px);
+    height: 60vh;
   }
   .showcase-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid green;
   }
   .showcase-image {
     display: none;
@@ -64,29 +67,75 @@
   .showcase-lottie {
     display: block;
     height: 100%;
-    /* border: 3px solid green; */
+    border: 3px solid green;
     overflow: hidden;
   }
-  .showcase-cta {
-    width: 100%;
-    grid-column: span 2;
-    height: 200px;
-  }
+
   .small {
     display: none;
   }
+  .large-container {
+    display: block;
+    background-color: aliceblue;
+  }
   .large {
-    display: flex;
-    background-color: var(--primary-color);
-  }
-  .large::before {
-    content: "";
-    position: absolute;
-    height: 40%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    height: 30vh;
     width: 100%;
-    background-color: #423e3b;
-    bottom: 15%;
-    z-index: 11;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100%-20vw), 0% 100%);
+    max-width: 1300px;
+    margin: 0 auto;
   }
+  .showcase-cta {
+    height: 100%;
+  }
+  .showcase-large-skills {
+    padding: 20px;
+  }
+  .showcase-skills-header {
+    color: #423e3b;
+    margin-bottom: 40px;
+  }
+  .showcase-skills {
+    display: flex;
+
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #423e3b;
+  }
+
+  .showcase-text-button {
+    display: block;
+    margin-top: 40px;
+  }
+  .large-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .showcase-contact-text {
+    color: white;
+
+    background-color: #423e3b;
+  }
+  .showcase-contact-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  .showcase-contact-form h3 {
+    color: white;
+  }
+  /* .showcase-circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: 0;
+    left: 25%;
+    z-index: 0;
+    background-color: rgba(220, 20, 60);
+  } */
 }
