@@ -1,0 +1,31 @@
+import React from "react";
+import "./showcase.css";
+import pic1 from "./Saly-36.png";
+
+export const Showcase = () => {
+  return (
+    <div className="container">
+      <div className="showcase-container">
+        <div className="showcase-image">
+          <img src={pic1} alt="hello" />
+        </div>
+        <div className="showcase-text">
+          <h1 style={{ fontWeight: "400" }}>Solutions for</h1>
+          <h1>
+            Web<span style={{ color: "var(--primary-color)" }}>Design</span>{" "}
+          </h1>
+          <h1 style={{ fontWeight: "500" }}>and development</h1>
+        </div>
+        <div className="showcase-cta">
+          <button className="btn btn-secondary">
+            See Portfolio{" "}
+            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+          </button>
+          <button className="btn btn-alternate">
+            Contact <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};

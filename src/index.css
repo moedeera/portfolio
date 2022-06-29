@@ -56,6 +56,11 @@ code {
   font-size: 12px;
   padding: 10px 14px;
   letter-spacing: 1.5px;
+
+  justify-content: space-evenly;
+}
+.btn i {
+  font-size: 20px;
 }
 .btn-primary {
   background-color: var(--primary-color);
@@ -64,6 +69,20 @@ code {
 .btn-primary.active {
   background-color: var(--secondary-color);
   color: white;
+}
+.btn-secondary {
+  background-color: #5448c8;
+  color: white;
+  padding: 20px 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.btn-alternate {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px 0;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
 @media only screen and (min-width: 900px) {
