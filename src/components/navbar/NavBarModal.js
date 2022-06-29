@@ -1,7 +1,12 @@
 import React from "react";
 import "./NavBarModal.css";
 
-export const NavBarModal = ({ dropDown, showDropDown }) => {
+export const NavBarModal = ({
+  dropDown,
+  showDropDown,
+  dropDownContent,
+  setDropDownContent,
+}) => {
   let show = dropDown;
 
   return (
@@ -25,7 +30,25 @@ export const NavBarModal = ({ dropDown, showDropDown }) => {
             ></i>
           </div>
           <div className="navbar-item">Home</div>
-          <div className="navbar-item">Portfolio</div>
+
+          <div
+            className="navbar-item"
+            onClick={() => {
+              if (dropDownContent !== "portfolio") {
+                setDropDownContent("portfolio");
+              } else {
+                setDropDownContent("none");
+              }
+            }}
+          >
+            Portfolio
+          </div>
+          {dropDownContent === "portfolio" ? (
+            <div className="navbar-sm-selection">Completed</div>
+          ) : (
+            ""
+          )}
+
           <div className="navbar-item">Services</div>
           <div className="navbar-item">About</div>
           <div className="navbar-item">Contact</div>

@@ -9,6 +9,7 @@
 .dropdown-menu-section {
   border-right: 1px solid var(--primary-color);
   padding: 15px;
+  padding-right: 35px;
   height: 90%;
 }
 .dropdown-menu-section h3 {

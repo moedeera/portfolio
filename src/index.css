@@ -62,8 +62,8 @@ code {
   color: white;
 }
 .btn-primary.active {
-  background-color: white;
-  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 @media only screen and (min-width: 900px) {

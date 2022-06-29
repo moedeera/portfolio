@@ -25,29 +25,21 @@ export const DropDown = ({ selection }) => {
         </div>
       </div>
       <div className="dropdown-menu-section xs">
-        <h3>Completed</h3>
+        <h3>Upcoming</h3>
         <div className="menu-list">
           <div className="dd-menu-item">
             <i className="fab fa-react"></i>
-            Bear Social
+            AuctionaX
           </div>
           <div className="dd-menu-item">
             <i className="fab fa-react"></i>
             DeerCoded
           </div>
-          <div className="dd-menu-item">
-            <i className="fab fa-react"></i>
-            SuperDonair
-          </div>
-          <div className="dd-menu-item">
-            <i className="fab fa-react"></i>
-            E-Reader
-          </div>
         </div>
       </div>
       <div className="dropdown-menu-section dd-blog">
         <div className="dropdown-blog">
-          <h3>Recent</h3>{" "}
+          <h3>Recent article</h3>{" "}
           <div className="dropdown-blog-image">
             {" "}
             <img
