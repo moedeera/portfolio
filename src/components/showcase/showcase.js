@@ -48,6 +48,8 @@ export const Showcase = () => {
       </div>
 
       <div className="large-container">
+        <div className="large-left"></div>
+
         <div className="large">
           <div className="showcase-large-skills">
             <div className="showcase-skills-header">
@@ -67,16 +69,18 @@ export const Showcase = () => {
           </div>
           <div className="showcase-cta large-cta">
             <div className="showcase-contact-text">
-              <div className="showcase-circle"></div>
               <div className="showcase-h3">
-                <h3>Any Inquiries?</h3>
+                <h2>Any Inquiries?</h2>
+                <h2 style={{ color: "gold" }}>Questions?</h2>
               </div>
+              <span className="circle"></span>
             </div>
             <div className="showcase-contact-form">
-              <input placeholder="email" />
-              <input placeholder="email" />
-              <textarea />
-              <h3>Submit</h3>
+              <input placeholder="Name" />
+              <input placeholder="Email" />
+              <textarea placeholder="Send A message" />
+              {/* <h3>Submit</h3> */}
+              <div className="btn-send">SEND</div>
             </div>
           </div>
         </div>
