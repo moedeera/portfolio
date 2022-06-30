@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./showcase.css";
 import { useEffect, useRef } from "react";
 import pic1 from "./Saly-36.png";
 import pic2 from "./pngegg.png";
+import pic3 from "./react.png";
+import pic4 from "./wordpress.png";
+import pic5 from "./webflow.png";
 import Lottie from "lottie-web";
 
 export const Showcase = () => {
   const container = useRef(null);
+  const [text, setText] = useState("Design");
   useEffect(() => {
     Lottie.loadAnimation({
       container: container.current,
@@ -16,7 +20,19 @@ export const Showcase = () => {
       animationData: require("./showcase.json"),
     });
   }, []);
-
+  useEffect(() => {
+    const interval = setInterval(() => {
+      console.log(text);
+      if (text === "Design") {
+        setText("Apps");
+      } else if (text === "Apps") {
+        setText("Hosting");
+      } else if (text === "Hosting") {
+        setText("Design");
+      }
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [text]);
   return (
     <div className="container showcase">
       <div className="showcase-container">
@@ -25,9 +41,13 @@ export const Showcase = () => {
         </div>
         <div className="showcase-text">
           <h1 style={{ fontWeight: "400" }}>Solutions for</h1>
-          <h1>
-            Web<span style={{ color: "var(--primary-color)" }}>Design</span>{" "}
-          </h1>
+          <div className="span-container">
+            <h1 className="span-1">
+              Web
+              <span style={{ color: "var(--primary-color)" }}>Design</span>{" "}
+            </h1>
+          </div>
+
           <h1 className="text" style={{ fontWeight: "500" }}>
             and development
           </h1>
@@ -53,17 +73,17 @@ export const Showcase = () => {
         <div className="large">
           <div className="showcase-large-skills">
             <div className="showcase-skills-header">
-              <h1>My Skills</h1>
+              <h1>My Areas</h1>
             </div>
             <div className="showcase-skills">
               <div>
-                <i className="fab fa-react fa-3x"></i>
+                <img src={pic3} alt="" />
               </div>
               <div>
-                <i className="fab fa-wordpress fa-3x"></i>
+                <img src={pic4} alt="" />
               </div>
               <div>
-                <i className="fab fa-js fa-3x"></i>
+                <img src={pic5} alt="" />
               </div>
             </div>
           </div>
