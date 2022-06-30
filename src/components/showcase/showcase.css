@@ -8,6 +8,7 @@
   width: 100%;
   max-width: 300px;
   animation: float 2s ease-in-out infinite reverse;
+  box-shadow: none !important;
 }
 .showcase-cta {
   height: 39%;
