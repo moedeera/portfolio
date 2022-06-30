@@ -9,6 +9,7 @@ export const Portfolio = () => {
       <div className="portfolio-section-container">
         <div className="projects-header">
           <h1>Works</h1>
+          <p>This includes everything from paid projects to case studies</p>
         </div>
         <div className="projects-section-gallery">
           <div className="projects-section-card" id="proj-1">
