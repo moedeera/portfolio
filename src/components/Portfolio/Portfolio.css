@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap");
+
+.portfolio-section-container {
+  margin-top: 40px;
+}
+.projects-header {
+  color: var(--primary-color);
+}
+.projects-section-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects-section-card {
+  width: 300px;
+  min-height: 400px;
+  margin: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px 10px;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+}
+.card-cta {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: aliceblue;
+  padding: 10px 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-image img {
+  width: 100px;
+}
+#proj-1 {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 35, 122, 1) 0%,
+    rgba(100, 93, 215, 1) 0%,
+    rgba(53, 144, 243, 1) 100%
+  );
+}
+#proj-2 {
+  background: #13070c;
+  background-color: black;
+  background: rgb(2, 9, 23);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 9, 23, 1) 0%,
+    rgba(19, 7, 12, 1) 20%,
+    rgba(19, 7, 12, 1) 100%
+  );
+  background: #13070c;
+}
+#proj-3 {
+  background-color: #46237a;
+}
+.card-text {
+  color: white;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px;
+}
+.card-text h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+.projects-section-card :nth-child(2) h1 {
+  font-family: "Lato", sans-serif;
+}
+@media only screen and (min-width: 600px) {
+  .projects-section-card:hover {
+    transform: translateY(-8px);
+  }
+}

@@ -20,19 +20,19 @@ export const Showcase = () => {
       animationData: require("./showcase.json"),
     });
   }, []);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log(text);
-      if (text === "Design") {
-        setText("Apps");
-      } else if (text === "Apps") {
-        setText("Hosting");
-      } else if (text === "Hosting") {
-        setText("Design");
-      }
-    }, 4000);
-    return () => clearInterval(interval);
-  }, [text]);
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //       console.log(text);
+  //       if (text === "Design") {
+  //         setText("Apps");
+  //       } else if (text === "Apps") {
+  //         setText("Hosting");
+  //       } else if (text === "Hosting") {
+  //         setText("Design");
+  //       }
+  //     }, 4000);
+  //     return () => clearInterval(interval);
+  //   }, [text]);
   return (
     <div className="container showcase">
       <div className="showcase-container">
@@ -40,7 +40,7 @@ export const Showcase = () => {
           <img src={pic1} alt="hello" />
         </div>
         <div className="showcase-text">
-          <h1 style={{ fontWeight: "400" }}>Solutions for</h1>
+          <h1 style={{ fontWeight: "400", color: "grey" }}>Solutions for</h1>
           <div className="span-container">
             <h1 className="span-1">
               Web
