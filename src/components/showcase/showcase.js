@@ -61,9 +61,9 @@ export const Showcase = () => {
             See Portfolio{" "}
             <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
           </button>
-          <button className="btn btn-alternate">
+          {/* <button className="btn btn-alternate">
             Contact <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-          </button>
+          </button> */}
         </div>
       </div>
 
