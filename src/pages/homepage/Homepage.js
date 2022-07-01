@@ -4,13 +4,15 @@ import { Portfolio } from "../../components/Portfolio/Portfolio";
 
 import "./Homepage.css";
 import { Skills } from "../../components/Skills/Skills";
+import { Pitch } from "../../components/Pitch/Pitch";
 
 export const Homepage = () => {
   return (
     <div className="container homepage">
       <Showcase />
-      <Portfolio />
+      <Portfolio page={"homepage"} />
       <Skills />
+      <Pitch />
     </div>
   );
 };

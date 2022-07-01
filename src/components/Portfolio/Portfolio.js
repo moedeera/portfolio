@@ -9,15 +9,19 @@ import vid2 from "./vid2.mov";
 import vid3 from "./vid3.mov";
 import vid4 from "./vid4.mov";
 
-export const Portfolio = () => {
+export const Portfolio = ({ page }) => {
   return (
     <div className="container">
       <div className="portfolio-section-container">
         <div className="projects-header">
-          <h1>Works</h1>
-          <h3>
-            See All <i className="fa fa-arrow-right" aria-hidden="true"></i>
-          </h3>
+          {page === "homepage" && (
+            <>
+              <h1>Works</h1>
+              <h3>
+                See All <i className="fa fa-arrow-right" aria-hidden="true"></i>
+              </h3>
+            </>
+          )}
         </div>
         <div className="projects-section-gallery">
           <div className="projects-section-card-new">

@@ -7,6 +7,7 @@
 .ft-services h1 {
   margin: 75px 0;
   color: var(--primary-color);
+  text-align: left;
 }
 
 .services-container {
@@ -52,7 +53,9 @@
   .service:hover {
     transform: translateY(-10px);
   }
-
+  .services-container {
+    justify-content: space-between;
+  }
   /* .service:hover + .fas {
         display: block;
         color: red;
