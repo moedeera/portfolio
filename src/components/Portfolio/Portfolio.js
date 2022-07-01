@@ -26,22 +26,13 @@ export const Portfolio = () => {
               </video>
             </div>
             <div className="psc-new-text">
-              <h3>DeerCoded.com</h3>
-              <div className="card-details">
-                <div>
-                  <i className="fa fa-calendar" aria-hidden="true"></i> April
-                  2020
-                </div>
-                <div>
-                  {" "}
-                  <i class="fa fa-folder" aria-hidden="true"></i> See Github
-                </div>
+              <h3>Design Theme</h3>
+              <h1>DeerCoded</h1>
+
+              <p>Coding Bootcamp </p>
+              <div className="read-more-arrow">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
               </div>
-              <p>
-                A website designed for a fictional bootcamp. A website designed
-                for a fictional bootcamp
-              </p>
-              <button className="btn btn-primary">Read More</button>
             </div>
           </div>
 
@@ -53,22 +44,13 @@ export const Portfolio = () => {
               </video>
             </div>
             <div className="psc-new-text">
-              <h3>Super-Donair.com</h3>
-              <div className="card-details">
-                <div>
-                  <i className="fa fa-calendar" aria-hidden="true"></i> April
-                  2020
-                </div>
-                <div>
-                  {" "}
-                  <i class="fa fa-folder" aria-hidden="true"></i> See Github
-                </div>
+              <h3>Client</h3>
+              <h1>Super-Donair</h1>
+
+              <p>Local Diner Website</p>
+              <div className="read-more-arrow">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
               </div>
-              <p>
-                A website designed for a fictional bootcamp. A website designed
-                for a fictional bootcamp
-              </p>
-              <button className="btn btn-primary">Read More</button>
             </div>
           </div>
 
@@ -80,22 +62,13 @@ export const Portfolio = () => {
               </video>
             </div>
             <div className="psc-new-text">
-              <h3>Librum Reader</h3>
-              <div className="card-details">
-                <div>
-                  <i className="fa fa-calendar" aria-hidden="true"></i> April
-                  2020
-                </div>
-                <div>
-                  {" "}
-                  <i class="fa fa-folder" aria-hidden="true"></i> See Github
-                </div>
+              <h3>Client</h3>
+              <h1>Librum Reader</h1>
+
+              <p>Upcoming Software Website</p>
+              <div className="read-more-arrow">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
               </div>
-              <p>
-                A website designed for a fictional bootcamp. A website designed
-                for a fictional bootcamp
-              </p>
-              <button className="btn btn-primary">Read More</button>
             </div>
           </div>
 
@@ -107,24 +80,13 @@ export const Portfolio = () => {
               </video>
             </div>
             <div className="psc-new-text">
-              <h3>Social Media Website</h3>
-              <div className="card-details">
-                <div>
-                  <i className="fa fa-calendar" aria-hidden="true"></i> April
-                  2020
-                </div>
-                <div>
-                  {" "}
-                  <i class="fa fa-folder" aria-hidden="true"></i> See Github
-                </div>
+              <h3>Case Study</h3>
+              <h1>Orange Social</h1>
+
+              <p>Social Media Website</p>
+              <div className="read-more-arrow">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
               </div>
-              <p>
-                A website designed for a fictional bootcamp. A website designed
-                for a fictional bootcamp
-              </p>
-              <button className="btn btn-primary btn-card">
-                Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </button>
             </div>
           </div>
         </div>

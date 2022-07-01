@@ -103,7 +103,8 @@
 }
 
 .projects-section-card-new {
-  width: 375px;
+  width: 370px;
+
   height: 500px;
   margin: 10px;
   border-radius: 5px;
@@ -132,12 +133,20 @@
   text-align: left;
   justify-content: space-evenly;
   padding: 10px 15px;
+  background-color: aliceblue;
 }
 .psc-new-text p {
   color: #13070cc2;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
+.psc-new-text h1 {
+  color: var(--primary-color);
 }
 .psc-new-text h3 {
-  color: var(--primary-color);
+  color: black;
+  letter-spacing: 1px;
 }
 .card-details {
   display: flex;
@@ -149,6 +158,15 @@
   display: flex;
   justify-content: space-evenly;
 }
+.read-more-arrow {
+  color: var(--primary-color);
+  font-size: 28px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 600px) {
   .projects-section-card:hover,
   .projects-section-card-new:hover {
