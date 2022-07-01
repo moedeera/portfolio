@@ -1,63 +1,62 @@
 import React from "react";
 import "./DropDownMenu.css";
 
-export const DropDownMenu = ({ selection }) => {
+export const DropDownMenu = ({ selection, status }) => {
   return (
     <div className="ddm-container">
       {" "}
-      <div className="dropdown-menu">
-        <div className="dropdown-menu-section ">
-          <h3>Completed</h3>
-          <div className="menu-list">
-            <div className="dd-menu-item">
-              <i className="fab fa-react"></i>
-              Bear Social
+      <div className={status ? "dropdown-menu active" : "dropdown-menu"}>
+        <div className="dropdown-menu-section">
+          <h3>Latest Projects</h3>
+          <div className="dropdown-menu-list">
+            <div className="dropdown-menu-list-item">
+              <i class="fab fa-asymmetrik"></i>
+              Orange Social
             </div>
-            <div className="dd-menu-item">
-              <i className="fab fa-react"></i>
-              DeerCoded
+            <div className="dropdown-menu-list-item">
+              <i className="fas fa-hamburger"></i>
+              Super Donair
             </div>
-            <div className="dd-menu-item">
-              <i className="fab fa-react"></i>
-              SuperDonair
+
+            <div className="dropdown-menu-list-item">
+              <i className="fas fa-broom"></i>
+              Super Donair
             </div>
-            <div className="dd-menu-item">
-              <i className="fab fa-react"></i>
-              E-Reader
-            </div>
-          </div>
-        </div>
-        <div className="dropdown-menu-section xs">
-          <h3>Upcoming</h3>
-          <div className="menu-list">
-            <div className="dd-menu-item">
-              <i className="fab fa-react"></i>
-              AuctionaX
-            </div>
-            <div className="dd-menu-item">
-              <i className="fab fa-react"></i>
-              DeerCoded
+
+            <div className="dropdown-menu-list-item">
+              <i className="fab fa-codiepie"></i>
+              Super Donair
             </div>
           </div>
         </div>
-        <div className="dropdown-menu-section dd-blog">
-          <div className="dropdown-blog">
-            <h3>Recent article</h3>{" "}
-            <div className="dropdown-blog-image">
-              {" "}
-              <img
-                src="https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="hello"
-              />
+        <div className="dropdown-menu-section">
+          <h3>Areas </h3>
+          <div className="dropdown-menu-list">
+            <div className="dropdown-menu-list-item">
+              <i className="fas fa-code"></i>
+              Custom Sites
             </div>
-            <h3>Upcoming Tech Recession</h3>
-            <p>
-              Sept 8th <span style={{ color: "crimson" }}>Read more</span>
-            </p>
+            <div className="dropdown-menu-list-item">
+              <i className="fab fa-wordpress"></i>
+              WordPress
+            </div>
+
+            <div className="dropdown-menu-list-item">
+              <i className="fas fa-blog"></i>
+              WebFlow
+            </div>
+
+            <div className="dropdown-menu-list-item">
+              <i className="fab fa-buffer"></i>
+              Single Page
+            </div>
           </div>
+        </div>
+
+        <div className="dropdown-menu-section">
+          <h3> Blog</h3>
         </div>
       </div>
-      u
     </div>
   );
 };

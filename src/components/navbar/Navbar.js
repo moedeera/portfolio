@@ -154,7 +154,7 @@ export const Navbar = () => {
           </div>
 
           <div className="dropDownMenu-Container">
-            {dropDown && <DropDownMenu selection={dropDown} />}
+            {dropDown && <DropDownMenu selection={dropDown} status={navbar} />}
           </div>
         </div>
       </div>
