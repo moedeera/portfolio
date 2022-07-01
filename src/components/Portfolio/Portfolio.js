@@ -4,6 +4,10 @@ import proj1 from "./pic1.png";
 import proj2 from "./pic2.png";
 import proj3 from "./pic3.png";
 import proj4 from "./pic4.png";
+import vid1 from "./vid1.mov";
+import vid2 from "./vid2.mov";
+import vid3 from "./vid3.mov";
+import vid4 from "./vid4.mov";
 
 export const Portfolio = () => {
   return (
@@ -14,63 +18,115 @@ export const Portfolio = () => {
           <p>This includes everything from paid projects to case studies</p>
         </div>
         <div className="projects-section-gallery">
-          <div className="projects-section-card" id="proj-1">
-            <div className="card-info">
-              <div className="card-image">
-                <img src={proj1} alt="" style={{ width: "200px" }} />
-              </div>
-              <div className="card-text">
-                <h5>Bootcamp Website</h5>
-                <h1>DeerCoded</h1>
-                <p>A website designed for a fictional bootcamp</p>
-              </div>
+          <div className="projects-section-card-new">
+            <div className="psc-new-image">
+              {" "}
+              <video src={vid1} autoplay="true" loop="true">
+                {" "}
+              </video>
             </div>
-            <div className="card-cta">See More</div>
-          </div>
-          <div className="projects-section-card" id="proj-2">
-            <div className="card-info">
-              <div className="card-image">
-                <img src={proj2} alt="" style={{ marginBottom: "50px" }} />
+            <div className="psc-new-text">
+              <h3>DeerCoded.com</h3>
+              <div className="card-details">
+                <div>
+                  <i className="fa fa-calendar" aria-hidden="true"></i> April
+                  2020
+                </div>
+                <div>
+                  {" "}
+                  <i class="fa fa-folder" aria-hidden="true"></i> See Github
+                </div>
               </div>
-              <div className="card-text">
-                <h5>local Diner</h5>
-                <h1>Super-Donair</h1>
-                <p>A website designed for a local business</p>
-              </div>
+              <p>
+                A website designed for a fictional bootcamp. A website designed
+                for a fictional bootcamp
+              </p>
+              <button className="btn btn-primary">Read More</button>
             </div>
-            <div className="card-cta">See More</div>
-          </div>
-          <div className="projects-section-card" id="proj-3">
-            <div className="card-info">
-              <div className="card-image">
-                <img src={proj3} alt="" style={{ marginBottom: "50px" }} />
-              </div>
-              <div className="card-text">
-                <h5>local Diner</h5>
-                <h1>Librum Reader</h1>
-                <p>A website designed for a local business</p>
-              </div>
-            </div>
-            <div className="card-cta">See More</div>
-          </div>
-          <div className="projects-section-card" id="proj-4">
-            <div className="card-info">
-              <div className="card-image">
-                <img src={proj4} alt="" style={{ marginBottom: "50px" }} />
-              </div>
-              <div className="card-text">
-                <h5>MERN app</h5>
-                <h1>Orange Social</h1>
-                <p>A full stack social media website</p>
-              </div>
-            </div>
-            <div className="card-cta">See More</div>
           </div>
 
-          {/* <div className="projects-section-card">
-            <div className="card-image"></div>
-            <div className="card-cta">See More</div>
-          </div> */}
+          <div className="projects-section-card-new">
+            <div className="psc-new-image">
+              {" "}
+              <video src={vid2} autoplay="true" loop="true">
+                {" "}
+              </video>
+            </div>
+            <div className="psc-new-text">
+              <h3>Super-Donair.com</h3>
+              <div className="card-details">
+                <div>
+                  <i className="fa fa-calendar" aria-hidden="true"></i> April
+                  2020
+                </div>
+                <div>
+                  {" "}
+                  <i class="fa fa-folder" aria-hidden="true"></i> See Github
+                </div>
+              </div>
+              <p>
+                A website designed for a fictional bootcamp. A website designed
+                for a fictional bootcamp
+              </p>
+              <button className="btn btn-primary">Read More</button>
+            </div>
+          </div>
+
+          <div className="projects-section-card-new">
+            <div className="psc-new-image">
+              {" "}
+              <video src={vid3} autoplay="true" loop="true">
+                {" "}
+              </video>
+            </div>
+            <div className="psc-new-text">
+              <h3>Librum Reader</h3>
+              <div className="card-details">
+                <div>
+                  <i className="fa fa-calendar" aria-hidden="true"></i> April
+                  2020
+                </div>
+                <div>
+                  {" "}
+                  <i class="fa fa-folder" aria-hidden="true"></i> See Github
+                </div>
+              </div>
+              <p>
+                A website designed for a fictional bootcamp. A website designed
+                for a fictional bootcamp
+              </p>
+              <button className="btn btn-primary">Read More</button>
+            </div>
+          </div>
+
+          <div className="projects-section-card-new">
+            <div className="psc-new-image">
+              {" "}
+              <video src={vid4} autoplay="true" loop="true">
+                {" "}
+              </video>
+            </div>
+            <div className="psc-new-text">
+              <h3>Social Media Website</h3>
+              <div className="card-details">
+                <div>
+                  <i className="fa fa-calendar" aria-hidden="true"></i> April
+                  2020
+                </div>
+                <div>
+                  {" "}
+                  <i class="fa fa-folder" aria-hidden="true"></i> See Github
+                </div>
+              </div>
+              <p>
+                A website designed for a fictional bootcamp. A website designed
+                for a fictional bootcamp
+              </p>
+              <button className="btn btn-primary btn-card">
+                Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

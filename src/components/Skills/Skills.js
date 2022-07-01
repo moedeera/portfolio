@@ -6,7 +6,7 @@ export const Skills = () => {
   return (
     <Fade up>
       <div className="ft-services">
-        <h1>My Tools</h1>
+        <h1>Services</h1>
 
         <div className="services-container">
           <div className="service">
@@ -44,6 +44,15 @@ export const Skills = () => {
             <p>
               Websites built entirely from scratch to meet the specific demands
               of a client and their business.
+            </p>
+          </div>
+          <div className="service">
+            <i className="far fa-comment"></i>
+
+            <h3>Consulting</h3>
+            <p>
+              Not sure how to build your website? Contact me for a quick zoom
+              meeting to get advice on what's best for you
             </p>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { DropDown } from "./dropDown";
 import { NavBarModal } from "./NavBarModal";
+import { DropDownMenu } from "./DropDownMenu";
 
 import OutsideClickHandler from "react-outside-click-handler";
 import "./Navbar.css";
@@ -134,17 +135,6 @@ export const Navbar = () => {
               </div>
               <div></div>
             </div>
-
-            {dropDown && (
-              <div
-                className={
-                  navbar ? "drop-down-content active" : "drop-down-content"
-                }
-              >
-                {" "}
-                <DropDown selection={dropDown} />
-              </div>
-            )}
           </div>
           <div className="navbar-large">
             <button
@@ -162,8 +152,13 @@ export const Navbar = () => {
           >
             <i className="fa fa-bars" aria-hidden="true"></i>
           </div>
+
+          <div className="dropDownMenu-Container">
+            {dropDown && <DropDownMenu selection={dropDown} />}
+          </div>
         </div>
       </div>
+
       <NavBarModal
         dropDown={dropDown}
         showDropDown={showDropDown}

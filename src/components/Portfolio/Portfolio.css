@@ -101,8 +101,57 @@
 .projects-section-card :nth-child(2) h1 {
   font-family: "Lato", sans-serif;
 }
+
+.projects-section-card-new {
+  width: 375px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  transition: all 300ms ease-in-out;
+  background-color: white;
+  padding: 10px 0;
+}
+.psc-new-image {
+  /* border: 1px solid green; */
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+.psc-new-image img,
+.psc-new-image video {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+.psc-new-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+  padding: 10px 15px;
+}
+.psc-new-text p {
+  color: #13070cc2;
+}
+.psc-new-text h3 {
+  color: var(--primary-color);
+}
+.card-details {
+  display: flex;
+
+  justify-content: space-between;
+  color: var(--alt-color);
+}
+.btn-card {
+  display: flex;
+  justify-content: space-evenly;
+}
 @media only screen and (min-width: 600px) {
-  .projects-section-card:hover {
+  .projects-section-card:hover,
+  .projects-section-card-new:hover {
     transform: translateY(-8px);
   }
 }

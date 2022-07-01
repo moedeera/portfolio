@@ -1,9 +1,12 @@
 .ft-services {
   width: 100%;
   margin: 50px 0 200px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .ft-services h1 {
   margin: 75px 0;
+  color: var(--primary-color);
 }
 
 .services-container {
