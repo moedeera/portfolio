@@ -47,8 +47,8 @@ export const DropDownMenu = ({ selection, status }) => {
             </div>
 
             <div className="dropdown-menu-list-item">
-              <i className="fab fa-buffer"></i>
-              Single Page
+              <i className="fas fa-life-ring"></i>
+              Support
             </div>
           </div>
         </div>

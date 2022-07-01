@@ -15,7 +15,9 @@ export const Portfolio = () => {
       <div className="portfolio-section-container">
         <div className="projects-header">
           <h1>Works</h1>
-          <p>This includes everything from paid projects to case studies</p>
+          <h3>
+            See All <i className="fa fa-arrow-right" aria-hidden="true"></i>
+          </h3>
         </div>
         <div className="projects-section-gallery">
           <div className="projects-section-card-new">
