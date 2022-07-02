@@ -1,12 +1,12 @@
 .showcase {
   position: relative;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .curve {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: ;
 }
 
 .showcase-container {
