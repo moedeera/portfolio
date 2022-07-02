@@ -8,7 +8,7 @@ export const Skills = () => {
       <div className="ft-services">
         <h1>Services</h1>
 
-        <div className="services-container">
+        <div className="services-section-container">
           <div className="service">
             <i className="fa fa-wordpress" aria-hidden="true"></i>
 

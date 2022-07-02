@@ -11,8 +11,8 @@ export const Homepage = () => {
     <div className="container homepage">
       <Showcase />
       <Portfolio page={"homepage"} />
-      <Skills />
       <Pitch />
+      <Skills />
     </div>
   );
 };

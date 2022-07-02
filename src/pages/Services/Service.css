@@ -54,7 +54,7 @@
 
 .header {
   color: var(--color-primary);
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 .header h1 {
   font-size: 38px;
