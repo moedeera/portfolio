@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./Service.css";
-import pic1 from "./pic1.svg";
-import pic2 from "./pic2.svg";
-import pic3 from "./pic3.svg";
+import pic1 from "./Saly-13.png";
+import pic2 from "./Saly-12.png";
+import pic3 from "./Saly-7.png";
 import about1 from "./about-intro-image.svg";
 import about2 from "./about-intro-image2.svg";
 import { Fade } from "react-reveal";
+import Lottie from "lottie-web";
 
 export const Services = () => {
   return (
@@ -35,31 +36,14 @@ export const Services = () => {
                     date with us on our social media feeds to see whats new.
                     Below our some of the features we plan to include.
                   </p>
-                  <ul>
-                    <li>
-                      {" "}
-                      <i className="fa fa-circle"></i>
-                      Snippets, this feature allows user to summarize and save
-                      chapters of any book they are reading into a public
-                      summary post.
-                    </li>
-                    <li>
-                      <i className="fa fa-circle"></i>
-                      Chapter rating system, this allows you to rate and discuss
-                      chapters you enjoyed or did not like.
-                    </li>
-                    <li>
-                      <i className="fa fa-circle"></i>A MyStory section that
-                      allows you to write your own stories
-                    </li>
-                  </ul>
+
                   <button className="btn btn-about">
                     Follow us
                     <i class="fa fa-facebook"></i>
                   </button>
                 </div>
                 <div className="about-intro-image">
-                  <img src={about1} alt="" />
+                  <img src={pic1} alt="" />
                 </div>
               </div>
             </section>{" "}
@@ -68,7 +52,7 @@ export const Services = () => {
             <section className="about-intro-container">
               <div className="about-intro sm2">
                 <div className="about-intro-image">
-                  <img src={about2} alt="" />
+                  <img src={pic2} alt="" />
                 </div>
 
                 <div className="about-intro-text">
@@ -94,24 +78,7 @@ export const Services = () => {
                     for readers and writers alike. The purpose is the give the
                     experience a more interactive feel.
                   </p>
-                  {/* <ul>
-              <li>
-                {" "}
-                <i className="fa fa-circle"></i>
-                Snippets, this feature allows user to summarize and save
-                chapters of any book they are reading into a public summary
-                post.
-              </li>
-              <li>
-                <i className="fa fa-circle"></i>
-                Chapter rating system, this allows you to rate and discuss
-                chapters you enjoyed or did not like.
-              </li>
-              <li>
-                <i className="fa fa-circle"></i>A MyStory section that allows
-                you to write your own stories
-              </li>
-            </ul> */}
+
                   <button className="btn btn-about">
                     Learn more
                     <i class="fa fa-chevron-circle-right"></i>
@@ -150,7 +117,7 @@ export const Services = () => {
                   </button>
                 </div>
                 <div className="about-intro-image">
-                  <img src={pic1} alt="" />
+                  <img src={pic3} alt="" />
                 </div>
               </div>
             </section>{" "}
