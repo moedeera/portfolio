@@ -1,3 +1,14 @@
+.showcase {
+  position: relative;
+  border: 1px solid green;
+}
+.curve {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 .showcase-container {
   height: calc(100vh - 100px);
   width: 100%;

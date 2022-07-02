@@ -21,6 +21,9 @@ code {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+a {
+  cursor: pointer;
+}
 :root {
   --max-width: 1300px;
   --primary-color: #256eff;
@@ -30,6 +33,7 @@ code {
   --text-alt: white;
   --text-secondary: rgba(0, 0, 0, 0.885);
   --box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  --animation: float 2s ease-in-out infinite reverse;
 }
 .container {
   width: 100%;
