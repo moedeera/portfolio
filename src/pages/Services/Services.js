@@ -12,7 +12,23 @@ export const Services = () => {
   return (
     <div>
       <div className="services-container">
-        <div className="upper-container"></div>
+        <div className="upper-container">
+          <div className="uc-header"></div>
+          <div className="uc-services">
+            <div className="uc-services-unit">
+              <div className="ucs-icon"></div>
+              <div className="ucs-text">
+                <h3>Custom Websites</h3>
+                <p>
+                  Fully Custom Websites designed to suit your personal and/or
+                  business needs
+                </p>
+              </div>
+            </div>
+            <div className="uc-services-unit"></div>
+            <div className="uc-services-unit"></div>
+          </div>
+        </div>
         <div className="lower-container">
           <Fade right>
             <section className="about-intro-container">
