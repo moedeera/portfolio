@@ -9,15 +9,15 @@ export const Landing = () => {
         <div className="landing-top">
           <div className="landing-header">
             <h1>
+              Web <br className="header-breaker" />
+              <span className="span-text">Development</span>
+              <br />
               Solutions
-              <br />
-              <span className="span-text">for Web</span>
-              <br />
-              Development
               <br />
             </h1>
           </div>
         </div>
+
         <div className="landing-bottom">
           <div className="landing-bottom-upper">
             <div className="landing-bottom-cta">
@@ -54,6 +54,7 @@ export const Landing = () => {
           </div>
         </div>
       </div>
+
       <div className="underlay"></div>
     </div>
   );

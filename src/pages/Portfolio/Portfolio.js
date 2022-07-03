@@ -1,6 +1,7 @@
 import React from "react";
 import "./Portfolio.css";
-import { Portfolio } from "../../components/Portfolio/Portfolio";
+
+import { Projects } from "../../components/Projects/Projects";
 
 export const PortfolioPage = () => {
   return (
@@ -8,7 +9,7 @@ export const PortfolioPage = () => {
       <div className="portfolio-page-container">
         <h1 style={{ color: "rgb(37, 110, 255)" }}>Portfolio </h1>
         <div>
-          <Portfolio />
+          <Projects />
         </div>
       </div>
     </div>

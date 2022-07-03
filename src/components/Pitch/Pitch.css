@@ -1,35 +1,51 @@
+.pitch {
+  background-color: var(--dark);
+  width: 98%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
 .pitch-container {
-  /* border: 1px solid green; */
-  width: 100%;
+  width: 95%;
   max-width: 1300px;
-  margin: 0px auto;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   gap: 200px;
+
+  color: white;
 }
 .upper-pitch {
   /* border: 1px solid crimson; */
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 25px;
   padding: 10px;
+  margin-top: -100px;
 }
 .up-text-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  /* border: 1px solid var(--dark); */
+  padding: 20px;
+  color: white;
+}
+
+.up-image-section {
 }
 .up-image-section img {
   animation: var(--animation);
   box-shadow: none !important;
+  width: 100%;
 }
 .up-text-section h1 {
   color: var(--primary-color);
 }
 .up-text-section p {
-  color: var(--text-secondary);
+  color: white;
   padding: 10px 30px 0px 0px;
+  line-height: 1.8em;
 }
 .upt-cta {
   display: flex;
@@ -44,13 +60,16 @@
   flex-direction: column;
   gap: 20px;
   padding: 10px;
+  padding-bottom: 30px;
+  margin-top: -100px;
 }
 .lower-pitch h1 {
   color: var(--primary-color);
 }
 .lp-text p {
-  color: var(--text-secondary);
+  color: white;
   padding: 25px;
+  line-height: 1.8em;
 }
 .lp-logos {
   /* border: 1px solid green; */
@@ -59,9 +78,40 @@
   font-size: 38px;
   padding: 10px;
 }
+.pitch-header {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin-top: -20px;
+}
+.pitch-circle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  font-size: 28px;
+}
 @media only screen and (min-width: 600px) {
+  .pitch-header {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .pitch-header h1 {
+    font-size: 40px;
+  }
+  .pitch-circle {
+    height: 150px;
+    width: 150px;
+    font-size: 34px;
+  }
   .pitch-container {
-    margin: 0px auto 40px;
+    margin: 100px auto 40px;
   }
 
   .upper-pitch {

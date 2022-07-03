@@ -27,6 +27,7 @@ a {
 :root {
   --max-width: 1300px;
   --primary-color: #256eff;
+  --primary-color: #505ce4;
   --dark: #201c24;
   --theme: #505ce4;
   --secondary-color: #bb342f;
@@ -137,5 +138,21 @@ a {
   100% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
+  }
+}
+@keyframes FadeInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-0%);
+  }
+}
+@keyframes FadeInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-0%);
   }
 }
