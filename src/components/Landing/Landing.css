@@ -97,6 +97,12 @@
 .landing-bottom-cta h1 {
   font-size: 48px;
 }
+.landing-bottom-cta p {
+  margin-bottom: 50px;
+}
+.button-cta {
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   .landing-container {
     grid-template-rows: 4fr 6fr;
@@ -180,6 +186,10 @@
   .lb-circle {
     height: 230px;
     width: 230px;
+  }
+  .button-cta {
+    display: block;
+    width: 80%;
   }
 }
 @media only screen and (min-width: 950px) {

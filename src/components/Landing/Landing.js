@@ -22,9 +22,15 @@ export const Landing = () => {
           <div className="landing-bottom-upper">
             <div className="landing-bottom-cta">
               <h1>
-                10 <i className="fa fa-plus" aria-hidden="true"></i>
+                10 <i className="fa fa-plus"></i>
               </h1>
               <p>Years of experience</p>
+              <div className="button-cta">
+                <button className="btn btn-alt">
+                  <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+                </button>
+              </div>
+
               <div className="buttons-cta">
                 <button className="btn btn-landing">Portfolio</button>
                 <button className="btn btn-landing">Contact</button>

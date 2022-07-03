@@ -92,7 +92,20 @@ a {
   font-size: 14px;
   letter-spacing: 2px;
 }
-
+.btn-alt {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: var(--animation);
+}
+.btn-alt i {
+  font-size: 20px !important;
+  font-weight: 900;
+}
 @media only screen and (min-width: 600px) {
   .btn {
     font-size: 14px;
