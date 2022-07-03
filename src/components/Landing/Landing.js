@@ -9,9 +9,11 @@ export const Landing = () => {
         <div className="landing-top">
           <div className="landing-header">
             <h1>
+              <span className="span-text">Web</span>
               <br />
-              Solutions for <br />
-              <span className="span-text">Web</span>Development
+              Development
+              <br />
+              Solutions
             </h1>
           </div>
         </div>

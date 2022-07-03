@@ -1,0 +1,98 @@
+.dates {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.date-header {
+  width: 100%;
+  max-width: 1300px;
+
+  margin: 60px auto;
+  padding: 5px;
+  /* border: 1px solid red; */
+}
+.date-header h1 {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+.dates-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+.date-unit {
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.284);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 100%;
+  height: 300px;
+  text-align: left;
+  /* background-color: #201c24;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 110, 255, 1) 0%,
+    rgba(37, 110, 255, 1) 0%,
+    rgba(53, 144, 243, 1) 100%
+  ); */
+  background-color: #201c24;
+  box-shadow: var(--box-shadow);
+  transition: 300ms ease-in-out;
+}
+
+.date-unit h1,
+.date-unit p,
+.date-unit h3,
+.date-unit i {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.date-unit:nth-child(even) {
+  background: aliceblue;
+}
+.date-unit:nth-child(even) h1,
+.date-unit:nth-child(even) p,
+.date-unit:nth-child(even) h3,
+.date-unit:nth-child(even) i {
+  color: black !important;
+}
+.course-info {
+  display: flex;
+  justify-content: space-between;
+}
+.date-unit h3 {
+  padding: 0 5px;
+  width: 60%;
+  letter-spacing: 1px;
+  line-height: 1.8em;
+}
+.date-unit h1 {
+  font-size: 38px;
+}
+@media only screen and (min-width: 600px) {
+  .dates-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .dates-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .date-unit {
+    cursor: pointer;
+  }
+  .date-unit:hover {
+    transform: translateY(-10px);
+  }
+}
