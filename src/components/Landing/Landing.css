@@ -5,7 +5,7 @@
   position: relative;
 }
 .underlay {
-  background-color: #201c24;
+  background-color: var(--dark);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -145,7 +145,7 @@
     text-align: left;
   }
   .second {
-    background-color: #505ce4;
+    background-color: var(--theme);
     border: none;
     margin: 0 -20px;
     z-index: 9;

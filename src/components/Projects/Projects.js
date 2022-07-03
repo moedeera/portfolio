@@ -13,7 +13,7 @@ export const Projects = () => {
           <h1>
             <i className="fas fa-hamburger fa-2x"></i>
           </h1>
-          <h3>SUPER-DONIAR.com</h3>
+          <h3>Super-donair.com</h3>
           <div className="course-info">
             <p>Read more</p>
             <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
@@ -23,12 +23,12 @@ export const Projects = () => {
         <div className="date-unit">
           <p>Design Theme</p>
           <h1>
-            <i className="fab fa-js fa-2x"></i>
+            <i className="fab fa-js-square fa-2x" style={{ color: "red" }}></i>
           </h1>
           <h3>DeerCoded.com</h3>
           <div className="course-info">
             <p>Read More</p>
-            <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-arrow-right fa-2x"></i>
           </div>
         </div>
 
@@ -45,31 +45,36 @@ export const Projects = () => {
         </div>
 
         <div className="date-unit">
-          <p>September</p>
-          <h1>4</h1>
-          <h3>Introduction to Web Development 101</h3>
+          <p>Wep App</p>
+          <h1>
+            <i className="fab fa-react fa-2x"></i>
+          </h1>
+          <h3>Bear Social</h3>
           <div className="course-info">
-            <p>26 Spots lefts</p>
+            <p>Read More</p>
             <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
           </div>
         </div>
 
         <div className="date-unit">
-          <p>September</p>
-          <h1>5</h1>
-          <h3>Modern Web Design</h3>
+          <p>Case Study</p>
+          <h1>
+            {" "}
+            <i class="fa fa-wordpress fa-2x"></i>
+          </h1>
+          <h3>GreenframeDesigns.com</h3>
           <div className="course-info">
-            <p>26 Spots lefts</p>
+            <p>Read more</p>
             <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
           </div>
         </div>
 
         <div className="date-unit">
-          <p>November</p>
-          <h1>6</h1>
-          <h3>MERN Stack Development</h3>
+          <p></p>
+          <h1>#</h1>
+          <h3>Next Project will be yours</h3>
           <div className="course-info">
-            <p>38 Spots lefts</p>
+            <p>Contact Now</p>
             <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
           </div>
         </div>

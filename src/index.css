@@ -27,6 +27,8 @@ a {
 :root {
   --max-width: 1300px;
   --primary-color: #256eff;
+  --dark: #201c24;
+  --theme: #505ce4;
   --secondary-color: #bb342f;
   --alt-color: #5448c8;
   --text-primary: black;
