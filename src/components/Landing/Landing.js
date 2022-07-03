@@ -22,9 +22,9 @@ export const Landing = () => {
           <div className="landing-bottom-upper">
             <div className="landing-bottom-cta">
               <h1>
-                10 <i className="fa fa-plus"></i>
+                5.0<i className="fa fa-star"></i>
               </h1>
-              <p>Years of experience</p>
+              <p>Quality Websites</p>
               <div className="button-cta">
                 <button className="btn btn-alt">
                   <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
