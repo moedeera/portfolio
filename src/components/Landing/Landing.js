@@ -37,7 +37,7 @@ export const Landing = () => {
                 <p>Website building, hosting, and content management</p>
               </div>
               <div className="lb-circle second">
-                <h1>Design</h1>
+                <h1>Designs</h1>
                 <p>Amazing Designs, User Friendly interfaces</p>
               </div>
               <div className="lb-circle">
