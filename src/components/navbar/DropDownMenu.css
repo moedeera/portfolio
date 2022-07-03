@@ -12,6 +12,7 @@
 .ddm-container {
   height: 100%;
   width: 100%;
+  transition: all 500ms ease-in-out;
 }
 .dropdown-menu.active {
   color: white;
@@ -64,13 +65,14 @@
 }
 .dropdown-menu-section h3 {
   text-align: left;
-  letter-spacing: 2px;
-  margin-bottom: 7px;
+  letter-spacing: 4px;
+  margin-bottom: 13px;
 }
 
-.menu-list {
+.dd-blog {
+  display: none;
+  border: none;
 }
-
 @media only screen and (min-width: 600px) {
   .dropDownMenu-Container {
     display: block;

@@ -65,7 +65,7 @@ export const DropDownMenu = ({
           </div>
         </div>
 
-        <div className="dropdown-menu-section">
+        <div className="dropdown-menu-section dd-blog">
           <h3> Blog</h3>
         </div>
       </div>
