@@ -16,7 +16,9 @@ export const Footer = () => {
 
       <div className="footer-lower">
         <div className="footer-lower-label">
-          <h3>MoeDevelops</h3>
+          <h3>
+            Moe<span style={{ color: "var(--primary-color)" }}>Develops</span>
+          </h3>
         </div>
 
         <ul>

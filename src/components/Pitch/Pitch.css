@@ -5,7 +5,7 @@
   border-radius: 10px;
 }
 .pitch-container {
-  width: 95%;
+  width: 98%;
   max-width: 1300px;
   margin: 100px auto;
   display: flex;
@@ -33,11 +33,16 @@
 }
 
 .up-image-section {
+  /* border: 1px solid green; */
+  overflow-x: hidden;
+  display: none;
 }
 .up-image-section img {
   animation: var(--animation);
   box-shadow: none !important;
-  width: 100%;
+  overflow-x: hidden;
+  width: 300px;
+  height: auto;
 }
 .up-text-section h1 {
   color: var(--primary-color);
@@ -49,6 +54,7 @@
 }
 .upt-cta {
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 .upt-cta button {
@@ -98,6 +104,9 @@
   font-size: 28px;
 }
 @media only screen and (min-width: 600px) {
+  .up-image-section {
+    display: block;
+  }
   .pitch-header {
     flex-direction: row;
     gap: 10px;
@@ -118,7 +127,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
+  .upt-cta {
+    flex-direction: row;
+  }
   .up-text-section {
     text-align: left;
   }
