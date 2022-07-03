@@ -15,7 +15,6 @@ export const Navbar = () => {
   const changeNavbar = () => {
     console.log(window.scrollY);
     if (window.scrollY >= 60) {
-      console.log("true");
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -62,78 +61,87 @@ export const Navbar = () => {
                   <p>Home</p>
                 </Link>
               </div>
-              <div
-                className="navigation-link"
-                onClick={() => {
-                  if (dropDownContent !== "portfolio") {
-                    setDropDownContent("portfolio");
-                    showDropDown(true);
-                  } else {
-                    setDropDownContent("none");
-                    showDropDown(false);
-                  }
-                }}
-              >
-                <p>Portfolio</p>
-                <i
-                  className="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style={
-                    dropDownContent === "portfolio"
-                      ? { transform: "rotate(180deg)" }
-                      : { transform: "rotate(0deg)" }
-                  }
-                ></i>
-              </div>
 
-              <div
-                className="navigation-link"
-                onClick={() => {
-                  if (dropDownContent !== "services") {
-                    setDropDownContent("services");
-                    showDropDown(true);
-                  } else {
-                    setDropDownContent("none");
-                    showDropDown(false);
-                  }
-                }}
-              >
-                <p>Services</p>
+              <Link to="/portfolio">
+                {" "}
+                <div
+                  className="navigation-link"
+                  onMouseEnter={() => {
+                    if (dropDownContent !== "portfolio") {
+                      setDropDownContent("portfolio");
+                      showDropDown(true);
+                    } else {
+                      setDropDownContent("none");
+                      showDropDown(false);
+                    }
+                  }}
+                >
+                  <p>Portfolio</p>
+                  <i
+                    className="fa fa-chevron-down"
+                    aria-hidden="true"
+                    style={
+                      dropDownContent === "portfolio"
+                        ? { transform: "rotate(180deg)" }
+                        : { transform: "rotate(0deg)" }
+                    }
+                  ></i>
+                </div>
+              </Link>
 
-                <i
-                  className="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style={
-                    dropDownContent === "services"
-                      ? { transform: "rotate(180deg)" }
-                      : { transform: "rotate(0deg)" }
-                  }
-                ></i>
-              </div>
-              <div
-                className="navigation-link"
-                onClick={() => {
-                  if (dropDownContent !== "about") {
-                    setDropDownContent("about");
-                    showDropDown(true);
-                  } else {
-                    setDropDownContent("none");
-                    showDropDown(false);
-                  }
-                }}
-              >
-                <p>About</p>
-                <i
-                  className="fa fa-chevron-down"
-                  aria-hidden="true"
-                  style={
-                    dropDownContent === "about"
-                      ? { transform: "rotate(180deg)" }
-                      : { transform: "rotate(0deg)" }
-                  }
-                ></i>
-              </div>
-              <div></div>
+              <Link to="/services">
+                <div
+                  className="navigation-link"
+                  onMouseEnter={() => {
+                    if (dropDownContent !== "services") {
+                      setDropDownContent("services");
+                      showDropDown(true);
+                    } else {
+                      setDropDownContent("none");
+                      showDropDown(false);
+                    }
+                  }}
+                >
+                  <p>Services</p>
+
+                  <i
+                    className="fa fa-chevron-down"
+                    aria-hidden="true"
+                    style={
+                      dropDownContent === "services"
+                        ? { transform: "rotate(180deg)" }
+                        : { transform: "rotate(0deg)" }
+                    }
+                  ></i>
+                </div>
+              </Link>
+
+              <Link to="/about">
+                {" "}
+                <div
+                  className="navigation-link"
+                  onMouseEnter={() => {
+                    if (dropDownContent !== "about") {
+                      setDropDownContent("about");
+                      showDropDown(true);
+                    } else {
+                      setDropDownContent("none");
+                      showDropDown(false);
+                    }
+                  }}
+                >
+                  <p>About</p>
+                  <i
+                    className="fa fa-chevron-down"
+                    aria-hidden="true"
+                    style={
+                      dropDownContent === "about"
+                        ? { transform: "rotate(180deg)" }
+                        : { transform: "rotate(0deg)" }
+                    }
+                  ></i>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="navbar-large">
@@ -154,7 +162,14 @@ export const Navbar = () => {
           </div>
 
           <div className="dropDownMenu-Container">
-            {dropDown && <DropDownMenu selection={dropDown} status={navbar} />}
+            {dropDown && (
+              <DropDownMenu
+                selection={dropDown}
+                status={navbar}
+                show={showDropDown}
+                setDropDownContent={setDropDownContent}
+              />
+            )}
           </div>
         </div>
       </div>

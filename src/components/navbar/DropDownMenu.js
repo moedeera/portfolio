@@ -1,9 +1,21 @@
 import React from "react";
 import "./DropDownMenu.css";
 
-export const DropDownMenu = ({ selection, status }) => {
+export const DropDownMenu = ({
+  selection,
+  status,
+  show,
+  setDropDownContent,
+}) => {
   return (
-    <div className="ddm-container">
+    <div
+      className="ddm-container"
+      onMouseLeave={() => {
+        show(false);
+        setDropDownContent("none");
+        // alert(selection);
+      }}
+    >
       {" "}
       <div className={status ? "dropdown-menu active" : "dropdown-menu"}>
         <div className="dropdown-menu-section">
