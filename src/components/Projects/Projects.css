@@ -67,12 +67,13 @@
 .date-unit:nth-child(even) h1,
 .date-unit:nth-child(even) p,
 .date-unit:nth-child(even) h3,
-.date-unit:nth-child(even) i {
+.date-unit:nth-child(even) i,
+.date-unit:nth-child(even) a {
   color: black !important;
 }
 .course-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .date-unit h3 {
   padding: 0 5px;
@@ -96,7 +97,7 @@
   .dates-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .date-unit {
+  .date-unit i {
     cursor: pointer;
   }
   .date-unit:hover {
