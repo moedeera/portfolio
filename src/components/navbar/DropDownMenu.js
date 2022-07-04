@@ -24,7 +24,7 @@ export const DropDownMenu = ({
           <div className="dropdown-menu-list">
             <Link to="/portfolio/orange-social">
               <div className="dropdown-menu-list-item">
-                <i class="fab fa-asymmetrik"></i>
+                <i className="fab fa-asymmetrik"></i>
                 Orange Social
               </div>
             </Link>
