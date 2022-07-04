@@ -10,7 +10,7 @@ export const Project = () => {
         <div className="pp-upper">
           <div className="pp-upper-container">
             <div className="pp-upper-text">
-              <p>UI/UX</p>
+              <p>UI/UX Project</p>
               <h1>{id}</h1>
             </div>
             <div className="pp-upper-circles">
@@ -37,32 +37,30 @@ export const Project = () => {
             Client
           </div>
         </div>
-        <div className="pp-image">
-          {" "}
-          <img
-            src={
-              "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            }
-            alt=""
-          />
-        </div>
-        <div className="pp-summary">
-          <div className="pp-summary-header">
-            <h3>A website designed for User Interfaces</h3>
+        <div className="pp-lower">
+          <div className="pp-image">
+            {" "}
+            <img
+              src={
+                "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              }
+              alt=""
+            />
           </div>
-          <div className="pp-summary-text">
-            <p>
-              {" "}
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic
-              typesetting, remaining essentially unchanged. It was popularised
-              in the 1960s with the release of Letraset sheets containing Lorem
-              Ipsum passages, and more recently with desktop publishing software
-              like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+          <div className="pp-summary">
+            <div className="pp-summary-header">
+              <h3>A website designed for User Interfaces</h3>
+            </div>
+            <div className="pp-summary-text">
+              <p>
+                {" "}
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic.
+              </p>
+            </div>
           </div>
         </div>
       </div>
