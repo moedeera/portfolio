@@ -62,10 +62,13 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  width: 50%;
+  width: 70%;
   border-radius: 10px;
   padding: 5px;
   transition: all 500ms ease-in-out;
+}
+.dropdown-menu-list-item {
+  color: white !important;
 }
 .dropdown-menu-section h3 {
   text-align: left;
@@ -94,7 +97,7 @@
   .dropdown-menu-list-item:hover {
     background-color: rgba(255, 255, 255, 0.963);
     cursor: pointer;
-    color: black;
+    color: black !important;
   }
 }
 

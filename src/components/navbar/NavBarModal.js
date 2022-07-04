@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBarModal.css";
+import { Link } from "react-router-dom";
 
 export const NavBarModal = ({
   dropDown,
@@ -29,7 +30,15 @@ export const NavBarModal = ({
               }}
             ></i>
           </div>
-          <div className="navbar-item">Home</div>
+          <Link
+            onClick={() => {
+              showDropDown(false);
+              show = false;
+            }}
+            to="/"
+          >
+            <div className="navbar-item">Home</div>
+          </Link>
 
           <div
             className="navbar-item"
@@ -48,10 +57,33 @@ export const NavBarModal = ({
           ) : (
             ""
           )}
-
-          <div className="navbar-item">Services</div>
-          <div className="navbar-item">About</div>
-          <div className="navbar-item">Contact</div>
+          <Link
+            onClick={() => {
+              showDropDown(false);
+              show = false;
+            }}
+            to="/services"
+          >
+            <div className="navbar-item">Services</div>
+          </Link>
+          <Link
+            onClick={() => {
+              showDropDown(false);
+              show = false;
+            }}
+            to="/about"
+          >
+            <div className="navbar-item">About</div>
+          </Link>
+          <Link
+            onClick={() => {
+              showDropDown(false);
+              show = false;
+            }}
+            to="/contact"
+          >
+            <div className="navbar-item">Contact</div>
+          </Link>
         </div>
       </div>
     </div>

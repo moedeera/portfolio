@@ -25,7 +25,7 @@
 .navbar-sm-selection {
   padding-left: 10px;
   color: var(--primary-color);
-  border: 1px solid green;
+  /* border: 1px solid green; */
   min-height: 300px;
   transition: all 500ms ease-in-out;
 }
