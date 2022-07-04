@@ -38,8 +38,9 @@
 }
 .pp-details {
   display: flex;
-  justify-content: space-evenly;
-  text-align: left;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
 }
 .pp-details h3 {
   font-size: 18px;
@@ -74,6 +75,7 @@
   .pp-details {
     justify-content: space-between;
     padding: 20px 5px;
+    text-align: left;
   }
   .md {
     display: block;
