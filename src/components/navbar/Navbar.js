@@ -74,6 +74,10 @@ export const Navbar = () => {
                       showDropDown(false);
                     }
                   }}
+                  onClick={() => {
+                    setDropDownContent("none");
+                    showDropDown(false);
+                  }}
                 >
                   <p>Portfolio</p>
                   <i
@@ -99,6 +103,10 @@ export const Navbar = () => {
                       setDropDownContent("none");
                       showDropDown(false);
                     }
+                  }}
+                  onClick={() => {
+                    setDropDownContent("none");
+                    showDropDown(false);
                   }}
                 >
                   <p>Services</p>
@@ -127,6 +135,10 @@ export const Navbar = () => {
                       setDropDownContent("none");
                       showDropDown(false);
                     }
+                  }}
+                  onClick={() => {
+                    setDropDownContent("none");
+                    showDropDown(false);
                   }}
                 >
                   <p>About</p>
