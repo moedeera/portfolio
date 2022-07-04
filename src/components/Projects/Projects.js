@@ -1,10 +1,11 @@
 import React from "react";
 import "./Projects.css";
 import { Fade } from "react-reveal";
+import { useRef } from "react";
 export const Projects = () => {
   return (
     <Fade right>
-      <section className="dates">
+      <section className="dates" id="portfolio">
         <div className="date-header">
           <h1>Portfolio</h1>
         </div>

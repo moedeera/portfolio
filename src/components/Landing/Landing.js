@@ -2,7 +2,7 @@ import React from "react";
 import "./Landing.css";
 import pic1 from "./Saly-36.png";
 
-export const Landing = () => {
+export const Landing = ({ portfolio, scrollToSection }) => {
   return (
     <div className="landing">
       <div className="landing-container">
@@ -26,9 +26,16 @@ export const Landing = () => {
               </h1>
               <p>Quality Websites</p>
               <div className="button-cta">
-                <button className="btn btn-alt">
+                <a
+                  className="btn btn-alt"
+                  href="#portfolio"
+                  style={{
+                    color: "var(--dark)",
+                    backgroundColor: "white",
+                  }}
+                >
                   <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
-                </button>
+                </a>
               </div>
 
               <div className="buttons-cta">

@@ -13,7 +13,6 @@ export const Navbar = () => {
   const [dropDown, showDropDown] = useState(false);
 
   const changeNavbar = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 60) {
       setNavbar(true);
     } else {
