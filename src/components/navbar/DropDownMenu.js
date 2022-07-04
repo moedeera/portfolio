@@ -22,19 +22,37 @@ export const DropDownMenu = ({
         <div className="dropdown-menu-section">
           <h3>Latest Works</h3>
           <div className="dropdown-menu-list">
-            <Link to="/portfolio/orange-social">
+            <Link
+              onClick={() => {
+                setDropDownContent("none");
+                show(false);
+              }}
+              to="/portfolio/orange-social"
+            >
               <div className="dropdown-menu-list-item">
                 <i className="fab fa-asymmetrik"></i>
                 Orange Social
               </div>
             </Link>
-            <Link to="/portfolio/super-donair">
+            <Link
+              onClick={() => {
+                setDropDownContent("none");
+                show(false);
+              }}
+              to="/portfolio/Super-donair"
+            >
               <div className="dropdown-menu-list-item">
                 <i className="fas fa-hamburger"></i>
                 Super Donair
               </div>
             </Link>
-            <Link to="/portfolio/DeerCoded">
+            <Link
+              onClick={() => {
+                setDropDownContent("none");
+                show(false);
+              }}
+              to="/portfolio/DeerCoded"
+            >
               {" "}
               <div className="dropdown-menu-list-item">
                 <i className="fas fa-broom"></i>
@@ -42,7 +60,13 @@ export const DropDownMenu = ({
               </div>
             </Link>
 
-            <Link to="/portfolio/librum-reader">
+            <Link
+              onClick={() => {
+                setDropDownContent("none");
+                show(false);
+              }}
+              to="/portfolio/Librum-reader"
+            >
               <div className="dropdown-menu-list-item">
                 <i className="fab fa-codiepie"></i>
                 Liburm-Reader
