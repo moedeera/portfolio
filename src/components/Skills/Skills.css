@@ -2,13 +2,14 @@
   width: 100%;
 
   max-width: 1300px;
-  margin: 150px auto 40px;
+  margin: 50px auto 40px;
   padding: 10px;
 }
 .ft-services h1 {
-  margin: 10px 0;
+  margin: 10px 0 75px;
   color: var(--primary-color);
-  text-align: left;
+  text-align: center;
+  font-size: 30px;
 }
 
 .services-section-container {
@@ -25,7 +26,7 @@
 .service {
   height: 350px;
 
-  width: 290px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,13 +36,29 @@
   gap: 20px;
   padding: 0 12px;
   border-radius: 4px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+
   transition: all 200ms ease-in-out;
+  background-color: var(--dark);
+  color: white;
+  position: relative;
 }
 .service i {
-  font-size: 38px;
+  font-size: 48px;
   color: var(--color-primary1);
+
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 50%;
 }
 .service h3 {
   color: var(--color-secondary);
@@ -55,15 +72,17 @@
   .service:hover {
     transform: translateY(-10px);
   }
-  .services-section-container {
-    justify-content: space-between;
-  }
+
   /* .service:hover + .fas {
         display: block;
         color: red;
       } */
 }
-
+@media screen and (min-width: 1080px) {
+  .services-section-container {
+    justify-content: space-between;
+  }
+}
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);

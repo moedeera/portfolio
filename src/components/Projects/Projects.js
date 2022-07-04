@@ -6,7 +6,7 @@ export const Projects = () => {
     <Fade right>
       <section className="dates">
         <div className="date-header">
-          <h1>Projects</h1>
+          <h1>Portfolio</h1>
         </div>
 
         <div className="dates-container">

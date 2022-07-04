@@ -14,16 +14,16 @@
   /* border: 1px solid red; */
 }
 .date-header h1 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 900;
   color: var(--primary-color);
+  text-align: center;
 }
 .dates-container {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   padding: 5px;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
