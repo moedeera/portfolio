@@ -80,6 +80,9 @@
   display: none;
   border: none;
 }
+.xs {
+  border-right: none;
+}
 @media only screen and (min-width: 600px) {
   .dropDownMenu-Container {
     display: block;
@@ -89,10 +92,43 @@
 @media only screen and (min-width: 900px) {
   .dd-blog {
     display: block;
-  }
 
+    text-align: left;
+    padding-top: 0;
+    padding: 0 20px;
+    width: 80%;
+  }
+  .dd-blog img {
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  .dd-blog h3 {
+    color: white;
+    letter-spacing: 0.75px;
+    font-weight: 700;
+    font-size: 16px;
+    width: 70%;
+    margin-bottom: 0;
+  }
+  .dd-blog-cta {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: white;
+  }
+  .dd-blog-cta a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .dd-blog-cta a:visited {
+    color: aliceblue;
+  }
   .xs {
-    border-right: 1px solid var(--primary-color);
+    border-right: 1px solid white;
   }
   .dropdown-menu-list-item:hover {
     background-color: rgba(255, 255, 255, 0.963);
