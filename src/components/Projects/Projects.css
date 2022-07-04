@@ -3,7 +3,10 @@
   max-width: 1300px;
   margin: 0 auto;
 }
-
+.date-header h3,
+.date-header a {
+  color: var(--primary-color);
+}
 .date-header {
   width: 100%;
   max-width: 1300px;

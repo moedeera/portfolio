@@ -4,7 +4,32 @@
   max-width: 1300px;
   margin: 100px auto 0;
 }
-
+.upper-services-container {
+  /* border: 1px solid green; */
+}
+.usc-services {
+  /* border: 3px solid steelblue; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.usc-services-unit {
+  /* border: 2px solid crimson; */
+  padding: 15px;
+  max-width: 350px;
+  margin: 10px;
+}
+.usc-icon i {
+  /* border: 1px solid steelblue; */
+  padding: 25px;
+  border-radius: 50%;
+  font-size: 28px;
+  color: var(--primary-color);
+  background-color: var(--dark);
+}
+.usc-text h3 {
+  color: var(--secondary-color);
+}
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700&display=swap");
 
 .aboutPage-container {
@@ -213,7 +238,8 @@
   height: auto;
   /* border: 1px solid green; */
 }
-
+.services-container {
+}
 @media only screen and (min-width: 400px) {
   .about-intro-image img {
     max-width: 320px;
@@ -266,5 +292,16 @@
   }
   .about-intro-image {
     /* height: 100%; */
+  }
+  .usc-services-unit {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  .usc-text {
+    /* border: 1px solid green; */
+    text-align: left;
+    padding: 0 10px;
+    margin: 0 10px;
+    letter-spacing: 1px;
   }
 }

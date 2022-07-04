@@ -3,30 +3,52 @@ import "./Service.css";
 import pic1 from "./Saly-13.png";
 import pic2 from "./Saly-12.png";
 import pic3 from "./Saly-7.png";
-import about1 from "./about-intro-image.svg";
-import about2 from "./about-intro-image2.svg";
+
 import { Fade } from "react-reveal";
-import Lottie from "lottie-web";
 
 export const Services = () => {
   return (
     <div>
       <div className="services-container">
-        <div className="upper-container">
-          <div className="uc-header"></div>
-          <div className="uc-services">
-            <div className="uc-services-unit">
-              <div className="ucs-icon"></div>
-              <div className="ucs-text">
-                <h3>Custom Websites</h3>
+        <div className="upper-services-container">
+          <div className="usc-header general-header">Services</div>
+          <div className="usc-services">
+            <div className="usc-services-unit">
+              <div className="usc-icon">
+                <i className="fas fa-layer-group"></i>
+              </div>
+              <div className="usc-text">
+                <h3>Standard Websites</h3>
                 <p>
                   Fully Custom Websites designed to suit your personal and/or
                   business needs
                 </p>
               </div>
             </div>
-            <div className="uc-services-unit"></div>
-            <div className="uc-services-unit"></div>
+            <div className="usc-services-unit">
+              <div className="usc-icon">
+                <i className="fas fa-rocket"></i>
+              </div>
+              <div className="usc-text">
+                <h3>Web Applications</h3>
+                <p>
+                  Fully Custom Websites designed to suit your personal and/or
+                  business needs
+                </p>
+              </div>
+            </div>
+            <div className="usc-services-unit">
+              <div className="usc-icon">
+                <i class="fas fa-object-group"></i>
+              </div>
+              <div className="usc-text">
+                <h3>Custom </h3>
+                <p>
+                  Fully Custom Websites designed to suit your personal and/or
+                  business needs
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="lower-container">
@@ -37,11 +59,11 @@ export const Services = () => {
                   <h3 id="spe">
                     <i class="fa fa-circle"></i>
 
-                    <span style={{ margin: "0 3px" }}>Standard Websites</span>
+                    {/* <span style={{ margin: "0 3px" }}>Standard Websites</span> */}
 
                     <i class="fa fa-circle"></i>
                   </h3>
-                  <h1>When will Librum-Reader launch?</h1>
+                  <h1>Standard Websites</h1>
                   <p>
                     Librum-Reader is set to launch on August 1st and is
                     currently in the final stages of development. After that
@@ -75,11 +97,11 @@ export const Services = () => {
                   <h3 id="spe">
                     <i class="fa fa-circle"></i>
 
-                    <span style={{ margin: "0 3px" }}>Web applications</span>
+                    {/* <span style={{ margin: "0 3px" }}>Web applications</span> */}
 
                     <i class="fa fa-circle"></i>
                   </h3>
-                  <h1>Why use Librum-Reader as oppose to similiar apps?</h1>
+                  <h1>Web Application</h1>
                   <p>
                     Librum-Reader is convenient and easy to use. But ultimately
                     its the custom features and open source nature that will
@@ -111,11 +133,11 @@ export const Services = () => {
                   <h3 id="spe">
                     <i class="fa fa-circle"></i>
 
-                    <span style={{ margin: "0 3px" }}>Custom</span>
+                    {/* <span style={{ margin: "0 3px" }}>Custom</span> */}
 
                     <i class="fa fa-circle"></i>
                   </h3>
-                  <h1>How can you support or get a hold of us?</h1>
+                  <h1>Custom Designs</h1>
                   <p>
                     Librum-Reader is set to launch on August 1st and is
                     currently in the final stages of development. After that

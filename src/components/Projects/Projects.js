@@ -1,13 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Projects.css";
 import { Fade } from "react-reveal";
-import { useRef } from "react";
-export const Projects = () => {
+
+export const Projects = ({ page }) => {
   return (
     <Fade right>
       <section className="dates" id="portfolio">
         <div className="date-header">
-          <h1>Portfolio</h1>
+          {page && (
+            <>
+              <h1>Portfolio</h1>
+              <Link to="/portfolio">
+                {" "}
+                <h3>See All </h3>
+              </Link>
+            </>
+          )}
         </div>
 
         <div className="dates-container">

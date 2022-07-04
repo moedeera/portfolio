@@ -2,7 +2,7 @@ import React from "react";
 import "./Landing.css";
 import pic1 from "./Saly-36.png";
 
-export const Landing = ({ portfolio, scrollToSection }) => {
+export const Landing = () => {
   return (
     <div className="landing">
       <div className="landing-container">

@@ -108,6 +108,14 @@ a {
   font-size: 20px !important;
   font-weight: 900;
 }
+
+.general-header {
+  font-size: 38px;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 700;
+}
+
 @media only screen and (min-width: 600px) {
   .btn {
     font-size: 14px;
