@@ -8,6 +8,7 @@
   padding: 2px 0 0;
   overflow-y: hidden;
   display: none;
+  border: none !important;
 }
 .ddm-container {
   height: 100%;
@@ -34,14 +35,13 @@
 
     rgba(53, 111, 173, 0.95) 100%
   ); */
-  background-color: #505ce4;
+  background-color: var(--alternate-color);
 
   padding: 10px 35px;
   border-radius: 10px;
   transition: all 300ms ease-in-out;
   animation: slide-down 300ms ease-in-out;
   color: white;
-  box-shadow: var(--box-shadow);
 }
 
 .dropdown-menu-section {
