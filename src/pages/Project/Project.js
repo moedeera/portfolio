@@ -1,13 +1,15 @@
 import React from "react";
 import "./Project.css";
 import { useParams } from "react-router-dom";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
 
 export const Project = () => {
   const { id } = useParams();
   return (
     <div>
       <div className="project-page-container">
-        <div className="pp-upper-circles-dec">
+        <PageHeader tagline={"UI/UX"} header={id} />
+        {/* <div className="pp-upper-circles-dec">
           <div className="pp-dot pp-up"></div>
           <div className="pp-dot pp-up"></div>
           <div className="pp-dot pp-up"></div>
@@ -49,7 +51,8 @@ export const Project = () => {
               <div className="pp-circle pp-upper-circle-2"></div>
             </div>
           </div>
-        </div>
+        </div> */}
+
         <div className="pp-details">
           <div className="pp-detail-unit">
             <h3>Built with</h3>

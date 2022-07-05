@@ -28,7 +28,7 @@ a {
 }
 :root {
   --max-width: 1300px;
-  --primary-color: #256eff;
+  --alternate-color: #256eff;
   --primary-color: #505ce4;
   --dark: #201c24;
   --theme: #505ce4;

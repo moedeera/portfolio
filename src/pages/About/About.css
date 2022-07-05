@@ -1,0 +1,116 @@
+.about-page {
+  min-height: 37vh;
+  /* border: 2px solid purple; */
+  margin-top: 0px;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: 60vh;
+  margin-top: 100px;
+  background-color: white;
+  color: black;
+  /* border: 1px solid green; */
+  padding: 10px;
+  position: relative;
+}
+
+.about-header {
+  border: 1px solid crimson;
+  padding: 10px;
+  color: var(--alternate-color);
+  font-size: 20px;
+  margin-top: 0;
+}
+.about-header i {
+  padding-bottom: 15px;
+  height: 2rem;
+}
+.about-text {
+  border: 1px solid red;
+  margin: 5px 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px;
+}
+.about-text h3 {
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+  font-weight: 900;
+  line-height: 1.8em;
+  font-size: 24px;
+}
+.about-text p,
+.skills-text p {
+  color: var(--dark);
+  letter-spacing: 1px;
+  line-height: 1.8em;
+}
+.about-images {
+  border: 1px solid green;
+}
+.about-images img {
+  width: 100%;
+  max-width: 500px;
+  margin: 5px 0;
+}
+.about-img-2 {
+  display: none;
+}
+.about-skills {
+  border: 1px solid steelblue;
+  display: flex;
+  flex-direction: column;
+}
+.skills-text {
+  border: 1px solid red;
+}
+.skills-text h3 {
+  color: var(--alternate-color);
+  letter-spacing: 1px;
+  font-weight: 900;
+  line-height: 1.8em;
+  font-size: 24px;
+}
+.skills-grid {
+  height: 300px;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.skills-grid i {
+  font-size: 28px;
+}
+@media only screen and (min-width: 600px) {
+  .about-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  .about-img-2 {
+    display: block;
+  }
+  .about-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-header {
+    text-align: left;
+    font-size: 28px;
+  }
+  .about-text {
+    gap: 80px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+}
