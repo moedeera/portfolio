@@ -188,6 +188,7 @@ export const Navbar = () => {
                 status={navbar}
                 show={showDropDown}
                 setDropDownContent={setDropDownContent}
+                dropDownContent={dropDownContent}
               />
             )}
           </div>
