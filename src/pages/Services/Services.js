@@ -65,20 +65,15 @@ export const Services = () => {
                   </h3>
                   <h1>Standard Websites</h1>
                   <p>
-                    Librum-Reader is set to launch on August 1st and is
-                    currently in the final stages of development. After that
-                    stage is done we will start a round of testing to make sure
-                    there are'nt any bugs . If the first phase of testing goes
-                    well, we will launch a beta version of the application for
-                    our users to tryout. In the meanwhile you can keep up to
-                    date with us on our social media feeds to see whats new.
-                    Below our some of the features we plan to include.
+                    A simple static website is a good starting point for anyone
+                    needing digital presence for themselves or there business.
+                    This can be built in as quick as a day with something like
+                    WordPress or 2-3 days if you have a design already in mind.
+                    If you are not sure what you want, just send me an email and
+                    we can discuss what works for you.
                   </p>
 
-                  <button className="btn btn-about">
-                    Follow us
-                    <i class="fa fa-facebook"></i>
-                  </button>
+                  <button className="btn btn-about">contact now</button>
                 </div>
                 <div className="about-intro-image">
                   <img
@@ -111,26 +106,23 @@ export const Services = () => {
 
                     <i class="fa fa-circle"></i>
                   </h3>
-                  <h1>Web Application</h1>
+                  <h1>Web Applications</h1>
                   <p>
-                    Librum-Reader is convenient and easy to use. But ultimately
-                    its the custom features and open source nature that will
-                    have it stick out. The app is meant to be the go to place
-                    for readers and writers alike. The purpose is the give the
-                    experience a more interactive feel.
+                    A Web App is just a site with more function. This can be as
+                    simple as features that enhance user interaction, or as
+                    complex as a full e-commerce website with inventory and a
+                    payment system.
                   </p>
                   <p>
-                    Librum-Reader is convenient and easy to use. But ultimately
-                    its the custom features and open source nature that will
-                    have it stick out. The app is meant to be the go to place
-                    for readers and writers alike. The purpose is the give the
-                    experience a more interactive feel.
+                    I generally build web Applications with a framework called
+                    ReactJS. For data-bases, I use MongoDB, and for payments,
+                    Stripe is what I work with. Your application will be hosted
+                    on the Heroku platform. All of these services have monthly
+                    charges so feel free to look them or contact me if you are
+                    not sure how much fees you may pay for your website traffic.
                   </p>
 
-                  <button className="btn btn-about">
-                    Learn more
-                    <i class="fa fa-chevron-circle-right"></i>
-                  </button>
+                  <button className="btn btn-about">contact now</button>
                 </div>
               </div>
             </section>{" "}
@@ -149,20 +141,12 @@ export const Services = () => {
                   </h3>
                   <h1>Custom Designs</h1>
                   <p>
-                    Librum-Reader is set to launch on August 1st and is
-                    currently in the final stages of development. After that
-                    stage is done we will start a round of testing to make sure
-                    there are'nt any bugs . If the first phase of testing goes
-                    well, we will launch a beta version of the application for
-                    our users to tryout. In the meanwhile you can keep up to
-                    date with us on our social media feeds to see whats new.
-                    Below our some of the features we plan to include.
+                    Not quite sure what you may need? Thats perfectly fine. Send
+                    me a message and we can have a discussion about your goals
+                    and website requirements.
                   </p>
 
-                  <button className="btn btn-about">
-                    Our Twitter
-                    <i class="fa fa-twitter"></i>
-                  </button>
+                  <button className="btn btn-about">Contact now</button>
                 </div>
                 <div className="about-intro-image">
                   <img src={pic3} alt="" />
