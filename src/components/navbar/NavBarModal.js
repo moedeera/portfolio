@@ -108,21 +108,57 @@ export const NavBarModal = ({
 
           {selectOption === "portfolio" ? (
             <div className="portfolio-nms-container">
-              <div className="pnms-unit">
-                <i className="fas fa-hamburger"></i> Super Donair
-              </div>
-              <div className="pnms-unit">
-                <i className="fas fa-rocket"></i>
-                DeerCoded
-              </div>
-              <div className="pnms-unit">
-                <i className="fas fa-fire"></i>
-                Librum Reader
-              </div>
-              <div className="pnms-unit">
-                <i className="fas fa-share-alt-square"></i>
-                BlueBear Social
-              </div>
+              <Link
+                onClick={() => {
+                  showDropDown(false);
+
+                  show = false;
+                }}
+                to="/portfolio/super-donair"
+              >
+                <div className="pnms-unit">
+                  <i className="fas fa-hamburger"></i> Super Donair
+                </div>
+              </Link>
+              <Link
+                onClick={() => {
+                  showDropDown(false);
+
+                  show = false;
+                }}
+                to="/portfolio/deercoded"
+              >
+                <div className="pnms-unit">
+                  <i className="fas fa-rocket"></i>
+                  DeerCoded
+                </div>
+              </Link>
+              <Link
+                onClick={() => {
+                  showDropDown(false);
+
+                  show = false;
+                }}
+                to="portfolio/librum-reader"
+              >
+                <div className="pnms-unit">
+                  <i className="fas fa-fire"></i>
+                  Librum Reader
+                </div>
+              </Link>
+              <Link
+                onClick={() => {
+                  showDropDown(false);
+                  // setSelectShow(false);
+                  show = false;
+                }}
+                to="portfolio/bluebear-social"
+              >
+                <div className="pnms-unit">
+                  <i className="fas fa-share-alt-square"></i>
+                  BlueBear Social
+                </div>
+              </Link>
             </div>
           ) : (
             <div className="portfolio-nms-container">

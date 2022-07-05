@@ -44,10 +44,10 @@ export const Project = () => {
               <p>UI/UX Project</p>
               <h1>{id}</h1>
             </div>
-            {/* <div className="pp-upper-circles">
+            <div className="pp-upper-circles">
               <div className="pp-circle pp-upper-circle-1"></div>
               <div className="pp-circle pp-upper-circle-2"></div>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="pp-details">
