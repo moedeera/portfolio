@@ -166,10 +166,19 @@ export const Navbar = () => {
           <div
             className="navbar-menu-sm"
             onClick={() => {
-              showDropDown(true);
+              showDropDown(!dropDown);
             }}
           >
-            <i className="fa fa-bars" aria-hidden="true"></i>
+            {dropDown ? (
+              <>
+                {" "}
+                <i className="fa fa-times fa-2x" aria-hidden="true"></i>
+              </>
+            ) : (
+              <>
+                <i className="fa fa-bars" aria-hidden="true"></i>
+              </>
+            )}
           </div>
 
           <div className="dropDownMenu-Container">
