@@ -81,7 +81,12 @@ export const Services = () => {
                   </button>
                 </div>
                 <div className="about-intro-image">
-                  <img src={pic1} alt="" />
+                  <img
+                    src={pic1}
+                    alt=""
+                    style={{ animation: "var(--animation-slow)" }}
+                  />
+                  <div className="image-circle ic-4"></div>
                 </div>
               </div>
             </section>{" "}
@@ -90,7 +95,12 @@ export const Services = () => {
             <section className="about-intro-container">
               <div className="about-intro sm2">
                 <div className="about-intro-image">
-                  <img src={pic2} alt="" />
+                  <img
+                    src={pic2}
+                    alt=""
+                    style={{ animation: "var(--animation-slow)" }}
+                  />
+                  <div className="image-circle ic-3"></div>
                 </div>
 
                 <div className="about-intro-text">
@@ -156,6 +166,8 @@ export const Services = () => {
                 </div>
                 <div className="about-intro-image">
                   <img src={pic3} alt="" />
+                  <div className="image-circle ic-1"></div>
+                  <div className="image-circle ic-2"></div>
                 </div>
               </div>
             </section>{" "}

@@ -18,7 +18,7 @@
 }
 
 .about-header {
-  border: 1px solid crimson;
+  /* border: 1px solid crimson; */
   padding: 10px;
   color: var(--alternate-color);
   font-size: 20px;
@@ -29,7 +29,7 @@
   height: 2rem;
 }
 .about-text {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 5px 0;
   text-align: left;
   display: flex;
@@ -51,7 +51,7 @@
   line-height: 1.8em;
 }
 .about-images {
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .about-images img {
   width: 100%;
@@ -62,12 +62,12 @@
   display: none;
 }
 .about-skills {
-  border: 1px solid steelblue;
+  /* border: 1px solid steelblue; */
   display: flex;
   flex-direction: column;
 }
 .skills-text {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .skills-text h3 {
   color: var(--alternate-color);
