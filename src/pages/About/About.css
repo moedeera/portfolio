@@ -86,6 +86,13 @@
 }
 .skills-text p {
   padding: 45px;
+  padding-bottom: none;
+  margin-bottom: 0;
+}
+.skills-text ul {
+  list-style: none;
+  padding: 45px;
+  padding-top: 0;
 }
 .skills-grid {
   height: 100%;

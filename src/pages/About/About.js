@@ -23,21 +23,26 @@ export const About = () => {
           <div className="about-text">
             <h3>
               If you look into my Github page you understand that Web
-              Development is not just a hobby or a job for me, Its my passion.
+              Development is not just a hobby or a job for me, It's my passion.
             </h3>
             <p>
               {" "}
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic.
+              My name is Moe and I decided to learn coding in 2020 and
+              immediately fell in love with it. I chose early on that I wanted
+              to focus on Web Development with an emphasis on web design. Unable
+              to attend school due to working full time, I dedicated a minimum
+              hours a day to learning.
               <br />
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic.
+              <br />
+              CSS, HTML and JavaScript were the first skills I learned. I
+              followed that up with ReactJS, Express, and MongoDB.
+              <br />
+              After looking into the market a little more deeply, I realized
+              their was a lot of demand for design/brand oriented websites so I
+              leaned WordPress, WebFlow and Figma. to boost my design skills. I
+              am still learning but have made huge strides since then. My goal
+              is to establish a career in the web Development field and provide
+              reliable quality websites.
             </p>
           </div>
         </Fade>
@@ -54,24 +59,32 @@ export const About = () => {
         <Fade>
           <div className="about-skills">
             <div className="skills-grid">
-              <i className="fa fa-jsfiddle"></i>
-              <i className="fa fa-css3"></i>
-              <i class="fa fa-github" aria-hidden="true"></i>
               <i className="fa fa-wordpress"></i>
+
+              <i className="fab fa-css3-alt"></i>
               <i className="fa fa-html5"></i>
-              <i class="fa fa-html5 "></i>
-              <i className="fa fa-wordpress"></i>
-              <i className="fa fa-html5"></i>
-              <i class="fa fa-html5 "></i>
+              <i className="fab fa-react"></i>
+
+              <i className="fab fa-js-square"></i>
+              <i className="fab fa-node"></i>
+              <i className="fab fa-monero"></i>
+              <i className="fab fa-weebly"></i>
+              <i className="fab fa-figma"></i>
             </div>
             <div className="skills-text">
               <h3>Skills</h3>
-              <p>
-                {" "}
-                is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s.
-              </p>
+              <p> I am skilled and work mainly with the follow technologies</p>
+              <ul>
+                <li>WordPress</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>WebFlow</li>
+                <li>Figma</li>
+              </ul>
               <div className="about-contact">
                 <button className="btn btn-alternate contact-me">
                   Contact
