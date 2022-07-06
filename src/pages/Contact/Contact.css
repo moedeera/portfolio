@@ -1,35 +1,119 @@
 .contact-page {
-  min-height: 70vh;
-  border: 1px solid green;
-  margin-top: 100px;
+  /* border: 1px solid green; */
+  min-height: 100vh;
   position: relative;
+  width: 100%;
+  margin: 100px auto;
 }
-
-.overlay-right {
+.contact-header-container {
+  position: relative;
+  border: 1px solid white;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* .overlay-right {
   position: absolute;
   height: 100%;
   width: 50%;
-  top: 0;
+  bottom: 0;
   right: 0;
   background-color: var(--primary-color);
-}
+} */
 .contact-page-container {
   position: absolute;
   width: 100%;
-  height: 100%;
-  border: 1px solid crimson;
+
   z-index: 8;
   max-width: 1300px;
   left: 50%;
   transform: translateX(-50%);
 }
 .contact-form {
-  border: 1px solid blue;
-  display: grid;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
   grid-template-columns: 1fr 1fr;
-  height: 80%;
+  height: 100%;
+  text-align: left;
+}
+.contact-form-text {
+  padding: 0px;
 }
 .contact-form-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* border: 1px solid orange; */
+  padding: 0px;
+}
+.contact-form-text h3 {
+  color: var(--alternate-color);
+
+  font-weight: 900;
+  line-height: 1.8em;
+  font-size: 24px;
+  padding: 20px;
+}
+.contact-form-text p {
+  padding: 20px;
+  letter-spacing: 1px;
+  color: var(--dark);
+}
+.contact-form-box {
+  /* border: 1px solid crimson; */
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding: 0px;
+}
+.cf-form {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--dark);
+  padding: 10px;
+  gap: 10px;
+  color: white;
+  height: 100%;
+}
+.cf-form input,
+.cf-form textarea {
+  width: 100%;
+  max-width: 20rem;
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.cf-image {
+  /* border: 1px solid green; */
+  padding: 10px;
+  background-color: var(--dark);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cf-image img {
+  width: 100%;
+  max-width: 200px;
+  animation: var(--animation);
+  box-shadow: none !important;
+}
+@media only screen and (min-width: 600px) {
+  .contact-form-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+  }
+  .cf-form {
+    padding: 30px;
+  }
 }
