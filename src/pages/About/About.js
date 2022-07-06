@@ -7,17 +7,23 @@ export const About = () => {
   return (
     <div className="about-page">
       <div className="about-container">
-        <PageHeader tagline={"Info"} header={"About Me"} />
+        <PageHeader
+          tagline={"About me "}
+          header={"A Little Bit About Myself"}
+        />
         <Fade left>
           <div className="about-header">
-            <h1>'A Developer that gets the job done'</h1>
+            <h1>
+              'A Self taught developer that understands its not about what you
+              know, but rather what can you solve'
+            </h1>
           </div>
         </Fade>
         <Fade right>
           <div className="about-text">
             <h3>
-              Web Development is not just a hobby or a job for me, Its my
-              obsession
+              If you look into my Github page you understand that Web
+              Development is not just a hobby or a job for me, Its my passion.
             </h3>
             <p>
               {" "}
