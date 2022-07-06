@@ -1,0 +1,35 @@
+.contact-page {
+  min-height: 70vh;
+  border: 1px solid green;
+  margin-top: 100px;
+  position: relative;
+}
+
+.overlay-right {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-color);
+}
+.contact-page-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid crimson;
+  z-index: 8;
+  max-width: 1300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact-form {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80%;
+}
+.contact-form-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

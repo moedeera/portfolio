@@ -155,13 +155,17 @@ export const Navbar = () => {
               </Link>
             </div>
           </div>
-          <div className="navbar-large">
-            <button
-              className={navbar ? "btn btn-primary active" : "btn btn-primary"}
-            >
-              Contact
-            </button>
-          </div>
+          <Link to="/contact">
+            <div className="navbar-large">
+              <button
+                className={
+                  navbar ? "btn btn-primary active" : "btn btn-primary"
+                }
+              >
+                Contact
+              </button>
+            </div>
+          </Link>
 
           <div
             className="navbar-menu-sm"
