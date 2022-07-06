@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Project.css";
 import { useParams } from "react-router-dom";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
+import { useContext } from "react";
+import { SiteContext } from "../../context/Context";
 
 export const Project = () => {
   const { id } = useParams();
+  const { projects } = useContext(SiteContext);
+
   return (
     <div>
       <div className="project-page-container">
