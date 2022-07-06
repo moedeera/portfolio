@@ -23,12 +23,7 @@ export const Navbar = () => {
   window.addEventListener("scroll", changeNavbar);
 
   return (
-    <OutsideClickHandler
-      onOutsideClick={() => {
-        showDropDown(false);
-        setDropDownContent("none");
-      }}
-    >
+    <>
       <div className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
           <div className="logo">
@@ -46,115 +41,131 @@ export const Navbar = () => {
               </span>
             </h3>
           </div>
-          <div className="navbar-large">
-            <div className="navigation">
-              <div className="navigation-link">
-                <Link
-                  to="/"
-                  onClick={() => {
-                    setDropDownContent("none");
-                    showDropDown(false);
-                  }}
-                >
+
+          <OutsideClickHandler
+            onOutsideClick={() => {
+              showDropDown(false);
+              setDropDownContent("none");
+            }}
+          >
+            <div
+              onMouseLeave={() => {
+                showDropDown(false);
+                setDropDownContent("none");
+                // alert(selection);
+              }}
+              className="navbar-large"
+            >
+              <div className="navigation">
+                <div className="navigation-link">
+                  <Link
+                    to="/"
+                    onClick={() => {
+                      setDropDownContent("none");
+                      showDropDown(false);
+                    }}
+                  >
+                    {" "}
+                    <p>Home</p>
+                  </Link>
+                </div>
+
+                <Link to="/portfolio">
                   {" "}
-                  <p>Home</p>
+                  <div
+                    className="navigation-link"
+                    onMouseEnter={() => {
+                      if (dropDownContent !== "portfolio") {
+                        setDropDownContent("portfolio");
+                        showDropDown(true);
+                      } else {
+                        setDropDownContent("none");
+                        showDropDown(false);
+                      }
+                    }}
+                    onClick={() => {
+                      setDropDownContent("none");
+                      showDropDown(false);
+                    }}
+                  >
+                    <p>Portfolio</p>
+                    <i
+                      className="fa fa-chevron-down"
+                      aria-hidden="true"
+                      style={
+                        dropDownContent === "portfolio"
+                          ? { transform: "rotate(180deg)" }
+                          : { transform: "rotate(0deg)" }
+                      }
+                    ></i>
+                  </div>
+                </Link>
+
+                <Link to="/services">
+                  <div
+                    className="navigation-link"
+                    onMouseEnter={() => {
+                      if (dropDownContent !== "services") {
+                        setDropDownContent("services");
+                        showDropDown(true);
+                      } else {
+                        setDropDownContent("none");
+                        showDropDown(false);
+                      }
+                    }}
+                    onClick={() => {
+                      setDropDownContent("none");
+                      showDropDown(false);
+                    }}
+                  >
+                    <p>Services</p>
+
+                    <i
+                      className="fa fa-chevron-down"
+                      aria-hidden="true"
+                      style={
+                        dropDownContent === "services"
+                          ? { transform: "rotate(180deg)" }
+                          : { transform: "rotate(0deg)" }
+                      }
+                    ></i>
+                  </div>
+                </Link>
+
+                <Link to="/about">
+                  {" "}
+                  <div
+                    className="navigation-link"
+                    onMouseEnter={() => {
+                      if (dropDownContent !== "about") {
+                        setDropDownContent("about");
+                        showDropDown(true);
+                      } else {
+                        setDropDownContent("none");
+                        showDropDown(false);
+                      }
+                    }}
+                    onClick={() => {
+                      setDropDownContent("none");
+                      showDropDown(false);
+                    }}
+                  >
+                    <p>About</p>
+                    <i
+                      className="fa fa-chevron-down"
+                      aria-hidden="true"
+                      style={
+                        dropDownContent === "about"
+                          ? { transform: "rotate(180deg)" }
+                          : { transform: "rotate(0deg)" }
+                      }
+                    ></i>
+                  </div>
                 </Link>
               </div>
-
-              <Link to="/portfolio">
-                {" "}
-                <div
-                  className="navigation-link"
-                  onMouseEnter={() => {
-                    if (dropDownContent !== "portfolio") {
-                      setDropDownContent("portfolio");
-                      showDropDown(true);
-                    } else {
-                      setDropDownContent("none");
-                      showDropDown(false);
-                    }
-                  }}
-                  onClick={() => {
-                    setDropDownContent("none");
-                    showDropDown(false);
-                  }}
-                >
-                  <p>Portfolio</p>
-                  <i
-                    className="fa fa-chevron-down"
-                    aria-hidden="true"
-                    style={
-                      dropDownContent === "portfolio"
-                        ? { transform: "rotate(180deg)" }
-                        : { transform: "rotate(0deg)" }
-                    }
-                  ></i>
-                </div>
-              </Link>
-
-              <Link to="/services">
-                <div
-                  className="navigation-link"
-                  onMouseEnter={() => {
-                    if (dropDownContent !== "services") {
-                      setDropDownContent("services");
-                      showDropDown(true);
-                    } else {
-                      setDropDownContent("none");
-                      showDropDown(false);
-                    }
-                  }}
-                  onClick={() => {
-                    setDropDownContent("none");
-                    showDropDown(false);
-                  }}
-                >
-                  <p>Services</p>
-
-                  <i
-                    className="fa fa-chevron-down"
-                    aria-hidden="true"
-                    style={
-                      dropDownContent === "services"
-                        ? { transform: "rotate(180deg)" }
-                        : { transform: "rotate(0deg)" }
-                    }
-                  ></i>
-                </div>
-              </Link>
-
-              <Link to="/about">
-                {" "}
-                <div
-                  className="navigation-link"
-                  onMouseEnter={() => {
-                    if (dropDownContent !== "about") {
-                      setDropDownContent("about");
-                      showDropDown(true);
-                    } else {
-                      setDropDownContent("none");
-                      showDropDown(false);
-                    }
-                  }}
-                  onClick={() => {
-                    setDropDownContent("none");
-                    showDropDown(false);
-                  }}
-                >
-                  <p>About</p>
-                  <i
-                    className="fa fa-chevron-down"
-                    aria-hidden="true"
-                    style={
-                      dropDownContent === "about"
-                        ? { transform: "rotate(180deg)" }
-                        : { transform: "rotate(0deg)" }
-                    }
-                  ></i>
-                </div>
-              </Link>
             </div>
-          </div>
+          </OutsideClickHandler>
+
           <Link to="/contact">
             <div className="navbar-large">
               <button
@@ -185,17 +196,15 @@ export const Navbar = () => {
             )}
           </div>
 
-          <div className="dropDownMenu-Container">
-            {dropDown && (
-              <DropDownMenu
-                selection={dropDown}
-                status={navbar}
-                show={showDropDown}
-                setDropDownContent={setDropDownContent}
-                dropDownContent={dropDownContent}
-              />
-            )}
-          </div>
+          {dropDown && (
+            <DropDownMenu
+              selection={dropDown}
+              status={navbar}
+              show={showDropDown}
+              setDropDownContent={setDropDownContent}
+              dropDownContent={dropDownContent}
+            />
+          )}
         </div>
       </div>
 
@@ -205,6 +214,6 @@ export const Navbar = () => {
         dropDownContent={dropDownContent}
         setDropDownContent={setDropDownContent}
       />
-    </OutsideClickHandler>
+    </>
   );
 };

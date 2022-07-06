@@ -31,7 +31,7 @@ export const About = () => {
               immediately fell in love with it. I chose early on that I wanted
               to focus on Web Development with an emphasis on web design. Unable
               to attend school due to working full time, I dedicated a minimum
-              hours a day to learning.
+              of 2 hours a day to learning.
               <br />
               <br />
               CSS, HTML and JavaScript were the first skills I learned. I
