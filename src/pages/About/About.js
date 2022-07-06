@@ -3,6 +3,8 @@ import "./About.css";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { Fade } from "react-reveal";
 
+import { Link } from "react-router-dom";
+
 export const About = () => {
   return (
     <div className="about-page">
@@ -86,9 +88,11 @@ export const About = () => {
                 <li>Figma</li>
               </ul>
               <div className="about-contact">
-                <button className="btn btn-alternate contact-me">
-                  Contact
-                </button>
+                <Link to="/contact">
+                  <button className="btn btn-alternate contact-me">
+                    Contact
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

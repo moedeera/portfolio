@@ -122,7 +122,11 @@
   margin-top: 40px;
   margin-left: 40px;
 }
-
+.skills-text h3,
+.skills-text p,
+.skills-text ul {
+  padding: 0;
+}
 @media only screen and (min-width: 600px) {
   .about-header {
     padding: 0;
@@ -167,6 +171,6 @@
   .skills-text h3,
   .skills-text p,
   .skills-text ul {
-    padding: 0 25px;
+    padding: 0 45px;
   }
 }
