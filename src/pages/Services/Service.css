@@ -30,6 +30,27 @@
 .usc-text h3 {
   color: var(--secondary-color);
 }
+.service-downward-arrow {
+  color: var(--alternate-color);
+  margin: 20px 0;
+  font-size: 20px;
+}
+.service-downward-arrow i {
+  /* height: 56px;
+  width: 56px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  font-size: 28px;
+  background-color: var(--alternate-color);
+
+  box-shadow: none !important;
+  cursor: pointer; */
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700&display=swap");
 
 .aboutPage-container {
@@ -150,7 +171,8 @@
   max-width: 500px;
 }
 .about-intro-container {
-  margin: 40px 0;
+  padding: 0px 0;
+  margin: 80px 0 40px;
   animation: fade-in-left 600ms ease-in-out;
   display: flex;
   flex-direction: column;
@@ -239,6 +261,12 @@
 
   background-color: var(--primary-color);
 }
+.ic-1,
+.ic-2,
+.ic-3,
+.ic-4 {
+  display: none;
+}
 .ic-1 {
   z-index: 2;
 }
@@ -273,7 +301,6 @@
   z-index: 3;
   box-shadow: none !important;
   border: none;
-  /* border: 1px solid green; */
 }
 .services-container {
 }
@@ -284,6 +311,14 @@
   .about-intro-image img {
     max-width: 320px;
     max-height: 320px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .ic-1,
+  .ic-2,
+  .ic-3,
+  .ic-4 {
+    display: block;
   }
 }
 

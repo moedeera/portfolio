@@ -14,8 +14,8 @@ export const About = () => {
         <Fade left>
           <div className="about-header">
             <h1>
-              'A Self taught developer that understands its not about what you
-              know, but rather what can you solve'
+              'A Self taught developer that understands it's not about what you
+              learn, but rather what can you solve'
             </h1>
           </div>
         </Fade>

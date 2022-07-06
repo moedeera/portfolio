@@ -101,6 +101,11 @@
   box-shadow: none !important;
 }
 @media only screen and (min-width: 600px) {
+  .contact-form-text h3,
+  .contact-form-text p {
+    padding: 0px;
+  }
+
   .contact-form-box {
     display: grid;
     grid-template-columns: 1fr 1fr;

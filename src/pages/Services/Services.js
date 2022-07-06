@@ -23,6 +23,9 @@ export const Services = () => {
                   Fully Custom Websites designed to suit your personal and/or
                   business needs
                 </p>
+                <a className="service-downward-arrow" href="#standard">
+                  <i className="fas fa-angle-double-down"></i>
+                </a>
               </div>
             </div>
             <div className="usc-services-unit">
@@ -35,6 +38,9 @@ export const Services = () => {
                   Fully Custom Websites designed to suit your personal and/or
                   business needs
                 </p>
+                <a className="service-downward-arrow" href="#webapps">
+                  <i className="fas fa-angle-double-down"></i>
+                </a>
               </div>
             </div>
             <div className="usc-services-unit">
@@ -47,13 +53,16 @@ export const Services = () => {
                   Fully Custom Websites designed to suit your personal and/or
                   business needs
                 </p>
+                <a className="service-downward-arrow" href="#custom">
+                  <i className="fas fa-angle-double-down"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div className="lower-container">
           <Fade right>
-            <section className="about-intro-container">
+            <section className="about-intro-container" id="services">
               <div className="about-intro sm">
                 <div className="about-intro-text">
                   <h3 id="spe">
@@ -87,7 +96,7 @@ export const Services = () => {
             </section>{" "}
           </Fade>
           <Fade left>
-            <section className="about-intro-container">
+            <section className="about-intro-container" id="webapps">
               <div className="about-intro sm2">
                 <div className="about-intro-image">
                   <img
@@ -129,7 +138,7 @@ export const Services = () => {
           </Fade>
 
           <Fade up>
-            <section className="about-intro-container">
+            <section className="about-intro-container" id="custom">
               <div className="about-intro sm">
                 <div className="about-intro-text">
                   <h3 id="spe">
