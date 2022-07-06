@@ -80,6 +80,16 @@ export const NavBarModal = ({
               showDropDown(false);
               show = false;
             }}
+            to="/blog"
+            style={{ color: "var(--primary-color)" }}
+          >
+            <div className="navbar-item">Blog</div>
+          </Link>
+          <Link
+            onClick={() => {
+              showDropDown(false);
+              show = false;
+            }}
             to="/contact"
             style={{ color: "var(--primary-color)" }}
           >

@@ -1,0 +1,116 @@
+.blog-page-container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: 60vh;
+  margin-top: 100px;
+  background-color: white;
+  color: black;
+  /* border: 1px solid green; */
+  padding: 10px;
+  position: relative;
+}
+.blog-header h1 {
+  font-size: 50px;
+}
+.blog-headline-container {
+  /* border: 3px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog-headline-image {
+  width: 100%;
+}
+.blog-headline-image img {
+  width: 100%;
+  max-width: 900px;
+}
+.blog-headline-text {
+  /* border: 1px solid salmon; */
+}
+.blog-headline-summary {
+  display: none;
+}
+.previous-articles-header {
+}
+.blog-articles-container {
+  /* border: 1px solid steelblue; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.blog-article {
+  /* border: 1px solid rebeccapurple; */
+  width: 100%;
+  max-width: 310px;
+  text-align: left;
+  padding: 5px;
+}
+.blog-article-image {
+}
+.blog-article-image img {
+  width: 100%;
+  max-width: 300px;
+}
+.blog-article-cta,
+.blog-headline-cta {
+  cursor: pointer;
+}
+@media only screen and (min-width: 600px) {
+  .blog-header h1 {
+    font-size: calc(58px + 1vw);
+    text-align: left;
+  }
+  .blog-headline-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    /* border: 2px solid red; */
+  }
+  .blog-headline-image {
+    /* border: 1px solid green; */
+  }
+
+  .blog-article {
+    max-width: 325px;
+  }
+  .blog-article-image img {
+    max-width: 325px;
+  }
+
+  .blog-headline-image {
+    padding: 0px;
+    border-radius: 4px;
+  }
+  .blog-headline-image img {
+  }
+  .blog-headline-text {
+    text-align: left;
+    padding: 0 20px;
+  }
+  .blog-headline-text h2 {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+}
+
+@media only screen and (min-width: 1100px) {
+  .blog-headline-summary {
+    display: block;
+  }
+
+  .blog-article {
+    max-width: 375px;
+  }
+  .blog-article-image img {
+    max-width: 375px;
+  }
+  .blog-articles-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+  }
+}

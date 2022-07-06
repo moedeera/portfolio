@@ -9,6 +9,7 @@ import { Project } from "./pages/Project/Project";
 import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
 import { SiteContextProvider } from "./context/Context";
+import { Blog } from "./pages/Blog/Blog";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio/:id" element={<Project />} />
             <Route path="/blog/:id" element={<Project />} />
-            <Route path="/blog" element={<Project />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/post" element={<Blog />} />
           </Routes>
         </Router>
         <Footer />
