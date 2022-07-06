@@ -59,22 +59,42 @@ export const Project = () => {
 
         <div className="pp-details">
           <div className="pp-detail-unit">
-            <h3>Built with</h3>
-            <i className="fa fa-jsfiddle" aria-hidden="true"></i>
+            <div>
+              <h3>Built with</h3>
+            </div>
+            <div>
+              <i className="fa fa-jsfiddle" aria-hidden="true"></i>
+            </div>
           </div>
           <div className="pp-detail-unit">
-            <h3>Link</h3>
-            <a href="https://deeracode.dev/socialmedia">BlueBear Social</a>
+            <div>
+              {" "}
+              <h3>Link</h3>
+            </div>
+            <div>
+              <a href="https://deeracode.dev/socialmedia">BlueBear Social</a>
+            </div>
           </div>
-          <div className="pp-detail-unit md">
-            <h3>Purpose</h3>
-            Client
+          <div className="pp-detail-unit pp-md">
+            <div>
+              {" "}
+              <h3>Purpose</h3>
+            </div>
+            <div>
+              <p>Client</p>
+            </div>
           </div>
-          <div className="pp-detail-unit lg">
-            <h3>Repository</h3>
-            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          <div className="pp-detail-unit pp-lg">
+            <div>
+              {" "}
+              <h3>Repository</h3>
+            </div>
+            <div>
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
           </div>
         </div>
+
         <div className="pp-lower">
           <div className="pp-image">
             {" "}

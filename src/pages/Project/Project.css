@@ -1,5 +1,5 @@
 .project-page-container {
-  width: 100%;
+  width: 95%;
   max-width: 1300px;
   margin: 0 auto;
   min-height: 60vh;
@@ -47,17 +47,23 @@
   gap: 30px;
   text-align: center;
   padding: 15px 10px;
+  margin-bottom: 30px;
 }
 .pp-detail-unit {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  /* border: 1px solid green; */
+  height: 76px;
+  justify-content: space-between;
 }
 .pp-details i {
   font-size: 24px;
 }
 .pp-details h3 {
   font-size: 18px;
+}
+.pp-detail-unit p {
 }
 .pp-image {
   /* border: 1px solid crimson; */
@@ -74,11 +80,17 @@
   color: var(--primary-color);
   font-size: 22px;
 }
-.md {
+.pp-md {
   display: none;
 }
-.lg {
+.pp-lg {
   display: none;
+}
+.pp-summary-header {
+  padding: 0 15px;
+}
+.pp-summary-text {
+  padding: 15px;
 }
 .pp-lower-border {
   height: 2rem;
@@ -104,7 +116,7 @@
   position: absolute;
   right: 0;
   top: 50px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 125px;
   width: 125px;
   display: none;
@@ -143,8 +155,8 @@
     padding: 20px 5px;
     text-align: left;
   }
-  .md {
-    display: block;
+  .pp-md {
+    display: flex;
   }
   .pp-upper-text {
     text-align: left;
@@ -162,14 +174,21 @@
 
     margin-top: 0;
   }
+
+  .pp-summary-header {
+    padding: 0 25px;
+  }
+  .pp-summary-text {
+    padding: 25px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
   .pp-upper {
     margin: 50px 0 100px;
   }
-  .lg {
-    display: block;
+  .pp-lg {
+    display: flex;
   }
   .pp-summary {
     margin-top: 0px;
