@@ -169,17 +169,48 @@ export const NavBarModal = ({
             </div>
           ) : (
             <div className="portfolio-nms-container">
-              <div className="pnms-unit">
-                <i className="fas fa-hamburger"></i> Websites
-              </div>
-              <div className="pnms-unit">
-                <i className="fas fa-rocket"></i>
-                Web Apps
-              </div>
-              <div className="pnms-unit">
-                <i className="fas fa-fire"></i>
-                Custom
-              </div>
+              <Link
+                style={{ color: "black" }}
+                onClick={() => {
+                  showDropDown(false);
+
+                  show = false;
+                }}
+                to="/services"
+              >
+                <div className="pnms-unit">
+                  <i className="fas fa-hamburger"></i> Websites
+                </div>
+              </Link>
+
+              <Link
+                style={{ color: "black" }}
+                onClick={() => {
+                  showDropDown(false);
+
+                  show = false;
+                }}
+                to="/services"
+              >
+                <div className="pnms-unit">
+                  <i className="fas fa-rocket"></i>
+                  Web Apps
+                </div>
+              </Link>
+              <Link
+                style={{ color: "black" }}
+                onClick={() => {
+                  showDropDown(false);
+
+                  show = false;
+                }}
+                to="/services"
+              >
+                <div className="pnms-unit">
+                  <i className="fas fa-fire"></i>
+                  Custom
+                </div>
+              </Link>
             </div>
           )}
         </div>
