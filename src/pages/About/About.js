@@ -73,7 +73,7 @@ export const About = () => {
             </div>
             <div className="skills-text">
               <h3>Skills</h3>
-              <p> I am skilled and work mainly with the follow technologies</p>
+              <p> I work mainly with the following technologies</p>
               <ul>
                 <li>WordPress</li>
                 <li>CSS</li>
