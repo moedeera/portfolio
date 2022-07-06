@@ -31,11 +31,12 @@ export const DropDownMenu = ({
                     setDropDownContent("none");
                     show(false);
                   }}
-                  to="/portfolio/orange-social"
+                  to="/portfolio/DeerCoded"
                 >
+                  {" "}
                   <div className="dropdown-menu-list-item">
-                    <i className="fab fa-asymmetrik"></i>
-                    Orange Social
+                    <i className="far fa-file-code"></i>
+                    DeerCoded
                   </div>
                 </Link>
                 <Link
@@ -50,17 +51,17 @@ export const DropDownMenu = ({
                     Super Donair
                   </div>
                 </Link>
+
                 <Link
                   onClick={() => {
                     setDropDownContent("none");
                     show(false);
                   }}
-                  to="/portfolio/DeerCoded"
+                  to="/portfolio/orange-social"
                 >
-                  {" "}
                   <div className="dropdown-menu-list-item">
-                    <i className="fas fa-broom"></i>
-                    DeerCoded
+                    <i className="fas fa-share-alt"></i>
+                    Social Media Web App
                   </div>
                 </Link>
 
@@ -72,7 +73,7 @@ export const DropDownMenu = ({
                   to="/portfolio/Librum-reader"
                 >
                   <div className="dropdown-menu-list-item">
-                    <i className="fab fa-codiepie"></i>
+                    <i className="far fa-bookmark"></i>
                     Liburm-Reader
                   </div>
                 </Link>
@@ -82,7 +83,7 @@ export const DropDownMenu = ({
               <h3>Upcoming</h3>
               <div className="dropdown-menu-list ">
                 <div className="dropdown-menu-list-item ">
-                  <i className="fas fa-code"></i>
+                  <i className="fas fa-stethoscope"></i>
                   Calgary Radiology
                 </div>
                 {/* <div className="dropdown-menu-list-item">
@@ -130,11 +131,11 @@ export const DropDownMenu = ({
                     setDropDownContent("none");
                     show(false);
                   }}
-                  to="/portfolio/orange-social"
+                  to="/services"
                 >
                   <div className="dropdown-menu-list-item">
-                    <i className="fab fa-asymmetrik"></i>
-                    Static Websites
+                    <i className="far fa-window-maximize"></i>
+                    Standard
                   </div>
                 </Link>
                 <Link
@@ -142,11 +143,11 @@ export const DropDownMenu = ({
                     setDropDownContent("none");
                     show(false);
                   }}
-                  to="/portfolio/Super-donair"
+                  to="/services"
                 >
                   <div className="dropdown-menu-list-item">
-                    <i className="fas fa-hamburger"></i>
-                    Business Websites
+                    <i className="fas fa-cart-plus"></i>
+                    E-commerce
                   </div>
                 </Link>
                 <Link
@@ -154,11 +155,11 @@ export const DropDownMenu = ({
                     setDropDownContent("none");
                     show(false);
                   }}
-                  to="/portfolio/DeerCoded"
+                  to="/services"
                 >
                   {" "}
                   <div className="dropdown-menu-list-item">
-                    <i className="fas fa-broom"></i>
+                    <i className="fas fa-tablet-alt"></i>
                     Web Applications
                   </div>
                 </Link>
@@ -168,16 +169,16 @@ export const DropDownMenu = ({
               <h3> Web Solutions</h3>
               <div className="dropdown-menu-list ">
                 <div className="dropdown-menu-list-item ">
-                  <i className="fas fa-code"></i>
+                  <i className="fas fa-sitemap"></i>
                   Web Hosting
                 </div>
                 <div className="dropdown-menu-list-item ">
-                  <i className="fas fa-code"></i>
+                  <i className="fas fa-server"></i>
                   Server setup
                 </div>
 
                 <div className="dropdown-menu-list-item ">
-                  <i className="fas fa-code"></i>
+                  <i class="fas fa-tools"></i>
                   Site Maintenance
                 </div>
               </div>
@@ -210,10 +211,10 @@ export const DropDownMenu = ({
                     setDropDownContent("none");
                     show(false);
                   }}
-                  to="/portfolio/orange-social"
+                  to="/contact"
                 >
                   <div className="dropdown-menu-list-item">
-                    <i className="fab fa-asymmetrik"></i>
+                    <i className="far fa-question-circle"></i>
                     About Myself
                   </div>
                 </Link>
@@ -222,17 +223,25 @@ export const DropDownMenu = ({
                     setDropDownContent("none");
                     show(false);
                   }}
-                  to="/portfolio/Super-donair"
+                  to="https://github.com/moedeera"
                 >
                   <div className="dropdown-menu-list-item">
                     <i className="fa fa-github"></i>
                     Github Page
                   </div>
                 </Link>
-                <div className="dropdown-menu-list-item ">
-                  <i className="fa fa-wordpress"></i>
-                  Blog
-                </div>
+                <Link
+                  onClick={() => {
+                    setDropDownContent("none");
+                    show(false);
+                  }}
+                  to="/blog"
+                >
+                  <div className="dropdown-menu-list-item ">
+                    <i className="fa fa-wordpress"></i>
+                    Blog
+                  </div>
+                </Link>
               </div>
             </div>
             <div
@@ -241,10 +250,12 @@ export const DropDownMenu = ({
             >
               <h3>Other Links</h3>
               <div className="dropdown-menu-list ">
-                <div className="dropdown-menu-list-item ">
-                  <i className="fa fa-wordpress"></i>
-                  WordPress page
-                </div>
+                <a href="https://deeracode.ca/">
+                  <div className="dropdown-menu-list-item ">
+                    <i className="fa fa-wordpress"></i>
+                    WordPress page
+                  </div>
+                </a>
                 <div className="dropdown-menu-list-item ">
                   <i className="fa fa-linkedin" aria-hidden="true"></i>
                   Linkedin

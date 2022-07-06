@@ -43,7 +43,9 @@
   animation: slide-down 300ms ease-in-out;
   color: white;
 }
-
+.navbar-item {
+  color: var(--primary-color);
+}
 .dropdown-menu-section {
   /* border: 1px solid red; */
   width: 100%;

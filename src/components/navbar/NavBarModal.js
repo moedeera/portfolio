@@ -28,6 +28,7 @@ export const NavBarModal = ({
               show = false;
             }}
             to="/"
+            style={{ color: "var(--primary-color)" }}
           >
             <div className="navbar-item">Home</div>
           </Link>
@@ -69,6 +70,7 @@ export const NavBarModal = ({
               show = false;
             }}
             to="/about"
+            style={{ color: "var(--primary-color)" }}
           >
             <div className="navbar-item">About</div>
           </Link>
@@ -79,6 +81,7 @@ export const NavBarModal = ({
               show = false;
             }}
             to="/contact"
+            style={{ color: "var(--primary-color)" }}
           >
             <div className="navbar-item">Contact</div>
           </Link>
@@ -109,6 +112,7 @@ export const NavBarModal = ({
           {selectOption === "portfolio" ? (
             <div className="portfolio-nms-container">
               <Link
+                style={{ color: "black" }}
                 onClick={() => {
                   showDropDown(false);
 
@@ -121,6 +125,7 @@ export const NavBarModal = ({
                 </div>
               </Link>
               <Link
+                style={{ color: "black" }}
                 onClick={() => {
                   showDropDown(false);
 
@@ -134,6 +139,7 @@ export const NavBarModal = ({
                 </div>
               </Link>
               <Link
+                style={{ color: "black" }}
                 onClick={() => {
                   showDropDown(false);
 
@@ -147,6 +153,7 @@ export const NavBarModal = ({
                 </div>
               </Link>
               <Link
+                style={{ color: "black" }}
                 onClick={() => {
                   showDropDown(false);
                   // setSelectShow(false);
