@@ -21,10 +21,8 @@ export const Landing = () => {
         <div className="landing-bottom">
           <div className="landing-bottom-upper">
             <div className="landing-bottom-cta">
-              <h1>
-                5.0<i className="fa fa-star"></i>
-              </h1>
-              <p>Quality Websites</p>
+              <h1 className="lb-sw">See Works</h1>
+
               <div className="button-cta">
                 <a
                   className="btn btn-alt"

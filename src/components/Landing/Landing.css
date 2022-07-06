@@ -9,7 +9,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60%;
+  height: 70%;
   z-index: 0;
   border-radius: 10px;
 }
@@ -104,7 +104,8 @@
   display: none;
 }
 .landing-bottom-cta h1 {
-  font-size: 48px;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 .landing-bottom-cta p {
   margin-bottom: 50px;
@@ -129,11 +130,12 @@
   }
   .landing-bottom-upper {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
     gap: 10px;
-    padding: 20px;
+    padding: 0px 20px;
   }
   .landing-bottom-lower {
     display: flex;
@@ -178,6 +180,14 @@
   .buttons-cta {
     display: none;
   }
+  .landing-bottom-cta h1,
+  .landing-bottom-cta p {
+    display: block;
+  }
+
+  .button-cta {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -193,10 +203,6 @@
   }
 }
 @media only screen and (min-width: 900px) {
-  .landing-bottom-cta h1,
-  .landing-bottom-cta p {
-    display: block;
-  }
   .lb-circle {
     height: 230px;
     width: 230px;
@@ -204,15 +210,21 @@
   .button-cta {
     display: block;
     width: 80%;
+
+    margin: 0 auto;
   }
   .lb-circle h1 {
     font-size: 28px;
   }
+  .landing-bottom-upper {
+    display: flex;
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 950px) {
   .lb-circle {
-    height: 275px;
-    width: 275px;
+    height: 245px;
+    width: 245px;
   }
 }
 @media only screen and (min-width: 1140px) {
