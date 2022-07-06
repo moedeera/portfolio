@@ -31,21 +31,23 @@ export const Navbar = () => {
     >
       <div className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
-          <div className="logo">
-            <h3>
-              {" "}
-              Moe
-              <span
-                style={
-                  !navbar
-                    ? { color: "var(--primary-color)" }
-                    : { color: "gold" }
-                }
-              >
-                Develops
-              </span>
-            </h3>
-          </div>
+          <Link to="/">
+            <div className="logo">
+              <h3>
+                {" "}
+                Moe
+                <span
+                  style={
+                    !navbar
+                      ? { color: "var(--primary-color)" }
+                      : { color: "gold" }
+                  }
+                >
+                  Develops
+                </span>
+              </h3>
+            </div>
+          </Link>
 
           <div className="navbar-large">
             <div className="navigation">

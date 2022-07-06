@@ -75,6 +75,9 @@
 .buttons-cta button {
   min-width: 16rem;
 }
+.landing-bottom-cta {
+  /* border: 1px solid green; */
+}
 .landing-bottom-cta i {
   font-size: 14px;
 }
@@ -229,8 +232,8 @@
 }
 @media only screen and (min-width: 1140px) {
   .lb-circle {
-    height: 295px;
-    width: 295px;
+    height: 275px;
+    width: 275px;
   }
 }
 @media only screen and (min-width: 500px) {
