@@ -115,6 +115,7 @@
   .about-text {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* border: 1px solid green; */
   }
   .about-images {
     display: flex;
@@ -127,6 +128,7 @@
   .about-skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* border: 1px solid red; */
   }
   .about-header {
     text-align: left;
