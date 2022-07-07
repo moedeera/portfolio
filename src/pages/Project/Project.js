@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { useContext } from "react";
 import { SiteContext } from "../../context/Context";
+import pic1 from "./Group3.png";
 
 export const Project = () => {
   const { id } = useParams();
@@ -98,12 +99,7 @@ export const Project = () => {
         <div className="pp-lower">
           <div className="pp-image">
             {" "}
-            <img
-              src={
-                "https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              }
-              alt=""
-            />
+            <img src={pic1} alt="" />
           </div>
           <div className="pp-summary">
             <div className="pp-summary-header">

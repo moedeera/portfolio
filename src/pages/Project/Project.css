@@ -67,9 +67,16 @@
 }
 .pp-image {
   /* border: 1px solid crimson; */
+  background-color: aliceblue;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
 }
 .pp-image img {
   width: 100%;
+  /* border: 1px solid green; */
   border-radius: 7px;
 }
 .pp-summary {
