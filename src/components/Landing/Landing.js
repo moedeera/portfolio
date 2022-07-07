@@ -1,6 +1,7 @@
 import React from "react";
 import "./Landing.css";
 import pic1 from "./Saly-36.png";
+import { Link } from "react-router-dom";
 
 export const Landing = () => {
   return (
@@ -36,9 +37,13 @@ export const Landing = () => {
                 </a>
               </div> */}
               <div className="btn-container">
-                <h2> A Developer that loves Design</h2>
-                <button className="btn-hero">See Portfolio</button>
-                <button className="btn-hero btn-contact">Contact</button>
+                <h2> A Developer that lives to Design</h2>
+                <button className="btn-hero">
+                  <a href="#portfolio">See Portfolio</a>
+                </button>
+                <Link to="/contact">
+                  <button className="btn-hero btn-contact">Contact</button>
+                </Link>
               </div>
               {/* <div className="buttons-cta">
                 <button className="btn btn-landing">Portfolio</button>

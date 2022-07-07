@@ -4,6 +4,13 @@
   background-color: transparent;
   position: relative;
 }
+.landing a {
+  color: white;
+  transition: all 500ms ease-in-out;
+}
+.landing a:visited {
+  color: white;
+}
 .underlay {
   background-color: var(--dark);
   position: absolute;
@@ -142,6 +149,9 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .landing a:hover {
+    color: black;
+  }
   .btn-container {
     text-align: left;
   }
