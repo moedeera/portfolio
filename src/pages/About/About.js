@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
-import { Fade } from "react-reveal";
+import { Fade, Rotate } from "react-reveal";
 
 import { Link } from "react-router-dom";
 
@@ -16,8 +16,18 @@ export const About = () => {
         <Fade left>
           <div className="about-header">
             <h1>
-              'A Self taught developer that understands it's not about what you
-              learn, but rather what can you solve'
+              'A Self taught developer that understands it's about{" "}
+              <span
+                style={{
+                  color: "red",
+                  textDecoration: "line-through",
+                }}
+              >
+                <span style={{ color: "black", fontWeight: "600" }}>
+                  what you know{" "}
+                </span>
+              </span>
+              <span> what can you solve'</span>
             </h1>
           </div>
         </Fade>
