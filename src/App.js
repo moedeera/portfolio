@@ -10,6 +10,7 @@ import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
 import { SiteContextProvider } from "./context/Context";
 import { Blog } from "./pages/Blog/Blog";
+import { Article } from "./pages/Article/Article";
 
 function App() {
   return (
@@ -24,9 +25,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio/:id" element={<Project />} />
-            <Route path="/blog/:id" element={<Project />} />
+
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/post" element={<Blog />} />
+            <Route path="/blog/:post" element={<Article />} />
           </Routes>
         </Router>
         <Footer />
