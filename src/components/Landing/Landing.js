@@ -21,7 +21,7 @@ export const Landing = () => {
         <div className="landing-bottom">
           <div className="landing-bottom-upper">
             <div className="landing-bottom-cta">
-              <h1 className="lb-sw">See Works</h1>
+              {/* <h1 className="lb-sw">See Works</h1>
 
               <div className="button-cta">
                 <a
@@ -34,12 +34,16 @@ export const Landing = () => {
                 >
                   <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
                 </a>
+              </div> */}
+              <div className="btn-container">
+                <h2> A Developer that loves Design</h2>
+                <button className="btn-hero">See Portfolio</button>
+                <button className="btn-hero btn-contact">Contact</button>
               </div>
-
-              <div className="buttons-cta">
+              {/* <div className="buttons-cta">
                 <button className="btn btn-landing">Portfolio</button>
                 <button className="btn btn-landing">Contact</button>
-              </div>
+              </div> */}
             </div>
 
             <div className="lb-services">
@@ -53,7 +57,7 @@ export const Landing = () => {
               </div>
               <div className="lb-circle">
                 <h1>Solutions</h1>
-                <p>Amazing Designs, User Friendly interfaces</p>
+                <p>Servers set up, e-commerce websites and much more</p>
               </div>
             </div>
           </div>
