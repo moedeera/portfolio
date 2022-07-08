@@ -71,7 +71,7 @@ export const DropDownMenu = ({
             </div>
 
             <div className="sub-block">
-              <h5>Industries</h5>
+              <div className="sub-block-header">Industries</div>
               <div className="sub-list">
                 <div className="sub-list-item">E-commerce</div>
                 <div className="sub-list-item">Financial Services</div>

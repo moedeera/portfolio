@@ -2,6 +2,7 @@ const projectsList = [
   {
     id: null,
     orientation: "",
+    title: "",
     icons: [],
     pic1: "",
     pic2: "",
@@ -15,6 +16,7 @@ const projectsList = [
   {
     id: 0,
     orientation: "UI/UX",
+    title: "deercoded",
     icons: ["js", "css", "html"],
     pic1: "",
     pic2: "",
@@ -29,6 +31,7 @@ const projectsList = [
   {
     id: 1,
     orientation: "Client",
+    title: "super-donair",
     icons: ["js", "css", "html"],
     pic1: "",
     pic2: "",
@@ -43,6 +46,7 @@ const projectsList = [
   {
     id: 2,
     orientation: "Client",
+    title: "librum-reader",
     icons: ["react", "nodejs"],
     pic1: "",
     pic2: "",
@@ -57,6 +61,7 @@ const projectsList = [
   {
     id: 3,
     orientation: "Web Application",
+    title: "blue-bear",
     icons: ["react", "nodejs"],
     pic1: "",
     pic2: "",
@@ -71,6 +76,7 @@ const projectsList = [
   {
     id: 4,
     orientation: "WordPress theme",
+    title: "greenframe",
     icons: ["wordpress", "elementor"],
     pic1: "",
     pic2: "",

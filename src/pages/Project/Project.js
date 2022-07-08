@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import "./Project.css";
 import { useParams } from "react-router-dom";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
@@ -8,57 +8,16 @@ import pic1 from "./Group3.png";
 
 export const Project = () => {
   const { id } = useParams();
-  const { projects } = useContext(SiteContext);
+  const { projects, getProjectInformation } = useContext(SiteContext);
 
-  // const proj = usememo
+  const projectData = useMemo(() => {
+    getProjectInformation(id);
+  }, [id, getProjectInformation]);
 
   return (
     <div>
       <div className="project-page-container">
         <PageHeader tagline={"UI/UX"} header={id} />
-        {/* <div className="pp-upper-circles-dec">
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up col1"></div>
-
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up col1"></div>
-          <div className="pp-dot pp-up col1"></div>
-
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up col1"></div>
-          <div className="pp-dot pp-up col1"></div>
-          <div className="pp-dot pp-up col1"></div>
-
-          <div className="pp-dot pp-up"></div>
-          <div className="pp-dot pp-up col1"></div>
-          <div className="pp-dot pp-up col1"></div>
-          <div className="pp-dot pp-up col1"></div>
-          <div className="pp-dot pp-up col1"></div>
-        </div>
-        <div className="pp-upper">
-          <div className="pp-upper-container">
-            <div className="pp-upper-text">
-              <p>UI/UX Project</p>
-              <h1>{id}</h1>
-            </div>
-            <div className="pp-upper-circles">
-              <div className="pp-circle pp-upper-circle-1"></div>
-              <div className="pp-circle pp-upper-circle-2"></div>
-            </div>
-          </div>
-        </div> */}
 
         <div className="pp-details">
           <div className="pp-detail-unit">
@@ -93,7 +52,7 @@ export const Project = () => {
               <h3>Repository</h3>
             </div>
             <div>
-              <i class="fa fa-github" aria-hidden="true"></i>
+              <i className="fa fa-github" aria-hidden="true"></i>
             </div>
           </div>
 
@@ -103,7 +62,7 @@ export const Project = () => {
               <h3>Date </h3>
             </div>
             <div>
-              <i class="fa fa-github" aria-hidden="true"></i>
+              <i className="fa fa-github" aria-hidden="true"></i>
             </div>
           </div>
         </div>

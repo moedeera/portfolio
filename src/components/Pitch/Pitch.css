@@ -10,7 +10,7 @@
   margin: 100px auto;
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 150px;
 
   color: white;
 }
@@ -25,9 +25,9 @@
 .up-text-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
-  /* border: 1px solid var(--dark); */
+  /* border: 1px solid white; */
   padding: 20px;
   color: white;
   margin-top: -100px;
