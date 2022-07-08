@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { DropDown } from "./dropDown";
 import { NavBarModal } from "./NavBarModal";
 import { DropDownMenu } from "./DropDownMenu";
+import { NewDropDownMenu } from "./NewDropDownMenu";
 
 import OutsideClickHandler from "react-outside-click-handler";
 import "./Navbar.css";
@@ -10,7 +11,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [dropDownContent, setDropDownContent] = useState("none");
-  const [dropDown, showDropDown] = useState(false);
+  const [dropDown, showDropDown] = useState(true);
 
   const changeNavbar = () => {
     if (window.scrollY >= 60) {
@@ -198,6 +199,7 @@ export const Navbar = () => {
               dropDownContent={dropDownContent}
             />
           )}
+          <NewDropDownMenu />
         </div>
       </div>
 

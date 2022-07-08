@@ -6,6 +6,8 @@ export const SiteContext = createContext({});
 export const SiteContextProvider = ({ children }) => {
   const { projects, setProject } = useProjects();
 
+  ///()=>{project}
+
   return (
     <SiteContext.Provider
       value={{

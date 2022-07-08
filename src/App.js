@@ -11,6 +11,7 @@ import { Contact } from "./pages/Contact/Contact";
 import { SiteContextProvider } from "./context/Context";
 import { Blog } from "./pages/Blog/Blog";
 import { Article } from "./pages/Article/Article";
+import ScrollToTop from "./Scroll/Scroll";
 
 function App() {
   return (
@@ -18,17 +19,19 @@ function App() {
       <div className="App">
         <Router>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/portfolio/:id" element={<Project />} />
+          <ScrollToTop>
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/portfolio" element={<PortfolioPage />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/portfolio/:id" element={<Project />} />
 
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:post" element={<Article />} />
-          </Routes>
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:post" element={<Article />} />
+            </Routes>
+          </ScrollToTop>
         </Router>
         <Footer />
       </div>

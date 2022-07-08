@@ -1,6 +1,6 @@
 .dropDownMenu-Container {
   position: absolute;
-  height: 300px;
+  height: fit-content;
   background-color: none;
   width: 100%;
   top: 100%;
@@ -10,6 +10,7 @@
   display: none;
   /* border: none !important;
   background-color: aqua; */
+  background-color: transparent;
 }
 .ddm-container {
   height: 100%;
@@ -36,13 +37,19 @@
 
     rgba(53, 111, 173, 0.95) 100%
   ); */
-  background-color: var(--alternate-color);
+  background-color: white;
 
   padding: 10px 35px;
-  border-radius: 10px;
+  border-radius: 3px;
   transition: all 300ms ease-in-out;
   animation: slide-down 300ms ease-in-out;
   color: white;
+  border: 1px solid rgba(128, 128, 128, 0.678);
+  border-top: none;
+  box-shadow: var(--box-shadow);
+}
+.dd-mm {
+  display: flex;
 }
 .navbar-item {
   color: var(--primary-color);

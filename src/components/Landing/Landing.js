@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Landing.css";
 import pic1 from "./Saly-36.png";
 import { Link } from "react-router-dom";
 
 export const Landing = () => {
+  const [hover, SetHover] = useState(false);
   return (
     <div className="landing">
       <div className="landing-container">
@@ -39,7 +40,9 @@ export const Landing = () => {
               <div className="btn-container">
                 <h2> A Developer that lives to Design</h2>
                 <button className="btn-hero">
-                  <a href="#portfolio">See Portfolio</a>
+                  <a href="#portfolio">
+                    <span className="btn-a">See Portfolio</span>
+                  </a>
                 </button>
                 <Link to="/contact">
                   <button className="btn-hero btn-contact">Contact</button>

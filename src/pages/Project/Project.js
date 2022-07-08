@@ -10,6 +10,8 @@ export const Project = () => {
   const { id } = useParams();
   const { projects } = useContext(SiteContext);
 
+  // const proj = usememo
+
   return (
     <div>
       <div className="project-page-container">
@@ -94,6 +96,16 @@ export const Project = () => {
               <i class="fa fa-github" aria-hidden="true"></i>
             </div>
           </div>
+
+          <div className="pp-detail-unit pp-lg">
+            <div>
+              {" "}
+              <h3>Date </h3>
+            </div>
+            <div>
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+          </div>
         </div>
 
         <div className="pp-lower">
@@ -117,10 +129,10 @@ export const Project = () => {
             </div>
           </div>
         </div>
-        <div className="pp-lower-border">
+        {/* <div className="pp-lower-border">
           <div className="pp-dot"></div>
           <div className="lower-border"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
