@@ -5,6 +5,11 @@ import "./MegaMenuServices.css";
 import superdonair from "./images/superdonair.png";
 import bootcamp from "./images/bootcamp.png";
 import ereader from "./images/ereader4.png";
+import webapps from "./images/react.png";
+import wordpress from "./images/wordpress.png";
+import design from "./images/design.png";
+import business from "./images/business.png";
+import consult from "./images/chat.png";
 import { Link } from "react-router-dom";
 
 export const DropDownMenu = ({
@@ -39,7 +44,7 @@ export const DropDownMenu = ({
                       {/* <i className="fa fa-rocket" aria-hidden="true"></i> */}
                       <img
                         src={bootcamp}
-                        style={{ width: "100%", maxWidth: "40px" }}
+                        style={{ width: "100%", maxWidth: "30px" }}
                         alt=""
                       />
                     </div>
@@ -53,7 +58,7 @@ export const DropDownMenu = ({
                     <div className="primary-list-icon">
                       <img
                         src={superdonair}
-                        style={{ width: "100%", maxWidth: "40px" }}
+                        style={{ width: "100%", maxWidth: "30px" }}
                         alt=""
                       />
                     </div>
@@ -67,7 +72,7 @@ export const DropDownMenu = ({
                     <div className="primary-list-icon">
                       <img
                         src={ereader}
-                        style={{ width: "100%", maxWidth: "40px" }}
+                        style={{ width: "100%", maxWidth: "30px" }}
                         alt=""
                       />
                     </div>
@@ -132,7 +137,7 @@ export const DropDownMenu = ({
             <div className="megamenu-services" id="services">
               <div className="mm-service-unit">
                 <div className="mmsu-image">
-                  <img src={ereader} alt=""></img>
+                  <img src={design} alt=""></img>
                 </div>
                 <div className="mmsu-text">
                   <div className="mmsu-text-header">UI/UX Design</div>
@@ -143,7 +148,7 @@ export const DropDownMenu = ({
               </div>
               <div className="mm-service-unit">
                 <div className="mmsu-image">
-                  <img src={ereader} alt=""></img>
+                  <img src={webapps} alt=""></img>
                 </div>
                 <div className="mmsu-text">
                   <div className="mmsu-text-header">Web Applications</div>
@@ -154,7 +159,7 @@ export const DropDownMenu = ({
               </div>
               <div className="mm-service-unit">
                 <div className="mmsu-image">
-                  <img src={ereader} alt=""></img>
+                  <img src={business} alt=""></img>
                 </div>
                 <div className="mmsu-text">
                   <div className="mmsu-text-header">Business Websites</div>
@@ -165,7 +170,7 @@ export const DropDownMenu = ({
               </div>
               <div className="mm-service-unit">
                 <div className="mmsu-image">
-                  <img src={ereader} alt=""></img>
+                  <img src={wordpress} alt=""></img>
                 </div>
                 <div className="mmsu-text">
                   <div className="mmsu-text-header">WordPress sites</div>
@@ -176,7 +181,7 @@ export const DropDownMenu = ({
               </div>
               <div className="mm-service-unit">
                 <div className="mmsu-image">
-                  <img src={ereader} alt=""></img>
+                  <img src={consult} alt=""></img>
                 </div>
                 <div className="mmsu-text">
                   <div className="mmsu-text-header">Consulting</div>
