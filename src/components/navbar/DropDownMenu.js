@@ -1,6 +1,9 @@
 import React from "react";
 import "./DropDownMenu.css";
 import "./MegaMenu.css";
+import superdonair from "./images/superdonair.png";
+import bootcamp from "./images/bootcamp.png";
+import ereader from "./images/ereader4.png";
 import { Link } from "react-router-dom";
 
 export const DropDownMenu = ({
@@ -31,61 +34,75 @@ export const DropDownMenu = ({
               <div className="primary-list">
                 <div className="primary-list-item">
                   <div className="primary-list-icon">
-                    <i className="fas fa-life-ring"></i>
+                    {/* <i className="fa fa-rocket" aria-hidden="true"></i> */}
+                    <img
+                      src={bootcamp}
+                      style={{ width: "100%", maxWidth: "40px" }}
+                      alt=""
+                    />
                   </div>
                   <div className="primary-list-text">
-                    <h5>24/7 Technical Support</h5>
-                    <small>Obtain quality Support anytime</small>
+                    <h5>DeerCoded.com</h5>
+                    <small>Coding bootcamp theme</small>
                   </div>
                 </div>
 
                 <div className="primary-list-item">
                   <div className="primary-list-icon">
-                    <i className="fas fa-life-ring"></i>
+                    <img
+                      src={superdonair}
+                      style={{ width: "100%", maxWidth: "40px" }}
+                      alt=""
+                    />
                   </div>
                   <div className="primary-list-text">
-                    <h5>24/7 Technical Support</h5>
-                    <small>Obtain quality Support anytime</small>
+                    <h5>Super-Donair.com</h5>
+                    <small>Website for local Diner</small>
                   </div>
                 </div>
 
                 <div className="primary-list-item">
                   <div className="primary-list-icon">
-                    <i className="fas fa-life-ring"></i>
+                    <img
+                      src={ereader}
+                      style={{ width: "100%", maxWidth: "40px" }}
+                      alt=""
+                    />
                   </div>
                   <div className="primary-list-text">
-                    <h5>24/7 Technical Support</h5>
-                    <small>Obtain quality Support anytime</small>
+                    <h5>Librum Reader</h5>
+                    <small>Software launch website</small>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="sub-block">
-              <h5>Industries</h5>
+              <h5>Completed</h5>
               <div className="sub-list">
-                <div className="sub-list-item">E-commerce</div>
-                <div className="sub-list-item">Financial Services</div>
-                <div className="sub-list-item">E-Learning</div>
+                <div className="sub-list-item">BlueBear Social</div>
+                <div className="sub-list-item">DeerCoded.com</div>
+                <div className="sub-list-item">Super-Donair.com</div>
+                <div className="sub-list-item">Librum Reader</div>
+                <div className="sub-list-item">Greenframe designs</div>
               </div>
             </div>
 
             <div className="sub-block">
-              <div className="sub-block-header">Industries</div>
+              {/* <div className="sub-block-header">Industries</div> */}
+              <h5>Upcoming</h5>
               <div className="sub-list">
-                <div className="sub-list-item">E-commerce</div>
-                <div className="sub-list-item">Financial Services</div>
-                <div className="sub-list-item">E-Learning</div>
-                <div className="sub-list-item">Blogging</div>
+                <div className="sub-list-item">Calgary Radiology SA</div>
+                <div className="sub-list-item">AuctionaX</div>
               </div>
             </div>
 
             <div className="sub-block">
-              <h5>Industries</h5>
+              <h5>Categories</h5>
               <div className="sub-list">
-                <div className="sub-list-item">E-commerce</div>
-                <div className="sub-list-item">Financial Services</div>
-                <div className="sub-list-item">E-Learning</div>
+                <div className="sub-list-item">Web Applications</div>
+                <div className="sub-list-item">Freelance work</div>
+                <div className="sub-list-item">Design Themes</div>
               </div>
             </div>
 
@@ -99,7 +116,7 @@ export const DropDownMenu = ({
                   />
                 </div>
                 <div className="blog-text">
-                  CSS, HTML and JavaScript were the first skills I learned. I
+                  <p>How the upcoming tech Recession will effect developers.</p>
                   <button className="blog-btn">Read more</button>
                 </div>
               </div>
