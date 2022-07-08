@@ -1,0 +1,45 @@
+.megamenu-services {
+  /* border: 2px solid red; */
+  min-height: 200px;
+  width: 100%;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.mm-service-unit {
+  /* border: 1px solid green; */
+  display: flex;
+  color: var(--text-secondary);
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 20px;
+}
+.mmsu-image {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(135, 207, 235, 0.452);
+}
+.mmsu-image img {
+  width: 30px;
+}
+
+.mmsu-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0px;
+  text-align: left;
+  padding: 10px 0;
+}
+.mmsu-text-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+.mmsu-text-summary {
+  font-size: 13px;
+}
