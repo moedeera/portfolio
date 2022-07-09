@@ -44,8 +44,8 @@
   transition: all 300ms ease-in-out;
   animation: slide-down 300ms ease-in-out;
   color: white;
-  border: 1px solid rgba(128, 128, 128, 0.1);
-  border-top: none;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  /* border-top: none; */
   box-shadow: var(--box-shadow);
 }
 .dd-mm {

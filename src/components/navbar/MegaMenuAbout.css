@@ -1,21 +1,21 @@
-.megamenu-services {
+.megamenu-about {
   /* border: 2px solid red; */
   min-height: 200px;
   width: 100%;
   background-color: transparent;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  color: black;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.mm-service-unit {
+.mm-about-unit {
   /* border: 1px solid green; */
   display: flex;
+  flex-direction: column;
   color: var(--text-secondary);
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
   padding: 15px 20px;
 }
-.mmsu-image {
+.mmau-image {
   height: 55px;
   width: 55px;
   display: flex;
@@ -25,11 +25,11 @@
   background-color: rgba(135, 207, 235, 0.452);
   background-color: aliceblue;
 }
-.mmsu-image img {
+.mmau-image img {
   width: 30px;
 }
 
-.mmsu-text {
+.mmau-text {
   display: flex;
   flex-direction: column;
 
@@ -37,14 +37,15 @@
   text-align: left;
   padding: 10px 0;
 }
-.mmsu-text-header {
+.mmau-text-header {
   font-size: 14px;
   font-weight: 600;
   color: black;
 }
-.mmsu-text-summary {
+/* .mmau-text-summary {
   font-size: 13px;
-}
-.bl-ab {
-  color: black;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+} */

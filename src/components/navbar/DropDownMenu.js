@@ -2,6 +2,7 @@ import React from "react";
 import "./DropDownMenu.css";
 import "./MegaMenu.css";
 import "./MegaMenuServices.css";
+import "./MegaMenuAbout.css";
 import superdonair from "./images/superdonair.png";
 import bootcamp from "./images/bootcamp.png";
 import ereader from "./images/ereader4.png";
@@ -132,7 +133,6 @@ export const DropDownMenu = ({
               </div>
             </div>
           )}
-
           {dropDownContent === "services" && (
             <div className="megamenu-services" id="services">
               <div className="mm-service-unit">
@@ -201,6 +201,59 @@ export const DropDownMenu = ({
                   </div>
                 </div>
               </div> */}
+            </div>
+          )}
+          {dropDownContent === "about" && (
+            <div className="megamenu-about" id="about">
+              <div className="mm-about-unit">
+                <div className="mmau-image">
+                  <img src={design} alt=""></img>
+                </div>
+                <div className="mmau-text">
+                  <div className="mmau-text-header">General Info</div>
+                  <div className="mmau-text-summary">
+                    <div className="mmau-link"> About Me</div>
+                    <div className="mmau-link">Github</div>
+                    <div className="mmau-link">Linkedin</div>
+                    <div className="mmau-link">Twiiter</div>
+                  </div>
+                </div>
+              </div>
+              <div className="mm-about-unit">
+                <div className="mmau-image">
+                  <img src={webapps} alt=""></img>
+                </div>
+                <div className="mmau-text">
+                  <div className="mmau-text-header">Skills</div>
+                  <div className="mmau-text-summary">
+                    <div className="mmau-link"> WordPress</div>
+
+                    <div className="mmau-link"> CSS</div>
+                    <div className="mmau-link">HTML</div>
+                    <div className="mmau-link">JavaScript</div>
+                    <div className="mmau-link">ReactJS</div>
+                    <div className="mmau-link">ExpressJS</div>
+                    <div className="mmau-link">Heroku</div>
+                  </div>
+                </div>
+              </div>
+              <div className="Blog-reminder bl-ab">
+                <h3>Latest Blog</h3>
+                <div className="br-lower">
+                  <div className="blog-image">
+                    <img
+                      src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt=""
+                    />
+                  </div>
+                  <div className="blog-text">
+                    <p>
+                      How the upcoming tech Recession will effect developers.
+                    </p>
+                    <button className="blog-btn">More</button>
+                  </div>
+                </div>
+              </div>
             </div>
           )}
         </div>
