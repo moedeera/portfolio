@@ -131,22 +131,22 @@ export const Navbar = () => {
                 {" "}
                 <div
                   className="navigation-link"
-                  onMouseEnter={() => {
-                    if (dropDownContent !== "about") {
-                      setDropDownContent("about");
-                      showDropDown(true);
-                    } else {
-                      setDropDownContent("none");
-                      showDropDown(false);
-                    }
-                  }}
-                  onClick={() => {
-                    setDropDownContent("none");
-                    showDropDown(false);
-                  }}
+                  // onMouseEnter={() => {
+                  //   if (dropDownContent !== "about") {
+                  //     setDropDownContent("about");
+                  //     showDropDown(true);
+                  //   } else {
+                  //     setDropDownContent("none");
+                  //     showDropDown(false);
+                  //   }
+                  // }}
+                  // onClick={() => {
+                  //   setDropDownContent("none");
+                  //   showDropDown(false);
+                  // }}
                 >
                   <p>About</p>
-                  <i
+                  {/* <i
                     className="fa fa-chevron-down"
                     aria-hidden="true"
                     style={
@@ -154,7 +154,7 @@ export const Navbar = () => {
                         ? { transform: "rotate(180deg)" }
                         : { transform: "rotate(0deg)" }
                     }
-                  ></i>
+                  ></i> */}
                 </div>
               </Link>
             </div>

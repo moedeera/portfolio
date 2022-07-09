@@ -21,7 +21,14 @@ export const DropDownMenu = ({
   dropDownContent,
 }) => {
   return (
-    <div className="dropDownMenu-Container">
+    <div
+      className="dropDownMenu-Container"
+      style={
+        dropDownContent === "about"
+          ? { width: "0%", right: "0" }
+          : { width: "100%" }
+      }
+    >
       <div
         onMouseLeave={() => {
           show(false);
@@ -203,7 +210,7 @@ export const DropDownMenu = ({
               </div> */}
             </div>
           )}
-          {dropDownContent === "about" && (
+          {/* {dropDownContent === "about" && (
             <div className="megamenu-about" id="about">
               <div className="mm-about-unit">
                 <div className="mmau-image">
@@ -237,25 +244,8 @@ export const DropDownMenu = ({
                   </div>
                 </div>
               </div>
-              <div className="Blog-reminder bl-ab">
-                <h3>Latest Blog</h3>
-                <div className="br-lower">
-                  <div className="blog-image">
-                    <img
-                      src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt=""
-                    />
-                  </div>
-                  <div className="blog-text">
-                    <p>
-                      How the upcoming tech Recession will effect developers.
-                    </p>
-                    <button className="blog-btn">More</button>
-                  </div>
-                </div>
-              </div>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>
