@@ -66,7 +66,7 @@ export const DropDownMenu = ({
                     </div>
                   </Link>
 
-                  <Link to="/portfolio/superdonair">
+                  <Link to="/portfolio/super-donair">
                     <div className="primary-list-item">
                       <div className="primary-list-icon">
                         <img

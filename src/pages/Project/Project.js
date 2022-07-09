@@ -8,24 +8,41 @@ import pic1 from "./Group3.png";
 
 export const Project = () => {
   const { id } = useParams();
-  const { projects, getProjectInformation } = useContext(SiteContext);
+  const { getProjectInformation } = useContext(SiteContext);
 
   const projectData = useMemo(() => {
-    getProjectInformation(id);
+    return getProjectInformation(id);
   }, [id, getProjectInformation]);
+  console.log(projectData, id);
 
   return (
     <div>
       <div className="project-page-container">
-        <PageHeader tagline={"UI/UX"} header={id} />
+        <PageHeader
+          tagline={projectData.orientation}
+          header={projectData.header}
+        />
 
         <div className="pp-details">
           <div className="pp-detail-unit">
             <div>
               <h3>Built with</h3>
             </div>
-            <div>
-              <i className="fa fa-jsfiddle" aria-hidden="true"></i>
+            <div className="pp-icon-list">
+              {projectData.icons.map((icon) => (
+                <>
+                  {icon === "js" && <i className="fab fa-js"></i>}
+                  {icon === "css" && <i className="fab fa-css3-alt"></i>}
+                  {icon === "html" && <i className="fab fa-html5"></i>}
+                  {icon === "react" && <i className="fab fa-react"></i>}
+                  {icon === "nodejs" && <i className="fab fa-node-js"></i>}
+                  {icon === "wordpress" && (
+                    <i className="fab fa-wordpress-simple"></i>
+                  )}
+                  {icon === "figma" && <i className="fab fa-figma"></i>}
+                  {icon === "elementor" && <i className="fab fa-elementor"></i>}
+                </>
+              ))}
             </div>
           </div>
           <div className="pp-detail-unit">
@@ -34,7 +51,12 @@ export const Project = () => {
               <h3>Link</h3>
             </div>
             <div>
-              <a href="https://deeracode.dev/socialmedia">BlueBear Social</a>
+              <a
+                style={{ color: "var(--primary-color)" }}
+                href={projectData.link}
+              >
+                {projectData.header}
+              </a>
             </div>
           </div>
           <div className="pp-detail-unit pp-md">
@@ -43,7 +65,7 @@ export const Project = () => {
               <h3>Purpose</h3>
             </div>
             <div>
-              <p>Client</p>
+              <p>{projectData.purpose}</p>
             </div>
           </div>
           <div className="pp-detail-unit pp-lg">
@@ -52,7 +74,12 @@ export const Project = () => {
               <h3>Repository</h3>
             </div>
             <div>
-              <i className="fa fa-github" aria-hidden="true"></i>
+              <a
+                href={projectData.repository}
+                style={{ color: "var(--primary-color)" }}
+              >
+                <i className="fa fa-github" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
 
@@ -61,9 +88,7 @@ export const Project = () => {
               {" "}
               <h3>Date </h3>
             </div>
-            <div>
-              <i className="fa fa-github" aria-hidden="true"></i>
-            </div>
+            <div>{projectData.date}</div>
           </div>
         </div>
 
@@ -74,17 +99,10 @@ export const Project = () => {
           </div>
           <div className="pp-summary">
             <div className="pp-summary-header">
-              <h3>A website designed for User Interfaces</h3>
+              <h3>{projectData.Intro}</h3>
             </div>
             <div className="pp-summary-text">
-              <p>
-                {" "}
-                is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. It has survived
-                not only five centuries, but also the leap into electronic.
-              </p>
+              <p>{projectData.information}</p>
             </div>
           </div>
         </div>

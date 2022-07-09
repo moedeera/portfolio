@@ -9,11 +9,13 @@ export const SiteContextProvider = ({ children }) => {
   const getProjectInformation = (id) => {
     let projectInfo = null;
     const match = projects.some((project) => project.title === id);
-
+    console.log(match);
     if (match) {
       projectInfo = projects.find((project) => project.title === id);
+      console.log(projectInfo);
+      return projectInfo;
     }
-    return projectInfo;
+    return "not found";
   };
 
   return (

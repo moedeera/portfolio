@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [dropDownContent, setDropDownContent] = useState("none");
-  const [dropDown, showDropDown] = useState(true);
+  const [dropDown, showDropDown] = useState(false);
 
   const changeNavbar = () => {
     if (window.scrollY >= 60) {

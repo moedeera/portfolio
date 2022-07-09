@@ -46,24 +46,32 @@
   justify-content: center;
   gap: 20px;
   text-align: center;
-  padding: 15px 0px;
+  padding: 0px;
   margin-bottom: 30px;
 }
 .pp-detail-unit {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   /* border: 1px solid green; */
-  height: 76px;
+  height: 56px;
   justify-content: space-between;
+}
+.pp-icon-list {
+  color: var(--primary-color);
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
 }
 .pp-details i {
   font-size: 24px;
 }
 .pp-details h3 {
-  font-size: 18px;
+  font-size: 15px;
 }
-.pp-detail-unit p {
+.pp-detail-unit {
+  font-size: 13px;
 }
 .pp-image {
   /* border: 1px solid crimson; */

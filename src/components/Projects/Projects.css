@@ -84,6 +84,13 @@
 .date-unit h1 {
   font-size: 38px;
 }
+.pp-icon-list {
+  color: var(--primary-color);
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (min-width: 600px) {
   .dates-container {
     grid-template-columns: 1fr 1fr;
