@@ -88,10 +88,12 @@
 .pitch-header {
   /* border: 1px solid green; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  gap: 0px;
+  gap: 5px;
   margin-top: -20px;
+  margin-bottom: 15px;
+  padding: 0 10px;
 }
 .pitch-circle {
   border-radius: 50%;
