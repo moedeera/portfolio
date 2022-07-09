@@ -48,6 +48,7 @@
   text-align: center;
   padding: 0px;
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 .pp-detail-unit {
   display: flex;
@@ -75,11 +76,11 @@
 }
 .pp-image {
   /* border: 1px solid crimson; */
-  background-color: aliceblue;
+  background-color: transparent;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 0;
 }
 .pp-image img {
@@ -176,12 +177,7 @@
   .pp-upper-text {
     text-align: left;
   }
-  .pp-lower {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: center;
-    /* border: 1px solid blue; */
-  }
+
   .pp-summary {
     text-align: left;
     padding: 0 15px;
@@ -220,5 +216,11 @@
     text-align: left;
     letter-spacing: 1px;
     line-height: 1.8em;
+  }
+  .pp-lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    /* border: 1px solid blue; */
   }
 }

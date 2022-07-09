@@ -5,6 +5,11 @@ import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { useContext } from "react";
 import { SiteContext } from "../../context/Context";
 import pic1 from "./Group3.png";
+import pic2 from "./deercoded-mockup.png";
+import pic3 from "./superdonair-mockup.png";
+import pic4 from "./ereader-mockup.png";
+import pic5 from "./bluebear-mockup.png";
+const images = [pic1, pic2, pic3, pic4, pic5];
 
 export const Project = () => {
   const { id } = useParams();
@@ -95,7 +100,7 @@ export const Project = () => {
         <div className="pp-lower">
           <div className="pp-image">
             {" "}
-            <img src={pic1} alt="" />
+            <img src={images[projectData.pic1]} alt="" />
           </div>
           <div className="pp-summary">
             <div className="pp-summary-header">
@@ -106,10 +111,6 @@ export const Project = () => {
             </div>
           </div>
         </div>
-        {/* <div className="pp-lower-border">
-          <div className="pp-dot"></div>
-          <div className="lower-border"></div>
-        </div> */}
       </div>
     </div>
   );
