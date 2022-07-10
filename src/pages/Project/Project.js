@@ -9,7 +9,8 @@ import pic2 from "./deercoded-mockup.png";
 import pic3 from "./superdonair-mockup.png";
 import pic4 from "./ereader-mockup.png";
 import pic5 from "./bluebear-mockup.png";
-const images = [pic1, pic2, pic3, pic4, pic5];
+import error from "./error.jpeg";
+const images = [error, pic2, pic3, pic4, pic5];
 
 export const Project = () => {
   const { id } = useParams();
@@ -79,12 +80,19 @@ export const Project = () => {
               <h3>Repository</h3>
             </div>
             <div>
-              <a
-                href={projectData.repository}
-                style={{ color: "var(--primary-color)" }}
-              >
-                <i className="fa fa-github" aria-hidden="true"></i>
-              </a>
+              {projectData.repository === "n/a" ? (
+                <>N/A</>
+              ) : (
+                <>
+                  {" "}
+                  <a
+                    href={projectData.repository}
+                    style={{ color: "var(--primary-color)" }}
+                  >
+                    <i className="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                </>
+              )}
             </div>
           </div>
 

@@ -126,7 +126,7 @@ export const DropDownMenu = ({
                 {/* <div className="sub-block-header">Industries</div> */}
                 <h5>Upcoming</h5>
                 <div className="sub-list">
-                  <Link to="/portfolio/superdonair">
+                  <Link to="/portfolio/super-donair">
                     <div className="sub-list-item">Calgary Radiology SA</div>
                   </Link>
                   <Link to="/portfolio/auctionax">
@@ -185,7 +185,8 @@ export const DropDownMenu = ({
                 <div className="mmsu-text">
                   <div className="mmsu-text-header">Web Applications</div>
                   <div className="mmsu-text-summary">
-                    Design Templates, Mockups and Drafts for websites
+                    React Web Apps for websites that require more features for
+                    user interaction
                   </div>
                 </div>
               </div>
@@ -196,7 +197,8 @@ export const DropDownMenu = ({
                 <div className="mmsu-text">
                   <div className="mmsu-text-header">Business Websites</div>
                   <div className="mmsu-text-summary">
-                    Design Templates, Mockups and Drafts for websites
+                    Websites that require bookings, payments, content, and
+                    inventory management.
                   </div>
                 </div>
               </div>
@@ -207,21 +209,66 @@ export const DropDownMenu = ({
                 <div className="mmsu-text">
                   <div className="mmsu-text-header">WordPress sites</div>
                   <div className="mmsu-text-summary">
-                    Design Templates, Mockups and Drafts for websites
+                    Timely, Professional looking sites that are easy to manage
+                    and customize.
                   </div>
                 </div>
               </div>
-              <div className="mm-service-unit">
-                <div className="mmsu-image">
-                  <img src={consult} alt=""></img>
-                </div>
-                <div className="mmsu-text">
-                  <div className="mmsu-text-header">Consulting</div>
-                  <div className="mmsu-text-summary">
-                    Design Templates, Mockups and Drafts for websites
+
+              <Link
+                onClick={() => {
+                  show(false);
+                  setDropDownContent("none");
+                }}
+                to={"/contact"}
+              >
+                <div className="mm-service-unit">
+                  <div className="mmsu-image">
+                    <img src={consult} alt=""></img>
+                  </div>
+                  <div className="mmsu-text">
+                    <div
+                      className="mmsu-text-header"
+                      style={{ color: "black" }}
+                    >
+                      Consulting
+                    </div>
+                    <div
+                      className="mmsu-text-summary"
+                      style={{ color: "var(--text-secondary" }}
+                    >
+                      Not sure what you need? Interested in recruiting me for
+                      your organization? Send me a message and I will get back
+                      to you as soon as possible.
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
+
+              <Link
+                onClick={() => {
+                  show(false);
+                  setDropDownContent("none");
+                }}
+                to={"/services"}
+              >
+                <div
+                  className="mm-service-unit"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <div className="mmsu-image">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </div>
+                  <div className="mmsu-text">
+                    <div className="mmsu-text-header">See all</div>
+                    <div className="mmsu-text-summary"></div>
+                  </div>
+                </div>
+              </Link>
               {/* <div className="mm-service-unit">
                 <div className="mmsu-image">
                   <img src={ereader} alt=""></img>

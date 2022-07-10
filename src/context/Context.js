@@ -15,7 +15,23 @@ export const SiteContextProvider = ({ children }) => {
       console.log(projectInfo);
       return projectInfo;
     }
-    return "not found";
+    return {
+      id: 0,
+      orientation: "error",
+      title: "error",
+      icons: [],
+      pic1: 0,
+      pic2: "",
+      pic3: "",
+      purpose: "n/a",
+      repository: "n/a",
+      link: "n/a",
+      header: "Missing Project",
+      Intro: "Nothing to show",
+      information:
+        "This project is either no longer listed or has  yet to be posted",
+      date: "n/a",
+    };
   };
 
   return (
