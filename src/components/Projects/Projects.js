@@ -32,9 +32,16 @@ export const Projects = ({ page }) => {
                 <h3>{project.header}</h3>
                 <div className="course-info">
                   {/* <p>Read more</p> */}
-                  <Link to={`./${project.title}`}>
-                    <i className="fa fa-arrow-right fa-2x"></i>
-                  </Link>
+
+                  {page ? (
+                    <Link to={`portfolio/${project.title}`}>
+                      <i className="fa fa-arrow-right fa-2x"></i>
+                    </Link>
+                  ) : (
+                    <Link to={`./${project.title}`}>
+                      <i className="fa fa-arrow-right fa-2x"></i>
+                    </Link>
+                  )}
                 </div>
               </div>
             </>
