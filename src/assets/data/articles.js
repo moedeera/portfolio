@@ -19,7 +19,7 @@ const articles = [
     id: 0,
     title: "upcoming-recession",
     icons: [],
-    pic1: "https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    pic1: "https://images.pexels.com/photos/5717791/pexels-photo-5717791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     pic2: "",
     pic3: "",
     topic: "Economy",
