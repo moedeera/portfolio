@@ -21,7 +21,6 @@ export const Project = () => {
   const projectData = useMemo(() => {
     return getProjectInformation(id);
   }, [id, getProjectInformation]);
-  console.log(projectData, id);
 
   return (
     <div>
