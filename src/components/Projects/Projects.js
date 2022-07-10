@@ -7,7 +7,7 @@ import { SiteContext } from "../../context/Context";
 export const Projects = ({ page }) => {
   const { projects } = useContext(SiteContext);
   return (
-    <Fade right>
+    <Fade up>
       <section className="dates" id="portfolio">
         <div className="date-header">
           {page && (
