@@ -48,6 +48,7 @@
   padding: 5px;
 }
 .blog-article-image {
+  margin-bottom: 10px;
 }
 .blog-article-image img {
   width: 100%;
@@ -56,6 +57,7 @@
 .blog-article-cta,
 .blog-headline-cta {
   cursor: pointer;
+  text-decoration: underline;
 }
 @media only screen and (min-width: 600px) {
   .blog-header h1 {

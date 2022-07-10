@@ -2,6 +2,7 @@ import React, { useContext, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { SiteContext } from "../../context/Context";
 import "./Article.css";
+import { Link } from "react-router-dom";
 const pic1 = "../Blog/recession.jpg";
 const pic2 = "../Blog/design.jpg";
 
@@ -65,6 +66,11 @@ export const Article = () => {
             })}
           </div>
         </div>
+        <Link to="../blog">
+          <div className="go-back">
+            <small>Other blogs</small>
+          </div>
+        </Link>
       </div>
     </div>
   );
