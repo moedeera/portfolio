@@ -164,7 +164,7 @@ export const Navbar = () => {
             <div className="navbar-large">
               <button
                 className={
-                  navbar ? "btn btn-primary active" : "btn btn-primary"
+                  navbar ? "btn btn-variant active" : "btn btn-variant"
                 }
               >
                 Contact

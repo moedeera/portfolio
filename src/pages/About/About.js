@@ -70,7 +70,7 @@ export const About = () => {
         </Fade> */}
         <Fade>
           <div className="about-skills">
-            <div className="skills-grid">
+            {/* <div className="skills-grid">
               <i className="fa fa-wordpress"></i>
 
               <i className="fab fa-css3-alt"></i>
@@ -82,8 +82,8 @@ export const About = () => {
               <i className="fab fa-monero"></i>
               <i className="fab fa-weebly"></i>
               <i className="fab fa-figma"></i>
-            </div>
-            <div className="skills-text">
+            </div> */}
+            {/* <div className="skills-text">
               <h3>Skills</h3>
               <p> I work mainly with the following technologies</p>
               <ul>
@@ -104,7 +104,7 @@ export const About = () => {
                   </button>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </Fade>
       </div>

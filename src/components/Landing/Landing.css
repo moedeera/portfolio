@@ -153,12 +153,6 @@
   .landing a:hover {
     color: black;
   }
-  .btn-container {
-    text-align: left;
-  }
-  .btn-contact {
-    display: none;
-  }
 
   .landing-container {
     grid-template-rows: 4fr 6fr;
@@ -173,6 +167,7 @@
   .landing-bottom {
     display: grid;
     grid-template-rows: 1fr;
+    /* border: 4px solid orange; */
   }
   .landing-bottom-upper {
     display: flex;
@@ -184,14 +179,6 @@
     padding: 0px 20px;
   }
 
-  .lb-services {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 300px;
-  }
   .lb-circle {
     border: 1px solid grey;
     padding: 25px;
@@ -228,9 +215,6 @@
   .button-cta {
     display: block;
   }
-  .btn-hero {
-    margin: 0;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -245,7 +229,32 @@
     width: 185px;
   }
 }
+
+@media only screen and (min-width: 769px) {
+}
+
 @media only screen and (min-width: 900px) {
+  .btn-hero {
+    margin: 0;
+  }
+
+  .btn-container {
+    text-align: left;
+  }
+
+  .btn-contact {
+    display: none;
+  }
+
+  .lb-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 300px;
+  }
+
   .landing-bottom-lower {
     display: flex;
 

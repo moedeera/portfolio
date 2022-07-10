@@ -59,18 +59,18 @@
   color: var(--dark);
 }
 .contact-form-box {
-  /* border: 1px solid crimson; */
   display: flex;
   flex-direction: column;
   gap: 0px;
   padding: 0px;
+  background-color: var(--dark);
 }
 .cf-form {
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: var(--dark);
+
   padding: 10px;
   gap: 10px;
   color: white;
@@ -88,7 +88,7 @@
 .cf-image {
   /* border: 1px solid green; */
   padding: 10px;
-  background-color: var(--dark);
+
   padding: 20px;
   display: flex;
   justify-content: center;
