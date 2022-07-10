@@ -55,7 +55,14 @@ export const Article = () => {
             of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown
             printer took a galley */}
-            {`${article.summary}`}
+            {/* {`${article.summary}`} */}
+            {article.summary.split("\n").map((i, key) => {
+              return (
+                <div style={{ marginTop: "10px" }} key={key}>
+                  {i}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
