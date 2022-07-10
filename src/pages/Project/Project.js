@@ -9,8 +9,10 @@ import pic2 from "./deercoded-mockup.png";
 import pic3 from "./superdonair-mockup.png";
 import pic4 from "./ereader-mockup.png";
 import pic5 from "./bluebear-mockup.png";
+import pic6 from "./greenframe.png";
 import error from "./error.jpeg";
-const images = [error, pic2, pic3, pic4, pic5];
+
+const images = [error, pic2, pic3, pic4, pic5, pic6];
 
 export const Project = () => {
   const { id } = useParams();

@@ -90,6 +90,7 @@
   display: flex;
   /* flex-direction: column; */
   align-items: center;
+  justify-content: center;
   gap: 5px;
   margin-top: -20px;
   margin-bottom: 15px;
@@ -105,6 +106,7 @@
   justify-content: center;
   background-color: var(--primary-color);
   font-size: 28px;
+  border: 2px solid steelblue;
 }
 
 @media only screen and (min-width: 600px) {
@@ -113,6 +115,7 @@
   }
   .pitch-header {
     flex-direction: row;
+    justify-content: flex-start;
     gap: 10px;
   }
   .pitch-header h1 {

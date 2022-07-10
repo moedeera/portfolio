@@ -18,9 +18,8 @@ export const Pitch = () => {
               <div>
                 <h1>Professional Quality Guaranteed</h1>
                 <p>
-                  Contact me today or visit my page on Github for a free
-                  consultation, Once We finish up the details a quality website
-                  is waiting for you.
+                  Contact me today for a free consultation, Once We finish up
+                  the details, a quality website is waiting for you.
                 </p>
               </div>
               <div className="upt-cta">
@@ -38,7 +37,7 @@ export const Pitch = () => {
         <div className="lower-pitch">
           <Fade left>
             <div className="lp-tagline">
-              <h1> Many skills, Many Services, One Mission.</h1>
+              <h1> Many skills, Many Services, One Goal.</h1>
             </div>
           </Fade>
           <Fade right>

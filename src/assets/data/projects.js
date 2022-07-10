@@ -95,7 +95,7 @@ const projectsList = [
     icons: ["wordpress", "elementor"],
     brand: "fa fa-wordpress fa-2x",
     date: "April 2022",
-    pic1: 1,
+    pic1: 5,
     pic2: "",
     pic3: "",
     purpose: "Case Study",
