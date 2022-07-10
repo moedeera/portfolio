@@ -4,7 +4,7 @@ import pic1 from "./Saly-36.png";
 import { Link } from "react-router-dom";
 
 export const Landing = () => {
-  const [hover, SetHover] = useState(false);
+  const [hover, setHover] = useState(false);
   return (
     <div className="landing">
       <div className="landing-container">
@@ -39,9 +39,22 @@ export const Landing = () => {
               </div> */}
               <div className="btn-container">
                 <h2> A Developer that lives to Design</h2>
-                <button className="btn-hero">
+                <button
+                  className="btn-hero"
+                  onMouseEnter={() => {
+                    setHover(true);
+                  }}
+                  onMouseLeave={() => {
+                    setHover(false);
+                  }}
+                >
                   <a href="#portfolio">
-                    <span className="btn-a">See Portfolio</span>
+                    <span
+                      className="btn-a"
+                      style={hover ? { color: "black" } : { color: "white" }}
+                    >
+                      See Portfolio
+                    </span>
                   </a>
                 </button>
                 <Link to="/contact">
