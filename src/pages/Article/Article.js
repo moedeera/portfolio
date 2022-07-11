@@ -77,19 +77,115 @@ export const Article = () => {
           <div className="sidebar-container">
             <div className="side-bar-upper">
               <h3>
-                Stay up to date with my articles by following me on twitter
+                Interested in submitting an article on this blog? just send me a
+                message.
               </h3>
-              <button className="btn-follow">Follow</button>
+              <button className="btn-follow">Contact</button>
             </div>
             <div className="sidebar-posts">
               <h2> Recent Posts</h2>
               <div className="sidebar-posts-list">
-                <h3>Tech Recession effect on developers</h3>
-                <h3>The importance of design</h3>
-                <h3>Tech Recession effect on developers</h3>
-                <h3>The importance of design</h3>
-                <h3>Tech Recession effect on developers</h3>
-                <h3>The importance of design</h3>
+                <div className="sidebar-post">
+                  <div className="sidebar-post-image">
+                    <img
+                      alt=""
+                      src={article.pic1}
+                      style={{
+                        width: "100%",
+                        maxWidth: "150px",
+                      }}
+                    />
+                  </div>
+                  <div className="side-bar-post-text">
+                    <h3>Tech Recession effect on developers</h3>
+                    <p>March 2022</p>
+                  </div>
+                </div>
+
+                <div className="sidebar-post">
+                  <div className="sidebar-post-image">
+                    <img
+                      alt=""
+                      src={article.pic1}
+                      style={{
+                        width: "100%",
+                        maxWidth: "150px",
+                      }}
+                    />
+                  </div>
+                  <div className="side-bar-post-text">
+                    <h3>Tech Recession effect on developers</h3>
+                    <p>March 2022</p>
+                  </div>
+                </div>
+
+                <div className="sidebar-post">
+                  <div className="sidebar-post-image">
+                    <img
+                      alt=""
+                      src={article.pic1}
+                      style={{
+                        width: "100%",
+                        maxWidth: "150px",
+                      }}
+                    />
+                  </div>
+                  <div className="side-bar-post-text">
+                    <h3>Tech Recession effect on developers</h3>
+                    <p>March 2022</p>
+                  </div>
+                </div>
+
+                <div className="sidebar-post">
+                  <div className="sidebar-post-image">
+                    <img
+                      alt=""
+                      src={article.pic1}
+                      style={{
+                        width: "100%",
+                        maxWidth: "150px",
+                      }}
+                    />
+                  </div>
+                  <div className="side-bar-post-text">
+                    <h3>Tech Recession effect on developers</h3>
+                    <p>March 2022</p>
+                  </div>
+                </div>
+
+                <div className="sidebar-post">
+                  <div className="sidebar-post-image">
+                    <img
+                      alt=""
+                      src={article.pic1}
+                      style={{
+                        width: "100%",
+                        maxWidth: "150px",
+                      }}
+                    />
+                  </div>
+                  <div className="side-bar-post-text">
+                    <h3>Tech Recession effect on developers</h3>
+                    <p>March 2022</p>
+                  </div>
+                </div>
+
+                <div className="sidebar-post">
+                  <div className="sidebar-post-image">
+                    <img
+                      alt=""
+                      src={article.pic1}
+                      style={{
+                        width: "100%",
+                        maxWidth: "150px",
+                      }}
+                    />
+                  </div>
+                  <div className="side-bar-post-text">
+                    <h3>Tech Recession effect on developers</h3>
+                    <p>March 2022</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="sidebar-categories">
