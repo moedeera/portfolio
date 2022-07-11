@@ -120,7 +120,9 @@
   display: flex;
   gap: 10px;
 }
-
+.sidebar-post-image {
+  transition: all 500ms ease-in-out;
+}
 .side-bar-post-text {
   display: flex;
   flex-direction: column;
@@ -152,6 +154,13 @@
   .btn-follow:hover {
     background-color: var(--primary-color);
     color: aliceblue;
+  }
+  .sidebar-post {
+    cursor: pointer;
+  }
+
+  .sidebar-post-image:hover {
+    opacity: 0.8;
   }
 }
 @media only screen and (min-width: 900px) {
