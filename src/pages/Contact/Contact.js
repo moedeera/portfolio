@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import pic1 from "./saly-28.png";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
@@ -6,6 +6,7 @@ import { Fade } from "react-reveal";
 import axios from "axios";
 
 export const Contact = () => {
+  const [count, setCount] = useState(1);
   const [sent, setSent] = useState(false);
   const [message, setMessage] = useState({
     name: "",
@@ -39,6 +40,13 @@ export const Contact = () => {
         config
       );
       console.log(res.data);
+      setSent(true);
+      setCount(count + 1);
+      setMessage({
+        name: "",
+        email: "",
+        messageText: "",
+      });
 
       // retrieve
       // redirect to main page
@@ -46,6 +54,13 @@ export const Contact = () => {
       console.log(error);
     }
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSent(false);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [count, setMessage]);
 
   return (
     <div className="contact-page">
