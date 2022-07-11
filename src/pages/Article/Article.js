@@ -72,7 +72,7 @@ export const Article = () => {
               <button className="btn-follow">Contact</button>
             </div>
             <div className="sidebar-posts">
-              <h2> Recent Posts</h2>
+              <h2> See Also</h2>
               <div className="sidebar-posts-list">
                 {articlesList.map(
                   (post) =>
