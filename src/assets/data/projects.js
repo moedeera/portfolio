@@ -102,7 +102,7 @@ const projectsList = [
     repository: "n/a",
     link: "https://greenframedesign.com/",
     header: "GreenFrame Designs",
-    Intro: "Website for a Renovation company",
+    Intro: "Renovation company website",
     information:
       "Built using WordPress, It was meant to work as a professional website for a mock client in the renovation sector. It bolsters a robust professional look coupled with an easy-to-navigate interface. \n The structure was a standard corporate setup with various custom sections that were manually designed. It was built with Elementor using a theme from Astra as a starting point. Multiple custom blocks were used to finish up the final draft and a custom domain was bought to give a sense of realism.",
   },
