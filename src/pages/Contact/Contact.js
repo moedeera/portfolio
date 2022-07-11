@@ -3,8 +3,10 @@ import "./Contact.css";
 import pic1 from "./saly-28.png";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { Fade } from "react-reveal";
+import axios from "axios";
 
 export const Contact = () => {
+  const [sent, setSent] = useState(false);
   const [message, setMessage] = useState({
     name: "",
     email: "",
@@ -21,8 +23,28 @@ export const Contact = () => {
     }
   };
 
-  const onSubmit = () => {
+  const onSubmit = async () => {
     console.log(message);
+
+    try {
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+      const body = JSON.stringify(message);
+      const res = await axios.post(
+        "https://auction-website89.herokuapp.com/bids/message",
+        body,
+        config
+      );
+      console.log(res.data);
+
+      // retrieve
+      // redirect to main page
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -32,7 +54,7 @@ export const Contact = () => {
       </div>
       <div className="contact-page-container">
         <div className="contact-form">
-          <Fade left>
+          <Fade>
             <div className="contact-form-text">
               <h3>
                 Send me any inquiries regarding services or potential employment
@@ -44,7 +66,7 @@ export const Contact = () => {
               </p>
             </div>
           </Fade>
-          <Fade right>
+          <Fade>
             <div className="contact-form-box">
               <div className="cf-form">
                 <h1> Message Me</h1>
@@ -75,14 +97,19 @@ export const Contact = () => {
                     onChangeHandler(e, "message");
                   }}
                 />
-                <button
-                  onClick={() => {
-                    onSubmit();
-                  }}
-                  className="btn btn-alternate"
-                >
-                  Send Message
-                </button>
+
+                {sent ? (
+                  <h3 style={{ color: "lightgreen" }}>Succesfully sent!</h3>
+                ) : (
+                  <button
+                    onClick={() => {
+                      onSubmit();
+                    }}
+                    className="btn btn-alternate"
+                  >
+                    Send Message
+                  </button>
+                )}
               </div>
               <div className="cf-image">
                 <img src={pic1} alt="" />
