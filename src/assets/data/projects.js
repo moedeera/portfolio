@@ -31,7 +31,7 @@ const projectsList = [
     header: "DeerCoded.com",
     Intro: "UI Design for a coding bootcamp",
     information:
-      "A Design oriented website built as a theme for a coding bootcamp. It was built using css, JavaScript and HTML.\n The focus of the website is to experiment with new design trends involving landing page lottie animations and bubbly 3d illustrations.\n It also uses a landing page countdown timer that visually channels urgency in a potential customer.",
+      "A Design oriented website built as a theme for a coding bootcamp. It was built using CSS, JavaScript and HTML.\n The focus of the website is to experiment with new design trends involving landing page lottie animations and bubbly 3d illustrations.\n It also uses a landing page countdown timer that visually channels urgency in a potential customer.",
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ const projectsList = [
       "https://github.com/moedeera/nclient/tree/main/src/projects/socialmedia",
     link: "https://deeracode.dev/socialmedia",
     header: "Blue Bear Social",
-    Intro: "Social Media site that showcases understanding of React",
+    Intro: "Social Media Website",
     information:
       "A Function oriented website built to serve as a social media platform. It was built using React, NodeJS, and fireBase. It's main purpose is to demonstrate modern concepts in application development. It utulizes React Router V6 to manage the routes and uses React Context Provider to manage the states and information. It is preloaded with mock profiles, posts, and comments to make it easier to demonstrate.",
   },
