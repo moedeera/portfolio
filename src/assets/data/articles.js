@@ -51,6 +51,23 @@ const articles = [
     paragraph2: "",
     paragraph3: "",
   },
+  {
+    id: 2,
+
+    title: "importance-progress",
+    icons: [],
+    pic1: "https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    pic2: "",
+    pic3: "",
+    topic: "learning",
+    link: "",
+    header: "Why tracking progress is important for new web developers",
+    abstract:
+      "Keeping tabs on your achievements is an easy way to boost motivation when you are learning to code or design.",
+    date: "April 2022",
+    summary:
+      "For many aspiring web developers, the learning curve is friendly at first, but get’s steeper as they go along.  Once you learn the basics, learning new concepts becomes more challenging. As humans we at many times require validation of our efforts to drive our ambition. The problem is in many areas of life the validation dwindles the more we achieve. Take for instance working out, there is a concept known as newbie gains to highlight the faster muscle growth in the early stages of a workout routine. The rate of muscle gain slowly diminishes as you continue to build it. Therefore, so many people who try to body build quit early on. The same concept is true in web development. Once those early victories come by, learning new things becomes more of a challenge and the motivation turns into frustration. /n This is why documenting your progress over long periods of time is very important. My suggestion would be to make a new portfolio website every 3 months or so. It establishes a sense achievement that gives you the drive to go forward.  Stagnation is the greatest contributor to apathy. Once you feel like you are stuck, the goal starts to feel less achievable. When new developers get stuck on a certain concept, the tendency is to not go forward until that problem is overcome. But this hinders the learning curve greatly for most new learners. It is always better to move on and come back later if you get stuck. Sadly, most developers fall into the all or nothing mindset. /n My biggest suggestion would be to write down the things you get stuck on in a list and spend an hour a day searching for answers on either stackoverflow.com or reddit. Another major advice is to improve your early projects as soon as you learn new concepts.  Your first and second projects don’t have to be the worst on your portfolio. Constantly build on them and improve the code and UI. But make sure to keep the old versions saved in some fashion for you to look back on.  This will help you see your progress and visualize how much closer you are in getting to your goal.",
+  },
 ];
 
 module.exports = { articles };

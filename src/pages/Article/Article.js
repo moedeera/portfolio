@@ -5,8 +5,9 @@ import "./Article.css";
 import { Link } from "react-router-dom";
 const pic1 = "../Blog/recession.jpg";
 const pic2 = "../Blog/design.jpg";
+const pic3 = "../Blog/progress.jpg";
 
-const images = [pic1, pic2];
+const images = [pic1, pic2, pic3];
 
 export const Article = () => {
   const { post } = useParams();
@@ -89,7 +90,7 @@ export const Article = () => {
                   <div className="sidebar-post-image">
                     <img
                       alt=""
-                      src={article.pic1}
+                      src={images[article.id]}
                       style={{
                         width: "100%",
                         maxWidth: "150px",

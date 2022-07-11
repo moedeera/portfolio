@@ -3,9 +3,10 @@ import "./Blog.css";
 import { Link } from "react-router-dom";
 import pic1 from "./recession.jpg";
 import pic2 from "./design.jpg";
+import pic3 from "./progress.jpg";
 import { SiteContext } from "../../context/Context";
 
-const images = [pic1, pic2];
+const images = [pic1, pic2, pic3];
 export const Blog = () => {
   const { articlesList } = useContext(SiteContext);
 
