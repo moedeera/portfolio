@@ -12,13 +12,13 @@ const images = [pic1, pic2, pic3];
 export const Article = () => {
   const { post } = useParams();
 
-  const { getArticle } = useContext(SiteContext);
+  const { getArticle, articlesList } = useContext(SiteContext);
 
   const article = useMemo(() => {
     return getArticle(post);
   }, [post, getArticle]);
 
-  console.log(post, article);
+  console.log(articlesList);
   return (
     <div className="article-page">
       <div className="article-container">
@@ -86,56 +86,24 @@ export const Article = () => {
             <div className="sidebar-posts">
               <h2> Recent Posts</h2>
               <div className="sidebar-posts-list">
-                <div className="sidebar-post">
-                  <div className="sidebar-post-image">
-                    <img
-                      alt=""
-                      src={images[article.id]}
-                      style={{
-                        width: "100%",
-                        maxWidth: "150px",
-                      }}
-                    />
+                {articlesList.map((post) => (
+                  <div className="sidebar-post">
+                    <div className="sidebar-post-image">
+                      <img
+                        alt=""
+                        src={post.pic1}
+                        style={{
+                          width: "100%",
+                          maxWidth: "150px",
+                        }}
+                      />
+                    </div>
+                    <div className="side-bar-post-text">
+                      <h3>Tech Recession effect on developers</h3>
+                      <p>March 2022</p>
+                    </div>
                   </div>
-                  <div className="side-bar-post-text">
-                    <h3>Tech Recession effect on developers</h3>
-                    <p>March 2022</p>
-                  </div>
-                </div>
-
-                <div className="sidebar-post">
-                  <div className="sidebar-post-image">
-                    <img
-                      alt=""
-                      src={article.pic1}
-                      style={{
-                        width: "100%",
-                        maxWidth: "150px",
-                      }}
-                    />
-                  </div>
-                  <div className="side-bar-post-text">
-                    <h3>Tech Recession effect on developers</h3>
-                    <p>March 2022</p>
-                  </div>
-                </div>
-
-                <div className="sidebar-post">
-                  <div className="sidebar-post-image">
-                    <img
-                      alt=""
-                      src={article.pic1}
-                      style={{
-                        width: "100%",
-                        maxWidth: "150px",
-                      }}
-                    />
-                  </div>
-                  <div className="side-bar-post-text">
-                    <h3>Tech Recession effect on developers</h3>
-                    <p>March 2022</p>
-                  </div>
-                </div>
+                ))}
 
                 <div className="sidebar-post">
                   <div className="sidebar-post-image">
@@ -193,11 +161,10 @@ export const Article = () => {
               <h2> Categories</h2>
               <div>Design</div>
               <div>Economy</div>
-              <div>Trends</div>
-
-              <div>Design</div>
-              <div>Economy</div>
-              <div>Trends</div>
+              <div>Learning</div>
+              <div>Code</div>
+              <div>Jobs</div>
+              <div>Media</div>
             </div>
             <div className="sidebar-categories"></div>
           </div>
