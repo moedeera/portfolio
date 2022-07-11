@@ -94,13 +94,13 @@ export const Article = () => {
                         alt=""
                         src={post.pic1}
                         style={{
-                          width: "100%",
-                          maxWidth: "150px",
+                          width: "150px",
+                          // maxWidth: "150px",
                         }}
                       />
                     </div>
                     <div className="side-bar-post-text">
-                      <h3>Tech Recession effect on developers</h3>
+                      <h3>{post.header}</h3>
                       <p>March 2022</p>
                     </div>
                   </div>
@@ -112,8 +112,7 @@ export const Article = () => {
                       alt=""
                       src={article.pic1}
                       style={{
-                        width: "100%",
-                        maxWidth: "150px",
+                        width: "150px",
                       }}
                     />
                   </div>
@@ -129,8 +128,7 @@ export const Article = () => {
                       alt=""
                       src={article.pic1}
                       style={{
-                        width: "100%",
-                        maxWidth: "150px",
+                        width: "150px",
                       }}
                     />
                   </div>
@@ -146,8 +144,7 @@ export const Article = () => {
                       alt=""
                       src={article.pic1}
                       style={{
-                        width: "100%",
-                        maxWidth: "150px",
+                        width: "150px",
                       }}
                     />
                   </div>
