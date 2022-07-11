@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import pic1 from "./recession.jpg";
 import pic2 from "./design.jpg";
 import pic3 from "./progress.jpg";
+import pic4 from "./pbuddies.jpg";
 
 const images = [pic1, pic2, pic3];
 
