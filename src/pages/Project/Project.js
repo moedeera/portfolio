@@ -116,7 +116,14 @@ export const Project = () => {
               <h3>{projectData.Intro}</h3>
             </div>
             <div className="pp-summary-text">
-              <p>{projectData.information}</p>
+              {projectData.information.split("\n").map((i, key) => {
+                return (
+                  <div style={{ marginTop: "10px" }} key={key}>
+                    {i}
+                  </div>
+                );
+              })}
+              {/* <p>{projectData.information}</p> */}
             </div>
           </div>
         </div>

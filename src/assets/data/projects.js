@@ -29,9 +29,9 @@ const projectsList = [
     repository: "https://github.com/moedeera/FED-HT-website-design",
     link: "https://deercoded.com/",
     header: "DeerCoded.com",
-    Intro: "Modern UI Design for a coding bootcamp",
+    Intro: "UI Design for a coding bootcamp",
     information:
-      "A Design oriented website built as a theme for a coding bootcamp, It was built using css, JavaScript and HTML. The focus of the website is to demonstrate the key fundamentals of design such Simplicity, Visual Hierarchy, and Mobile Friendliness. It currently acts as an avenue to try out new designs on component but long term I do plan to sell the theme to businesses",
+      "A Design oriented website built as a theme for a coding bootcamp. It was built using css, JavaScript and HTML.\n The focus of the website is to experiment with new design trends involving landing page lottie animations and bubbly 3d illustrations.\n It also uses a landing page countdown timer that visually channels urgency in a potential customer.",
   },
   {
     id: 2,
@@ -61,13 +61,13 @@ const projectsList = [
     pic1: 3,
     pic2: "",
     pic3: "",
-    purpose: "Software launch",
+    purpose: "Client",
     repository: "https://github.com/moedeera/ereader",
     link: "https://librum-reader.com/",
     header: "Librum-Reader.com",
-    Intro: "A Website built for a pending software launch",
+    Intro: "Pending software launch",
     information:
-      " A website created for an impending software launch by a group of university students. The front end phase of the website was completed last month. Currently I am waiting for more intel from the clients to start developing the backend server. ",
+      " Created for a software launch by a group of university students in Berlin, Germany. The design was meant to convey a theme of youth and imagination. \n The front end phase of the website was completed last month. Currently, I am waiting for more intel from the clients to start developing the backend server. ",
   },
   {
     id: 4,
@@ -102,9 +102,9 @@ const projectsList = [
     repository: "n/a",
     link: "https://greenframedesign.com/",
     header: "GreenFrame Designs",
-    Intro: "A Website designed for a fictional Interior design company",
+    Intro: "Website for a Renovation company",
     information:
-      "This was build using WordPress. It was meant to work as a professional website for an interior design client.This is a website designed for a fictional interior design company. It bolsters a smooth professional look coupled with an easy-to-use interface. The logo was custom designed. The structure was a standard corporate structure with various custom templates that were manually designed. It was built with Elementor and an theme from Astra. Multiple custom templates were used as well.",
+      "Built using WordPress, It was meant to work as a professional website for a mock client in the renovation sector. It bolsters a robust professional look coupled with an easy-to-navigate interface. \n The structure was a standard corporate setup with various custom sections that were manually designed. It was built with Elementor using a theme from Astra as a starting point. Multiple custom blocks were used to finish up the final draft and a custom domain was bought to give a sense of realism.",
   },
 ];
 
