@@ -101,7 +101,7 @@ export const Article = () => {
                     </div>
                     <div className="side-bar-post-text">
                       <h3>{post.header}</h3>
-                      <p>March 2022</p>
+                      <p>{post.date}</p>
                     </div>
                   </div>
                 ))}
