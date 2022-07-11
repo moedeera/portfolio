@@ -155,7 +155,7 @@ export const NavBarModal = ({
 
                   show = false;
                 }}
-                to="portfolio/librum-reader"
+                to="portfolio/librumreader"
               >
                 <div className="pnms-unit">
                   <i className="fas fa-fire"></i>
@@ -169,7 +169,7 @@ export const NavBarModal = ({
                   // setSelectShow(false);
                   show = false;
                 }}
-                to="portfolio/bluebear-social"
+                to="portfolio/bluebear"
               >
                 <div className="pnms-unit">
                   <i className="fas fa-share-alt-square"></i>
