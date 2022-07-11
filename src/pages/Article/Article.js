@@ -3,9 +3,10 @@ import { useParams } from "react-router-dom";
 import { SiteContext } from "../../context/Context";
 import "./Article.css";
 import { Link } from "react-router-dom";
-const pic1 = "../Blog/recession.jpg";
-const pic2 = "../Blog/design.jpg";
-const pic3 = "../Blog/progress.jpg";
+
+import pic1 from "./recession.jpg";
+import pic2 from "./design.jpg";
+import pic3 from "./progress.jpg";
 
 const images = [pic1, pic2, pic3];
 
@@ -29,7 +30,7 @@ export const Article = () => {
             <p>{article?.abstract}</p>
           </div>
           <div className="articles-image">
-            <img src={article.pic1} alt="" />
+            <img src={images[article.id]} alt="" />
             <div className="article-details">
               <div className="articles-author">
                 <h3>Moe Deera</h3>
