@@ -2,12 +2,13 @@ import React, { useContext } from "react";
 import "./Blog.css";
 import { Link } from "react-router-dom";
 import pic1 from "./recession.jpg";
-import pic2 from "./design.jpg";
-import pic3 from "./progress.jpg";
-import pic4 from "./pbuddies.jpg";
+import pic2 from "./webflow.jpg";
+import pic3 from "./design.jpg";
+import pic4 from "./progress.jpg";
+import pic5 from "./pbuddies.jpg";
 import { SiteContext } from "../../context/Context";
 
-const images = [pic1, pic2, pic3, pic4];
+const images = [pic1, pic2, pic3, pic4, pic5];
 export const Blog = () => {
   const { articlesList } = useContext(SiteContext);
 

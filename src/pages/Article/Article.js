@@ -4,12 +4,15 @@ import { SiteContext } from "../../context/Context";
 import "./Article.css";
 import { Link } from "react-router-dom";
 
-import pic1 from "./recession.jpg";
-import pic2 from "./design.jpg";
-import pic3 from "./progress.jpg";
-import pic4 from "./pbuddies.jpg";
+import pic1 from "../Blog/recession.jpg";
+import pic2 from "../Blog/webflow.jpg";
+import pic3 from "../Blog/design.jpg";
+import pic4 from "../Blog/progress.jpg";
+import pic5 from "../Blog/pbuddies.jpg";
 
-const images = [pic1, pic2, pic3, pic4];
+import { articles } from "../../assets/data/articles";
+
+const images = [pic1, pic2, pic3, pic4, pic5];
 
 export const Article = () => {
   const { post } = useParams();
@@ -51,6 +54,7 @@ export const Article = () => {
                   </div>
                 );
               })}
+              <div style={{ marginTop: "20px" }}>{article.paragraph1}</div>
             </div>
           </div>
           <Link to="../blog">
@@ -84,7 +88,7 @@ export const Article = () => {
                           <Link to={`../Blog/${post.title}`}>
                             <img
                               alt=""
-                              src={post.pic1}
+                              src={images[post.id]}
                               style={{
                                 width: "150px",
                                 // maxWidth: "150px",
@@ -109,39 +113,7 @@ export const Article = () => {
                   <div className="sidebar-post-image">
                     <img
                       alt=""
-                      src={article.pic1}
-                      style={{
-                        width: "150px",
-                      }}
-                    />
-                  </div>
-                  <div className="side-bar-post-text">
-                    <h3>Tech Recession effect on developers</h3>
-                    <p>March 2022</p>
-                  </div>
-                </div>
-
-                <div className="sidebar-post">
-                  <div className="sidebar-post-image">
-                    <img
-                      alt=""
-                      src={article.pic1}
-                      style={{
-                        width: "150px",
-                      }}
-                    />
-                  </div>
-                  <div className="side-bar-post-text">
-                    <h3>Tech Recession effect on developers</h3>
-                    <p>March 2022</p>
-                  </div>
-                </div>
-
-                <div className="sidebar-post">
-                  <div className="sidebar-post-image">
-                    <img
-                      alt=""
-                      src={article.pic1}
+                      src={images[article.id]}
                       style={{
                         width: "150px",
                       }}
