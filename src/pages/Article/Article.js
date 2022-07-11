@@ -69,7 +69,9 @@ export const Article = () => {
                 Interested in submitting an article on this blog? just send me a
                 message.
               </h3>
-              <button className="btn-follow">Contact</button>
+              <Link style={{ color: "black" }} to="../contact">
+                <button className="btn-follow">Contact</button>{" "}
+              </Link>
             </div>
             <div className="sidebar-posts">
               <h2> See Also</h2>
