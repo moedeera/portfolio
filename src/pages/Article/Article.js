@@ -42,23 +42,6 @@ export const Article = () => {
               </div>
             </div>
             <div className="articles-text">
-              {/* is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley. is simply dummy text
-            of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley. is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a
-            galley
-            <br />
-            <br />
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley. is simply dummy text
-            of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley */}
               {/* {`${article.summary}`} */}
               {article.summary.split("\n").map((i, key) => {
                 return (

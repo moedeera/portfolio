@@ -126,6 +126,14 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.side-bar-post-text h3 {
+  font-size: 15px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.side-bar-post-text p {
+  font-size: 12px;
+}
 
 @media only screen and (min-width: 900px) {
   .article-container {
