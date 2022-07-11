@@ -9,7 +9,7 @@ import pic2 from "./design.jpg";
 import pic3 from "./progress.jpg";
 import pic4 from "./pbuddies.jpg";
 
-const images = [pic1, pic2, pic3];
+const images = [pic1, pic2, pic3, pic4];
 
 export const Article = () => {
   const { post } = useParams();
@@ -55,7 +55,10 @@ export const Article = () => {
           </div>
           <Link to="../blog">
             <div className="go-back">
-              <small>Other blogs</small>
+              <small>
+                Other blogs{" "}
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </small>
             </div>
           </Link>
         </div>
@@ -71,24 +74,34 @@ export const Article = () => {
             <div className="sidebar-posts">
               <h2> Recent Posts</h2>
               <div className="sidebar-posts-list">
-                {articlesList.map((post) => (
-                  <div className="sidebar-post">
-                    <div className="sidebar-post-image">
-                      <img
-                        alt=""
-                        src={post.pic1}
-                        style={{
-                          width: "150px",
-                          // maxWidth: "150px",
-                        }}
-                      />
-                    </div>
-                    <div className="side-bar-post-text">
-                      <h3>{post.header}</h3>
-                      <p>{post.date}</p>
-                    </div>
-                  </div>
-                ))}
+                {articlesList.map(
+                  (post) =>
+                    post.id !== article.id && (
+                      <div className="sidebar-post">
+                        <div className="sidebar-post-image">
+                          <Link to={`../Blog/${post.title}`}>
+                            <img
+                              alt=""
+                              src={post.pic1}
+                              style={{
+                                width: "150px",
+                                // maxWidth: "150px",
+                              }}
+                            />
+                          </Link>
+                        </div>
+                        <div className="side-bar-post-text">
+                          <Link
+                            to={`../Blog/${post.title}`}
+                            style={{ color: "black" }}
+                          >
+                            <h3>{post.header}</h3>
+                          </Link>
+                          <p>{post.date}</p>
+                        </div>
+                      </div>
+                    )
+                )}
 
                 <div className="sidebar-post">
                   <div className="sidebar-post-image">

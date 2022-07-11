@@ -18,6 +18,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 50px;
+  text-align: left;
 }
 .blog-headline-image {
   width: 100%;
@@ -69,7 +71,14 @@
     grid-template-columns: 3fr 2fr;
     /* border: 2px solid red; */
   }
-  .blog-headline-image {
+  .blog-headline-image img,
+  .blog-article-image img {
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+  }
+  .blog-headline-image img:hover,
+  .blog-article-image img:hover {
+    opacity: 0.6;
     /* border: 1px solid green; */
   }
 

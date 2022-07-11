@@ -19,8 +19,11 @@ export const Blog = () => {
         </div>
         <div className="blog-headline-container">
           <div className="blog-headline-image">
-            <img src={images[articlesList[0].id]} alt="" />
+            <Link to={`./${articlesList[0].title}`}>
+              <img src={images[articlesList[0].id]} alt="" />
+            </Link>
           </div>
+
           <div className="blog-headline-text">
             <div className="blog-headline-date">
               <p>{articlesList[0].date}</p>
@@ -39,28 +42,33 @@ export const Blog = () => {
           </div>
         </div>
         <div className="previous-articles-header">
-          <h2>Previous Articles</h2>
+          <h3>Previous Articles</h3>
         </div>
         <div className="blog-articles-container">
-          {articlesList.map((article) => (
-            <div className="blog-article">
-              <div className="blog-article-image">
-                <img src={images[article.id]} alt="" />
-              </div>
-              <div className="blog-article-date">{article.date}</div>
-              <div className="blog-article-title">
-                <h3> {article.header}</h3>
-              </div>
-              <div className="blog-article-summary">
-                <p>{article.abstract}</p>
-              </div>
-              <div className="blog-article-cta">
-                <Link to={`./${article.title}`}>
-                  <small>read more</small>
-                </Link>
-              </div>
-            </div>
-          ))}
+          {articlesList.map(
+            (article, key) =>
+              key !== 0 && (
+                <div className="blog-article">
+                  <div className="blog-article-image">
+                    <Link to={`./${article.title}`}>
+                      <img src={images[article.id]} alt="" />
+                    </Link>
+                  </div>
+                  <div className="blog-article-date">{article.date}</div>
+                  <div className="blog-article-title">
+                    <h3> {article.header}</h3>
+                  </div>
+                  <div className="blog-article-summary">
+                    <p>{article.abstract}</p>
+                  </div>
+                  <div className="blog-article-cta">
+                    <Link to={`./${article.title}`}>
+                      <small>read more</small>
+                    </Link>
+                  </div>
+                </div>
+              )
+          )}
         </div>
       </div>
     </div>

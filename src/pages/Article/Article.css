@@ -136,6 +136,13 @@
 .side-bar-post-text p {
   font-size: 12px;
 }
+.go-back {
+  margin-top: 50px;
+  /* border: 1px solid green; */
+  text-decoration: underline;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
 
 @media only screen and (min-width: 900px) {
   .article-container {
