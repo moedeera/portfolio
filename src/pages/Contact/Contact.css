@@ -2,7 +2,7 @@
   /* border: 1px solid green; */
   min-height: 100vh;
   position: relative;
-  width: 100%;
+  width: 95%;
   margin: 100px auto;
 }
 .contact-header-container {
@@ -34,12 +34,13 @@
   flex-direction: column;
   grid-template-columns: 1fr 1fr;
   height: 100%;
-  text-align: left;
+  text-align: center;
 }
 .contact-form-text {
   padding: 0px;
 }
 .contact-form-box {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* border: 1px solid orange; */
@@ -101,6 +102,10 @@
   box-shadow: none !important;
 }
 @media only screen and (min-width: 600px) {
+  .contact-form {
+    text-align: left;
+  }
+
   .contact-form-text h3,
   .contact-form-text p {
     padding: 0px;
