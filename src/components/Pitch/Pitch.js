@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Pitch.css";
 import pic1 from "./Saly-32.png";
 import { Fade } from "react-reveal";
 import { Zoom } from "react-reveal";
+import { Link } from "react-router-dom";
 
 export const Pitch = () => {
+  const [hover, setHover] = useState("none");
+
   return (
     <div className="pitch">
       <div className="pitch-container">
@@ -23,8 +26,44 @@ export const Pitch = () => {
                 </p>
               </div>
               <div className="upt-cta">
-                <button className="btn btn-secondary"> Contact</button>
-                <button className="btn btn-secondary"> Read more</button>
+                <Link to="/contact">
+                  <button
+                    className="btn btn-secondary"
+                    onMouseEnter={() => {
+                      setHover("contact");
+                    }}
+                    onMouseLeave={() => {
+                      setHover("none");
+                    }}
+                    style={
+                      hover === "contact"
+                        ? { color: "var(--alternate-color)" }
+                        : { color: "white" }
+                    }
+                  >
+                    {" "}
+                    Contact
+                  </button>
+                </Link>
+                <Link to="/services">
+                  <button
+                    onMouseEnter={() => {
+                      setHover("read-more");
+                    }}
+                    onMouseLeave={() => {
+                      setHover("none");
+                    }}
+                    style={
+                      hover === "read-more"
+                        ? { color: "var(--alternate-color)" }
+                        : { color: "white" }
+                    }
+                    className="btn btn-secondary"
+                  >
+                    {" "}
+                    Read more
+                  </button>
+                </Link>
               </div>
             </div>
           </Fade>
