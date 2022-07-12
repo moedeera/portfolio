@@ -5,7 +5,7 @@ import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { useContext } from "react";
 import { SiteContext } from "../../context/Context";
 import pic1 from "./Group3.png";
-import pic2 from "./deercoded-mockup.png";
+import pic2 from "./deercoded-mockup2.png";
 import pic3 from "./superdonair-mockup.png";
 import pic4 from "./ereader-mockup.png";
 import pic5 from "./bluebear-mockup.png";
