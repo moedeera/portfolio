@@ -66,7 +66,7 @@ const projectsList = [
     recent: true,
     completed: true,
     title: "librumreader",
-    icons: ["react", "nodejs"],
+    icons: ["react", "css"],
     brand: "far fa-bookmark fa-2x",
     date: "May 2021",
     pic1: 3,
@@ -78,7 +78,7 @@ const projectsList = [
     header: "Librum-Reader.com",
     Intro: "Pending software launch",
     information:
-      " Created for a software launch by a group of university students in Berlin, Germany. The design was meant to convey a theme of youth and imagination. \n The front end phase of the website was completed last month. Currently, I am waiting for more intel from the clients to start developing the backend server. ",
+      " Created for a software launch by a group of university students in Berlin, Germany. It was built using React and hosted on Netlify. The design was meant to convey a theme of youth and imagination. \n The front end phase of the website was completed last month. Currently, I am waiting for more intel from the clients to start developing the backend server. ",
   },
   {
     id: 4,

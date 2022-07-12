@@ -55,9 +55,9 @@ export const Navbar = () => {
               <div className="navigation-link">
                 <Link
                   to="/"
-                  onClick={() => {
-                    setDropDownContent("none");
+                  onMouseEnter={() => {
                     showDropDown(false);
+                    setDropDownContent("none");
                   }}
                 >
                   {" "}
@@ -127,7 +127,13 @@ export const Navbar = () => {
                 </div>
               </Link>
 
-              <Link to="/about">
+              <Link
+                to="/about"
+                onMouseEnter={() => {
+                  showDropDown(false);
+                  setDropDownContent("none");
+                }}
+              >
                 {" "}
                 <div
                   className="navigation-link"
