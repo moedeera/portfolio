@@ -11,15 +11,17 @@
   /* border: none !important;
   background-color: aqua; */
   background-color: transparent;
+  transition: all 500ms ease-in-out;
+}
+.dropDownMenu-Container.active {
+  top: 140%;
 }
 .ddm-container {
   height: 100%;
   width: 100%;
   transition: all 500ms ease-in-out;
 }
-.dropdown-menu.active {
-  color: white;
-}
+
 .dropdown-menu {
   width: 100%;
   height: 100%;
@@ -47,6 +49,9 @@
   border: 1px solid rgba(128, 128, 128, 0.2);
   /* border-top: none; */
   box-shadow: var(--box-shadow);
+}
+.dropdown-menu.active {
+  color: white;
 }
 
 .dd-mm {

@@ -19,14 +19,12 @@ export const DropDownMenu = ({
   show,
   setDropDownContent,
   dropDownContent,
+  active,
 }) => {
   return (
     <div
-      className="dropDownMenu-Container"
-      style={
-        dropDownContent === "about"
-          ? { width: "0%", right: "0" }
-          : { width: "100%" }
+      className={
+        active ? "dropDownMenu-Container active" : "dropDownMenu-Container"
       }
     >
       <div

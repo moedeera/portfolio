@@ -197,6 +197,7 @@ export const Navbar = () => {
               show={showDropDown}
               setDropDownContent={setDropDownContent}
               dropDownContent={dropDownContent}
+              active={navbar}
             />
           )}
           <NewDropDownMenu />
