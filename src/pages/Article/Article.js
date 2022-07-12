@@ -85,7 +85,7 @@ export const Article = () => {
                     post.id !== article.id && (
                       <div className="sidebar-post">
                         <div className="sidebar-post-image">
-                          <Link to={`../Blog/${post.title}`}>
+                          <Link to={`../blog/${post.title}`}>
                             <img
                               alt=""
                               src={images[post.id]}
@@ -98,7 +98,7 @@ export const Article = () => {
                         </div>
                         <div className="side-bar-post-text">
                           <Link
-                            to={`../Blog/${post.title}`}
+                            to={`../blog/${post.title}`}
                             style={{ color: "black" }}
                           >
                             <h3>{post.header}</h3>

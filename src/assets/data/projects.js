@@ -73,7 +73,7 @@ const projectsList = [
     id: 4,
     orientation: "Web Application",
     title: "bluebear",
-    icons: ["react", "nodejs"],
+    icons: ["react", "nodejs", "firebase"],
     brand: "fab fa-react fa-2x",
     date: "March 2022",
     pic1: 4,
@@ -86,7 +86,7 @@ const projectsList = [
     header: "Blue Bear Social",
     Intro: "Social Media Website",
     information:
-      "A Function oriented website built to serve as a social media platform. It was built using React, NodeJS, and fireBase. It's main purpose is to demonstrate modern concepts in application development. It utulizes React Router V6 to manage the routes and uses React Context Provider to manage the states and information. It is preloaded with mock profiles, posts, and comments to make it easier to demonstrate.",
+      "An Interaction oriented website built to serve as a social media platform. \n It was built using React, NodeJS, and FireBase. It's main purpose is to showcase the efficiency of front-end server platforms like FireBase against a well established frame-work like ExpressJS. It utilizes React Router V6 to manage the routes and uses React-Context-Provider to manage the states and information. \n It is preloaded with mock profiles, posts, and comments to showcase the various functions.",
   },
   {
     id: 5,

@@ -74,6 +74,9 @@
 .pp-detail-unit {
   font-size: 13px;
 }
+/* .pp-lower {
+  border: 2px solid crimson;
+} */
 .pp-image {
   /* border: 1px solid crimson; */
   background-color: transparent;
@@ -91,6 +94,10 @@
 .pp-summary {
   color: var(--text-secondary);
   letter-spacing: 0.75px;
+  display: flex;
+  flex-direction: column;
+
+  grid-area: 10px;
 }
 .pp-summary h3 {
   color: var(--primary-color);
@@ -106,7 +113,12 @@
   padding: 0 15px;
 }
 .pp-summary-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
   padding: 15px;
+  min-height: 350px;
 }
 .pp-lower-border {
   height: 2rem;
@@ -151,7 +163,37 @@
   width: 5rem;
   border-radius: 10px;
 }
+.cta-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.project-cta-button {
+  border: 1px solid grey;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px 5px;
+  width: 100%;
+  max-width: 10rem;
+  display: flex;
+  justify-content: center;
+  transition: all 500ms ease-in-out;
+  background-color: var(--alternate-color);
+  box-shadow: var(--box-shadow);
+}
 
+.project-cta-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: right;
+  transition: all 300ms ease-in-out;
+}
+.project-cta-button img {
+  width: 30px;
+}
 @media only screen and (min-width: 600px) {
   .pp-upper-circles-dec {
     display: grid;
@@ -222,5 +264,10 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     /* border: 1px solid blue; */
+  }
+  .project-cta-button:hover {
+    background-color: aliceblue;
+    color: var(--primary-color) !important;
+    transform: translateY(-8px);
   }
 }

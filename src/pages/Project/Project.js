@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "./Project.css";
 import { useParams } from "react-router-dom";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
@@ -10,11 +10,14 @@ import pic3 from "./superdonair-mockup.png";
 import pic4 from "./ereader-mockup.png";
 import pic5 from "./bluebear-mockup.png";
 import pic6 from "./greenframe.png";
+import firebase from "./firebase.png";
+import linkicon from "./link.png";
 import error from "./error.jpeg";
 
 const images = [error, pic2, pic3, pic4, pic5, pic6];
 
 export const Project = () => {
+  const [hover, setHover] = useState(false);
   const { id } = useParams();
   const { getProjectInformation } = useContext(SiteContext);
 
@@ -38,6 +41,9 @@ export const Project = () => {
             <div className="pp-icon-list">
               {projectData.icons.map((icon) => (
                 <>
+                  {icon === "firebase" && (
+                    <img src={firebase} alt="" style={{ width: "30px" }} />
+                  )}
                   {icon === "js" && <i className="fab fa-js"></i>}
                   {icon === "css" && <i className="fab fa-css3-alt"></i>}
                   {icon === "html" && <i className="fab fa-html5"></i>}
@@ -124,6 +130,32 @@ export const Project = () => {
                 );
               })}
               {/* <p>{projectData.information}</p> */}
+              <div className="cta-btn-container">
+                <div
+                  className="project-cta-button"
+                  onMouseEnter={() => {
+                    setHover(true);
+                  }}
+                  onMouseLeave={() => {
+                    setHover(false);
+                  }}
+                >
+                  <a
+                    href={projectData.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={
+                      !hover
+                        ? { color: "white" }
+                        : { color: "var(--primary-color)" }
+                    }
+                  >
+                    {" "}
+                    Visit Site
+                    <img src={linkicon} alt="" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
