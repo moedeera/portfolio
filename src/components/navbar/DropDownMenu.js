@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./DropDownMenu.css";
 import "./MegaMenu.css";
 import "./MegaMenuServices.css";
@@ -12,6 +12,9 @@ import design from "./images/design.png";
 import business from "./images/business.png";
 import consult from "./images/chat.png";
 import { Link } from "react-router-dom";
+import { SiteContext } from "../../context/Context";
+
+const images = [null, bootcamp, superdonair, ereader];
 
 export const DropDownMenu = ({
   selection,
@@ -21,6 +24,8 @@ export const DropDownMenu = ({
   dropDownContent,
   active,
 }) => {
+  const { projects } = useContext(SiteContext);
+
   return (
     <div
       className={
@@ -46,77 +51,54 @@ export const DropDownMenu = ({
                 <div className="primary-block-header">Latest Projects</div>
 
                 <div className="primary-list">
-                  <Link to="/portfolio/deercoded">
-                    <div className="primary-list-item">
-                      <div className="primary-list-icon">
-                        {/* <i className="fa fa-rocket" aria-hidden="true"></i> */}
-                        <img
-                          src={bootcamp}
-                          style={{ width: "100%", maxWidth: "30px" }}
-                          alt=""
-                        />
-                      </div>
+                  {projects.map(
+                    (project, i) =>
+                      project.recent && (
+                        <Link
+                          to={`../portfolio/${project.title}`}
+                          onClick={() => {
+                            show(false);
+                            setDropDownContent("none");
+                          }}
+                        >
+                          <div className="primary-list-item">
+                            <div className="primary-list-icon">
+                              {/* <i className="fa fa-rocket" aria-hidden="true"></i> */}
+                              <img
+                                src={images[project.id]}
+                                style={{ width: "100%", maxWidth: "30px" }}
+                                alt=""
+                              />
+                            </div>
 
-                      <div className="primary-list-text">
-                        <h5>DeerCoded.com</h5>
-                        <small>Coding bootcamp theme</small>
-                      </div>
-                    </div>
-                  </Link>
-
-                  <Link to="/portfolio/super-donair">
-                    <div className="primary-list-item">
-                      <div className="primary-list-icon">
-                        <img
-                          src={superdonair}
-                          style={{ width: "100%", maxWidth: "30px" }}
-                          alt=""
-                        />
-                      </div>
-                      <div className="primary-list-text">
-                        <h5>Super-Donair.com</h5>
-                        <small>Website for local Diner</small>
-                      </div>
-                    </div>
-                  </Link>
-
-                  <Link to="/portfolio/librumreader">
-                    <div className="primary-list-item">
-                      <div className="primary-list-icon">
-                        <img
-                          src={ereader}
-                          style={{ width: "100%", maxWidth: "30px" }}
-                          alt=""
-                        />
-                      </div>
-                      <div className="primary-list-text">
-                        <h5>Librum Reader</h5>
-                        <small>Software launch website</small>
-                      </div>
-                    </div>
-                  </Link>
+                            <div className="primary-list-text">
+                              <h5>{project.header}</h5>
+                              <small>{project.tagline}</small>
+                            </div>
+                          </div>
+                        </Link>
+                      )
+                  )}
                 </div>
               </div>
 
               <div className="sub-block">
                 <h5>Completed</h5>
                 <div className="sub-list">
-                  <Link to="/portfolio/bluebear">
-                    <div className="sub-list-item">BlueBear Social</div>
-                  </Link>
-                  <Link to="/portfolio/deercoded">
-                    <div className="sub-list-item">DeerCoded.com</div>
-                  </Link>
-                  <Link to="/portfolio/super-donair">
-                    <div className="sub-list-item">Super-Donair.com</div>
-                  </Link>
-                  <Link to="/portfolio/librumreader">
-                    <div className="sub-list-item">Librum Reader</div>
-                  </Link>
-
-                  <Link to="/portfolio/greenframe">
-                    <div className="sub-list-item">Greenframe designs</div>
-                  </Link>
+                  {projects.map(
+                    (project) =>
+                      project.completed && (
+                        <Link
+                          to={`../portfolio/${project.title}`}
+                          onClick={() => {
+                            show(false);
+                            setDropDownContent("none");
+                          }}
+                        >
+                          <div className="sub-list-item">{project.header}</div>
+                        </Link>
+                      )
+                  )}
                 </div>
               </div>
 
@@ -124,10 +106,22 @@ export const DropDownMenu = ({
                 {/* <div className="sub-block-header">Industries</div> */}
                 <h5>Upcoming</h5>
                 <div className="sub-list">
-                  <Link to="/portfolio/super-donair">
+                  <Link
+                    to="/portfolio/super-donair"
+                    onClick={() => {
+                      show(false);
+                      setDropDownContent("none");
+                    }}
+                  >
                     <div className="sub-list-item">Calgary Radiology SA</div>
                   </Link>
-                  <Link to="/portfolio/auctionax">
+                  <Link
+                    to="/portfolio/auctionax"
+                    onClick={() => {
+                      show(false);
+                      setDropDownContent("none");
+                    }}
+                  >
                     <div className="sub-list-item">AuctionaX</div>
                   </Link>
                 </div>

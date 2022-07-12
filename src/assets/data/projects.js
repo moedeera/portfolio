@@ -1,6 +1,8 @@
 const template = {
   id: null,
   orientation: "",
+  recent: false,
+  completed: true,
   title: "",
   icons: [],
   pic1: "",
@@ -18,6 +20,9 @@ const projectsList = [
   {
     id: 1,
     orientation: "UI/UX",
+    tagline: "Coding bootcamp theme",
+    recent: true,
+    completed: true,
     title: "deercoded",
     icons: ["js", "css", "html"],
     brand: "fab fa-js-square fa-2x",
@@ -36,6 +41,9 @@ const projectsList = [
   {
     id: 2,
     orientation: "Client",
+    tagline: "Website for local Diner",
+    recent: true,
+    completed: true,
     title: "super-donair",
     icons: ["js", "css", "html"],
     brand: "fas fa-hamburger fa-2x",
@@ -54,6 +62,9 @@ const projectsList = [
   {
     id: 3,
     orientation: "Client",
+    tagline: "Software launch website",
+    recent: true,
+    completed: true,
     title: "librumreader",
     icons: ["react", "nodejs"],
     brand: "far fa-bookmark fa-2x",
@@ -72,6 +83,9 @@ const projectsList = [
   {
     id: 4,
     orientation: "Web Application",
+    tagline: "Coding bootcamp theme",
+    recent: false,
+    completed: true,
     title: "bluebear",
     icons: ["react", "nodejs", "firebase"],
     brand: "fab fa-react fa-2x",
@@ -91,6 +105,9 @@ const projectsList = [
   {
     id: 5,
     orientation: "WordPress theme",
+    tagline: "Coding bootcamp theme",
+    recent: false,
+    completed: true,
     title: "greenframe",
     icons: ["wordpress", "elementor"],
     brand: "fa fa-wordpress fa-2x",
