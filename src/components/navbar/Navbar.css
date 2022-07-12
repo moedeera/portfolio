@@ -102,10 +102,12 @@
 .navbar.active {
   background-color: var(--primary-color);
   background-color: rgba(240, 248, 255, 0.904);
+  background-color: white;
   color: white;
   color: var(--primary-color);
   height: 80px;
   z-index: 10;
+  border-bottom: 1px solid grey;
 }
 .new-dropdown {
   position: absolute;

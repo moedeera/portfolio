@@ -68,7 +68,7 @@ const articles = [
     pic3: "",
     topic: "Design",
     link: "",
-    header: "Web Design as a skill on its own",
+    header: "Web Design as a distinct skill within front-end development",
     abstract:
       "Developers need to understand that design is its own discipline and neglecting it could undermine your progress as a developer ",
     date: "June 2022",
