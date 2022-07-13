@@ -58,6 +58,7 @@
 }
 .blog-article-cta,
 .blog-headline-cta {
+  text-align: right;
   cursor: pointer;
   text-decoration: underline;
 }
