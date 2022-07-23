@@ -118,6 +118,29 @@ const articles = [
     paragraph2: "",
     paragraph3: "",
   },
+  {
+    id: 5,
+
+    title: "PHP is undervalued",
+    icons: [],
+    pic1: "https://images.pexels.com/photos/11035390/pexels-photo-11035390.jpeg",
+    pic2: "",
+    pic3: "",
+    topic: "General",
+    link: "",
+    header: "Why PHP and WordPress are neglected by many developers",
+    abstract:
+      "I recently started learning PHP to add as a second language to my set of skills.",
+    date: "April 2022",
+    summary:
+      "I recently started learning PHP to add as a second language to my set of skills. Part of it had to do with my frustrations of dealing with WordPress and the limitations it imposes on developers by all these paid themes, builders and plugins.  I knew with my programming experience that I should be able to easily customize much of the things without having to pay for expensive builders. As I delve into PHP, I started to come to the realization that it should have been the first language I learned. \n  Now that is not to say that is the case for everyone, but for me at least, I wish I got into PHP before learning Express or React.  For me, the way I approached Express when I first learned it was to try and do things that it was not really meant for.  After understanding Express, instead of heading on to learn the MERN stack, I decided to use Express to render the front-end pages of my website on top of acting as the server.  It was fun and I learned a lot about server-side rendering and authentication. ",
+    paragraph1:
+      "But what I was doing in Express was much easier within a MERN stack setup. And it was already done and perfected in the WordPress/Laravel paradigm.  If I had spent that time teaching myself server-side rendering using any other language, it would have been much more helpful. At least in the context of the current small business climate. Most businesses want a WordPress website, so most web design companies cater to that. If you have PHP/Laravel experience that adds to the WordPress capability, NodeJS and Express do not.",
+    paragraph2:
+      "That is not to say the Express and NodeJS have no value, far from it. It’s just that their use without a front-end framework like ReactJS, Vue, or Angular is rare in the industry.",
+    paragraph3:
+      "So new developers should be mindful of this and should focus more on learning PHP and Laravel unless they are certain that the demand for the MERN stack is high where they live. Ultimately everyone’s situation is unique, but in my case I would have loved to learn PHP much sooner.",
+  },
 ];
 
 module.exports = { articles };

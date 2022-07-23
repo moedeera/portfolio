@@ -9,10 +9,11 @@ import pic2 from "../Blog/webflow.jpg";
 import pic3 from "../Blog/design.jpg";
 import pic4 from "../Blog/progress.jpg";
 import pic5 from "../Blog/pbuddies.jpg";
+import pic6 from "../Blog/php.jpg";
 
 import { articles } from "../../assets/data/articles";
 
-const images = [pic1, pic2, pic3, pic4, pic5];
+const images = [pic1, pic2, pic3, pic4, pic5, pic6];
 
 export const Article = () => {
   const { post } = useParams();
@@ -55,6 +56,8 @@ export const Article = () => {
                 );
               })}
               <div style={{ marginTop: "20px" }}>{article.paragraph1}</div>
+              <div style={{ marginTop: "20px" }}>{article.paragraph2}</div>
+              <div style={{ marginTop: "20px" }}>{article.paragraph3}</div>
             </div>
           </div>
           <Link to="../blog">
@@ -108,22 +111,6 @@ export const Article = () => {
                       </div>
                     )
                 )}
-
-                <div className="sidebar-post">
-                  <div className="sidebar-post-image">
-                    <img
-                      alt=""
-                      src={images[article.id]}
-                      style={{
-                        width: "150px",
-                      }}
-                    />
-                  </div>
-                  <div className="side-bar-post-text">
-                    <h3>Tech Recession effect on developers</h3>
-                    <p>March 2022</p>
-                  </div>
-                </div>
               </div>
             </div>
             <div className="sidebar-categories">
