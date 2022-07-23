@@ -56,6 +56,15 @@ export const Article = () => {
                 );
               })}
               <div style={{ marginTop: "20px" }}>{article.paragraph1}</div>
+              <div style={{ marginTop: "20px" }}>
+                <img
+                  src={article.picture1}
+                  alt=""
+                  style={{
+                    width: "100%",
+                  }}
+                />
+              </div>
               <div style={{ marginTop: "20px" }}>{article.paragraph2}</div>
               <div style={{ marginTop: "20px" }}>{article.paragraph3}</div>
             </div>
