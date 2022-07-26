@@ -68,8 +68,20 @@ export const Article = () => {
                     width: "100%",
                   }}
                 />
+                {article.picture01 && (
+                  <>
+                    <img
+                      src={articleImages[article.picture01]}
+                      alt=""
+                      style={{
+                        width: "100%",
+                      }}
+                    />
+                    <small>{article.img1Title}</small>
+                  </>
+                )}
               </div>
-              <div style={{ marginTop: "20px" }}>{article.paragraph2}</div>
+              <div style={{ margin: "10px 0" }}>{article.paragraph2}</div>
               <img
                 src={article.picture2}
                 alt=""
@@ -80,7 +92,7 @@ export const Article = () => {
               {article.picture01 && (
                 <>
                   <img
-                    src={articleImages[article.picture01]}
+                    src={articleImages[article.picture02]}
                     alt=""
                     style={{
                       width: "100%",
@@ -89,19 +101,21 @@ export const Article = () => {
                   <small>{article.img1Title}</small>
                 </>
               )}
-              <div style={{ marginTop: "20px" }}>{article.paragraph3}</div>
+              <div style={{ margin: "20px 0" }}>{article.paragraph2}</div>
               {article.picture01 && (
                 <>
                   <img
-                    src={articleImages[article.picture02]}
+                    src={articleImages[article.picture03]}
                     alt=""
                     style={{
                       width: "100%",
+                      border: "1px solid grey",
                     }}
                   />
-                  <small>{article.img2Title}</small>
+                  <small>{article.img3Title}</small>
                 </>
               )}
+              <div style={{ marginTop: "20px" }}>{article.paragraph3}</div>
             </div>
           </div>
           <Link to="../blog">

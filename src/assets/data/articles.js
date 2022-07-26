@@ -98,14 +98,18 @@ const articles = [
       "Keeping tabs on your achievements is an easy way to boost motivation when you are learning to code or design.",
     date: "May 2022",
     summary:
-      "For many aspiring web developers, the learning curve is friendly at first, but get’s steeper as they go along.  Once you learn the basics, learning new concepts becomes more challenging. As humans, we often require validation of our efforts to drive our ambition. The problem is that in many areas of life, the validation dwindles the more we achieve. Take for instance lifting weights, there is a concept known as 'newbie gains' to highlight the faster muscle growth in the early stages of a workout routine. The rate of muscle gain slowly diminishes as you continue to build it. Therefore, so many people who try to body build quit early on. The same concept is true in web development. Once those early victories come by, learning new things becomes more cumbersome and the motivation turns into frustration.\n This is why documenting your progress over long periods of time is very important. My suggestion would be to make a new portfolio website every 3 months or so. It establishes a sense of achievement that gives you the drive to go forward. ",
-    paragraph1: "",
+      "For many aspiring web developers, the learning curve is friendly at first, but get’s steeper as they go along.  Once you learn the basics, learning new concepts becomes more challenging. As humans, we often require validation of our efforts to drive our ambition. The problem is that in many areas of life, the validation dwindles the more we achieve. Take for instance lifting weights, there is a concept known as 'newbie gains' to highlight the faster muscle growth in the early stages of a workout routine. The rate of muscle gain slowly diminishes as you continue to build it. Therefore, so many people who try to body build quit early on. The same concept is true in web development. Once those early victories come by, learning new things becomes more cumbersome and the motivation turns into frustration.",
+    paragraph1:
+      "This is why documenting your progress over long periods of time is very important. My suggestion would be to make a new portfolio website every 3 months or so. It establishes a sense of achievement that gives you the drive to go forward. ",
     picture1: null,
     picture01: 1,
     picture2: null,
     picture02: 0,
+    picture3: null,
+    picture03: 2,
     img1Title: "My first Portfolio website",
     img2Title: "My Second Portfolio website",
+    img3Title: "My Current Portfolio website",
     paragraph2:
       " Stagnation is the greatest contributor to apathy. Once you feel like you are stuck, the goal starts to feel less achievable. When new developers get stuck on a certain concept, the tendency is to not go forward until that problem is overcome. But this hinders the learning curve greatly for most newcomers. It is always better to move on and come back later if you stumble. Sadly, most developers fall into the all-or-nothing mindset and quit shortly after.",
     paragraph3:
