@@ -10,10 +10,14 @@ import pic3 from "../Blog/design.jpg";
 import pic4 from "../Blog/progress.jpg";
 import pic5 from "../Blog/pbuddies.jpg";
 import pic6 from "../Blog/php.jpg";
+import pic01 from "../Blog/portfolio-v1.png";
+import pic02 from "../Blog/portfolio-v2.5.png";
+import pic03 from "../Blog/portfolio-v3.png";
 
 import { articles } from "../../assets/data/articles";
 
 const images = [pic1, pic2, pic3, pic4, pic5, pic6];
+const articleImages = [pic02, pic01, pic03];
 
 export const Article = () => {
   const { post } = useParams();
@@ -66,7 +70,38 @@ export const Article = () => {
                 />
               </div>
               <div style={{ marginTop: "20px" }}>{article.paragraph2}</div>
+              <img
+                src={article.picture2}
+                alt=""
+                style={{
+                  width: "100%",
+                }}
+              />
+              {article.picture01 && (
+                <>
+                  <img
+                    src={articleImages[article.picture01]}
+                    alt=""
+                    style={{
+                      width: "100%",
+                    }}
+                  />
+                  <small>{article.img1Title}</small>
+                </>
+              )}
               <div style={{ marginTop: "20px" }}>{article.paragraph3}</div>
+              {article.picture01 && (
+                <>
+                  <img
+                    src={articleImages[article.picture02]}
+                    alt=""
+                    style={{
+                      width: "100%",
+                    }}
+                  />
+                  <small>{article.img2Title}</small>
+                </>
+              )}
             </div>
           </div>
           <Link to="../blog">
