@@ -189,7 +189,7 @@ const articles = [
     header: "How to deploy a MERN application to heroku",
     abstract:
       "A quick step by step guide on how to set up a MERN on Heroku servers",
-    date: "",
+    date: "April 2022",
     summary:
       "This little guide is meant to act as a quick little cheat sheet for developers who already have experience doing this. If you want a more detailed version I would suggest you watch the MERN stack tutorial on youtube by Brad Traversy",
     paragraph1:

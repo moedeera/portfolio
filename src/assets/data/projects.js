@@ -105,7 +105,7 @@ const projectsList = [
   {
     id: 5,
     orientation: "WordPress theme",
-    tagline: "Coding bootcamp theme",
+    tagline: "Interior Design",
     recent: false,
     completed: true,
     title: "greenframe",
@@ -122,6 +122,27 @@ const projectsList = [
     Intro: "Renovation company website",
     information:
       "Built using WordPress, It was meant to work as a professional website for a mock client in the renovation sector. It bolsters a sturdy professional look coupled with an easy-to-navigate interface. \n The structure was a standard corporate setup with various custom sections that were manually designed. It was built with Elementor using a theme from Astra as a starting point. Multiple custom blocks were used to finish up the final draft and a custom domain was bought to give a sense of realism.",
+  },
+  {
+    id: 6,
+    orientation: "WordPress theme",
+    tagline: "WordPress theme",
+    recent: false,
+    completed: true,
+    title: "deeracode",
+    icons: ["wordpress", "elementor"],
+    brand: "fa fa-wordpress fa-2x",
+    date: "July 2022",
+    pic1: 6,
+    pic2: "",
+    pic3: "",
+    purpose: "Case Study",
+    repository: "n/a",
+    link: "https://deeracode.ca/",
+    header: "Deeracode.ca",
+    Intro: "Web Design community",
+    information:
+      "Built using WordPress, It was meant to work as a website to serve web design enthusiasts. It was build with wordpress using the elementor. \n The effects and layouts were built using mainly free plugins from Stratum and HappyAddons. The website was inspired by dribbble designs and follows a trend of using animations and a bright theme to convey a welcoming theme",
   },
 ];
 

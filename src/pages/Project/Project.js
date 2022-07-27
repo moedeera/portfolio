@@ -10,11 +10,12 @@ import pic3 from "./superdonair-mockup.png";
 import pic4 from "./ereader-mockup.png";
 import pic5 from "./bluebear-mockup.png";
 import pic6 from "./greenframe.png";
+import pic7 from "./deeracode-mockup.png";
 import firebase from "./firebase.png";
 import linkicon from "./link.png";
 import error from "./error.jpeg";
 
-const images = [error, pic2, pic3, pic4, pic5, pic6];
+const images = [error, pic2, pic3, pic4, pic5, pic6, pic7];
 
 export const Project = () => {
   const [hover, setHover] = useState(false);
