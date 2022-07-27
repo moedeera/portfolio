@@ -36,9 +36,17 @@ const articles = [
     summary:
       "So if you have been keeping tabs on the economy, chances are you have been hearing of a possible if not probable recession. Many youtubers in the web development community are already talking about it.  Youtuber and senior developer Stefan Mischook made his second video on the topic recently.  The general advice from him was the same as what you would hear from other senior developers. If you are working in a company that operates on thin margins, you are in trouble. For those working for companies with more solid foundations, you should be fine.\n After speaking with a few companies in my own local area, I can confirm that web design companies are feeling the pinch. Some even stated they did lay off some developers. When I asked why (to see if it was for other reasons), they told me it came down to business slowing. They are not getting the steady supply of clients they normally would. Despite that, both companies did state that they would still consider hiring if they found the right talent. This tells me they probably don’t believe the recession will last long. Another possibility is that they want talented developers so that when the recession is over, they can meet the uptick in demand.  This falls inline with what happened in the 2008 recession where the downturn led to many layoffs initially. But the ensuing turnaround and demand uptick meant there was a major shortage in developers for a brief period.\n  Will there be a repeat of that this time around? Only time will tell. However, one thing that is for certain is that developers that keep improving are always In a better position when the jobs return. So in that sense, junior developers should look at this as an opportunity to bolster their knowledge. In times of a boom, there is a tendency to focus more on trying to get work as oppose to working on skills. But now that the job market has cooled off a little,  there is a lot less pressure to get a position right away.  So ultimately this is a gold opportunity for the developers who are willing to put the extra effort to separate themselves from the rest.",
     paragraph1: "",
-    picture1: null,
     paragraph2: "",
     paragraph3: "",
+    picture1: null,
+    picture01: 1,
+    picture2: null,
+    picture02: 0,
+    picture3: null,
+    picture03: 2,
+    img1Title: "",
+    img2Title: "",
+    img3Title: "",
   },
   {
     id: 1,
@@ -101,6 +109,10 @@ const articles = [
       "For many aspiring web developers, the learning curve is friendly at first, but get’s steeper as they go along.  Once you learn the basics, learning new concepts becomes more challenging. As humans, we often require validation of our efforts to drive our ambition. The problem is that in many areas of life, the validation dwindles the more we achieve. Take for instance lifting weights, there is a concept known as 'newbie gains' to highlight the faster muscle growth in the early stages of a workout routine. The rate of muscle gain slowly diminishes as you continue to build it. Therefore, so many people who try to body build quit early on. The same concept is true in web development. Once those early victories come by, learning new things becomes more cumbersome and the motivation turns into frustration.",
     paragraph1:
       "This is why documenting your progress over long periods of time is very important. My suggestion would be to make a new portfolio website every 3 months or so. It establishes a sense of achievement that gives you the drive to go forward. ",
+    paragraph2:
+      " Stagnation is the greatest contributor to apathy. Once you feel like you are stuck, the goal starts to feel less achievable. When new developers get stuck on a certain concept, the tendency is to not go forward until that problem is overcome. But this hinders the learning curve greatly for most newcomers. It is always better to move on and come back later if you stumble. Sadly, most developers fall into the all-or-nothing mindset and quit shortly after.",
+    paragraph3:
+      "My biggest suggestion would be to write down the things you get stuck on in a list and spend an hour a day searching for answers on either stackoverflow.com or reddit's developer threads. Another advice is to improve your early projects as soon as you learn new concepts.  Your first and second projects don’t have to be the worst on your portfolio. Constantly build on them and improve the code and UI. But make sure to keep the old versions saved in some fashion for you to look back on.  This will help you see your progress and visualize how much closer you are in getting to your goal.",
     picture1: null,
     picture01: 1,
     picture2: null,
@@ -110,10 +122,6 @@ const articles = [
     img1Title: "My first Portfolio website",
     img2Title: "My Second Portfolio website",
     img3Title: "My Current Portfolio website",
-    paragraph2:
-      " Stagnation is the greatest contributor to apathy. Once you feel like you are stuck, the goal starts to feel less achievable. When new developers get stuck on a certain concept, the tendency is to not go forward until that problem is overcome. But this hinders the learning curve greatly for most newcomers. It is always better to move on and come back later if you stumble. Sadly, most developers fall into the all-or-nothing mindset and quit shortly after.",
-    paragraph3:
-      "My biggest suggestion would be to write down the things you get stuck on in a list and spend an hour a day searching for answers on either stackoverflow.com or reddit's developer threads. Another advice is to improve your early projects as soon as you learn new concepts.  Your first and second projects don’t have to be the worst on your portfolio. Constantly build on them and improve the code and UI. But make sure to keep the old versions saved in some fashion for you to look back on.  This will help you see your progress and visualize how much closer you are in getting to your goal.",
   },
   {
     id: 4,

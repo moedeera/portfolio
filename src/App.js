@@ -28,6 +28,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/portfolio/:id" element={<Project />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/admin" element={<Blog />} />
               <Route path="/blog/:post" element={<Article />} />
             </Routes>
           </ScrollToTop>
