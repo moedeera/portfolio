@@ -7,9 +7,10 @@ import pic3 from "./design.jpg";
 import pic4 from "./progress.jpg";
 import pic5 from "./pbuddies.jpg";
 import pic6 from "./php.jpg";
+import pic7 from "./MERN.jpg";
 import { SiteContext } from "../../context/Context";
 
-const images = [pic1, pic2, pic3, pic4, pic5, pic6];
+const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7];
 export const Blog = () => {
   const { articlesList } = useContext(SiteContext);
 

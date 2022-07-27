@@ -13,10 +13,17 @@ const template = {
   date: "",
   summary: "",
   paragraph1: "",
-  picture1: null,
   paragraph2: "",
-
   paragraph3: "",
+  picture1: null,
+  picture01: 1,
+  picture2: null,
+  picture02: 0,
+  picture3: null,
+  picture03: 2,
+  img1Title: "",
+  img2Title: "",
+  img3Title: "",
 };
 
 const articles = [
@@ -39,11 +46,11 @@ const articles = [
     paragraph2: "",
     paragraph3: "",
     picture1: null,
-    picture01: 1,
+    picture01: null,
     picture2: null,
-    picture02: 0,
+    picture02: null,
     picture3: null,
-    picture03: 2,
+    picture03: null,
     img1Title: "",
     img2Title: "",
     img3Title: "",
@@ -147,7 +154,7 @@ const articles = [
   {
     id: 5,
 
-    title: "PHP is undervalued",
+    title: "PHP-undervalued",
     icons: [],
     pic1: "https://images.pexels.com/photos/11035390/pexels-photo-11035390.jpeg",
     pic2: "",
@@ -168,6 +175,37 @@ const articles = [
       "PHP and Laravel are like an ace card when you go to small web design companies. Not only can you work within the WordPress ecosystem, you can create and build your own custom themes and plugins. This can save many companies both time and money in the long run. Many new developers never see this reality because most social media posts encourage them to learn the MERN stack and insinuate PHP as outdated tech. That is not to say the Express and NodeJS have no value, far from it in fact. It’s just that their use without a front-end framework like ReactJS, Vue, or Angular is rare in the industry.",
     paragraph3:
       "Newcomers should focus more on learning PHP and Laravel unless they are certain that the demand for the MERN stack is high where they live. Ultimately everyone’s situation is unique, but in my case I would have loved to learn PHP much sooner.",
+  },
+  {
+    id: 6,
+
+    title: "MERN-application-Heroku",
+    icons: [],
+    pic1: "https://crowdbotics.ghost.io/content/images/2019/05/MERN.png",
+    pic2: "",
+    pic3: "",
+    topic: "Education",
+    link: "",
+    header: "How to deploy a MERN application to heroku",
+    abstract:
+      "A quick step by step guide on how to set up a MERN on Heroku servers",
+    date: "",
+    summary:
+      "This little guide is meant to act as a quick little cheat sheet for developers who already have experience doing this. If you want a more detailed version I would suggest you watch the MERN stack tutorial on youtube by Brad Traversy",
+    paragraph1:
+      "The first things you need to do involve setting up the files and getting the server runner. Here is the order you do them in.\n 1-Set up Source folder \n 2- Set up backend folder \n 3-Initiate backend folder. \n 4-Set up the '.env' and then the '.gitignore files'. Put PORT=(choose a number) in the .env file and then place the .env file in the '.gitignore' file \n 5-Install Express, Nodemon, dotenv, and mongoose by entering 'npm i express dotenv mongoose + npm i -D nodemon' in the terminal. \n 6- Start a git repository by opening a bash terminal on VS code and entering 'git init + git add . + git commit -m ‘text’'. \n 7-Setup a basic server ",
+    paragraph2:
+      "8-Create the front end folder by typing 'npm create-react-app frontend-folder-name' in the VS code terminal",
+    paragraph3: "",
+    picture1: null,
+    picture01: 3,
+    picture2: null,
+    picture02: null,
+    picture3: null,
+    picture03: null,
+    img1Title: "",
+    img2Title: "",
+    img3Title: "",
   },
 ];
 
