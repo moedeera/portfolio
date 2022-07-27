@@ -15,11 +15,13 @@ import pic01 from "../Blog/portfolio-v1.png";
 import pic02 from "../Blog/portfolio-v2.5.png";
 import pic03 from "../Blog/portfolio-v3.png";
 import pic04 from "../Blog/server0.png";
+import pic05 from "../Blog/server1.png";
+import pic06 from "../Blog/server2.png";
 
 import { articles } from "../../assets/data/articles";
 
 const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7];
-const articleImages = [pic02, pic01, pic03, pic04];
+const articleImages = [pic02, pic01, pic03, pic04, pic05, pic06];
 
 export const Article = () => {
   const { post } = useParams();
@@ -92,7 +94,16 @@ export const Article = () => {
                   </>
                 )}
               </div>
-              <div style={{ margin: "10px 0" }}>{article.paragraph2}</div>
+              <div style={{ margin: "10px 0" }}>
+                {" "}
+                {article.paragraph2.split("\n").map((i, key) => {
+                  return (
+                    <div style={{ marginTop: "10px" }} key={key}>
+                      {i}
+                    </div>
+                  );
+                })}
+              </div>
               <img
                 src={article.picture2}
                 alt=""
@@ -109,7 +120,7 @@ export const Article = () => {
                       width: "100%",
                     }}
                   />
-                  <small>{article.img1Title}</small>
+                  <small>{article.img2Title}</small>
                 </>
               )}
               <div style={{ margin: "20px 0" }}>{article.paragraph3}</div>

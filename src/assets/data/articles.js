@@ -195,15 +195,15 @@ const articles = [
     paragraph1:
       "The first things you need to do involve setting up the files and getting the server runner. Here is the order you do them in.\n 1-Set up Source folder \n 2- Set up backend folder \n 3-Initiate backend folder. \n 4-Set up the '.env' and then the '.gitignore files'. Put PORT=(choose a number) in the .env file and then place the .env file in the '.gitignore' file \n 5-Install Express, Nodemon, dotenv, and mongoose by entering 'npm i express dotenv mongoose + npm i -D nodemon' in the terminal. \n 6- Start a git repository by opening a bash terminal on VS code and entering 'git init + git add . + git commit -m ‘text’'. \n 7-Setup a basic server ",
     paragraph2:
-      "8-Create the front end folder by typing 'npm create-react-app frontend-folder-name' in the VS code terminal",
+      "8-Create the front end folder by typing 'npm create-react-app frontend-folder-name' in the VS code terminal. \n 9- Paste this into the .env file 'NODE_ENV = development'. \n 10-Copy this code below into the server.  ",
     paragraph3: "",
     picture1: null,
     picture01: 3,
     picture2: null,
-    picture02: null,
+    picture02: 4,
     picture3: null,
     picture03: null,
-    img1Title: "",
+    img1Title: "Basic server template",
     img2Title: "",
     img3Title: "",
   },
