@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { SiteContext } from "../../context/Context";
 import "./Article.css";
 import { Link } from "react-router-dom";
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 import pic1 from "../Blog/recession.jpg";
 import pic2 from "../Blog/webflow.jpg";
@@ -201,6 +202,24 @@ export const Article = () => {
               <div>Jobs</div>
               <div>Media</div>
             </div>
+            <TwitterShareButton
+    url={'https://www.moedevelops.com/blog/programming-buddies'}
+    options={{ text: 'programming buddies', via: 'moedevelops' }}
+  />
+
+
+<a class="twitter-share-button"
+  href="https://www.moedevelops.com/blog/programming-buddies">
+Tweet</a>
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@moedevelops" />
+<meta name="twitter:creator" content="@Moedevelops" />
+<meta name="twitter:title" content="Parade of Fans for Houston’s Funeral" />
+<meta name="twitter:description" content="NEWARK - The guest list and parade of limousines with celebrities emerging from them seemed more suited to a red carpet event in Hollywood or New York than than a gritty stretch of Sussex Avenue near the former site of the James M. Baxter Terrace public housing project here." />
+<meta name="twitter:image" content="https://www.moedevelops.com/blog/programming-buddies"></meta >
+
             <div className="sidebar-categories"></div>
           </div>
         </div>
