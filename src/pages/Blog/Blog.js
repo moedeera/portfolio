@@ -66,7 +66,7 @@ export const Blog = () => {
                   </div>
                   <div className="blog-article-cta">
                     <Link to={`./${article.title}`}>
-                      <small>read more</small>
+                      <small>Read </small>
                     </Link>
                   </div>
                 </div>
