@@ -125,6 +125,9 @@
   gap: 15px;
   color: var(--text-secondary);
 }
+.sidebar-posts h2 {
+  margin: 10px 0;
+}
 .sidebar-posts-list h3,
 .sidebar-categories {
   font-weight: 600;

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { SiteContext } from "../../context/Context";
 import "./Article.css";
 import { Link } from "react-router-dom";
+import { Videoplayer } from "../../components/videoplayer/videoplayer";
 import {
   TwitterTimelineEmbed,
   TwitterShareButton,
@@ -192,6 +193,12 @@ export const Article = () => {
               allowfullscreen
             ></iframe> */}
             <div className="sidebar-posts">
+              <h2> Featured Video</h2>
+
+              <Videoplayer
+                link={"https://www.youtube.com/watch?v=Rq5SEhs9lws"}
+              />
+
               <h2> See Also</h2>
               <div className="sidebar-posts-list">
                 {articlesList.map(
