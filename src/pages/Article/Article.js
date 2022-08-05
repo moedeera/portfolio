@@ -164,12 +164,10 @@ export const Article = () => {
               )}
             </div>
           </div>
-          <Link to="../blog">
+
+          <Link style={{ color: "black" }} to="../blog">
             <div className="go-back">
-              <small>
-                Other blogs{" "}
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </small>
+              <button className="btn-follow">Back</button>{" "}
             </div>
           </Link>
         </div>
