@@ -222,10 +222,13 @@ export const Article = () => {
               <div>Jobs</div>
               <div>Media</div>
             </div>
-            {/* <TwitterShareButton
-              url={"https://www.moedevelops.com/blog/programming-buddies"}
-              options={{ text: "programming buddies", via: "moedevelops" }}
-            /> */}
+            <a
+              class="twitter-share-button"
+              href="https://twitter.com/intent/tweet?text=Hello%20world"
+              data-size="large"
+            >
+              Tweet
+            </a>
             <div className="sidebar-categories"></div>
           </div>
         </div>
