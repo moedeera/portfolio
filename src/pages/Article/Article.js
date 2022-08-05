@@ -30,7 +30,7 @@ import pic04 from "../Blog/server0.png";
 import pic05 from "../Blog/server1.png";
 import pic06 from "../Blog/server2.png";
 
-import { articles } from "../../assets/data/articles";
+import avatar from "./avatar.jpg";
 
 const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7];
 const articleImages = [pic02, pic01, pic03, pic04, pic05, pic06];
@@ -50,20 +50,33 @@ export const Article = () => {
       <div className="article-container">
         <div className="article-page-container">
           <div className="articles-header">
-            <small>{article?.topic}</small>
+            <h5>{article?.topic}</h5>
             <h1>{article?.header}</h1>
             <p>{article?.abstract}</p>
+            <div className="article-time">
+              <small>Published on 8th {article.date} 8:30 PM EDT</small>
+              <i className="fas fa-circle"></i>
+              <small>Updated on 12th {article.date} 4:55 pm EDT</small>
+            </div>
           </div>
           <div className="articles-image">
             <img src={images[article.id]} alt="" />
             <div className="article-details">
-              <div className="articles-author">
-                <h3>Moe Deera</h3>
-                <small>{article.date}</small>
+              <div className="avatar-pic">
+                <img src={avatar} alt="" />
+                <div className="articles-author">
+                  <h3>Moe Deera</h3>
+                  <small style={{ color: "steelblue" }}>@moedevelops</small>
+                </div>
               </div>
+
               <div className="articles-social-media">
-                <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-                <i className="fa fa-twitter-square" aria-hidden="true"></i>
+                {/* <i className="fa fa-linkedin-square" aria-hidden="true"></i> */}
+                {/* <i className="fa fa-twitter-square" aria-hidden="true"></i> */}
+                <TwitterShareButton
+                  url={"https://www.moedevelops.com/blog/programming-buddies"}
+                  options={{ text: "programming buddies", via: "moedevelops" }}
+                />
               </div>
             </div>
             <div className="articles-text">
@@ -222,13 +235,7 @@ export const Article = () => {
               <div>Jobs</div>
               <div>Media</div>
             </div>
-            <a
-              class="twitter-share-button"
-              href="https://twitter.com/intent/tweet?text=Hello%20world"
-              data-size="large"
-            >
-              Tweet
-            </a>
+
             <div className="sidebar-categories"></div>
           </div>
         </div>
