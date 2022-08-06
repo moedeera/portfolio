@@ -60,7 +60,7 @@ const articles = [
     abstract:
       "The upcoming recession is a hurdle, but it will provide an opportunity for many developers",
     abstractLG:
-      "Senior developers should be fine. Mid-level developers should be a little concerned. Junior developers should use this time to update and sharpen their skills and prepare for the rebound. ",
+      "Senior developers should be fine. Mid-level developers should be a little concerned but will weather the storm. Junior developers should use this time to update and sharpen their skills and prepare for the rebound. ",
     abstractSM: "The upcoming recession is both a hurdle and an opportunity",
     created: "July 2022",
     updated: "July 2022",
@@ -122,7 +122,7 @@ const articles = [
     abstractLG:
       "Developers need to understand that design is its own discipline and neglecting it could undermine your progress as a developer.Because ultimately, it does not matter how good your coding skills are if you package them in websites from the early 2000s. ",
     abstractSM: "Understanding the design and visual aspect of the websites ",
-    created: "",
+    created: "June 2022",
     updated: "",
     headers: [],
     paragraphs: [
