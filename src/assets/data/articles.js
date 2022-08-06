@@ -153,7 +153,7 @@ const articles = [
     title: "webflow",
     icons: [],
     pic: "https://assets-global.website-files.com/615b6910fed3ab29278f1893/6213ade4e74351a6e1d71823_open-graph-webflow.png",
-    topic: "",
+    topic: "Educational",
     link: "",
     header: "My first impression of Webflow",
     abstract:
