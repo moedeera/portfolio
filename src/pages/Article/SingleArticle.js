@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { SiteContext } from "../../context/Context";
 import "./Article.css";
 import { Link } from "react-router-dom";
+import MetaTags from "react-meta-tags";
+
 import { Videoplayer } from "../../components/videoplayer/videoplayer";
 import {
   TwitterTimelineEmbed,
@@ -51,6 +53,16 @@ export const SingleArticle = () => {
   console.log(articlesList);
   return (
     <div className="article-page">
+      <MetaTags>
+        <title>Page 1</title>
+        <meta name="description" content="Some description." />
+        <meta property="og:title" content="MyApp" />
+        <meta property="og:image" content="path/to/image.jpg" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content={article.header} />
+        <meta property="twitter:image" content={articleImages[article.id]} />
+      </MetaTags>
+
       <div className="article-container">
         <div className="article-page-container">
           <div className="articles-header">
