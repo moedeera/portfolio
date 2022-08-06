@@ -68,7 +68,7 @@ export const SingleArticle = () => {
                 <img src={avatar} alt="" />
                 <div className="articles-author">
                   <h3>Moe Deera</h3>
-                  <small style={{ color: "steelblue" }}>@moedevelops</small>
+                  <small style={{ color: "steelblue" }}>@deeracode</small>
                 </div>
               </div>
 
