@@ -56,9 +56,11 @@ export const SingleArticle = () => {
             <h1>{article.header}</h1>
             <p>{article.abstract}</p>
             <div className="article-time">
-              <small>Published on 8th {article.date} 8:30 PM EDT</small>
-              <i className="fas fa-circle"></i>
-              <small>Updated on 12th {article.date} 4:55 pm EDT</small>
+              <small>Published on 8th {article.created} at 8:30 PM EDT</small>
+              <i className="fas fa-circle article-update-sm"></i>
+              <small className="article-update-sm">
+                Updated on 12th {article.updated}at 4:55 pm EDT
+              </small>
             </div>
           </div>
           <div className="articles-image">

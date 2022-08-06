@@ -56,6 +56,9 @@
   /* border: 1px solid crimson; */
   margin: 5px 0 0px;
 }
+/* .article-update-sm {
+  display: none;
+} */
 .articles-image {
   width: 100%;
 }
@@ -235,5 +238,10 @@
   }
   .article-sidebar {
     max-width: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .article-update-sm {
+    display: none;
   }
 }
