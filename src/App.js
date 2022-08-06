@@ -12,6 +12,7 @@ import { SiteContextProvider } from "./context/Context";
 import { Blog } from "./pages/Blog/Blog";
 import { Article } from "./pages/Article/Article";
 import ScrollToTop from "./Scroll/Scroll";
+import { SingleArticle } from "./pages/Article/SingleArticle";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
               <Route path="/portfolio/:id" element={<Project />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/admin" element={<Blog />} />
-              <Route path="/blog/:post" element={<Article />} />
+              <Route path="/blog/:post" element={<SingleArticle />} />
             </Routes>
           </ScrollToTop>
         </Router>
