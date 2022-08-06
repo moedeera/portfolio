@@ -32,7 +32,7 @@ import pic05 from "../Blog/server1.png";
 import pic06 from "../Blog/server2.png";
 import pic07 from "../Blog/php-meme.jpg";
 
-import avatar from "./avatar.jpg";
+import avatar from "./avatar.png";
 
 const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7];
 const articleImages = [pic02, pic01, pic03, pic04, pic05, pic06, pic07];
@@ -169,6 +169,7 @@ export const SingleArticle = () => {
                             style={{ color: "black" }}
                           >
                             <h3>{post.header}</h3>
+                            <small>{post.abstractSM}</small>
                           </Link>
                           <p>{post.date}</p>
                         </div>

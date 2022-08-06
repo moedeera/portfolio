@@ -48,35 +48,6 @@ const template2 = {
   feature: "",
 };
 
-const article1 = {
-  id: 0,
-  title: "upcoming-recession",
-  pic: "https://images.pexels.com/photos/5717791/pexels-photo-5717791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  icons: [],
-  topic: "Economy",
-  link: "",
-  header: "How this recession will impact the tech industry",
-  abstract:
-    "The upcoming recession is a hurdle, but it will provide an opportunity for many developers",
-  abstractLG:
-    "Senior developers should be fine. Mid-level developers should be a little concerned. Junior developers should use this time to update and sharpen their skills and prepare for the rebound. ",
-  abstractSM:
-    "The upcoming recession is both a hurdle and an opportunity new developers",
-  created: "July 2022",
-  updated: "July 2022",
-  headers: [],
-  paragraphs: [
-    "So if you have been keeping tabs on the economy, chances are you have been hearing of a possible if not probable recession. Many youtubers in the web development community are already talking about it. Youtuber and senior developer Stefan Mischook made his second video on the topic recently. The general advice from him was the same as what you would hear from other senior developers. If you are working in a company that operates on thin margins, you are in trouble. For those working for companies with more solid foundations, you should be fine.",
-    "After speaking with a few companies in my own local area, I can confirm that web design companies are feeling the pinch. Some even stated they did lay off some developers. When I asked why (to see if it was for other reasons), they told me it came down to business slowing. They are not getting the steady supply of clients they normally would. Despite that, both companies did state that they would still consider hiring if they found the right talent. This tells me they probably don’t believe the recession will last long. Another possibility is that they want talented developers so that when the recession is over, they can meet the uptick in demand. This falls inline with what happened in the 2008 recession where the downturn led to many layoffs initially. But the ensuing turnaround and demand uptick meant there was a major shortage in developers for a brief period.",
-    "Will there be a repeat of that this time around? Only time will tell. However, one thing that is for certain is that developers that keep improving are always In a better position when the jobs return. So in that sense, junior developers should look at this as an opportunity to bolster their knowledge. In times of a boom, there is a tendency to focus more on trying to get work as oppose to working on skills. But now that the job market has cooled off a little, there is a lot less pressure to get a position right away. So ultimately this is a gold opportunity for the developers who are willing to put the extra effort to separate themselves from the rest.",
-  ],
-  pictures: [],
-  picCaption: [],
-  videos: [],
-  comments: [],
-  feature: "https://www.youtube.com/watch?v=UmnRxymgtJs",
-};
-
 const articles = [
   {
     id: 0,
@@ -90,8 +61,7 @@ const articles = [
       "The upcoming recession is a hurdle, but it will provide an opportunity for many developers",
     abstractLG:
       "Senior developers should be fine. Mid-level developers should be a little concerned. Junior developers should use this time to update and sharpen their skills and prepare for the rebound. ",
-    abstractSM:
-      "The upcoming recession is both a hurdle and an opportunity new developers",
+    abstractSM: "The upcoming recession is both a hurdle and an opportunity",
     created: "July 2022",
     updated: "July 2022",
     headers: [],
@@ -118,25 +88,25 @@ const articles = [
     abstract:
       "Webflow seems like a builder that is geared mainly towards dynamic designs....and not much else",
     abstractLG:
-      "Webflow is amazing when it comes to creating a feature rich website, but is subsequently lacking in other areas",
+      "Webflow is amazing at creating a feature rich website, but is lacks in other areas",
     abstractSM:
       "Webflow is good for eye-catching features and SEO optimization, and little else.",
     created: "June 2022",
     updated: "June 2022",
     headers: [],
     paragraphs: [
-      "So recently I decided to try out webflow and see what it’s like to design a website with it. Webflow is an online builder that I saw on ads when I browse YouTube via devices outside of my own (I’m on premium so I don’t see any ads). Its free to start using, but if you want your own custom domain and hosting you must sign up with webflow(and webflow only). This is not ideal, but you get to see all of their features and build a website before you decide on signing up or not. So, I gave it a try.",
+      "So recently I decided to try out webflow and see what it’s like to design a website with it. Webflow is an online builder that I saw on ads when I browse YouTube via devices outside of my own (I’m on premium so I don’t see any ads). Its free to start using, but if you want your own custom domain and hosting you must sign up with webflow(and webflow only). This is not ideal, but you get to see all of their features and build a website before you decide on signing up or not. So, I gave it a try. Keep in mind, this is my FIRST impression of webflow and likely will change with more use. So don't take this as a full-on review of the platform",
       "For designers with CSS and JavaScript experience it’s very easy to learn and intuitive. The features make a whole host of things that require large amounts of CSS and JavaScript to be done quite easily. On the other hand, if your experience with CSS and JavaScript is limited, you will face a steep learning curve. The UI can be very intimidating and if you don’t have good organizational skills, you will have a hard time managing all the different sections, states, and classes.",
       "The navigation menu can drive one crazy, everything is drag and drop and you must make sure you do not insert a component or a div in the wrong container as it can be visually confusing, especially in larger multi-layered projects. In fact, it would be a major headache to manage complex pages if it weren’t for all the ready-made features and components.",
       "Another thing is that the responsiveness cascades downward for screens sizes under 600px. This means that trying to design the website mobile first is impossible. At first, I though I though It was just me who could not figure it out. But after looking into their YouTube tutorial and searching for answers online, it seems like the answer is no, you can’t. Granted, Webflow is structured to make responsiveness easier to mange. Nonetheless, I do find it bizarre to have this design choice given how many developers nowadays start with a mobile first approach",
       "Overall Webflow feels like a combination of WordPress and tailwind. It allows a lot of customization with a library of pre-made templates and effects. It is geared more towards dynamic features like animations and scroll effects than it is towards design aesthetics. However, managing all these dynamic visuals can be confusing and will take some time to learn, even if you know how to set up the effects you are going for.",
-      "Webflow ultimately is suited for developers coming from platforms like WordPress who dislike having to constantly download plugins and pay for premium features, but at the same time don't want to start coding websites from scratch. It may or may not suit people beyond that, but for that group its a powerful tool ",
+      "Webflow ultimately is suited for developers coming from platforms like WordPress who dislike having to constantly download plugins and pay for premium features, but at the same time don't want to start coding websites from scratch. It may or may not suit people beyond that, but for that group its a powerful tool. Like I said, this is just my initial impression of webflow and will change with more use.  ",
     ],
     pictures: [],
     picCaption: [],
     videos: [],
     comments: [],
-    mapper: [0, 1, 2, 3, 4],
+    mapper: [0, 1, 2, 3, 4, 5],
     feature: "https://www.youtube.com/watch?v=OI5M9lRiNI4",
   },
   {
@@ -149,8 +119,9 @@ const articles = [
     header: "Web Design as a distinct skill within front-end development",
     abstract:
       "Developers need to understand that design is its own discipline and neglecting it could undermine your progress as a developer ",
-    abstractLG: "",
-    abstractSM: "",
+    abstractLG:
+      "Developers need to understand that design is its own discipline and neglecting it could undermine your progress as a developer.Because ultimately, it does not matter how good your coding skills are if you package them in websites from the early 2000s. ",
+    abstractSM: "Understanding the design and visual aspect of the websites ",
     created: "",
     updated: "",
     headers: [],
@@ -177,7 +148,7 @@ const articles = [
     abstract:
       "Keeping tabs on your achievements is an easy way to boost motivation when you are learning to code or design.",
     abstractLG: "",
-    abstractSM: "",
+    abstractSM: "Tracking your progress is a great tool for motivation",
     created: "May 2022",
     updated: "May 2022",
     headers: [],
@@ -209,7 +180,7 @@ const articles = [
     abstract:
       "Partnerships can be a useful way to speed up your learning if done right, but a waste of time if done wrong",
     abstractLG: "",
-    abstractSM: "",
+    abstractSM: "Programming buddies are a powerful tool when done right",
     created: "April 2022",
     updated: "April 2022",
     headers: [
@@ -245,7 +216,7 @@ const articles = [
     abstract:
       "Mastering PHP opens up so many opportunities in the small business and freelance space. Yet so many new developers ignore it",
     abstractLG: "",
-    abstractSM: "",
+    abstractSM: "Learning PHP opens many doors that are often overlooked",
     created: "April 2022",
     updated: "April 2022",
     headers: [],
