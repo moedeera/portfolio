@@ -51,6 +51,77 @@ const template2 = {
 const articles = [
   {
     id: 0,
+    title: "mass-layoffs",
+    icons: [],
+    pic: "https://images.pexels.com/photos/7277906/pexels-photo-7277906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    topic: "Economy",
+    link: "",
+    header: "My thoughts on the recent layoffs",
+    abstract:
+      "The Layoffs are growing and there is still a lot of storm before the calm",
+    abstractLG:
+      "The current round of layoffs were expected. But the sheer number of workers being let go within a few months is concerning. Despite this, most reports show that those developers are immediately finding new work as the demand for talent is still high. The sting will be felt mostly by junior developers.",
+    abstractSM:
+      "The layoffs are concerning, but the sector still remains strong",
+    created: "August 2022",
+    updated: "August 2022",
+    headers: [
+      null,
+      "The numbers are staggering",
+      "Its not just the Hype companies",
+      "The developers losing work are finding jobs",
+      "When will the bleeding stop?",
+      null,
+    ],
+    paragraphs: [
+      "This recession is coming at no surprise to anyone. Everyone knew about it. Federal banks were going to start raising interest rates after lowering them since the pandemic.This was going to affect many companies including (and especially) those in the tech sector. Tech was highly susceptible due to the sheer number of startups and companies reliant on low interest rates and a growing economy. So as soon as interest rates started rising and the GDP started shrinking, layoffs were coming ",
+      "Despite knowing this, the actual numbers themselves are staggering on all fronts. More than 32,000 people in the US alone have been fired since the beginning of the year.  To be clear, that is 32,000 people in the tech sector alone. Other sectors were hit hard too, with amazon shrinking its workforce by 100,000. And to make matters worse, there are still more planned layoffs.",
+      "Contrary to popular belief, , this is not entirely contained to the more riskier companies. While it is true that companies in the cryptocurrencies and NFT sector are getting hit the hardest, the traditional giants are also taking a beating. Google, Microsoft, Meta and now Shopify are all either laying off workers or putting in hiring freezes. New companies are holding back from hiring and established companies are bracing for a large reduction in demand",
+      "Despite all the doom and gloom, the laid off workers are finding jobs right away. Senior developers are in such high demand that they are getting contacted by recruiters almost immediately. Some are lining up multiple interviews the same week. Mid level developers are also finding work albeit not as easily as the seniors. This will mean that companies normally settling for juniors will now find a fresh pool of mid level developers to recruit. So yes, Juniors will lose in the short run. New developers have benefited from the high demand for experienced developers because it meant smaller companies were getting desperate for workers. That dynamic is going to cool down for the next few months",
+      "The question now is ; when will things settle? We can’t keep losing jobs at this rate indefinitely. If this goes on for too long, it could get to a point where there is a glut of laid-off mid level developers. That is when things could get really scary for new graduates or students enrolling in computer sciences. It could very well lead to a drop in enrollment for new students in this field",
+      "Despite the concerns, developers getting into the industry should not worry. The tech sector is not going away as the demand for technology and digitization is always growing. So while  the short term may mean a lot of layoffs, we are nowhere near a point to start worrying about the sector as a whole. The demand for skilled developers is still greater than the supply. And so as long as that is the case, this industry will go on strong",
+    ],
+    pictures: [],
+    picCaption: [],
+    videos: [],
+    comments: [],
+    mapper: [0, 1, 2, 3, 4, 5],
+    feature: "https://www.youtube.com/watch?v=gCg47n_TlFc&t=499s",
+  },
+  {
+    id: 1,
+    title: "codingjourney",
+    icons: [],
+    pic: "https://images.pexels.com/photos/614484/pexels-photo-614484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    topic: "General",
+    link: "",
+    header: "My journey into the world of programming",
+    abstract:
+      "Learning to code has been quite a journey the past couple of years. I figured its time to share my thoughts on it.",
+    abstractLG:
+      "Learning ro code started in 2020 for me. Since then I went from barely knowing how to code hello world to building entire websites. Here are some of my thoughts on this journey",
+    abstractSM: "Some of my thoughts on my journey into learning how to code",
+    created: "August 2022",
+    updated: "August 2022",
+    headers: [null, "The start", "Change of routine", "Results", null, null],
+    paragraphs: [
+      'In 2020 I started to learn code, it was a decision to try out something new and see if it worked for me. I was stuck in a job I did not particularly like and wondered if there was something better for me out there. I remembered a course I took back in college that was an introduction to programming. It was focused on the C++ language  and I had a lot of fun with it. After the course ended, I started doing little side projects with it and seeing what I could build. As my projects grew bigger and more complex, I started running into more and more bugs and eventually lost enthusiasm. I was not planning to become a developer at the time so it was purely a hobby. The difficulties I encountered learning C++ painted a belief that I was not built for a career in programming. All I knew in the programming world was C++. I falsely assumed other programming languages were equally as challenging. I would go back to C++ periodically for the next decade or so to build simple little projects here and there but nothing more. Eventually, during 2020, in the early stages of the pandemic, I began to start wondering what other programming languages are like. So I started doing some research.  I searched "coding tutorial for beginners" and stumbled upon a video by Brad Traversy. It was an amazing informative video that showed me all the different coding languages. I Immediately decided I wanted to get into web development. My journey began.',
+      "Learning to code was not a linear process. Getting started was the hardest part. At first, I had a lot of enthusiasm but very little discipline. It took me 2 weeks to actually sit down and go through a css and html tutorial. I was at a job that never challenged me intellectually so this was something my brain was not used to. It was when I started learning an actual coding language in javascript that everything changed. Javascript to me was the friendlier version of c++. It could do all the things I tried to program in c++, but much quicker and easier. And it already had a visual interface in html and css. Everything fell in place at that point. I found a skill which I genuinely enjoyed learning and plenty of online resources to help me.",
+      "When you find something you enjoy learning, it absolutely changes how you manage your time. Instead of letting weeks and months go by aimlessly, I set goals to either learn new skills or complete new projects. I sold my gaming console and canceled my Netflix subscription. I was more conscious about the time I was wasting.  The beginning of my days starts with me planning out my schedule to accommodate as much coding as possible. The first 4 hours of my day are generally reserved for coding unless I have work. If I can not code, I watch YouTube tutorials. If I cannot watch tutorials, I surf websites to find design themes. Everything I do revolves around one simple goal; becoming a better developer",
+      "With all that being said, this new routine has both its pros and cons. There have been a few key things I have improved on and other areas where I have certainly started to struggle. The biggest improvement is in time management and focus. With coding, the goals you can set are endless. The key is understanding how to break down each goal into smaller goals and allocating enough time for each.. After you master that, you make a daily list of goals or tasks you want to achieve and write them down. This actually carries on to other areas of your life pretty well. The more you manage your code-allocated time, the better you organize your time in general.",
+      "The areas that I declined in are generally exercise and diet. Coding for 3-4 hours on most days got me into a habit of neglecting to exercise. This has been somewhat mitigated in recent months as I do allocate time to take breaks and go for a walk. However, Working a full time job and learning to program on the side is a recipe for a sedentary lifestyle. This at times causes cramps for both my back area as well as my neck . I do plan to solve these in the near future with a standing desk and a more defined exercise routine. But for now, it is an area where I declined given  that I was engaged in more physical activity before all of this. As far as diet is concerned, the biggest issue is adjusting my calories to my activity level. If you are not going to be active, better to lower your calories in general. But the days I am more active or not coding require more meals. Getting this balance right is tough but crucial if you want to maintain a healthy weight.",
+      "Becoming successful in anything will come with sacrifice. Programming is no different.  Despite some of the hurdles, this has overall been a positive journey that I plan to continue. The key factor in all of this is having a genuine love for what you are doing. Once you have that, everything else will fall all into place",
+    ],
+    pictures: [],
+    picCaption: [],
+    videos: [],
+    comments: [],
+    mapper: [0, 1, 2, 3, 4, 5],
+    feature: "https://www.youtube.com/watch?v=H_pBvUFPceA",
+  },
+
+  {
+    id: 2,
     title: "upcoming-recession",
     pic: "https://images.pexels.com/photos/5717791/pexels-photo-5717791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     icons: [],
@@ -78,7 +149,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=UmnRxymgtJs",
   },
   {
-    id: 1,
+    id: 3,
     title: "webflow",
     icons: [],
     pic: "https://assets-global.website-files.com/615b6910fed3ab29278f1893/6213ade4e74351a6e1d71823_open-graph-webflow.png",
@@ -110,7 +181,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=OI5M9lRiNI4",
   },
   {
-    id: 2,
+    id: 4,
     title: "design-skills",
     icons: [],
     pic: "https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -138,7 +209,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=fyaBtRiqUWI&t=1010s",
   },
   {
-    id: 3,
+    id: 5,
     title: "importance-progress",
     icons: [],
     pic: "https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -170,7 +241,7 @@ const articles = [
   },
 
   {
-    id: 4,
+    id: 6,
     title: "programming-buddies",
     icons: [],
     pic: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -206,7 +277,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=EqzUcMzfV1w&t=2624s",
   },
   {
-    id: 5,
+    id: 7,
     title: "PHP-undervalued",
     icons: [],
     pic: "https://images.pexels.com/photos/11035390/pexels-photo-11035390.jpeg",

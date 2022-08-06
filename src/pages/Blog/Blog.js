@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./Blog.css";
 import { Link } from "react-router-dom";
+
 import pic1 from "./recession.jpg";
 import pic2 from "./webflow.jpg";
 import pic3 from "./design.jpg";
@@ -9,9 +10,11 @@ import pic5 from "./pbuddies.jpg";
 import pic6 from "./php.jpg";
 import pic7 from "./MERN.jpg";
 import pic8 from "./php-meme.jpg";
+import pic9 from "./codingjourney.jpg";
+import pic10 from "./layoffs.jpg";
 import { SiteContext } from "../../context/Context";
 
-const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
+const images = [pic10, pic9, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
 export const Blog = () => {
   const { articlesList } = useContext(SiteContext);
 
