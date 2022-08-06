@@ -61,8 +61,7 @@ const articles = [
       "The Layoffs are growing and there is still a lot of storm before the calm",
     abstractLG:
       "The current round of layoffs were expected. But the sheer number of workers being let go within a few months is concerning. Despite this, most reports show that those developers are immediately finding new work as the demand for talent is still high. The sting will be felt mostly by junior developers.",
-    abstractSM:
-      "The layoffs are concerning, but the sector still remains strong",
+    abstractSM: "The layoffs are concerning, but the sector remains strong",
     created: "August 2022",
     updated: "August 2022",
     headers: [
