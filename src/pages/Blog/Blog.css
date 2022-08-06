@@ -27,6 +27,7 @@
 .blog-headline-title h2,
 .blog-article-title h3 {
   color: var(--alternate-color);
+  color: #3e4855;
 }
 
 .blog-headline-image {
