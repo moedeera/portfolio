@@ -147,9 +147,7 @@ export const DropDownMenu = ({
                       />
                     </div>
                     <div className="blog-text">
-                      <p>
-                        How the upcoming tech Recession will effect developers.
-                      </p>
+                      <p>My thoughts on the recent round of layoffs</p>
                       <button className="blog-btn">More</button>
                     </div>
                   </div>
