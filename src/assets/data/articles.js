@@ -57,8 +57,7 @@ const articles = [
     topic: "Economy",
     link: "",
     header: "My thoughts on the recent round of layoffs",
-    abstract:
-      "The Layoffs are growing and there is still a lot of storm before the calm",
+    abstract: "The Layoffs are growing and there is still a lot more to come",
     abstractLG:
       "The current round of layoffs were expected. But the sheer number of workers being let go within a few months is concerning. Despite this, most reports show that those developers are immediately finding new work as the demand for talent is still high. The sting will be felt mostly by junior developers.",
     abstractSM: "The layoffs are concerning, but the sector remains strong",
