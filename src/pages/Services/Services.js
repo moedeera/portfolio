@@ -3,6 +3,7 @@ import "./Service.css";
 import pic1 from "./Saly-13.png";
 import pic2 from "./Saly-12.png";
 import pic3 from "./Saly-7.png";
+import { Link } from "react-router-dom";
 
 import { Fade } from "react-reveal";
 
@@ -82,7 +83,9 @@ export const Services = () => {
                     we can discuss what works for you.
                   </p>
 
-                  <button className="btn btn-about">contact now</button>
+                  <Link to={`../contact`}>
+                    <button className="btn btn-about">contact now</button>
+                  </Link>
                 </div>
                 <div className="about-intro-image">
                   <img
@@ -131,7 +134,9 @@ export const Services = () => {
                     not sure how much fees you may pay for your website traffic.
                   </p>
 
-                  <button className="btn btn-about">contact now</button>
+                  <Link to={`../contact`}>
+                    <button className="btn btn-about">contact now</button>
+                  </Link>
                 </div>
               </div>
             </section>{" "}
@@ -155,7 +160,9 @@ export const Services = () => {
                     and website requirements.
                   </p>
 
-                  <button className="btn btn-about">Contact now</button>
+                  <Link to={`../contact`}>
+                    <button className="btn btn-about">contact now</button>
+                  </Link>
                 </div>
                 <div className="about-intro-image">
                   <img src={pic3} alt="" />
