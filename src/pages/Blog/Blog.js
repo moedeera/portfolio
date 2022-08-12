@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./Blog.css";
 import { Link } from "react-router-dom";
+
 import pic1 from "./recession.jpg";
 import pic2 from "./webflow.jpg";
 import pic3 from "./design.jpg";
@@ -8,9 +9,12 @@ import pic4 from "./progress.jpg";
 import pic5 from "./pbuddies.jpg";
 import pic6 from "./php.jpg";
 import pic7 from "./MERN.jpg";
+import pic8 from "./php-meme.jpg";
+import pic9 from "./codingjourney.jpg";
+import pic10 from "./layoffs.jpg";
 import { SiteContext } from "../../context/Context";
 
-const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7];
+const images = [pic10, pic9, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
 export const Blog = () => {
   const { articlesList } = useContext(SiteContext);
 
@@ -28,14 +32,16 @@ export const Blog = () => {
           </div>
 
           <div className="blog-headline-text">
-            <div className="blog-headline-date">
-              <p>{articlesList[0].date}</p>
-            </div>
-            <div className="blog-headline-title">
-              <h2>{articlesList[0].header}</h2>
-            </div>
-            <div className="blog-headline-summary">
-              {articlesList[0].abstract}
+            <div>
+              <div className="blog-headline-date">
+                <small>Published on {articlesList[0].created}</small>
+              </div>
+              <div className="blog-headline-title">
+                <h2>{articlesList[0].header}</h2>
+              </div>
+              <div className="blog-headline-summary">
+                {articlesList[0].abstractLG}
+              </div>
             </div>
             <div className="blog-headline-cta">
               <Link to={`./${articlesList[0].title}`}>
@@ -57,7 +63,9 @@ export const Blog = () => {
                       <img src={images[article.id]} alt="" />
                     </Link>
                   </div>
-                  <div className="blog-article-date">{article.date}</div>
+                  <div className="blog-article-date">
+                    <small> {article.created}</small>
+                  </div>
                   <div className="blog-article-title">
                     <h3> {article.header}</h3>
                   </div>
