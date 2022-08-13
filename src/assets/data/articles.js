@@ -103,7 +103,7 @@ const articles = [
     abstractSM: "Some of my thoughts on my journey into learning how to code",
     created: "August 2022",
     updated: "August 2022",
-    readTime:"7",
+    readTime:"4",
     headers: [null, "The start", "Change of routine", "Results", null, null],
     paragraphs: [
       'In 2020 I started to learn code, it was a decision to try out something new and see if it worked for me. I was stuck in a job I did not particularly like and wondered if there was something better for me out there. I remembered a coding introductory course I took back in college. It focused on C++ and I had a lot of fun with it. After the course ended, I started doing little side projects with C++. At first it was minor todo lists but slowly grew in complexity. I started running into more and more bugs however, and eventually, I lost enthusiasm. I was not planning to become a developer at the time so it was purely a hobby. The difficulties I encountered painted a belief that I was not built for a career in programming. All I knew in the programming world was C++. I falsely assumed other programming languages were equally as challenging. I would go back to C++ periodically for the next decade or so to build simple little projects here and there. But nothing more. Eventually, during 2020, in the early stages of the pandemic, I began to wonder about what other programming languages are like. So I started doing some research.  I searched "coding tutorial for beginners" and stumbled upon a video by Brad Traversy. It was a pretty informative video that showed me all the different coding languages and their uses. I Immediately decided I wanted to get into web development. My journey began.',
