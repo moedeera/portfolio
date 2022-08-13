@@ -39,6 +39,7 @@ const template2 = {
   abstractSM: "",
   created: "",
   updated: "",
+  readTime:"",
   headers: [],
   paragraphs: [],
   pictures: [],
@@ -63,6 +64,7 @@ const articles = [
     abstractSM: "The layoffs are concerning, but the sector remains strong",
     created: "August 2022",
     updated: "August 2022",
+    readTime:"6",
     headers: [
       null,
       "The numbers are staggering",
@@ -101,6 +103,7 @@ const articles = [
     abstractSM: "Some of my thoughts on my journey into learning how to code",
     created: "August 2022",
     updated: "August 2022",
+    readTime:"7",
     headers: [null, "The start", "Change of routine", "Results", null, null],
     paragraphs: [
       'In 2020 I started to learn code, it was a decision to try out something new and see if it worked for me. I was stuck in a job I did not particularly like and wondered if there was something better for me out there. I remembered a course I took back in college that was an introduction to programming. It was focused on the C++ language  and I had a lot of fun with it. After the course ended, I started doing little side projects with it and seeing what I could build. As my projects grew bigger and more complex, I started running into more and more bugs and eventually lost enthusiasm. I was not planning to become a developer at the time so it was purely a hobby. The difficulties I encountered learning C++ painted a belief that I was not built for a career in programming. All I knew in the programming world was C++. I falsely assumed other programming languages were equally as challenging. I would go back to C++ periodically for the next decade or so to build simple little projects here and there but nothing more. Eventually, during 2020, in the early stages of the pandemic, I began to start wondering what other programming languages are like. So I started doing some research.  I searched "coding tutorial for beginners" and stumbled upon a video by Brad Traversy. It was an amazing informative video that showed me all the different coding languages. I Immediately decided I wanted to get into web development. My journey began.',
@@ -133,6 +136,7 @@ const articles = [
     abstractSM: "The upcoming recession is both a hurdle and an opportunity",
     created: "July 2022",
     updated: "July 2022",
+    readTime:"5",
     headers: [],
     paragraphs: [
       "So if you have been keeping tabs on the economy, chances are you have been hearing of a possible if not probable recession. Many youtubers in the web development community are already talking about it. Youtuber and senior developer Stefan Mischook made his second video on the topic recently. The general advice from him was the same as what you would hear from other senior developers. If you are working in a company that operates on thin margins, you are in trouble. For those working for companies with more solid foundations, you should be fine.",
@@ -162,6 +166,7 @@ const articles = [
       "Webflow is good for eye-catching features and SEO optimization, and little else.",
     created: "June 2022",
     updated: "June 2022",
+    readTime:"5",
     headers: [],
     paragraphs: [
       "So recently I decided to try out webflow and see what it’s like to design a website with it. Webflow is an online builder that I saw on ads when I browse YouTube via devices outside of my own (I’m on premium so I don’t see any ads). Its free to start using, but if you want your own custom domain and hosting you must sign up with webflow(and webflow only). This is not ideal, but you get to see all of their features and build a website before you decide on signing up or not. So, I gave it a try. Keep in mind, this is my FIRST impression of webflow and likely will change with more use. So don't take this as a full-on review of the platform",
@@ -192,7 +197,8 @@ const articles = [
       "Developers need to understand that design is its own discipline and neglecting it could undermine your progress as a developer.Because ultimately, it does not matter how good your coding skills are if you package them in websites from the early 2000s. ",
     abstractSM: "Understanding the design and visual aspect of the websites ",
     created: "June 2022",
-    updated: "",
+    updated: "July 2022",
+    readTime:"6",
     headers: [],
     paragraphs: [
       "One of the most important things I learned in this industry, is the importance of separating different facets of web development. It may be easy to think that front end development is just one skill. However, that is not true, far from it in fact. Front end development must be separated into 2 disciplines; Design and structure (or code if you will). This is important because one of the biggest problems with new developers is that they focus too much on the coding aspect of a website and neglect the design or aesthetic portion of it. You will see graduates or new developers with sub-par looking websites built on well structured code. Many of these developers falsely believe that recruiters will look at their code and not be concerned about the overall look of their projects. They assume that companies have a specific position for the design aspect and that it will not be something a front-end developer has to focus on. This is just not the case.",
@@ -220,6 +226,7 @@ const articles = [
     abstractSM: "Tracking your progress is a great tool for motivation",
     created: "May 2022",
     updated: "May 2022",
+    readTime:"6",
     headers: [],
     paragraphs: [
       "This is why documenting your progress over long periods of time is very important. My suggestion would be to make a new portfolio website every 3 months or so. It establishes a sense of achievement that gives you the drive to go forward. ",
@@ -252,6 +259,7 @@ const articles = [
     abstractSM: "Programming buddies are a powerful tool when done right",
     created: "April 2022",
     updated: "April 2022",
+    readTime:"6",
     headers: [
       "",
       "1. Get on the same page early on",
@@ -288,6 +296,7 @@ const articles = [
     abstractSM: "Learning PHP opens many doors that are often overlooked",
     created: "April 2022",
     updated: "April 2022",
+    readTime:"6",
     headers: [],
     paragraphs: [
       "I recently started learning PHP to add as a second language to my set of skills. Part of it had to do with my frustrations of dealing with WordPress and the limitations it imposes on developers by all these paid themes, builder tools, and plugins. I knew that with my programming experience, I should be able to easily customize much of the things without having to be charged for simple features. As I delve into PHP, I realized that it should have been the first language I learned.",

@@ -66,12 +66,31 @@
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.249);
 }
+.blog-article-main h3, .blog-article-main h2{
+margin:0px 0 5px;
+color: var(--alt-color);
+letter-spacing: 1px;
+
+}
 .blog-article-image {
   margin-bottom: 10px;
 }
 .blog-article-image img {
   width: 100%;
   max-width: 300px;
+}
+.blog-article-date{
+  display: flex;
+  gap:40px;
+  /* justify-content:center; */
+  align-items: center;
+  padding:20px 0;
+  
+}
+.blog-article-date small{
+  display: flex;
+  gap:6px;
+  align-items: center;
 }
 .blog-article-cta,
 .blog-headline-cta {
