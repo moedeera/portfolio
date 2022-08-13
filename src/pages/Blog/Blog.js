@@ -53,9 +53,9 @@ console.log(getReadTime(articlesList[2].headers))
           </div>
 
           <div className="blog-headline-text">
-          <div className="blog-article-main">
+          {/* <div className="blog-article-main">
                   <h3>{articlesList[0].topic}</h3>
-                  </div>
+                  </div> */}
             <div>
               <div className="blog-headline-date">
                 <small>Published on {articlesList[0].created}</small>
