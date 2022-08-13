@@ -46,6 +46,7 @@
   display: none;
 }
 .previous-articles-header {
+  margin: 20px 0;
 }
 .blog-articles-container {
   /* border: 1px solid steelblue; */
