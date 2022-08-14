@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./Blog.css";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const images = [pic10, pic9, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
 export const Blog = () => {
   const { articlesList } = useContext(SiteContext);
 
-
+const [paginIndex, setPaginIndex] = useState(7)
 
 
   return (
@@ -64,7 +64,7 @@ export const Blog = () => {
 
           {articlesList.map(
             (article, key) =>
-              key !== 0 && key <7  && (
+              key !== 0 && key < paginIndex  && (
                 <div className="blog-article">
                   <div className="blog-article-main">
                   <h3>{article.topic}</h3>
@@ -95,7 +95,16 @@ export const Blog = () => {
 
 
         </div>
-         <button className="btn-follow">Load more</button>{" "}
+         <button 
+         onClick={() => {
+          if (articlesList.length > paginIndex) {
+ setPaginIndex(paginIndex + 7)}}
+
+          }
+          
+         
+         className="btn-follow"
+         >Load more</button>{" "}
       </div>
     </div>
   );
