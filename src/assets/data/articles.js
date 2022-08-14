@@ -159,14 +159,14 @@ const articles = [
     link: "",
     header: "My first impression of Webflow",
     abstract:
-      "Webflow seems like a builder that is geared mainly towards dynamic designs.",
+      "Webflow seems like a builder that is geared mainly towards animation-rich designs.",
     abstractLG:
-      "Webflow is amazing at creating a visual-effect rich website, but can lack in other areas",
+      "Webflow is amazing at creating a visual-effect rich websites, but can lack in other areas",
     abstractSM:
-      "Webflow is a builder for eye-catching features and SEO optimization.",
+      "So I tried out WebFlow for the first time, here are the results. ",
     created: "June 2022",
     updated: "August 2022",
-    readTime:"5",
+    readTime:"3",
     headers: [],
     paragraphs: [
       "I recently decided to try out Webflow and see what it’s like to build a website with it. Webflow is an online builder that I seen on ads when I browse YouTube via devices outside of my own (I’m on premium so I don’t see any ads). Its free to start using. But if you want your own custom domain and hosting, you must sign up with Webflow(and Webflow only). This is not ideal, but you get to see all of their features and build a website before you decide on signing up or not. So, I gave it a try. Keep in mind, this is my FIRST impression of Webflow and likely will change with more use. So don't take this as a full-on review of the platform",

@@ -18,24 +18,7 @@ const images = [pic10, pic9, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
 export const Blog = () => {
   const { articlesList } = useContext(SiteContext);
 
-const getReadTime = (array) =>{
-let sum = 0 
 
-// console.log(array[0])
-
-for (var i = 0; i < array.length; i++){
-
-
-  if (array[i]!==null){
-    sum = sum + array[i].length
-  }
-
-
-}
- return sum
-} 
-
-console.log(getReadTime(articlesList[2].headers))
 
 
   return (
@@ -81,7 +64,7 @@ console.log(getReadTime(articlesList[2].headers))
 
           {articlesList.map(
             (article, key) =>
-              key !== 0 && (
+              key !== 0 && key <7  && (
                 <div className="blog-article">
                   <div className="blog-article-main">
                   <h3>{article.topic}</h3>
@@ -109,7 +92,10 @@ console.log(getReadTime(articlesList[2].headers))
                 </div>
               )
           )}
+
+
         </div>
+         <button className="btn-follow">Load more</button>{" "}
       </div>
     </div>
   );
