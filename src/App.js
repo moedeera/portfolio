@@ -13,6 +13,7 @@ import { Blog } from "./pages/Blog/Blog";
 import { Article } from "./pages/Article/Article";
 import ScrollToTop from "./Scroll/Scroll";
 import { SingleArticle } from "./pages/Article/SingleArticle";
+import { SingleCase } from "./pages/SingleCase/SIngleCase";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/admin" element={<Blog />} />
               <Route path="/blog/:post" element={<SingleArticle />} />
+              <Route path="/case/:id" element={<SingleCase />} />
             </Routes>
           </ScrollToTop>
         </Router>

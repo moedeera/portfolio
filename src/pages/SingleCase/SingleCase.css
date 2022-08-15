@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+/*
+
+DO NOT COPY PASTE DIRECTLY
+
+s.case height changed
+sscp margin top changed
+
+back
+
+
+*/
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.single-case-page {
+  background: grey;
+  font-family: "Merriweather", serif;
+}
+
+.s-case {
+  min-height: 20vh;
+  background-color: var(--primary-color);
+  width: 100%;
+  padding-top: 100px;
+  background-color: #dce4ef;
+}
+.s-case-header {
+  text-align: left;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sscp {
+  min-height: 100vh;
+  background: white;
+  margin-top: -20px;
+}
+
+.case-container-box {
+  /* border: 3px solid green; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ccb-right {
+  /* border: 1px solid crimson; */
+  min-height: 100px;
+  /* background-color: aqua; */
+  width: 20%;
+  min-width: 300px;
+  display: none;
+}
+.ccb-left {
+  /* border: 1px solid orange; */
+  min-height: 100vh;
+  /* background-color: grey; */
+  width: 100%;
+  min-width: 300px;
+}
+
+/*side-bar-right css*/
+.cc-side-bar {
+  border: 2px solid white;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.side-bar-unit {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  text-align: left;
+  background-color: #d6d6d6;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.sbu-header {
+  background-color: #006db5;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sbu-current {
+  border-left: 3px solid crimson;
+  background-color: whitesmoke;
+}
+
+/*side-bar-left css*/
+
+.ccb-left-container {
+  padding: 5px;
+}
+.ccb-left-accordion {
+  /* border: 2px solid red; */
+}
+.ccb-accordion-box {
+  border: 2px solid #006db5;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background-color: #d6d6d6;
+}
+.ccb-accordion-box {
+  cursor: pointer;
+}
+.ccb-accordion-content {
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  padding: 5px;
+  /* border: 1px solid green; */
+  transition: all 400ms smooth;
+  /* height: 0; */
+  overflow-y: hidden;
+}
+
+@media only screen and (min-width: 900px) {
+  .side-bar-unit:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .ccb-right {
+    display: block;
+  }
+  .ccb-left {
+    width: 72%;
+  }
+}
