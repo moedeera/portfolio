@@ -27,6 +27,7 @@ back
   background-color: var(--primary-color);
   width: 100%;
   padding-top: 100px;
+  padding-bottom: 20px;
   background-color: #dce4ef;
 }
 .s-case-header {
@@ -37,6 +38,7 @@ back
 }
 
 .sscp {
+  padding-top: 20px;
   min-height: 100vh;
   background: white;
   margin-top: -20px;
@@ -64,6 +66,7 @@ back
   /* background-color: grey; */
   width: 100%;
   min-width: 300px;
+  
 }
 
 /*side-bar-right css*/
@@ -100,6 +103,10 @@ back
 }
 .ccb-left-accordion {
   /* border: 2px solid red; */
+  transition: all 0.5s ease;
+  overflow-y: hidden;
+ 
+  
 }
 .ccb-accordion-box {
   border: 2px solid #006db5;
@@ -107,20 +114,63 @@ back
   justify-content: space-between;
   padding: 20px 10px;
   background-color: #d6d6d6;
+   cursor: pointer;
+   transition: all 400ms linear;
+  z-index: 4;
 }
-.ccb-accordion-box {
-  cursor: pointer;
-}
+
 .ccb-accordion-content {
   text-align: left;
   letter-spacing: 1px;
   line-height: 1.6em;
-  padding: 5px;
-  /* border: 1px solid green; */
-  transition: all 400ms smooth;
-  /* height: 0; */
+  transition: all 400ms linear;
   overflow-y: hidden;
+  z-index: -2;
+  height:auto;
+ display:flex;
+ flex-direction: column;
+ gap:10px;
+  margin:10px 0;
 }
+.hide{
+height: 0;
+}
+.ccb-accordion-summary-box{
+  /* border: 1px solid purple; */
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ccb-accordion-summary-box img{
+  width: 100%;
+  max-width: 300px;
+}
+.ccb-accordion-summary{
+display:grid;
+grid-template-columns: 6fr 2fr;
+grid-row-gap:0px;
+height:100px;
+
+
+}
+.ccb-accordion-summary >  div {
+  border: 1px solid grey;
+  height: 50px;
+  margin: 0;
+  padding:15px 10px;
+}
+.ccb-accordion-summary :nth-child(odd) {
+
+background-color:#bbda8e;
+color:#2d4c01;
+}
+
+
+.ccbas-image{
+border: 1px solid black;
+}
+
 
 @media only screen and (min-width: 900px) {
   .side-bar-unit:hover {
