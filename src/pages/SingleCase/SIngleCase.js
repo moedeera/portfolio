@@ -13,7 +13,7 @@ export const SingleCase = () => {
           <h1>Cancer Stat Facts: Melanoma of the Skin</h1>
         </div>
       </div>
-      <div className="container sscp">
+      <div className="container-ss sscp">
         <div className="case-container-box">
           <div className="ccb-right">
             <div className="cc-side-bar">
