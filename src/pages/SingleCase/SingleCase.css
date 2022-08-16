@@ -143,8 +143,9 @@ height: 0;
 }
 
 .ccb-accordion-summary-box img{
-  width: 100%;
-  max-width: 300px;
+  height:300px;
+  width:auto;
+
 }
 .ccb-accordion-summary{
 display:grid;
@@ -168,9 +169,16 @@ color:#2d4c01;
 
 
 .ccbas-image{
-border: 1px solid black;
+border: 1px solid grey;
+width: 100%;
+max-width: 300px;
+overflow: hidden;
 }
+.ccbas-image img{
 
+
+
+}
 
 @media only screen and (min-width: 900px) {
   .side-bar-unit:hover {

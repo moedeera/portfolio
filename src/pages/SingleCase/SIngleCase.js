@@ -59,7 +59,7 @@ showAccordion(accordion.map((accord) => accord.id=== accordionId ?{...accord, st
                   <div className="ccb-accordion-summary-box">
 <div className="ccb-accordion-summary">
   <div className="ccbas-main">Estimated new cases</div><div className="ccbas-main">99,870</div>
-  <div className="ccbas-main">% of All new cancer cases </div><div className="ccbas-main">99,870</div>
+  <div className="ccbas-main">% of All new cancer cases </div><div className="ccbas-main">7,870</div>
 </div>
 
 <div className="ccbas-image">
@@ -87,7 +87,7 @@ showAccordion(accordion.map((accord) => accord.id=== accordionId ?{...accord, st
                   }}  
                                        
                            >
-                  <div>Statistics at Glance</div>
+                  <div>More details</div>
                   <div>
                     <i className="fa fa-plus"></i>
                   </div>
