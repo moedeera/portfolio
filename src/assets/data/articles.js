@@ -256,7 +256,7 @@ const articles = [
     header: "Maximizing the benefits of programming buddies",
     abstract:
       "Partnerships can be a useful way to speed up your learning if done right, but a waste of time if done wrong",
-    abstractLG: "Partnerships can be a useful way to speed up your learning if done right, but a waste of time if done wrong","Partnerships can be a useful way to speed up your learning if done right, but a waste of time if done wrong",
+    abstractLG: "Partnerships can be a useful way to speed up your learning if done right, but a waste of time if done wrong, Partnerships can be a useful way to speed up your learning if done right, but a waste of time if done wrong",
     abstractSM: "Programming buddies are a powerful tool when done right",
     created: "April 2022",
     updated: "August 2022",
