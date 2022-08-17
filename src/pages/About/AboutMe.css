@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;900&display=swap');
+
+
 .about-me-page{
     min-height:50vh;
     padding-top: 100px;
     color: crimson;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .container-abm{
     width:100%;
     max-width:1300px;
     margin: 0 auto;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     
 }
 
@@ -29,34 +33,40 @@ text-align: left;
 .uh-text{
 width: 100%;
 max-width: 300px;
+color: var(--primary-color);
 }
 .uh-text-line{
-    background-color:red;
+    /* background-color:red; */
     width: 100%;
     height:2px;
     max-width:600px;
 }
 .upper-abm-picture{
-    border: 2px solid orange; 
-    background:steelblue;
     min-height: 400px;
     text-align: left;
-    padding:5px 10px;
-    letter-spacing:1px;
+    padding:10px 15px;
+    letter-spacing:1.5px;
     width:100%;
     max-width: 300px;
-    line-height:1.8em;
+    line-height:2.8em;
+    color: white;
+    background:var(--alternate-color)
 }
 .upper-abm-text{
 width:100%;
 max-width: 600px;
 padding:5px 10px;
 }
+.abm-text-header{
+    color: var(--alt-color);
+    
+}
 .abm-text-summary{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin:10px 0;
+    color: black;
 }
 .abm-text-summary >  div{
 width:100%;
