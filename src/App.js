@@ -27,14 +27,14 @@ function App() {
               <Route path="/" element={<Homepage />} />
               <Route path="/portfolio" element={<PortfolioPage />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/aboutme" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/portfolio/:id" element={<Project />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/admin" element={<Blog />} />
               <Route path="/blog/:post" element={<SingleArticle />} />
               <Route path="/case/:id" element={<SingleCase />} />
-              <Route path="/aboutme" element={<AboutMe />} />
+              <Route path="/about" element={<AboutMe />} />
             </Routes>
           </ScrollToTop>
         </Router>

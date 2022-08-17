@@ -1,8 +1,11 @@
 import React from 'react'
 import "./AboutMe.css"
+import {Fade} from 'react-reveal'
 
 export const AboutMe = () => {
   return (
+
+    <Fade>
     <div className="about-me-page">
 
 <div className="container-abm">
@@ -53,10 +56,10 @@ export const AboutMe = () => {
 
 </div>
 <div className="lower-abm">
+</div>
 
-  
+
 </div>
-</div>
-    </div>
+    </div></Fade>
   )
 }
