@@ -1,0 +1,64 @@
+.about-me-page{
+    min-height:50vh;
+    padding-top: 100px;
+    color: crimson;
+}
+
+.container-abm{
+    width:100%;
+    max-width:1300px;
+    margin: 0 auto;
+    border: 2px solid green;
+    
+}
+
+.upper-abm{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+text-align: left;
+/* border: 1px solid green; */
+}
+.upper-header{
+    display:flex;
+    justify-content: center;
+    text-align: left;
+    /* padding: 5px 20px; */
+    /* background-color:blue */
+}
+.uh-text{
+width: 100%;
+max-width: 300px;
+}
+.uh-text-line{
+    background-color:red;
+    width: 100%;
+    height:2px;
+    max-width:600px;
+}
+.upper-abm-picture{
+    border: 2px solid orange; 
+    background:steelblue;
+    min-height: 400px;
+    text-align: left;
+    padding:5px 10px;
+    letter-spacing:1px;
+    width:100%;
+    max-width: 300px;
+    line-height:1.8em;
+}
+.upper-abm-text{
+width:100%;
+max-width: 600px;
+padding:5px 10px;
+}
+.abm-text-summary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:10px 0;
+}
+.abm-text-summary >  div{
+width:100%;
+max-width: 250px;
+}

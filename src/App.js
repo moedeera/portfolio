@@ -14,6 +14,7 @@ import { Article } from "./pages/Article/Article";
 import ScrollToTop from "./Scroll/Scroll";
 import { SingleArticle } from "./pages/Article/SingleArticle";
 import { SingleCase } from "./pages/SingleCase/SIngleCase";
+import {AboutMe} from "./pages/About/AboutMe";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               <Route path="/admin" element={<Blog />} />
               <Route path="/blog/:post" element={<SingleArticle />} />
               <Route path="/case/:id" element={<SingleCase />} />
+              <Route path="/aboutme" element={<AboutMe />} />
             </Routes>
           </ScrollToTop>
         </Router>
