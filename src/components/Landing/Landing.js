@@ -38,7 +38,18 @@ export const Landing = () => {
                 </a>
               </div> */}
               <div className="btn-container">
-                <h2> A Developer that lives to Design</h2>
+                <h2>
+                  {" "}
+                  Design{" "}
+                  <span style={{ fontWeight: "300", color: "goldenrod" }}>
+                    |
+                  </span>{" "}
+                  Code{" "}
+                  <span style={{ fontWeight: "300", color: "goldenrod" }}>
+                    |
+                  </span>{" "}
+                  Deploy{" "}
+                </h2>
                 <button
                   className="btn-hero"
                   onMouseEnter={() => {
@@ -68,15 +79,15 @@ export const Landing = () => {
             </div>
 
             <div className="lb-services">
-              <div className="lb-circle">
+              <div className="lb-circle" id="circle-1">
                 <h1>Websites</h1>
                 <p>Website building, hosting, and content management</p>
               </div>
-              <div className="lb-circle second">
+              <div className="lb-circle second" id="circle-2">
                 <h1>Designs</h1>
                 <p>Amazing Designs, User Friendly interfaces</p>
               </div>
-              <div className="lb-circle">
+              <div className="lb-circle" id="circle-3">
                 <h1>Solutions</h1>
                 <p>Servers set up, e-commerce websites and much more</p>
               </div>

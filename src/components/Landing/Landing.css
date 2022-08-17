@@ -150,6 +150,15 @@
   transition: 500ms ease-in-out;
 }
 
+#circle-1 {
+  animation: 3.6s FadeIV-1 ease-in-out;
+}
+#circle-2 {
+  animation: 3.6s FadeIV-2 ease-in-out;
+}
+#circle-3 {
+  animation: 3.6s FadeIV-3 ease-in-out;
+}
 @media only screen and (min-width: 600px) {
   .landing a:hover {
     color: black;
@@ -304,5 +313,59 @@
 @media only screen and (min-width: 500px) {
   .header-breaker {
     display: none;
+  }
+}
+
+@keyframes FadeIntoView {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIntoView2 {
+}
+
+@keyframes FadeIV-1 {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIV-2 {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIV-3 {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
