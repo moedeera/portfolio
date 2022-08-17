@@ -7,7 +7,7 @@ export const AboutMe = () => {
 
 <div className="container-abm">
   <div className="upper-header">
-    <div className="uh-text"><h3>About Me</h3></div>
+    <div className="uh-text"><h1>About Me</h1></div>
     
     <div className="uh-text-line"></div>
   </div>
@@ -19,7 +19,7 @@ export const AboutMe = () => {
 </div>
 <div className="upper-abm-text">
   <div className="abm-text-header">
-  <h1>'Being a developer is about{" "}
+  <h1>Being a developer is about{" "}
               <span
                 style={{
                   color: "red",
@@ -30,7 +30,7 @@ export const AboutMe = () => {
                   what you know{" "}
                 </span>
               </span>
-              <span> what you solve'</span>
+              <span> what you solve</span>
  </h1>
   </div>
   <div className="abm-text-summary">
@@ -52,7 +52,10 @@ export const AboutMe = () => {
 
 
 </div>
-<div className="lower-abm"></div>
+<div className="lower-abm">
+
+  
+</div>
 </div>
     </div>
   )
