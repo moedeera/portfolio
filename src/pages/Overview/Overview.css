@@ -1,58 +1,159 @@
 .overview-page {
   min-height: 50vh;
   margin-top: 100px;
+  padding: 100px 0;
+  /* background-color: black; */
 }
 
 .main-container {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .overview-project-showcase {
-  border: 2px solid green;
+  /* border: 2px solid red; */
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
   width: 100%;
-  margin: 20px 0;
+  margin: 20px auto;
+  /* height: calc(700px - 2vh); */
+  position: relative;
+  background: url("https://dlr5c2ow1z4cp.cloudfront.net/wp-content/uploads/2022/04/12162516/traveltech1a.jpg");
 }
 
 .overview-project-gallery {
-  width: 100%;
-  border: 2px solid crimson;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 50px;
-  position: relative;
 }
 
 .op-showcase {
-  border: 3px solid blue;
+  border: 1px solid steelblue;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding: 20px;
   width: 100%;
   max-width: 600px;
+  box-shadow: var(--box-shadow);
 }
 
 .sc-main {
   max-width: none;
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+
+  color: black;
+  background-color: rgba(240, 248, 255, 0.858);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.op-header h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: var(--alt-color);
 }
 .op-showcase-text {
   width: 100%;
   max-width: 600px;
+  text-align: left;
+  /* border: 2px solid white; */
 }
 
 .op-showcase-image {
   width: 100%;
   min-width: 300px;
   max-width: 500px;
+  /* border: 2px solid white; */
 }
 
 .op-showcase-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
+}
+.op-cta {
+  display: flex;
+  font-size: 38px;
+  justify-content: center;
+  gap: 30px;
+  margin: 25px 0;
+  color: var(--secondary-color);
+}
+.op-btn {
+  display: flex;
+  justify-content: center;
+}
+/* .ops-overlay {
+  background-color: black;
+  background: url("https://dlr5c2ow1z4cp.cloudfront.net/wp-content/uploads/2022/04/12162516/traveltech1a.jpg");
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+} */
+.overview-project {
+  background: url("https://dlr5c2ow1z4cp.cloudfront.net/wp-content/uploads/2022/04/12162516/traveltech1a.jpg");
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+.overview-projects-lower {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.ovp-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  /* border: 1px solid green; */
+  border: 1px solid steelblue;
+  color: black;
+  background-color: rgba(240, 248, 255, 0.858);
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  /* max-width: 600px; */
+  min-height: 400px;
+  box-shadow: var(--box-shadow);
+}
+.ovp-text {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.ovp-text h2 {
+  color: var(--alt-color);
+  text-align: left;
+}
+.ovp-image {
+}
+
+.ovp-image img {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 900px) {
+  .op-btn,
+  .op-cta {
+    justify-content: flex-start;
+  }
+
+  .overview-projects-lower {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

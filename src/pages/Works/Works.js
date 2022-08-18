@@ -24,6 +24,10 @@ export const Works = () => {
           <div className="banner-text">
             <div className="banner-header">
               <h1>My Works</h1>
+              <h3>
+                Here is some of the projects I have recently completed. Take a
+                look for yourself
+              </h3>
             </div>
             <div className="banner-header-cta">
               <button className="btn btn-primary">

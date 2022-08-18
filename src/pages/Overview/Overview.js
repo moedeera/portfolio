@@ -3,6 +3,7 @@ import "./Overview.css";
 import { Context } from "react";
 import { SiteContext } from "../../context/Context";
 import img1 from "./ereader-mockup.png";
+import { articles } from "../../assets/data/articles";
 
 export const Overview = () => {
   const { projects } = useContext(SiteContext);
@@ -12,12 +13,18 @@ export const Overview = () => {
         <div className="overview-project-showcase">
           <div className="op-showcase sc-main">
             <div className="op-showcase-text">
-              <div className="op-header">{projects[0].tagline}</div>
+              <div className="op-header">
+                <h2>{projects[0].tagline}</h2>
+              </div>
               <div className="op-summary">{projects[0].information}</div>
               <div className="op-cta">
-                <i className="fa fa-jsfiddle"></i>
+                <i className="fab fa-js"></i>
                 <i className="fa fa-html5"></i>
-                <i className="fa fa-wordpress"></i>
+                <i className="fab fa-css3-alt"></i>
+                <i className="fab fa-github"></i>
+              </div>
+              <div className="op-btn">
+                <button className="btn-new">View Project</button>
               </div>
             </div>
             <div className="op-showcase-image">
@@ -25,33 +32,41 @@ export const Overview = () => {
             </div>
           </div>
         </div>
-        <div className="overview-project-gallery">
-          <div className="op-showcase">
-            <div className="op-showcase-text">
-              <div className="op-header">{projects[0].tagline}</div>
-              <div className="op-summary">{projects[0].information}</div>
-              <div className="op-cta">
-                <i className="fa fa-jsfiddle"></i>
-                <i className="fa fa-html5"></i>
-                <i className="fa fa-wordpress"></i>
+
+        <div className="overview-projects-lower">
+          <div className="overview-project">
+            <div className="ovp-container">
+              <div className="ovp-text">
+                <h2>Genome Transplant Consort</h2>
+                <p>
+                  Genome Canada Transplant Consortium is an organization with a
+                  mission to improve kidney transplant success rates.
+                </p>
+                <div className="op-btn">
+                  <button className="btn-new">View Project</button>
+                </div>
               </div>
-            </div>
-            <div className="op-showcase-image">
-              <img src={img1} alt="" />
+              <div className="ovp-image">
+                <img src={img1} alt="" />
+              </div>
             </div>
           </div>
-          <div className="op-showcase">
-            <div className="op-showcase-text">
-              <div className="op-header">{projects[0].tagline}</div>
-              <div className="op-summary">{projects[0].information}</div>
-              <div className="op-cta">
-                <i className="fa fa-jsfiddle"></i>
-                <i className="fa fa-html5"></i>
-                <i className="fa fa-wordpress"></i>
+
+          <div className="overview-project">
+            <div className="ovp-container">
+              <div className="ovp-text">
+                <h2>Genome Transplant Consort</h2>
+                <p>
+                  Genome Canada Transplant Consortium is an organization with a
+                  mission to improve kidney transplant success rates.
+                </p>
+                <div className="op-btn">
+                  <button className="btn-new">View Project</button>
+                </div>
               </div>
-            </div>
-            <div className="op-showcase-image">
-              <img src={img1} alt="" />
+              <div className="ovp-image">
+                <img src={img1} alt="" />
+              </div>
             </div>
           </div>
         </div>
