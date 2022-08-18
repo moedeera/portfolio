@@ -119,6 +119,8 @@
   border: 1px solid steelblue;
   color: black;
   background-color: rgba(240, 248, 255, 0.858);
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
   text-align: left;
   padding: 10px;
   width: 100%;
@@ -134,7 +136,7 @@
   gap: 40px;
 }
 .ovp-text h2 {
-  color: var(--alt-color);
+  color: goldenrod;
   text-align: left;
 }
 .ovp-image {
