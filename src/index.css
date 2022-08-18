@@ -81,6 +81,7 @@ a {
 .btn-primary {
   background-color: var(--primary-color);
   color: white;
+  border: 1px solid var(--alternate-color);
 }
 .btn-primary.active {
   background-color: var(--secondary-color);

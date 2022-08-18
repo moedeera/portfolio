@@ -10,12 +10,12 @@ import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
 import { SiteContextProvider } from "./context/Context";
 import { Blog } from "./pages/Blog/Blog";
-import { Article } from "./pages/Article/Article";
 import ScrollToTop from "./Scroll/Scroll";
 import { SingleArticle } from "./pages/Article/SingleArticle";
 import { SingleCase } from "./pages/SingleCase/SIngleCase";
 import { AboutMe } from "./pages/About/AboutMe";
 import { Overview } from "./pages/Overview/Overview";
+import { Works } from "./pages/Works/Works";
 
 function App() {
   return (
@@ -37,6 +37,7 @@ function App() {
               <Route path="/case/:id" element={<SingleCase />} />
               <Route path="/about" element={<AboutMe />} />
               <Route path="/overview" element={<Overview />} />
+              <Route path="/my-work" element={<Works />} />
             </Routes>
           </ScrollToTop>
         </Router>
