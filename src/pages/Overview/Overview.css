@@ -1,0 +1,57 @@
+.overview-page {
+  min-height: 50vh;
+  margin-top: 100px;
+}
+
+.main-container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overview-project-showcase {
+  border: 2px solid green;
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.overview-project-gallery {
+  width: 100%;
+  border: 2px solid crimson;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.op-showcase {
+  border: 3px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.sc-main {
+  max-width: none;
+}
+.op-showcase-text {
+  width: 100%;
+  max-width: 600px;
+}
+
+.op-showcase-image {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.op-showcase-image img {
+  width: 100%;
+  max-width: 500px;
+}

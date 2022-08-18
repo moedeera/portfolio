@@ -14,7 +14,8 @@ import { Article } from "./pages/Article/Article";
 import ScrollToTop from "./Scroll/Scroll";
 import { SingleArticle } from "./pages/Article/SingleArticle";
 import { SingleCase } from "./pages/SingleCase/SIngleCase";
-import {AboutMe} from "./pages/About/AboutMe";
+import { AboutMe } from "./pages/About/AboutMe";
+import { Overview } from "./pages/Overview/Overview";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
               <Route path="/blog/:post" element={<SingleArticle />} />
               <Route path="/case/:id" element={<SingleCase />} />
               <Route path="/about" element={<AboutMe />} />
+              <Route path="/overview" element={<Overview />} />
             </Routes>
           </ScrollToTop>
         </Router>
