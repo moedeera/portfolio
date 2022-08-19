@@ -3,6 +3,8 @@ import { DropDown } from "./dropDown";
 import { NavBarModal } from "./NavBarModal";
 import { DropDownMenu } from "./DropDownMenu";
 import { NewDropDownMenu } from "./NewDropDownMenu";
+import image1 from "./menu.png";
+import image2 from "./close.png";
 
 import OutsideClickHandler from "react-outside-click-handler";
 import "./Navbar.css";
@@ -187,11 +189,12 @@ export const Navbar = () => {
             {dropDown ? (
               <>
                 {" "}
-                <i className="fa fa-times fa-2x" aria-hidden="true"></i>
+                {/* <i className="fa fa-times fa-2x" aria-hidden="true"></i> */}
+                <img src={image2} alt="" style={{ width: "30px" }} />
               </>
             ) : (
               <>
-                <i className="fa fa-bars" aria-hidden="true"></i>
+                <img src={image1} alt="" style={{ width: "30px" }} />
               </>
             )}
           </div>
