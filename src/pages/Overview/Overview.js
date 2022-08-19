@@ -74,7 +74,8 @@ export const Overview = ({ count }) => {
         <div className="overview-projects-lower">
           {projects.map(
             (project, key) =>
-              count > key > 0 && (
+              count + 1 > key &&
+              key > 0 && (
                 <>
                   <div
                     className="overview-project"
@@ -95,7 +96,7 @@ export const Overview = ({ count }) => {
                           </Link>
                         </div>
                       </div>
-                      <Fade down>
+                      <Fade right>
                         <div className="ovp-image">
                           <img src={images[project.pic1]} alt="" />
                         </div>

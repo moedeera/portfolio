@@ -17,6 +17,7 @@ export const Projects = ({ page }) => {
               <Link to="/portfolio">
                 {" "}
                 <h3>See All </h3>
+                {/* <button className="btn-new">See aLL</button> */}
               </Link>
             </>
           )}
