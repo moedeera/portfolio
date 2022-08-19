@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   gap: 0px;
-  width: 95%;
+  width: 90%;
   margin: 20px auto;
   /* height: calc(700px - 2vh); */
   position: relative;
@@ -27,7 +27,7 @@
 }
 
 .overview-project-gallery {
-  width: 95%;
+  /* width: 95%; */
 }
 
 .op-showcase {
@@ -128,6 +128,7 @@
    */
   overflow: hidden;
   box-shadow: var(--box-shadow);
+  width: 90%;
 }
 .overview-projects-lower {
   display: flex;
@@ -169,10 +170,13 @@
   text-transform: capitalize;
 }
 .ovp-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ovp-image img {
-  width: 100%;
+  width: 80%;
   max-width: 300px;
 }
 
@@ -181,7 +185,8 @@
   .op-cta {
     justify-content: flex-start;
   }
-  .overview-project-showcase {
+  .overview-project-showcase,
+  .overview-project {
     width: 100%;
   }
 
