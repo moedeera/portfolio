@@ -10,25 +10,40 @@
 .usc-services {
   /* border: 3px solid steelblue; */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .usc-services-unit {
-  /* border: 2px solid crimson; */
+  border: 2px solid rgba(128, 128, 128, 0.321);
   padding: 15px;
   max-width: 350px;
   margin: 10px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.usc-icon i {
-  /* border: 1px solid steelblue; */
-  padding: 25px;
-  border-radius: 50%;
-  font-size: 28px;
-  color: var(--primary-color);
-  background-color: var(--dark);
+.usc-icon {
+  /* border: 1px solid grey; */
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  align-items: center;
+}
+.usc-icon p {
+  /* border: 1px solid blue; */
+  background-color: rgba(128, 128, 128, 0.296);
+  padding: 0 5px;
+  width: 100%;
+  max-width: 100px;
+}
+.usc-text {
+  /* border: 1px solid red; */
+  width: 100%;
 }
 .usc-text h3 {
-  color: var(--secondary-color);
+  color: var(--alternate-color);
+  letter-spacing: 1.5px;
 }
 .service-downward-arrow {
   color: var(--alternate-color);
@@ -369,14 +384,14 @@
     /* height: 100%; */
   }
   .usc-services-unit {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    /* display: grid;
+    grid-template-columns: 1fr 4fr; */
   }
   .usc-text {
     /* border: 1px solid green; */
     text-align: left;
-    padding: 0 10px;
-    margin: 0 10px;
+    /* padding: 0 10px;
+    margin: 0 10px; */
     letter-spacing: 1px;
   }
 }

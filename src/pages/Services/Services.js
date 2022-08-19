@@ -3,6 +3,9 @@ import "./Service.css";
 import pic1 from "./Saly-13.png";
 import pic2 from "./Saly-12.png";
 import pic3 from "./Saly-7.png";
+import pic4 from "./apps.png";
+import pic5 from "./code.png";
+import pic6 from "./sites.png";
 import { Link } from "react-router-dom";
 
 import { Fade } from "react-reveal";
@@ -16,7 +19,8 @@ export const Services = () => {
           <div className="usc-services">
             <div className="usc-services-unit">
               <div className="usc-icon">
-                <i className="fas fa-layer-group"></i>
+                <img alt="" src={pic6} style={{ color: "width:50px" }} />
+                <p>Websites</p>
               </div>
               <div className="usc-text">
                 <h3>Standard Websites</h3>
@@ -31,7 +35,9 @@ export const Services = () => {
             </div>
             <div className="usc-services-unit">
               <div className="usc-icon">
-                <i className="fas fa-rocket"></i>
+                {/* <i className="fas fa-rocket"></i> */}
+                <img alt="" src={pic4} style={{ color: "width:50px" }} />
+                <p>Apps</p>
               </div>
               <div className="usc-text">
                 <h3>Web Applications</h3>
@@ -46,7 +52,8 @@ export const Services = () => {
             </div>
             <div className="usc-services-unit">
               <div className="usc-icon">
-                <i class="fas fa-object-group"></i>
+                <img alt="" src={pic5} style={{ color: "width:50px" }} />
+                <p>Specialized</p>
               </div>
               <div className="usc-text">
                 <h3>Custom </h3>
@@ -61,6 +68,7 @@ export const Services = () => {
             </div>
           </div>
         </div>
+
         <div className="lower-container">
           <Fade right>
             <section className="about-intro-container" id="services">
