@@ -40,7 +40,7 @@ export const Works = () => {
         </div> */}
 
         <div>
-          <Overview />
+          <Overview count={7} />
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ export const Services = () => {
           <div className="usc-services">
             <div className="usc-services-unit">
               <div className="usc-icon">
-                <img alt="" src={pic6} style={{ color: "width:50px" }} />
+                <img alt="" src={pic6} style={{ width: "50px" }} />
                 <p>Websites</p>
               </div>
               <div className="usc-text">
@@ -36,7 +36,7 @@ export const Services = () => {
             <div className="usc-services-unit">
               <div className="usc-icon">
                 {/* <i className="fas fa-rocket"></i> */}
-                <img alt="" src={pic4} style={{ color: "width:50px" }} />
+                <img alt="" src={pic4} style={{ width: "50px" }} />
                 <p>Apps</p>
               </div>
               <div className="usc-text">
@@ -52,7 +52,7 @@ export const Services = () => {
             </div>
             <div className="usc-services-unit">
               <div className="usc-icon">
-                <img alt="" src={pic5} style={{ color: "width:50px" }} />
+                <img alt="" src={pic5} style={{ width: "50px" }} />
                 <p>Specialized</p>
               </div>
               <div className="usc-text">

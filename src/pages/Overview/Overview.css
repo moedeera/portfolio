@@ -173,10 +173,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
+  height: 200px;
 }
 
 .ovp-image img {
-  width: 80%;
+  width: 90%;
   max-width: 300px;
 }
 

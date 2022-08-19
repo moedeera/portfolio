@@ -22,7 +22,7 @@ export const Projects = ({ page }) => {
           )}
         </div>
 
-        <Overview />
+        <Overview count={4} />
 
         <div
           className="dates-container"

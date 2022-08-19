@@ -21,50 +21,60 @@ import pic6 from "../Project/greenframe.png";
 import pic7 from "../Project/deeracode-mockup.png";
 const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7];
 
-export const Overview = ({ page }) => {
+export const Overview = ({ count }) => {
   const { projects } = useContext(SiteContext);
   return (
     <div className="overview-page" id="projects">
       <div className="main-container">
-        <div className="overview-project-showcase">
-          <div className="op-showcase sc-main">
-            <div className="op-showcase-text">
-              <div className="op-header">
-                <h2>{projects[0].tagline}</h2>
-              </div>
-              <div className="op-summary">{projects[0].information}</div>
-              <div className="op-cta">
-                <div className="op-cta-text">
-                  {/* <img src={img4} alt="" /> */}
-                  <i className="fa fa-check"></i>
-                  Friendly UI
+        <Fade>
+          <div
+            style={{
+              background: `url(${images[projects[0].pic1]})
+          center
+          
+            `,
+            }}
+            className="overview-project-showcase"
+          >
+            <div className="op-showcase sc-main">
+              <div className="op-showcase-text">
+                <div className="op-header">
+                  <h2>{projects[0].tagline}</h2>
                 </div>
-                <div className="op-cta-text">
-                  <img src={img3} alt="" />
-                  Responsive
-                </div>
-                <div className="op-cta-text">
-                  <img src={img6} alt="" />
-                  Customizable
-                </div>
-                {/* <div className="op-cta-text">
+                <div className="op-summary">{projects[0].information}</div>
+                <div className="op-cta">
+                  <div className="op-cta-text">
+                    {/* <img src={img4} alt="" /> */}
+                    <i className="fa fa-check"></i>
+                    Friendly UI
+                  </div>
+                  <div className="op-cta-text">
+                    <img src={img3} alt="" />
+                    Responsive
+                  </div>
+                  <div className="op-cta-text">
+                    <img src={img6} alt="" />
+                    Customizable
+                  </div>
+                  {/* <div className="op-cta-text">
                   <i className="fab fa-github"></i>
                 </div> */}
+                </div>
+                <div className="op-btn">
+                  <button className="btn-new">View Project</button>
+                </div>
               </div>
-              <div className="op-btn">
-                <button className="btn-new">View Project</button>
+              <div className="op-showcase-image">
+                <img src={img2} alt="" style={{ maxWidth: "200px" }} />
               </div>
-            </div>
-            <div className="op-showcase-image">
-              <img src={img2} alt="" style={{ maxWidth: "200px" }} />
             </div>
           </div>
-        </div>
+        </Fade>
 
         <div className="overview-projects-lower">
           {projects.map(
             (project, key) =>
-              key > 0 && (
+              count > key > 0 && (
                 <>
                   <div
                     className="overview-project"
