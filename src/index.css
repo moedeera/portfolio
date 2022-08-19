@@ -145,6 +145,7 @@ a {
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
+  transition: all 0.3s ease 0s;
 }
 
 @media only screen and (min-width: 600px) {
@@ -191,6 +192,12 @@ a {
     background-color: aliceblue;
     color: white;
     color: #256eff;
+  }
+  .btn-new:hover {
+    color: white;
+    background: transparent;
+    transform: translateY(-7px);
+    border: 1px solid white;
   }
 }
 @keyframes float {

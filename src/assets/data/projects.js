@@ -35,6 +35,7 @@ const projectsList = [
     link: "https://deercoded.com/",
     header: "DeerCoded.com",
     Intro: "UI Design for a coding bootcamp",
+
     information:
       "A Design oriented website built as a theme for a coding bootcamp. It was built using CSS, JavaScript and HTML.\n The focus of the website is to experiment with new design trends involving landing page lottie animations and bubbly 3d illustrations.\n It also uses a landing page countdown timer that visually channels urgency in a potential customer.",
   },
@@ -83,7 +84,7 @@ const projectsList = [
   {
     id: 4,
     orientation: "Web Application",
-    tagline: "Coding bootcamp theme",
+    tagline: "Social Media Website",
     recent: false,
     completed: true,
     title: "bluebear",

@@ -1,40 +1,46 @@
 import React from "react";
 import "./Works.css";
+import { Overview } from "../Overview/Overview";
 
 export const Works = () => {
   return (
     <div className="work-page">
-      <div className="main-container">
-        <div className="banner-box">
-          <div className="bg-display">
-            <div className="bg-display-units-container">
-              <div className="bg-display-unit" id="bg-1">
-                <div className="bgd-overlay"></div>
-              </div>
-              <div className="bg-display-unit" id="bg-2">
-                <div className="bgd-overlay"></div>
-              </div>
-
-              <div className="bg-display-unit" id="bg-3">
-                <div className="bgd-overlay"></div>
-              </div>
-            </div>
-          </div>
-
-          <div className="banner-text">
-            <div className="banner-header">
-              <h1>My Works</h1>
-              <h3>
+      <div className="banner-box">
+        <div className="banner-text">
+          <div className="banner-header">
+            <h1>
+              <a style={{ color: "purple" }} href="#projects">
+                My Works
+              </a>
+            </h1>
+            {/* <h3>
                 Here is some of the projects I have recently completed. Take a
                 look for yourself
-              </h3>
-            </div>
-            <div className="banner-header-cta">
-              <button className="btn btn-primary">
+              </h3> */}
+          </div>
+          <div className="banner-header-cta">
+            <a style={{ color: "purple" }} href="#projects">
+              <button
+                className="btn btn-primary"
+                style={{ margin: "10px 0 0" }}
+              >
                 <i className="fa fa-chevron-down"></i>
               </button>
-            </div>
+            </a>
           </div>
+        </div>
+      </div>
+      <div className="main-container">
+        {/* <div className="test">
+                  <div className="test-unit">
+                      <div className="unit-overlay"></div>
+          </div>
+          <div className="test-unit"></div>
+          <div className="test-unit"></div>
+        </div> */}
+
+        <div>
+          <Overview />
         </div>
       </div>
     </div>

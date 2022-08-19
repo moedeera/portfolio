@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Projects.css";
 import { Fade } from "react-reveal";
 import { SiteContext } from "../../context/Context";
+import { Overview } from "../../pages/Overview/Overview";
 
 export const Projects = ({ page }) => {
   const { projects } = useContext(SiteContext);
@@ -21,7 +22,14 @@ export const Projects = ({ page }) => {
           )}
         </div>
 
-        <div className="dates-container">
+        <Overview />
+
+        <div
+          className="dates-container"
+          style={{
+            display: "none",
+          }}
+        >
           {projects.map((project) => (
             <>
               <div className="date-unit">
