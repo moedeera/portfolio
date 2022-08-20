@@ -120,20 +120,20 @@ export const Contact = () => {
                     onClick={() => {
                       onSubmit();
                     }}
-                    className="btn btn-alternate"
+                    className="btn-contacts"
                   >
                     Send Message
                   </button>
                 )}
               </div>
-              <div className="cf-image">
+
+              {/* <div className="cf-image">
                 <img src={pic1} alt="" />
-              </div>
+              </div> */}
             </div>
           </Fade>
         </div>
       </div>
-      <div className="overlay-right"></div>
     </div>
   );
 };
