@@ -56,7 +56,7 @@ export const Skills = ({ page }) => {
                 <h3>Consulting</h3>
                 <p>
                   Having difficulties maintaining your website? Considering an
-                  upgrade? Message me and we can book and consultation.
+                  upgrade? Message me and we can book a consultation.
                 </p>
               </div>
               <div className="service">
