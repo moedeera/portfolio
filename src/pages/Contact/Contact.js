@@ -75,7 +75,7 @@ export const Contact = () => {
                 Send me any inquiries regarding services or potential employment
               </h3>
               <p>
-                Need to contact me for a a job or employment purposes, just send
+                Need to contact me for a a job or employment purposes? just send
                 me a quick message and I should respond to you as soon as
                 possible.
               </p>
@@ -84,7 +84,7 @@ export const Contact = () => {
           <Fade>
             <div className="contact-form-box">
               <div className="cf-form">
-                <h1> Message Me</h1>
+                <h2> Message Me</h2>
                 <input
                   placeholder="Enter Name"
                   name="name"
