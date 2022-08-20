@@ -84,6 +84,7 @@ export const Contact = () => {
           <Fade>
             <div className="contact-form-box">
               <div className="cf-form">
+                <i className="fas fa-comment-alt"></i>
                 <h2> Message Me</h2>
                 <input
                   placeholder="Enter Name"
