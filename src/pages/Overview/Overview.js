@@ -61,7 +61,9 @@ export const Overview = ({ count }) => {
                 </div> */}
                 </div>
                 <div className="op-btn">
-                  <button className="btn-new">View Project</button>
+                  <Link to={`../portfolio/${projects[0].title}`}>
+                    <button className="btn-new">View Project</button>
+                  </Link>
                 </div>
               </div>
               <div className="op-showcase-image">

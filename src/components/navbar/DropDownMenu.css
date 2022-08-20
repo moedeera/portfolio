@@ -59,6 +59,10 @@
 }
 .navbar-item {
   color: var(--primary-color);
+  color: var(--text-secondary);
+
+  /* border: 1px solid black;
+  width: 100%; */
 }
 .dropdown-menu-section {
   /* border: 1px solid red; */

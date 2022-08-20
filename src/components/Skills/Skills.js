@@ -2,7 +2,7 @@ import React from "react";
 import "./Skills.css";
 import { Fade } from "react-reveal";
 
-export const Skills = () => {
+export const Skills = ({ page }) => {
   return (
     <Fade up>
       <div className="ft-services">
@@ -37,15 +37,38 @@ export const Skills = () => {
               of a client and their business.
             </p>
           </div>
-          {/* <div className="service">
-            <i className="far fa-comment"></i>
 
-            <h3>Consulting</h3>
-            <p>
-              Not sure how to build your website? Contact me for a quick zoom
-              meeting to get advice on what's best for you
-            </p>
-          </div> */}
+          {page === "services" && (
+            <>
+              {" "}
+              <div className="service">
+                <i className="fab fa-contao"></i>
+
+                <h3>Content Editor</h3>
+                <p>
+                  I can create, edit, and publish content regarding web design,
+                  software development, and current technology trends.
+                </p>
+              </div>
+              <div className="service">
+                <i className="fas fa-comment-alt"></i>
+
+                <h3>Consulting</h3>
+                <p>
+                  Having difficulties maintaining your website? Considering an
+                  upgrade? Message me and we can book and consultation.
+                </p>
+              </div>
+              <div className="service">
+                <i className="fas fa-envelope"></i>
+                <h3>Email development</h3>
+                <p>
+                  For businesses needing custom promotional emails to send to
+                  their subscriber base{" "}
+                </p>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </Fade>

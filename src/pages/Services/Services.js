@@ -7,6 +7,7 @@ import pic4 from "./apps.png";
 import pic5 from "./code.png";
 import pic6 from "./sites.png";
 import { Link } from "react-router-dom";
+import { Skills } from "../../components/Skills/Skills";
 
 import { Fade } from "react-reveal";
 
@@ -15,8 +16,9 @@ export const Services = () => {
     <div>
       <div className="services-container">
         <div className="upper-services-container">
-          <div className="usc-header general-header">Services</div>
-          <div className="usc-services">
+          {/* <div className="usc-header general-header">Services</div> */}
+          <Skills page={"services"} />
+          <div className="usc-services" style={{ display: "none" }}>
             <div className="usc-services-unit">
               <div className="usc-icon">
                 <img alt="" src={pic6} style={{ width: "50px" }} />

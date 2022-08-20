@@ -1,0 +1,33 @@
+.n-m {
+  /* border: 1px solid green; */
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 0px;
+}
+
+.nm-link {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.603);
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.n-m a,
+.n-m a:visited {
+  color: rgba(0, 0, 0, 0.851);
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.nm-link:nth-child(1) {
+  /* border: 2px solid red; */
+}
+
+#nm1 {
+  height: 0px;
+}

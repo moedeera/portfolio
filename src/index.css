@@ -203,8 +203,8 @@ a {
     color: #256eff;
   }
   .btn-new:hover {
-    color: white;
-    background: transparent;
+    color: var(--alternate-color);
+    background: white;
     transform: translateY(-7px);
     border: 1px solid white;
   }
