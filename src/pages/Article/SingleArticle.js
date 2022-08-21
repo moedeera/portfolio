@@ -7,16 +7,7 @@ import MetaTags from "react-meta-tags";
 
 import { Videoplayer } from "../../components/videoplayer/videoplayer";
 import {
-  TwitterTimelineEmbed,
   TwitterShareButton,
-  TwitterFollowButton,
-  TwitterHashtagButton,
-  TwitterMentionButton,
-  TwitterTweetEmbed,
-  TwitterMomentShare,
-  TwitterDMButton,
-  TwitterVideoEmbed,
-  TwitterOnAirButton,
 } from "react-twitter-embed";
 
 import pic1 from "../Blog/recession.jpg";
@@ -125,6 +116,16 @@ export const SingleArticle = () => {
                   {article.videos.length > 1 && (
                     <Videoplayer link={article.videos[map]} />
                   )}
+                  {/* <div className="code-container"> 
+                  <pre>
+  &lt;VideoPlayer{'\n'}
+    ref="videoplayer"{'\n'}
+    preload={'{'}this.props.preload{'}\n'}
+    classes={'{'}this.props.classes{'}\n'}
+    videoID={'{'}this.props.videoID{'}\n'}
+    controls="controls"{'\n'}
+  /&gt;</pre>
+                   </div> */}
                 </div>
               ))}
             </div>
@@ -184,6 +185,7 @@ export const SingleArticle = () => {
                             to={`../blog/${post.title}`}
                             style={{ color: "black" }}
                           >
+                            <h5>{post.topic}</h5>
                             <h3>{post.header}</h3>
                             <small>{post.abstractSM}</small>
                           </Link>

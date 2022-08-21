@@ -240,7 +240,7 @@ export const Article = () => {
               <div>Jobs</div>
               <div>Media</div>
             </div>
-
+            
             <div className="sidebar-categories"></div>
           </div>
         </div>

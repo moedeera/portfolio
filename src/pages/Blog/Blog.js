@@ -95,6 +95,7 @@ const [paginIndex, setPaginIndex] = useState(7)
 
 
         </div>
+       
 
         {articlesList.length> paginIndex && 
          <button 
@@ -102,7 +103,9 @@ const [paginIndex, setPaginIndex] = useState(7)
           if (articlesList.length > paginIndex) {
  setPaginIndex(paginIndex + 7)}}} 
  className="btn-follow">Load more</button>}
+
       </div>
+      
     </div>
   );
 };

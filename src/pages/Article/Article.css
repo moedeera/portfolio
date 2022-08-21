@@ -203,6 +203,21 @@
   letter-spacing: 1px;
   line-height: 1.6em;
 }
+.code{
+  border: 1px solid red;
+}
+
+.code-container{
+  background-color:black;
+  color: white;
+}
+
+.side-bar-post-text h5{
+  color: var(--alternate-color);
+}
+.side-bar-post-text small{
+  display: none;
+}
 
 @media only screen and (min-width: 900px) {
   .article-container {
@@ -231,8 +246,6 @@
   .sidebar-post-image:hover {
     opacity: 0.8;
   }
-}
-@media only screen and (min-width: 900px) {
   .article-page-container {
     max-width: 900px;
   }
@@ -240,8 +253,18 @@
     max-width: none;
   }
 }
+@media only screen and (min-width: 600px) {
+
+
+  .side-bar-post-text small{
+    display: block;
+  }
+
+}
 @media only screen and (max-width: 900px) {
   .article-update-sm {
     display: none;
   }
+
+
 }
