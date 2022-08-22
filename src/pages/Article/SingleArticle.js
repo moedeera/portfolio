@@ -85,8 +85,8 @@ export const SingleArticle = () => {
                 {/* <i className="fa fa-linkedin-square" aria-hidden="true"></i> */}
                 {/* <i className="fa fa-twitter-square" aria-hidden="true"></i> */}
                 <TwitterShareButton
-                  url={"https://www.moedevelops.com/blog/programming-buddies"}
-                  options={{ text: "programming buddies", via: "moedevelops" }}
+                  url={`https://www.moedevelops.com/blog/${article.title}`}
+                  options={{ text: `${article.header}`, via: "moedevelops" }}
                 />
               </div>
             </div>

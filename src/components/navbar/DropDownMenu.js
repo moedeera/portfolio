@@ -24,7 +24,7 @@ export const DropDownMenu = ({
   dropDownContent,
   active,
 }) => {
-  const { projects } = useContext(SiteContext);
+  const { projects, articlesList } = useContext(SiteContext);
 
   return (
     <div
@@ -142,12 +142,12 @@ export const DropDownMenu = ({
                   <div className="br-lower">
                     <div className="blog-image">
                       <img
-                        src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src={articlesList[0].pic}
                         alt=""
                       />
                     </div>
                     <div className="blog-text">
-                      <p>My thoughts on the recent round of layoffs</p>
+                      <p>{articlesList[0].header}</p>
                       <button className="blog-btn">More</button>
                     </div>
                   </div>
@@ -259,55 +259,10 @@ export const DropDownMenu = ({
                   </div>
                 </div>
               </Link>
-              {/* <div className="mm-service-unit">
-                <div className="mmsu-image">
-                  <img src={ereader} alt=""></img>
-                </div>
-                <div className="mmsu-text">
-                  <div className="mmsu-text-header">UI/UX Design</div>
-                  <div className="mmsu-text-summary">
-                    Design Templates, Mockups and Drafts for websites
-                  </div>
-                </div>
-              </div> */}
+              
             </div>
           )}
-          {/* {dropDownContent === "about" && (
-            <div className="megamenu-about" id="about">
-              <div className="mm-about-unit">
-                <div className="mmau-image">
-                  <img src={design} alt=""></img>
-                </div>
-                <div className="mmau-text">
-                  <div className="mmau-text-header">General Info</div>
-                  <div className="mmau-text-summary">
-                    <div className="mmau-link"> About Me</div>
-                    <div className="mmau-link">Github</div>
-                    <div className="mmau-link">Linkedin</div>
-                    <div className="mmau-link">Twiiter</div>
-                  </div>
-                </div>
-              </div>
-              <div className="mm-about-unit">
-                <div className="mmau-image">
-                  <img src={webapps} alt=""></img>
-                </div>
-                <div className="mmau-text">
-                  <div className="mmau-text-header">Skills</div>
-                  <div className="mmau-text-summary">
-                    <div className="mmau-link"> WordPress</div>
-
-                    <div className="mmau-link"> CSS</div>
-                    <div className="mmau-link">HTML</div>
-                    <div className="mmau-link">JavaScript</div>
-                    <div className="mmau-link">ReactJS</div>
-                    <div className="mmau-link">ExpressJS</div>
-                    <div className="mmau-link">Heroku</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )} */}
+          
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { DropDown } from "./dropDown";
+
 import { NavBarModal } from "./NavBarModal";
 import { DropDownMenu } from "./DropDownMenu";
-import { NewDropDownMenu } from "./NewDropDownMenu";
+
 import image1 from "./menu.png";
 import image2 from "./close.png";
 
@@ -209,7 +209,7 @@ export const Navbar = () => {
               active={navbar}
             />
           )}
-          <NewDropDownMenu />
+         
         </div>
       </div>
 
