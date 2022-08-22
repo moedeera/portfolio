@@ -85,7 +85,7 @@ letter-spacing: 1px;
   gap:40px;
   /* justify-content:center; */
   align-items: center;
-  padding:20px 0;
+  padding:0px 0;
   
 }
 .blog-article-date small{
@@ -168,12 +168,15 @@ letter-spacing: 1px;
     /* border: 2px solid grey; */
     transform:translateY(-10px);
   }
+  .blog-headline-summary {
+    display: block;
+    line-height:2.3em;
+    letter-spacing:1px;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
-  .blog-headline-summary {
-    display: block;
-  }
+
 
   .blog-article {
     max-width: 375px;
