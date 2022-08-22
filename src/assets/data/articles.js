@@ -46,12 +46,50 @@ const template2 = {
   picCaption: [],
   videos: [],
   comments: [],
+  mapper: [0, 1, 2, 3, 4, 5],
   feature: "",
 };
 
 const articles = [
   {
     id: 0,
+    title: "",
+    icons: [],
+    pic: "https://images.pexels.com/photos/6190327/pexels-photo-6190327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    topic: "Advice",
+    link: "",
+    header: "CSS tips for beginners",
+    abstract: "A few things I wish I knew when I was first learning CSS",
+    abstractLG: "Learning CSS can be tricky for new developers. This is because knowing CSS and understanding how to use it are two different things. Getting over-confident or developing bad habits is a pitfall for most new learners. I am going to share some tips I have to help you avoid some of the mistakes I made",
+    abstractSM: "Tips to help you avoid the mistakes I made",
+    created: "August 2022",
+    updated: "August 2022",
+    readTime:"3",
+    headers: [null,
+  '1.Don’t get obsessed with CSS animations.',
+'2.Look Into existing Designs ',
+'3.Spacing is very important',
+'4.Mobile first approach.',
+'5.Practice Practice and Practice',
+null],
+    paragraphs: [
+'There are a few things I wish I knew when I was first learning CSS.  CSS is easily learned but rarely ever mastered. Truly understanding CSS takes time and practice. Because there are infinite ways of implementing CSS to achieve a specific design, it is easy to develop bad habits or overconfidence. For me I developed (and had to get rid of) tons of those bad habits. Here are some tips I have from my own personal experience.',
+`It's very tempting when you are new to have animations in your web designs. Animations look nice and can add to the quality of a website. But this applies only if they are done right. When you are new , chances are you are not going to know how to get animations right. Your attempt will create either something glitchy, excessive, or just downright ugly. Now don’t get it wrong, Animations in your own personal projects for learning purposes are fine. However, animations on your portfolio need a certain quality to validate their presence`,
+`You are not a designer, you're a coder. A new coder at that. Look into pre-existing designs for inspiration.  Go to websites like uidesigndaily.com or dribbble.com. Cloning established websites  is also very helpful. But you need to constantly see dozens of well made websites before you understand what is good design. So until then, don’t design from scratch.`,
+`When you analyze a good website design you don’t look at the spacing. But when you analyze the spacing, you understand why the design works. Now you don’t have to be a master of using space to enhance designs. You just need to master the basics. Always have a consistent container for all your sections including the navigation menu. Make sure images are properly aligned and spaced away from text. And most importantly, avoid excessive margins between sections or components. Just have enough space to visually show the sections are separated, and not thing more.`,
+`Always go mobile first. It will save you a lot of headaches down the line. Even if the designs you are basing your website off are 1080px+ mockups.  Now going mobile first does not mean you don’t have to watch your components as they scale up. It is just a more fluid way of building a responsive design. `,
+`You will never get good at CSS if you do it sparingly.  Practicing more often allows you to develop your own style. It also helps you learn more concepts within CSS. You understand  when to use different tools like Grid and Flexbox. Most importantly, you become a faster and more efficient coder. This is crucial if you want to be a front end developer because you get paid based on your productivity.`,
+`These are just some of the main tips I have for beginners. I will post another Blog detailing more technical details I think beginners should understand. In the meantime, make sure you don’t make the same mistakes I did.`,
+    ],
+    pictures: [],
+    picCaption: [],
+    videos: [],
+    comments: [],
+    mapper: [0, 1, 2, 3, 4, 5,6],
+    feature: "https://www.youtube.com/watch?v=1PnVor36_40",
+  },
+  {
+    id: 1,
     title: "mass-layoffs",
     icons: [],
     pic: "https://images.pexels.com/photos/7277906/pexels-photo-7277906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -64,7 +102,7 @@ const articles = [
     abstractSM: "The layoffs are concerning, but the sector remains strong",
     created: "August 2022",
     updated: "August 2022",
-    readTime:"6",
+    readTime:"3",
     headers: [
       null,
       "The numbers are staggering",
@@ -89,7 +127,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=gCg47n_TlFc&t=499s",
   },
   {
-    id: 1,
+    id: 2,
     title: "codingjourney",
     icons: [],
     pic: "https://images.pexels.com/photos/614484/pexels-photo-614484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -122,7 +160,7 @@ const articles = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "upcoming-recession",
     pic: "https://images.pexels.com/photos/5717791/pexels-photo-5717791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     icons: [],
@@ -151,7 +189,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=UmnRxymgtJs",
   },
   {
-    id: 3,
+    id: 4,
     title: "webflow",
     icons: [],
     pic: "https://assets-global.website-files.com/615b6910fed3ab29278f1893/6213ade4e74351a6e1d71823_open-graph-webflow.png",
@@ -184,7 +222,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=OI5M9lRiNI4",
   },
   {
-    id: 4,
+    id: 5,
     title: "design-skills",
     icons: [],
     pic: "https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -213,7 +251,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=fyaBtRiqUWI&t=1010s",
   },
   {
-    id: 5,
+    id: 6,
     title: "importance-progress",
     icons: [],
     pic: "https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -247,7 +285,7 @@ const articles = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "programming-buddies",
     icons: [],
     pic: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -284,7 +322,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=EqzUcMzfV1w&t=2624s",
   },
   {
-    id: 7,
+    id: 8,
     title: "PHP-undervalued",
     icons: [],
     pic: "https://images.pexels.com/photos/11035390/pexels-photo-11035390.jpeg",
@@ -297,7 +335,7 @@ const articles = [
     abstractSM: "Learning PHP opens many doors that are often overlooked",
     created: "April 2022",
     updated: "August 2022",
-    readTime:"6",
+    readTime:"3",
     headers: [],
     paragraphs: [
       "I recently started learning PHP to add as a second language to my set of skills. Part of it had to do with my frustrations of dealing with WordPress and the limitations it imposes on developers. This includes all the paid themes, builder tools, and plugins. I knew that with my programming experience, I should be able to easily customize much of the things without having to be charged for simple features. As I delve into PHP, I realized that it should have been the first language I learned.",
@@ -313,6 +351,7 @@ const articles = [
     mapper: [0, 1, 2, 3, 4],
     feature: "https://www.youtube.com/watch?v=GeJDaXuc5NY",
   },
+ 
 ];
 
 const OldArticles = [

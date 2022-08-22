@@ -12,9 +12,10 @@ import pic7 from "./MERN.jpg";
 import pic8 from "./php-meme.jpg";
 import pic9 from "./codingjourney.jpg";
 import pic10 from "./layoffs.jpg";
+import pic11 from "./csstips.jpg"
 import { SiteContext } from "../../context/Context";
 
-const images = [pic10, pic9, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
+const images = [pic11,pic10, pic9, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
 export const Blog = () => {
   const { articlesList } = useContext(SiteContext);
 
