@@ -53,7 +53,7 @@ const template2 = {
 const articles = [
   {
     id: 0,
-    title: "",
+    title: "css-tips",
     icons: [],
     pic: "https://images.pexels.com/photos/6190327/pexels-photo-6190327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     topic: "Advice",
@@ -66,7 +66,7 @@ const articles = [
     updated: "August 2022",
     readTime:"3",
     headers: [null,
-  '1.Don’t get obsessed with CSS animations.',
+'1.Don’t get obsessed with CSS animations.',
 '2.Look Into existing Designs ',
 '3.Spacing is very important',
 '4.Mobile first approach.',

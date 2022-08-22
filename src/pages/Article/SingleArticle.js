@@ -118,18 +118,36 @@ export const SingleArticle = () => {
                   {article.videos.length > 1 && (
                     <Videoplayer link={article.videos[map]} />
                   )}
-                  {/* <div className="code-container"> 
-                  <pre>
-  &lt;VideoPlayer{'\n'}
-    ref="videoplayer"{'\n'}
-    preload={'{'}this.props.preload{'}\n'}
-    classes={'{'}this.props.classes{'}\n'}
-    videoID={'{'}this.props.videoID{'}\n'}
-    controls="controls"{'\n'}
-  /&gt;</pre>
-                   </div> */}
+
+                  {article.code > 1 && ( <div className="code">
+                    <div className="code-upper">
+                      <button>Copy</button>
+                      <button>JS fiddle <i className="fab fa-jsfiddle"></i></button>
+                      {/* <button>Result</button> */}
+                      
+                     
+                    </div>
+                  <div className="code-container"> 
+               {/* <span style={{color:'yellow'}}>{`<styles>`}</span>    */}
+               
+{`
+.div {
+  color:white;
+  transition:500ms ease-in-out;
+  }
+  
+  `}   
+  {/* <span style={{color:'yellow'}}>{`<styles>`}</span>  */}
+                   </div>
+                   
+                   </div>)}
+                 
+
+
+
                 </div>
               ))}
+           
             </div>
           </div>
 
@@ -150,15 +168,7 @@ export const SingleArticle = () => {
                 <button className="btn-follow">Contact</button>{" "}
               </Link>
             </div>
-            {/* <iframe
-              dth="100%"
-              height="400px"
-              src="https://www.youtube.com/embed/1oNwhhNkcEM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe> */}
+
             <div className="sidebar-posts">
               <h2> Featured Video</h2>
 

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
 
 .article-pages {
 }
@@ -204,14 +207,33 @@
   line-height: 1.6em;
 }
 .code{
-  border: 1px solid red;
+  /* border: 2px solid red; */
+  border-radius:10px;
+  overflow:hidden;
 }
-
+.code-upper{
+  background-color:#d6dcea;
+  display:flex;
+  gap:5px;
+  justify-content:flex-end;
+  padding:14px;
+}
 .code-container{
-  background-color:black;
+  background-color:#081b4b;
+font-family: 'Roboto Mono', monospace;;
   color: white;
+  min-height: 300px;
+  padding:14px;
+  white-space: pre-line;
 }
-
+.code button{
+padding:10px 25px;
+border-radius:5px;
+border: 1px solid rgba(128, 128, 128, 0.682);
+cursor: pointer;
+transition:400ms ease-in-out;
+font-weight: 700;
+}
 .side-bar-post-text h5{
   color: var(--alternate-color);
 }
@@ -251,6 +273,9 @@
   }
   .article-sidebar {
     max-width: none;
+  }
+  .code button:hover{
+    transform:translateY(-5px)
   }
 }
 @media only screen and (min-width: 600px) {
