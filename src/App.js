@@ -17,6 +17,7 @@ import { AboutMe } from "./pages/About/AboutMe";
 import { Overview } from "./pages/Overview/Overview";
 import { Works } from "./pages/Works/Works";
 import { Blogs } from "./pages/Blogs/Blogs";
+import { ProtectedRoutes } from "./components/ProtectedRoutes/ProtectedRoutes";
 
 function App() {
   return (
@@ -40,6 +41,12 @@ function App() {
               <Route path="/overview" element={<Overview />} />
               <Route path="/my-work" element={<Works />} />
               <Route path="/blogs" element={<Blogs />} />
+              {/* <Route path="/sign-in" element={<Admin />}>
+                <Route element={<ProtectedRoutes />}>
+                  <Route path="/works" element={<Works />} />
+                  <Route path="/homepage" element={<Homepage />} />
+                </Route>
+              </Route> */}
             </Routes>
           </ScrollToTop>
         </Router>

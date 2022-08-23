@@ -1,8 +1,16 @@
 import { createContext, useState } from "react";
 import { useProjects } from "../Hooks/useProjects";
 import { useArticles } from "../Hooks/useArticles";
+import { useEffect } from "react";
 
 export const SiteContext = createContext({});
+
+const LoadUser = async () => {
+  if (localStorage.getItem("token")) {
+    let User = JSON.parse(localStorage.getItem("token"));
+    return User;
+  } else return { logged: false, user: null };
+};
 
 export const SiteContextProvider = ({ children }) => {
   const { projects, setProject } = useProjects();
@@ -70,6 +78,17 @@ export const SiteContextProvider = ({ children }) => {
     };
   };
 
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    const getUser = async () => {
+      const newUser = await LoadUser();
+      setUser(newUser);
+    };
+
+    getUser().catch(console.error);
+  }, []);
+
   return (
     <SiteContext.Provider
       value={{
@@ -78,6 +97,8 @@ export const SiteContextProvider = ({ children }) => {
         getProjectInformation,
         getArticle,
         articlesList,
+        user,
+        setUser,
       }}
     >
       {children}

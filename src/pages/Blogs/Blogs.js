@@ -11,7 +11,7 @@ export const Blogs = () => {
         <div className="blogs-upper-section">
           <div
             className="blogs-headliner"
-            style={{ backgroundImage: `url(${articlesList[3].pic})` }}
+            style={{ backgroundImage: `url(${articlesList[0].pic})` }}
           >
             <div className="blogs-overlay">
               <div className="blogs-container">
@@ -44,7 +44,7 @@ export const Blogs = () => {
               {articlesList.map(
                 (article, index) =>
                   index < 4 && (
-                    <div className="blogs-features-item">
+                    <div className="blogs-features-item" key={index}>
                       <div className="bf-image">
                         <img
                           src={article.pic}
@@ -57,7 +57,7 @@ export const Blogs = () => {
                           {article.topic}
                         </small>
                         <div className="bf-item-header">{article.header}</div>
-                        <small div className="bf-item-date">
+                        <small className="bf-item-date">
                           {article.created}
                         </small>
                       </div>
