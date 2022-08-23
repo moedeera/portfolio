@@ -13,6 +13,7 @@
   /* border: 2px solid navy; */
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   width: 95%;
   margin: 0 auto;
 }
