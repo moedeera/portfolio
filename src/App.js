@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Homepage } from "./pages/homepage/Homepage";
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
-import {Admin} from"./pages/admin/Admin"
+import { Admin } from "./pages/admin/Admin";
 import { Services } from "./pages/Services/Services";
 import { Project } from "./pages/Project/Project";
 import { About } from "./pages/About/About";
@@ -16,6 +16,7 @@ import { SingleCase } from "./pages/SingleCase/SIngleCase";
 import { AboutMe } from "./pages/About/AboutMe";
 import { Overview } from "./pages/Overview/Overview";
 import { Works } from "./pages/Works/Works";
+import { Blogs } from "./pages/Blogs/Blogs";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
               <Route path="/about" element={<AboutMe />} />
               <Route path="/overview" element={<Overview />} />
               <Route path="/my-work" element={<Works />} />
+              <Route path="/blogs" element={<Blogs />} />
             </Routes>
           </ScrollToTop>
         </Router>
