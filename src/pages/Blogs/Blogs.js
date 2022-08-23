@@ -39,62 +39,31 @@ export const Blogs = () => {
             </div>
           </div>
           <div>
-            <h3 className="bf-header">See Also</h3>
+            {/* <h3 className="bf-header">See Also</h3> */}
             <div className="blogs-features">
-              <div className="blogs-features-item">
-                <div className="bf-image">
-                  <img
-                    src={articlesList[1].pic}
-                    alt=""
-                    // style={{ width: "100px" }}
-                  />
-                </div>
-                <div className="bf-item">
-                  <small className="blogs-topic-bf">
-                    {articlesList[1].topic}
-                  </small>
-                  <div className="bf-item-header">{articlesList[1].header}</div>
-                  <small div className="bf-item-date">
-                    {articlesList[1].created}
-                  </small>
-                </div>
-              </div>
-              <div className="blogs-features-item">
-                <div className="bf-image">
-                  <img
-                    src={articlesList[1].pic}
-                    alt=""
-                    // style={{ width: "100px" }}
-                  />
-                </div>
-                <div className="bf-item">
-                  <small className="blogs-topic-bf">
-                    {articlesList[1].topic}
-                  </small>
-                  <div className="bf-item-header">{articlesList[1].header}</div>
-                  <small div className="bf-item-date">
-                    {articlesList[1].created}
-                  </small>
-                </div>
-              </div>
-              <div className="blogs-features-item">
-                <div className="bf-image">
-                  <img
-                    src={articlesList[1].pic}
-                    alt=""
-                    // style={{ width: "100px" }}
-                  />
-                </div>
-                <div className="bf-item">
-                  <small className="blogs-topic-bf">
-                    {articlesList[1].topic}
-                  </small>
-                  <div className="bf-item-header">{articlesList[1].header}</div>
-                  <small div className="bf-item-date">
-                    {articlesList[1].created}
-                  </small>
-                </div>
-              </div>
+              {articlesList.map(
+                (article, index) =>
+                  index < 4 && (
+                    <div className="blogs-features-item">
+                      <div className="bf-image">
+                        <img
+                          src={article.pic}
+                          alt=""
+                          // style={{ width: "100px" }}
+                        />
+                      </div>
+                      <div className="bf-item">
+                        <small className="blogs-topic-bf">
+                          {article.topic}
+                        </small>
+                        <div className="bf-item-header">{article.header}</div>
+                        <small div className="bf-item-date">
+                          {article.created}
+                        </small>
+                      </div>
+                    </div>
+                  )
+              )}
             </div>
           </div>
         </div>
