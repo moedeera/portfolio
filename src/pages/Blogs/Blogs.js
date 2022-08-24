@@ -77,19 +77,36 @@ export const Blogs = () => {
         </div>
         <div className="blogs-lower-section">
           <div className="blogs-lower-list">
-            <div className="bl-item">
-              <div
-                className="bl-item-image"
-                style={{ backgroundImage: `url(${articlesList[5].pic})` }}
-              ></div>
-              <div className="bl-item-text">
-                <div className="bl-item-topic">{articlesList[4].topic}</div>
-                <div className="bl-item-date">
-                  <small>{articlesList[4].created}</small>
-                </div>
-                <div className="bl-item-header">{articlesList[4].header}</div>
-              </div>
-            </div>
+            {articlesList.map(
+              (article, key) =>
+                4 < key &&
+                key < 9 && (
+                  <Link to={`/blogs/${article.title}`}>
+                    <div className="bl-item">
+                      <div
+                        className="bl-item-image"
+                        style={{ backgroundImage: `url(${article.pic})` }}
+                      ></div>
+                      <div className="bl-item-text">
+                        <div className="bl-item-topic">
+                          <small>{article.topic}</small>
+                        </div>
+
+                        <div className="bl-item-header">
+                          <h3>{article.header}</h3>
+                        </div>
+                        <div className="bl-item-date">
+                          <i className="fas fa-calendar-week"></i>
+                          <small>{article.created}</small>
+                        </div>
+                        <div className="bl-item-abstract">
+                          <p> {article.abstractSM}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                )
+            )}
           </div>
         </div>
       </div>
