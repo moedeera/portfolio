@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap");
 .blogs-page {
   min-height: 50vh;
   padding-top: 100px;
@@ -25,8 +26,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 400ms ease-in-out;
   align-items: center;
   cursor: pointer;
+  font-family: "Merriweather Sans", sans-serif;
 }
 .blogs-container {
   height: 200px;
@@ -88,6 +91,12 @@
 .bf-header {
   color: var(--alt-color);
   text-align: left;
+  margin-top: 0;
+  padding-top: 0;
+}
+.bf-header {
+  margin-top: 0;
+  padding-top: 0;
 }
 .blogs-features-item {
   display: grid;
@@ -107,24 +116,57 @@
   justify-content: center;
 }
 .bf-image img {
-  height: 100px;
+  height: 125px;
   width: auto;
+  transition: all 400ms ease-in-out;
 }
 .bf-item {
   text-align: left;
-  padding: 10px 5px;
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid green; */
+  height: 125px;
+  cursor: pointer;
 }
 .bf-item small {
 }
 .bf-item-header {
-  font-size: 10px;
+  font-size: 1rem;
+  font-size: 0.75rem;
+  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.15vw, 1rem);
+  /* font-size: 1.15vw; */
 }
 .blogs-topic-bf {
   color: var(--alt-color);
   font-weight: 700;
+  font-size: 0.75rem;
+  font-size: 0.7rem;
+  font-size: 0.9rem;
+  font-size: clamp(0.75rem, 0.7rem, 0.9rem);
 }
 .bf-item-date {
   font-size: 8px;
+}
+
+.blogs-lower-list {
+  border: 1px solid green;
+  margin-top: 50px;
+}
+.bl-item {
+  border: 3px solid blue;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+}
+.bl-item-image {
+  height: 200px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 600px) {
@@ -144,5 +186,11 @@
 
   .blogs-container {
     padding: 0 15px;
+  }
+  .blogs-overlay:hover {
+    background: rgba(128, 128, 128, 0.571);
+  }
+  .bf-image img:hover {
+    opacity: 0.8;
   }
 }

@@ -40,6 +40,7 @@ function App() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/blog/:post" element={<SingleArticle />} />
+              <Route path="/blogs/:post" element={<SingleArticle />} />
               <Route path="/case/:id" element={<SingleCase />} />
               <Route path="/about" element={<AboutMe />} />
               <Route path="/overview" element={<Overview />} />
