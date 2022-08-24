@@ -9,11 +9,12 @@ import image2 from "./close.png";
 import OutsideClickHandler from "react-outside-click-handler";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
 export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [dropDownContent, setDropDownContent] = useState("none");
   const [dropDown, showDropDown] = useState(false);
+  let location = useLocation();
 
   const changeNavbar = () => {
     if (window.scrollY >= 60) {
@@ -24,7 +25,9 @@ export const Navbar = () => {
   };
 
   window.addEventListener("scroll", changeNavbar);
-
+  if (location.pathname === "/profile") {
+    return null;
+  }
   return (
     <OutsideClickHandler
       onOutsideClick={() => {
@@ -209,7 +212,6 @@ export const Navbar = () => {
               active={navbar}
             />
           )}
-         
         </div>
       </div>
 

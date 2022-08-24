@@ -1,7 +1,12 @@
 import React from "react";
 import "./Footer.css";
+import { useLocation } from "react-router-dom";
 
 export const Footer = () => {
+  let location = useLocation();
+  if (location.pathname === "/profile") {
+    return null;
+  }
   return (
     <div className="footer" id="footer">
       <div className="container">

@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import { SiteContext } from "../../context/Context";
 import { Outlet } from "react-router-dom";
-import { Homepage } from "../../pages/homepage/Homepage";
+import { Login } from "../../pages/admin/login/Login";
 
 export const ProtectedRoutes = () => {
-  const { user } = useContext(SiteContext);
-
-  return user.logged ? <Outlet /> : <Homepage />;
+  const user = { name: "john", logged: true };
+  return user.logged ? <Outlet /> : <Login />;
 };

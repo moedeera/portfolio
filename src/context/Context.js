@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import { useProjects } from "../Hooks/useProjects";
 import { useArticles } from "../Hooks/useArticles";
+import { useSideBar } from "../Hooks/useSideBar";
 import { useEffect } from "react";
 
 export const SiteContext = createContext({});
@@ -14,8 +15,8 @@ const LoadUser = async () => {
 
 export const SiteContextProvider = ({ children }) => {
   const { projects, setProject } = useProjects();
-
-  const { articlesList, setArticles } = useArticles();
+  const { articlesList } = useArticles();
+  const { show, toggleShow } = useSideBar();
 
   const getProjectInformation = (id) => {
     let projectInfo = null;
@@ -99,6 +100,8 @@ export const SiteContextProvider = ({ children }) => {
         articlesList,
         user,
         setUser,
+        show,
+        toggleShow,
       }}
     >
       {children}

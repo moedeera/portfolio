@@ -1,0 +1,32 @@
+.SideMenu {
+  border: 3px solid green;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  padding: 0;
+  z-index: 2;
+  background-color: blueviolet;
+  color: goldenrod;
+  transform: translateX(-100%);
+  transition: 400ms ease-in-out;
+}
+.sm-small-show {
+  transform: translateX(0%);
+}
+.sm-small-hide {
+  transform: translateX(-100%);
+}
+@media only screen and (min-width: 900px) {
+  .SideMenu {
+    transform: translateX(0%);
+  }
+  .sm-small {
+    transform: translateX(0%);
+  }
+  .sm-small-hide {
+    transform: translateX(0%);
+  }
+  .SM-close-button {
+    display: none;
+  }
+}

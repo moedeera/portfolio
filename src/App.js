@@ -18,13 +18,17 @@ import { Overview } from "./pages/Overview/Overview";
 import { Works } from "./pages/Works/Works";
 import { Blogs } from "./pages/Blogs/Blogs";
 import { ProtectedRoutes } from "./components/ProtectedRoutes/ProtectedRoutes";
-
+import { Dashboard } from "./pages/admin/dashboard/Dashboard";
+import { Editor } from "./pages/admin/editor/Editor";
+import { Login } from "./pages/admin/login/Login";
+import { SideMenu } from "./components/SideMenu/SideMenu";
 function App() {
   return (
     <SiteContextProvider>
       <div className="App">
         <Router>
           <Navbar />
+          <SideMenu />
           <ScrollToTop>
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -41,16 +45,16 @@ function App() {
               <Route path="/overview" element={<Overview />} />
               <Route path="/my-work" element={<Works />} />
               <Route path="/blogs" element={<Blogs />} />
-              {/* <Route path="/sign-in" element={<Admin />}>
-                <Route element={<ProtectedRoutes />}>
-                  <Route path="/works" element={<Works />} />
-                  <Route path="/homepage" element={<Homepage />} />
-                </Route>
-              </Route> */}
+              <Route path="/login" element={<Login />} />
+
+              <Route element={<ProtectedRoutes />}>
+                <Route path="/profile" element={<Dashboard />} />
+                <Route path="/post" element={<Editor />} />
+              </Route>
             </Routes>
           </ScrollToTop>
+          <Footer />
         </Router>
-        <Footer />
       </div>
     </SiteContextProvider>
   );
