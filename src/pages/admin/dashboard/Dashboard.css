@@ -11,6 +11,12 @@
   justify-content: space-between;
   padding: 10px;
 }
+.dashboard-header-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 .progress-bar-container {
   /* border: 1px solid green; */
   min-width: 150px;
