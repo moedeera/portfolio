@@ -19,7 +19,8 @@
   margin: 0 auto;
 }
 .blogs-overlay {
-  background: rgba(128, 128, 128, 0.871);
+  background: rgba(128, 128, 128, 0.171);
+  background-color: rgba(0, 0, 0, 0.75);
   /* background-color: rgba(0, 0, 0, 0.775); */
 
   height: 100%;
@@ -29,7 +30,7 @@
   transition: all 400ms ease-in-out;
   align-items: center;
   cursor: pointer;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Merriweather Sans", sans-serif !important;
 }
 .blogs-container {
   height: 200px;
@@ -68,6 +69,8 @@
 .blogs-header h3 {
   /* font-size: clamp(18px, 1vw + 18px  , ); */
   font-size: 38px;
+  /* color: var(--secondary-color);
+  color: black; */
 }
 .blogs-headline-details {
   display: flex;
@@ -82,11 +85,13 @@
   justify-content: center;
 }
 .blogs-features {
+  height: 100%;
   width: 100%;
   /* border: 2px solid crimson; */
   /* background-color: bisque; */
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  /* gap: 10px; */
   flex-wrap: wrap;
 }
 .bf-header {
@@ -224,6 +229,7 @@
   }
   .blogs-overlay:hover {
     background: rgba(128, 128, 128, 0.571);
+    background-color: rgba(0, 0, 0, 0.55);
   }
   .bf-image img:hover {
     opacity: 0.8;

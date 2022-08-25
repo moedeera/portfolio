@@ -81,7 +81,7 @@ export const Blogs = () => {
               (article, key) =>
                 4 < key &&
                 key < 9 && (
-                  <Link to={`/blogs/${article.title}`}>
+                  <Link to={`/blogs/${article.title}`} key={article.id}>
                     <div className="bl-item">
                       <div
                         className="bl-item-image"
