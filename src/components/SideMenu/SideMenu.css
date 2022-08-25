@@ -2,6 +2,7 @@
   /* border: 3px solid green; */
   border-right: 1px solid grey;
   position: fixed;
+
   width: 310px;
   height: 100vh;
   padding: 0;
@@ -10,7 +11,7 @@
   color: goldenrod;
   transform: translateX(-100%);
   transition: 400ms ease-in-out;
-  padding: 10px 0;
+  padding: 0;
   overflow-y: hidden;
 }
 
