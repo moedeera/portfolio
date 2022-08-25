@@ -1,9 +1,126 @@
 .dashboard-container {
-  height: 150vh;
+  background-color: white;
+  /* border: 3px solid crimson; */
+}
+.dashboard-side {
+  display: none;
+}
+/*Header-block*/
+.dashboard-header-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.progress-bar-container {
+  /* border: 1px solid green; */
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+.progress-bar {
+  width: 50%;
+  border: 1px solid grey;
+  background-color: aliceblue;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.dash-progress {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: crimson;
+  left: 0;
+}
+/*Upper-block*/
+.upper-block {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 10px;
+  grid-row-gap: 25px;
+  grid-column-gap: 10px;
+}
+.single-block {
+  width: 100%;
+
+  /* border: 1px solid green; */
+  height: calc(150px + 4vw);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  padding: 20px 10px 10px;
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+}
+#messages {
+  background-color: #505ce4;
+}
+
+#cases {
+  background-color: #bb342f;
+}
+#requests {
+  background-color: #256eff;
+}
+#articles {
+  background-color: #06d6a0;
+}
+
+/**/
+.lower-block {
+  height: 100vh;
+  background-color: coral;
 }
 
 @media only screen and (min-width: 900px) {
   .dashboard-button {
     display: none;
+  }
+  .dashboard-container {
+    width: calc(100% - 310px);
+    transform: translateX(310px);
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .single-block:hover {
+    transform: translateY(-15px);
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .dashboard-container {
+    grid-template-columns: 5fr 2fr;
+  }
+  /* .upper-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+  } */
+
+  .dashboard-side {
+    display: block;
+    min-width: 200px;
+    height: 95%;
+    background-color: grey;
+    border: 3px solid green;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    transition: 400ms all ease-in-out;
+  }
+  .dashboard-side > div {
+    border: 1px solid red;
+    height: 200px;
+    width: 90%;
+    margin: 0 auto;
   }
 }
