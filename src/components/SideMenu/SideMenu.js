@@ -49,7 +49,10 @@ export const SideMenu = ({ state }) => {
                 <i className="far fa-envelope"></i>
                 Messages
               </div>
-              <div className="sm-count"> 5</div>
+              <div className="sm-count">
+                {" "}
+                <div>5</div>
+              </div>
             </div>
             <div className="SM-menu-item">
               <i className="fas fa-briefcase"></i>
@@ -86,6 +89,9 @@ export const SideMenu = ({ state }) => {
               <i className="far fa-calendar"></i>
               Monthly review
             </div>
+          </div>
+          <div className="footnotes-add">
+            <i className="fa fa-plus"></i>
           </div>
         </div>
       </div>
