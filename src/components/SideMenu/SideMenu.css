@@ -1,21 +1,117 @@
 .SideMenu {
-  border: 3px solid green;
+  /* border: 3px solid green; */
+  border-right: 1px solid grey;
   position: fixed;
   width: 300px;
   height: 100%;
   padding: 0;
   z-index: 2;
-  background-color: blueviolet;
+  background-color: white;
   color: goldenrod;
   transform: translateX(-100%);
   transition: 400ms ease-in-out;
+  padding-top: 20px;
 }
+
 .sm-small-show {
   transform: translateX(0%);
 }
 .sm-small-hide {
   transform: translateX(-100%);
 }
+.SideMenu-options > div {
+  padding-left: 20px;
+}
+
+/*Avatar area*/
+.SM-profile-info {
+  /* border: 2px solid crimson; */
+  background-color: white;
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+}
+.SM-close-button i {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  color: grey;
+  margin: 0px auto 30px;
+  border: 1px solid grey;
+}
+.SM-avatar img {
+  box-shadow: var(--box-shadow);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.SM-details {
+  text-align: left;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+/**/
+
+/*Menu area*/
+.SM {
+  /* border: 3px solid orange; */
+  background-color: white;
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 10px;
+  margin: 20px 0 0;
+}
+.SM-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.SM-menu-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.SM-menu-list i {
+  color: grey;
+}
+.sm-messages {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 95%;
+}
+.message-text {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.sm-count {
+  /* border: 1px solid grey; */
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  color: white;
+  font-weight: 700;
+}
+
+/*Footnotes area*/
+.footnotes {
+  margin-top: 60px;
+}
+
+/***/
+
 @media only screen and (min-width: 900px) {
   .SideMenu {
     transform: translateX(0%);

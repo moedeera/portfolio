@@ -22,12 +22,11 @@ export const SideMenu = ({ state }) => {
             }}
           ></i>
         </div>
-        <div className="SM-Option">
+        <div className="SM-profile-info">
           <div className="SM-avatar">
             <img
               src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
               alt="avatar-pic"
-              style={{ width: "50px", height: "50px", borderRadius: "50%" }}
             />
           </div>
           <div className="SM-details">
@@ -37,22 +36,57 @@ export const SideMenu = ({ state }) => {
             </div>
           </div>
         </div>
-        <div className="SM-Option">
+        <div className="SM Menu">
           <h3>Menu</h3>
-          <div className="SM-menu-list">
-            <div className="SM-menu-item">Menu item 1</div>
-            <div className="SM-menu-item">Menu item 2</div>
-            <div className="SM-menu-item">Menu item 3</div>
-            <div className="SM-menu-item">Menu item 4</div>
-            <div className="SM-menu-item">Menu item 5</div>
+          <div className="SM-menu">
+            <div className="SM-menu-item">
+              <i className="far fa-clipboard"></i>
+              Overview
+            </div>
+            <div className="SM-menu-item sm-messages">
+              <div className="message-text">
+                {" "}
+                <i className="far fa-envelope"></i>
+                Messages
+              </div>
+              <div className="sm-count"> 5</div>
+            </div>
+            <div className="SM-menu-item">
+              <i className="fas fa-briefcase"></i>
+              Cases
+            </div>
+            <div className="SM-menu-item">
+              <i className="fas fa-users"></i>
+              Users
+            </div>
+            <div className="SM-menu-item">
+              <i className="far fa-list-alt"></i>
+              Board
+            </div>
           </div>
         </div>
-        <div className="SM-Option">
+        <div className="SM footnotes">
           <h3>Footnotes</h3>
-          <div className="SM-footnote">Footnote</div>
-          <div className="SM-footnote">Footnote</div>
-          <div className="SM-footnote">Footnote</div>
-          <div className="SM-footnote">Footnote</div>
+          <div className="SM-menu">
+            <div className="SM-menu-item">
+              <i className="far fa-newspaper"></i>
+              Case 450
+            </div>
+            <div className="SM-menu-item">
+              <i className="far fa-newspaper"></i>
+              Case 454
+            </div>
+
+            <div className="SM-menu-item">
+              <i className="far fa-sticky-note"></i>
+              Note #Article review
+            </div>
+
+            <div className="SM-menu-item">
+              <i className="far fa-calendar"></i>
+              Monthly review
+            </div>
+          </div>
         </div>
       </div>
     </div>
