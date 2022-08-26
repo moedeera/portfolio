@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { SiteContext } from "../../../context/Context";
 import "../Admin.css";
 import "./Dashboard.css";
+import messages from "./icons/messages.png";
+import notification from "./icons/notification.png";
 
 export const Dashboard = () => {
   const { toggleShow, show } = useContext(SiteContext);
@@ -57,10 +59,25 @@ export const Dashboard = () => {
               <div className="curve first-curve"></div>
               <div className="content">
                 {" "}
-                Messages
-                <div>Hello</div>
-                <div>Hello</div>
-                <div>Hello</div>
+                <div className="content-icons">
+                  <div>
+                    <img src={messages} alt="logo" />
+                  </div>
+                  <div>
+                    <img src={notification} alt="logo" />
+                  </div>
+                </div>
+                <div className="content-message">Your have 3 messages</div>
+                <div className="content-avatars">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                    alt="avatar-pic"
+                  />
+                  <img
+                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                    alt="avatar-pic"
+                  />
+                </div>
               </div>
             </div>
             <div className="single-block" id="cases">

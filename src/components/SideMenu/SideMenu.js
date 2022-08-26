@@ -2,6 +2,13 @@ import React, { useContext, useState } from "react";
 import { SiteContext } from "../../context/Context";
 import "./SideMenu.css";
 import { useLocation } from "react-router-dom";
+import messages from "./messages.png";
+import cases from "./cases.png";
+import overview from "./overview.png";
+import users from "./users.png";
+import board from "./board.png";
+import bulletin from "./bulletin.png";
+import news from "./news.png";
 
 export const SideMenu = ({ state }) => {
   let location = useLocation();
@@ -32,13 +39,13 @@ export const SideMenu = ({ state }) => {
           <h3>Menu</h3>
           <div className="SM-menu">
             <div className="SM-menu-item">
-              <i className="far fa-clipboard"></i>
+              <img src={overview} alt="" style={{ width: "28px" }} />
               Overview
             </div>
             <div className="SM-menu-item sm-messages">
               <div className="message-text">
                 {" "}
-                <i className="far fa-envelope"></i>
+                <img src={messages} alt="" style={{ width: "28px" }} />
                 Messages
               </div>
               <div className="sm-count">
@@ -47,15 +54,15 @@ export const SideMenu = ({ state }) => {
               </div>
             </div>
             <div className="SM-menu-item">
-              <i className="fas fa-briefcase"></i>
+              <img src={cases} alt="" style={{ width: "28px" }} />
               Cases
             </div>
             <div className="SM-menu-item">
-              <i className="fas fa-users"></i>
+              <img src={users} alt="" style={{ width: "28px" }} />
               Users
             </div>
             <div className="SM-menu-item">
-              <i className="far fa-list-alt"></i>
+              <img src={board} alt="" style={{ width: "28px" }} />
               Board
             </div>
           </div>
@@ -64,21 +71,21 @@ export const SideMenu = ({ state }) => {
           <h3>Footnotes</h3>
           <div className="SM-menu">
             <div className="SM-menu-item">
-              <i className="far fa-newspaper"></i>
+              <img src={bulletin} alt="" style={{ width: "28px" }} />
               Case 450
             </div>
             <div className="SM-menu-item">
-              <i className="far fa-newspaper"></i>
+              <img src={bulletin} alt="" style={{ width: "28px" }} />
               Case 454
             </div>
 
             <div className="SM-menu-item">
-              <i className="far fa-sticky-note"></i>
+              <img src={news} alt="" style={{ width: "28px" }} />
               Note #Article review
             </div>
 
             <div className="SM-menu-item">
-              <i className="far fa-calendar"></i>
+              <img src={news} alt="" style={{ width: "28px" }} />
               Monthly review
             </div>
           </div>
