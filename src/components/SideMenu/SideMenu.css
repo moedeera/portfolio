@@ -2,19 +2,24 @@
   /* border: 3px solid green; */
   border-right: 1px solid grey;
   position: fixed;
-
+  margin-top: 0px;
   width: 310px;
-  height: 100vh;
+  top: 70px;
+  bottom: 0;
   padding: 0;
   z-index: 2;
   background-color: white;
   color: goldenrod;
   transform: translateX(-100%);
   transition: 400ms ease-in-out;
-  padding: 0;
-  overflow-y: hidden;
+  padding-top: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
+.SideMenu::-webkit-scrollbar {
+  display: none;
+}
 .sm-small-show {
   transform: translateX(0%);
 }
@@ -26,7 +31,8 @@
   flex-direction: column;
   justify-content: space-around;
   border: 1px solid red;
-  height: 100%;
+  height: 120vh;
+  padding: 15px 0;
 }
 .SideMenu-options > div {
   padding-left: 20px;
@@ -152,6 +158,7 @@
 
 @media only screen and (min-width: 900px) {
   .SideMenu {
+    top: 0;
     transform: translateX(0%);
   }
   .sm-small {

@@ -14,14 +14,6 @@ export const SideMenu = ({ state }) => {
   return (
     <div className={show ? "SideMenu sm-small-show" : "SideMenu sm-small-hide"}>
       <div className="SideMenu-options">
-        <div className="SM-close-button">
-          <i
-            className="fas fa-times"
-            onClick={() => {
-              toggleShow(false);
-            }}
-          ></i>
-        </div>
         <div className="SM-profile-info">
           <div className="SM-avatar">
             <img
