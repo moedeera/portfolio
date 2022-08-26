@@ -2,6 +2,7 @@
   /* border: 3px solid green; */
   border-right: 1px solid grey;
   position: fixed;
+  height: 100vh;
   margin-top: 0px;
   width: 310px;
   top: 70px;
