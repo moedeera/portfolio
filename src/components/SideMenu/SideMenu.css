@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 120vh;
   padding: 15px 0;
 }
@@ -44,9 +44,8 @@
 .SM-profile-info {
   /* border: 2px solid crimson; */
   background-color: white;
-  display: flex;
+  display: none;
   /* justify-content: center; */
-  gap: 20px;
 }
 .SM-close-button i {
   height: 30px;
@@ -61,7 +60,7 @@
   border: 1px solid grey;
 }
 .SM-avatar img {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -165,6 +164,10 @@
   }
   .sm-small {
     transform: translateX(0%);
+  }
+  .SM-profile-info {
+    display: flex;
+    gap: 20px;
   }
   .sm-small-hide {
     transform: translateX(0%);

@@ -9,6 +9,7 @@
   background-color: white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
   font-size: 24px;
   transition: all 400ms ease-in-out;
@@ -70,7 +71,6 @@
 .single-block {
   width: 25%;
   max-width: 300px;
-
   /* border: 1px solid green; */
   height: calc(150px + 4vw);
   color: white;
@@ -79,11 +79,31 @@
   padding: 20px 10px 10px;
   transition: all 400ms ease-in-out;
   cursor: pointer;
+  overflow: hidden;
 }
 #messages {
-  background-color: #505ce4;
+  background-color: #f26d8c;
+  position: relative;
 }
-
+.curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.first-curve {
+  border-radius: 0% 90% 0 0;
+  background: #f04770;
+  width: 300px;
+  height: 175px;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 25px;
+}
 #cases {
   background-color: #bb342f;
 }

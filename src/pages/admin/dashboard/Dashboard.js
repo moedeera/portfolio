@@ -29,6 +29,13 @@ export const Dashboard = () => {
             </>
           )}
         </div>
+
+        <div className="SM-avatar">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+            alt="avatar-pic"
+          />
+        </div>
       </div>
       <div className="dashboard-container">
         <div className="dashboard-main">
@@ -47,7 +54,14 @@ export const Dashboard = () => {
 
           <div className="upper-block">
             <div className="single-block" id="messages">
-              Messages
+              <div className="curve first-curve"></div>
+              <div className="content">
+                {" "}
+                Messages
+                <div>Hello</div>
+                <div>Hello</div>
+                <div>Hello</div>
+              </div>
             </div>
             <div className="single-block" id="cases">
               Cases
