@@ -17,6 +17,7 @@
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  padding: 0 0 20vh;
 }
 .SideMenu::-webkit-scrollbar {
   display: none;
@@ -30,7 +31,7 @@
 .SideMenu-options {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
   border: 1px solid red;
   height: 120vh;
   padding: 15px 0;
