@@ -91,6 +91,9 @@
   gap: 0px;
   width: 100%;
 }
+.SM h3 {
+  margin-top: 20px;
+}
 .SM-menu-item {
   display: flex;
   gap: 20px;

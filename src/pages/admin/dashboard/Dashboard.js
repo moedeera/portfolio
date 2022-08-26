@@ -3,9 +3,11 @@ import { SiteContext } from "../../../context/Context";
 import "../Admin.css";
 import "./Dashboard.css";
 import messages from "./icons/messages.png";
+
 import notification from "./icons/notification.png";
 import cases from "./icons/case.png";
 import request from "./icons/request.png";
+import shield from "./icons/shield.png";
 // import case from "../../../components/SideMenu/cases.png";
 
 export const Dashboard = () => {
@@ -70,7 +72,7 @@ export const Dashboard = () => {
                     <img src={notification} alt="logo" />
                   </div>
                 </div>
-                <div className="content-message">Your have 3 messages</div>
+                <div className="content-message">3 Unread messages</div>
                 <div className="content-avatars">
                   <img
                     src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
@@ -155,7 +157,192 @@ export const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="lower-block">Lowe Hello</div>
+          <div className="lower-block">
+            <div className="lower-upper">
+              <div className="lower-upper-sort">
+                {" "}
+                <div className="selected-option">Cases</div>
+                <div>Articles</div>
+                <div>Messages</div>
+              </div>
+              <div className="dashboard-search">Search</div>
+            </div>
+            <div className="lower-bottom">
+              <div className="bottom-overview-header">
+                <h3>Recent</h3>{" "}
+              </div>
+              <div className="overview-box-container">
+                <div className="overview-box-item">
+                  <div className="overview-item-main">
+                    <div className="overview-item-icon">
+                      <img src={messages} alt="" />
+                    </div>
+                    <div className="overview-item-details">
+                      <h3>Re:Pending Article needs edit</h3>
+                      <small>
+                        Hey can you allow us to edit the impending article to
+                        correct errors?
+                      </small>
+                    </div>
+                  </div>
+                  <div className="overview-item-images">
+                    {" "}
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                  </div>
+                </div>
+
+                <div className="overview-box-item">
+                  <div className="overview-item-main">
+                    <div
+                      className="overview-item-icon"
+                      style={{ backgroundColor: "crimson" }}
+                    >
+                      <img src={notification} alt="" />
+                    </div>
+                    <div className="overview-item-details">
+                      <h3>Article Pending for publication</h3>
+                      <small>
+                        Hey can you allow us to edit the impending article to
+                        correct errors?
+                      </small>
+                    </div>
+                  </div>
+                  <div className="overview-item-images">
+                    {" "}
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                  </div>
+                </div>
+
+                <div className="overview-box-item">
+                  <div className="overview-item-main">
+                    <div
+                      className="overview-item-icon"
+                      style={{ backgroundColor: "goldenrod" }}
+                    >
+                      <img src={shield} alt="" />
+                    </div>
+                    <div className="overview-item-details">
+                      <h3>Permission Upgrade Request</h3>
+                      <small>
+                        Hey can you allow us to edit the impending article to
+                        correct errors?
+                      </small>
+                    </div>
+                  </div>
+                  <div className="overview-item-images">
+                    {" "}
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                  </div>
+                </div>
+
+                <div className="overview-box-item">
+                  <div className="overview-item-main">
+                    <div className="overview-item-icon">
+                      <img src={messages} alt="" />
+                    </div>
+                    <div className="overview-item-details">
+                      <h3>Meeting for this month</h3>
+                      <small>
+                        Hey can you allow us to edit the impending article to
+                        correct errors?
+                      </small>
+                    </div>
+                  </div>
+                  <div className="overview-item-images">
+                    {" "}
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="bottom-overview-header">
+                <h3>Upcoming</h3>{" "}
+              </div>
+              <div className="overview-box-container">
+                <div className="overview-box-item">
+                  <div className="overview-item-main">
+                    <div
+                      className="overview-item-icon"
+                      style={{ backgroundColor: "green" }}
+                    >
+                      <img src={cases} alt="" />
+                    </div>
+                    <div className="overview-item-details">
+                      <h3>Case 456-B Pending Publish</h3>
+                      <small>
+                        Hey can you allow us to edit the impending article to
+                        correct errors?
+                      </small>
+                    </div>
+                  </div>
+                  <div className="overview-item-images">
+                    {" "}
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                  </div>
+                </div>
+
+                <div className="overview-box-item">
+                  <div className="overview-item-main">
+                    <div className="overview-item-icon">
+                      <img src={cases} alt="" />
+                    </div>
+                    <div className="overview-item-details">
+                      <h3>Case 103-Z Pending Edit</h3>
+                      <small>
+                        Hey can you allow us to edit the impending article to
+                        correct errors?
+                      </small>
+                    </div>
+                  </div>
+                  <div className="overview-item-images">
+                    {" "}
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                    <img
+                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                      alt="avatar-pic"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="dashboard-side">
