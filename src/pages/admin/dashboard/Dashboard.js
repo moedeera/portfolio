@@ -383,11 +383,74 @@ export const Dashboard = () => {
                 }}
               >
                 {" "}
-                Add Event<i className="fa fa-plus"></i>
+                View case<i className="fa fa-plus"></i>
               </button>
             </div>
           </div>
-          <div className="mid-level">Midlevel</div>
+          <div className="ds-mid-level">
+            <div className="stats-header">
+              <h3>Stats</h3>
+              <small>Updated August 2022</small>
+            </div>
+            <div className="stats-container">
+              <div className="stat-unit">
+                <h5>Published</h5>
+                <h2>115</h2>
+              </div>
+
+              <div className="stat-unit">
+                <h5>In Progress</h5>
+                <h2>24</h2>
+              </div>
+
+              <div className="stat-unit">
+                <h5>Users</h5>
+                <div className="stat-users">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                    alt="avatar-pic"
+                    style={{
+                      height: "40px",
+                      width: "40px",
+                      borderRadius: "50%",
+                      border: "3px solid white",
+                    }}
+                  />
+                  <img
+                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                    alt="avatar-pic"
+                    style={{
+                      height: "40px",
+                      width: "40px",
+                      borderRadius: "50%",
+                      border: "3px solid white",
+                    }}
+                  />
+                  <img
+                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                    alt="avatar-pic"
+                    style={{
+                      height: "40px",
+                      width: "40px",
+                      borderRadius: "50%",
+                      border: "3px solid white",
+                    }}
+                  />
+                  <img
+                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                    alt="avatar-pic"
+                    style={{
+                      height: "40px",
+                      width: "40px",
+                      borderRadius: "50%",
+                      border: "3px solid white",
+                    }}
+                  />
+                  <h2>4</h2>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="lower">Lower</div>
         </div>
       </div>{" "}

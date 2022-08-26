@@ -288,6 +288,37 @@
   display: flex;
   justify-content: space-between;
 }
+.ds-mid-level {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.stats-header {
+  /* border: 1px solid crimson; */
+}
+.stats-container {
+  margin: 30px 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.stat-unit {
+  display: flex;
+  flex-direction: column;
+}
+.stat-unit h5,
+.stats-header small {
+  color: grey;
+  font-weight: 700;
+}
+.stat-users {
+  display: flex;
+}
+.stat-users img:nth-child(1) {
+  margin: 0;
+}
+.stat-users img {
+  margin-left: -10%;
+}
 
 @media only screen and (min-width: 900px) {
   .overview-box-item:hover {
