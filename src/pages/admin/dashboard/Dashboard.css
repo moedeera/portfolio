@@ -183,7 +183,7 @@
 }
 
 /**/
-/*Overview area css*/
+/*Overview area lower-block css*/
 
 .lower-block {
   margin-top: 30px;
@@ -276,6 +276,19 @@
 .dashboard-search {
   display: none;
 }
+/*Overview dashboard-side*/
+.ds-upper {
+  text-align: left;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ds-side-main {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (min-width: 900px) {
   .overview-box-item:hover {
     background-color: aliceblue;
@@ -316,8 +329,8 @@
     display: block;
     min-width: 200px;
     height: 95%;
-    background-color: grey;
-    border: 3px solid green;
+    background-color: aliceblue;
+    border-left: 1px solid grey;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -328,8 +341,8 @@
     transition: 400ms all ease-in-out;
   }
   .dashboard-side > div {
-    border: 1px solid red;
-    height: 200px;
+    /* border: 1px solid red; */
+    min-height: 200px;
     width: 90%;
     margin: 0 auto;
   }

@@ -334,10 +334,6 @@ export const Dashboard = () => {
                       src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
                       alt="avatar-pic"
                     />
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
                   </div>
                 </div>
               </div>
@@ -346,7 +342,51 @@ export const Dashboard = () => {
         </div>
 
         <div className="dashboard-side">
-          <div className="upper">Upper</div>
+          <div className="ds-upper">
+            <div className="ds-side-main">
+              <h3>Today's Schedule</h3>
+              <div>
+                {" "}
+                <i className="fa fa-calendar"></i>
+              </div>
+            </div>
+
+            <div className="ds-side-main">
+              <div>
+                <h5>Case 459B-X</h5>
+                <h3>Micheal Jones</h3>
+              </div>
+
+              <div className="">
+                {" "}
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
+                  alt="avatar-pic"
+                  style={{
+                    height: "45px",
+                    width: "45px",
+                    borderRadius: "50%",
+                    border: "3px solid white",
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="">
+              <button
+                className="btn btn-new"
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  gap: "30px",
+                }}
+              >
+                {" "}
+                Add Event<i className="fa fa-plus"></i>
+              </button>
+            </div>
+          </div>
           <div className="mid-level">Midlevel</div>
           <div className="lower">Lower</div>
         </div>
