@@ -300,6 +300,7 @@
   margin: 30px 0 10px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .stat-unit {
   display: flex;
