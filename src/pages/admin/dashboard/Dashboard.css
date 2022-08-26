@@ -80,21 +80,51 @@
   transition: all 400ms ease-in-out;
   cursor: pointer;
   overflow: hidden;
+  position: relative;
 }
 #messages {
   background-color: #f26d8c;
-  position: relative;
 }
+
+#cases {
+  background-color: #bcacf4;
+}
+#requests {
+  background-color: #256eff;
+}
+#articles {
+  background-color: #14bdeb;
+}
+
 .curve {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  width: 300px;
+  height: 175px;
 }
 .first-curve {
   border-radius: 0% 90% 0 0;
   background: #f04770;
-  width: 300px;
-  height: 175px;
+
+  bottom: 0;
+  left: 0;
+}
+.second-curve {
+  border-radius: 0 0 0 100%;
+  background-color: #ac98ef;
+  top: 0;
+  right: 0;
+}
+.third-curve {
+  border-radius: 0 0 100% 0;
+  background-color: #6d8ac4;
+  top: 0;
+  right: 0;
+}
+.fourth-curve {
+  border-radius: 100% 0 0 0;
+  bottom: 0;
+  left: 0;
+  background-color: #4cad93;
 }
 .content {
   position: absolute;
@@ -115,7 +145,7 @@
   height: calc(35px + 1vh);
   width: calc(35px + 1vh);
 
-  background-color: rgba(128, 128, 128, 0.452);
+  background-color: rgba(128, 128, 128, 0.795);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,12 +177,7 @@
 .content-avatars img:nth-child(1) {
   margin-left: 0;
 }
-#cases {
-  background-color: #bb342f;
-}
-#requests {
-  background-color: #256eff;
-}
+
 #articles {
   background-color: #06d6a0;
 }
