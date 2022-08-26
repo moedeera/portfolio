@@ -17,7 +17,7 @@
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  padding: 0 0 20vh;
+  padding: 0 0 15vh;
 }
 .SideMenu::-webkit-scrollbar {
   display: none;
