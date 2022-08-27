@@ -6,10 +6,7 @@ import { Link } from "react-router-dom";
 import MetaTags from "react-meta-tags";
 
 import { Videoplayer } from "../../components/videoplayer/videoplayer";
-import {
-  TwitterShareButton,
-} from "react-twitter-embed";
-
+import { TwitterShareButton } from "react-twitter-embed";
 
 import pic1 from "../Blog/recession.jpg";
 import pic2 from "../Blog/webflow.jpg";
@@ -31,7 +28,7 @@ import pic07 from "../Blog/php-meme.jpg";
 
 import avatar from "./avatar.png";
 
-const images = [pic11,pic10, pic9, pic1, pic2, pic3, pic4, pic5, pic6, pic7];
+const images = [pic11, pic10, pic9, pic1, pic2, pic3, pic4, pic5, pic6, pic7];
 const articleImages = [pic02, pic01, pic03, pic04, pic05, pic06, pic07];
 
 export const SingleArticle = () => {
@@ -82,8 +79,6 @@ export const SingleArticle = () => {
               </div>
 
               <div className="articles-social-media">
-                {/* <i className="fa fa-linkedin-square" aria-hidden="true"></i> */}
-                {/* <i className="fa fa-twitter-square" aria-hidden="true"></i> */}
                 <TwitterShareButton
                   url={`https://www.moedevelops.com/blog/${article.title}`}
                   options={{ text: `${article.header}`, via: "moedevelops" }}
@@ -119,35 +114,28 @@ export const SingleArticle = () => {
                     <Videoplayer link={article.videos[map]} />
                   )}
 
-                  {article.code > 1 && ( <div className="code">
-                    <div className="code-upper">
-                      <button>Copy</button>
-                      <button>JS fiddle <i className="fab fa-jsfiddle"></i></button>
-                      {/* <button>Result</button> */}
-                      
-                     
-                    </div>
-                  <div className="code-container"> 
-               {/* <span style={{color:'yellow'}}>{`<styles>`}</span>    */}
-               
-{`
+                  {article.code > 1 && (
+                    <div className="code">
+                      <div className="code-upper">
+                        <button>Copy</button>
+                        <button>
+                          JS fiddle <i className="fab fa-jsfiddle"></i>
+                        </button>
+                      </div>
+                      <div className="code-container">
+                        {`
 .div {
   color:white;
   transition:500ms ease-in-out;
   }
   
-  `}   
-  {/* <span style={{color:'yellow'}}>{`<styles>`}</span>  */}
-                   </div>
-                   
-                   </div>)}
-                 
-
-
-
+  `}
+                        {/* <span style={{color:'yellow'}}>{`<styles>`}</span>  */}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
-           
             </div>
           </div>
 
