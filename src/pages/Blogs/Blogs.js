@@ -2,12 +2,17 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { SiteContext } from "../../context/Context";
 import "./Blogs.css";
+import icon from "./blogsIcon.png";
 
 export const Blogs = () => {
   const { articlesList } = useContext(SiteContext);
 
   return (
     <div className="blogs-page">
+      <div className="blog-master-header">
+        <span>Rocket</span>Blog
+        <img src={icon} alt="rocket-logo" />
+      </div>
       <div className="bp-page main-container">
         <div className="blogs-upper-section">
           <div
@@ -35,7 +40,9 @@ export const Blogs = () => {
                     </small>
                   </div>
                 </div>
-                <small>{articlesList[0].abstract}...</small>
+                <div className="blogs-abstract">
+                  <small>{articlesList[0].abstract}...</small>
+                </div>
               </div>
             </div>
           </div>
@@ -48,13 +55,10 @@ export const Blogs = () => {
                   index > 0 && (
                     <Link to={`./${article.title}`}>
                       <div className="blogs-features-item" key={index}>
-                        <div className="bf-image">
-                          <img
-                            src={article.pic}
-                            alt=""
-                            // style={{ width: "100px" }}
-                          />
-                        </div>
+                        <div
+                          className="bf-image"
+                          style={{ backgroundImage: `url(${article.pic})` }}
+                        ></div>
                         <div className="bf-item">
                           <div>
                             <small className="blogs-topic-bf">
@@ -76,10 +80,11 @@ export const Blogs = () => {
           </div>
         </div>
         <div className="blogs-lower-section">
+          <div className="blogs-lower-header">More Articles</div>
           <div className="blogs-lower-list">
             {articlesList.map(
               (article, key) =>
-                4 < key &&
+                3 < key &&
                 key < 9 && (
                   <Link to={`/blogs/${article.title}`} key={article.id}>
                     <div className="bl-item">
@@ -89,16 +94,19 @@ export const Blogs = () => {
                       ></div>
                       <div className="bl-item-text">
                         <div className="bl-item-topic">
-                          <small>{article.topic}</small>
+                          {article.topic}
+                          <div>
+                            {" "}
+                            <small>
+                              <i className="fa fa-minus" aria-hidden="true"></i>
+                              <i className="fas fa-calendar-week"></i>
+                              {article.created}
+                            </small>
+                          </div>
                         </div>
 
-                        <div className="bl-item-header">
-                          <h3>{article.header}</h3>
-                        </div>
-                        <div className="bl-item-date">
-                          <i className="fas fa-calendar-week"></i>
-                          <small>{article.created}</small>
-                        </div>
+                        <div className="bl-item-header">{article.header}</div>
+
                         <div className="bl-item-abstract">
                           <p> {article.abstractSM}</p>
                         </div>
