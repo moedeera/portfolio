@@ -37,7 +37,7 @@ function App() {
               <Route path="/aboutme" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/portfolio/:id" element={<Project />} />
-              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog" element={<Blogs />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/blog/:post" element={<SingleArticle />} />
               <Route path="/blogs/:post" element={<SingleArticle />} />
