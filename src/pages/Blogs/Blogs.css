@@ -143,6 +143,7 @@
 }
 .blogs-features-item {
   max-width: 300px;
+  transition: 400ms ease-in-out;
 }
 .bf-image {
   height: 100%;
@@ -273,6 +274,9 @@
   }
 }
 @media only screen and (min-width: 900px) {
+  .blogs-features-item:hover {
+    background-color: aliceblue;
+  }
   .upper-blh {
     display: none;
   }
