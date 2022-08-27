@@ -23,20 +23,6 @@ export const Landing = () => {
         <div className="landing-bottom">
           <div className="landing-bottom-upper">
             <div className="landing-bottom-cta">
-              {/* <h1 className="lb-sw">See Works</h1>
-
-              <div className="button-cta">
-                <a
-                  className="btn btn-alt"
-                  href="#portfolio"
-                  style={{
-                    color: "var(--dark)",
-                    backgroundColor: "white",
-                  }}
-                >
-                  <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
-                </a>
-              </div> */}
               <div className="btn-container">
                 <h2>
                   {" "}
