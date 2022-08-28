@@ -104,4 +104,20 @@ const content = [
   },
 ];
 
+const messages = [
+
+  {
+    id: '',
+    message: '',
+    status: '',
+    to: '',
+    from: '',
+    subject: '',
+    date:''
+
+},
+
+]
+
+
 module.exports = { usersBase, requestLog, contentBase, profiles, content };

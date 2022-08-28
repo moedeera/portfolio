@@ -145,6 +145,28 @@ const projectsList = [
     information:
       "Built using WordPress, It was meant to work as a website to serve web design enthusiasts. It was build with wordpress using the elementor. \n The effects and layouts were built using mainly free plugins from Stratum and HappyAddons. The website was inspired by dribbble designs and follows a trend of using animations and a bright theme to convey a welcoming theme",
   },
+  {
+    id: 7,
+    orientation: "Web Application",
+    tagline: "Radiology Archives Website",
+    recent: true,
+    completed: false,
+    title: "crm-site",
+    icons: ["react", "css", "html"],
+    brand: "fab fa-js-square fa-2x",
+    date: "August 2022",
+    pic1: 1,
+    pic2: "",
+    pic3: "",
+    purpose: "Client",
+    repository: "https://github.com/moedeera/FED-HT-website-design",
+    link: "https://deercoded.com/",
+    header: "DeerCoded.com",
+    Intro: "UI Design for a coding bootcamp",
+
+    information:
+      "A Design oriented website built as a theme for a coding bootcamp. It was built using CSS, JavaScript and HTML.\n The focus of the website is to experiment with new design trends involving landing page lottie animations and bubbly 3d illustrations.\n It also uses a landing page countdown timer that visually channels urgency in a potential customer.",
+  }
 ];
 
 module.exports = { projectsList };
