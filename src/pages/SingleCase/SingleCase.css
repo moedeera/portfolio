@@ -66,7 +66,6 @@ back
   /* background-color: grey; */
   width: 100%;
   min-width: 300px;
-  
 }
 
 /*side-bar-right css*/
@@ -105,8 +104,6 @@ back
   /* border: 2px solid red; */
   transition: all 0.5s ease;
   overflow-y: hidden;
- 
-  
 }
 .ccb-accordion-box {
   border: 2px solid #006db5;
@@ -114,8 +111,8 @@ back
   justify-content: space-between;
   padding: 20px 10px;
   background-color: #d6d6d6;
-   cursor: pointer;
-   transition: all 400ms linear;
+  cursor: pointer;
+  transition: all 400ms linear;
   z-index: 4;
 }
 
@@ -123,61 +120,54 @@ back
   text-align: left;
   letter-spacing: 1px;
   line-height: 1.6em;
-  transition: all 400ms linear;
+  transition: all 400ms ease-in-out;
   overflow-y: hidden;
   z-index: -2;
-  height:auto;
- display:flex;
- flex-direction: column;
- gap:10px;
-  margin:10px 0;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+  border: 1px solid green;
 }
-.hide{
-height: 0;
+.hide {
+  max-height: 0;
 }
-.ccb-accordion-summary-box{
+.ccb-accordion-summary-box {
   /* border: 1px solid purple; */
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.ccb-accordion-summary-box img{
-  height:300px;
-  width:auto;
-
+.ccb-accordion-summary-box img {
+  height: 300px;
+  width: auto;
 }
-.ccb-accordion-summary{
-display:grid;
-grid-template-columns: 6fr 2fr;
-grid-row-gap:0px;
-height:100px;
-
-
+.ccb-accordion-summary {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  grid-row-gap: 0px;
+  height: 100px;
 }
-.ccb-accordion-summary >  div {
+.ccb-accordion-summary > div {
   border: 1px solid grey;
   height: 50px;
   margin: 0;
-  padding:15px 10px;
+  padding: 15px 10px;
 }
 .ccb-accordion-summary :nth-child(odd) {
-
-background-color:#bbda8e;
-color:#2d4c01;
+  background-color: #bbda8e;
+  color: #2d4c01;
 }
 
-
-.ccbas-image{
-border: 1px solid grey;
-width: 100%;
-max-width: 300px;
-overflow: hidden;
+.ccbas-image {
+  border: 1px solid grey;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
 }
-.ccbas-image img{
-
-
-
+.ccbas-image img {
 }
 
 @media only screen and (min-width: 900px) {
