@@ -372,19 +372,8 @@ export const Dashboard = () => {
               </div>
             </div>
 
-            <div className="">
-              <button
-                className="btn btn-new"
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  alignItems: "center",
-                  gap: "30px",
-                }}
-              >
-                {" "}
-                View case<i className="fa fa-plus"></i>
-              </button>
+            <div className="dashboard-view-button">
+              <button className="btn-admin"> View</button>
             </div>
           </div>
           <div className="ds-mid-level">
@@ -451,7 +440,21 @@ export const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="lower">Lower</div>
+          <div className="ds-lower">
+            <div className="ds-form">
+              <div className="ds-header">
+                <h3>Create New Reminder</h3>
+
+                <i className="fas fa-ellipsis-h"></i>
+              </div>
+
+              <small>Reminder title</small>
+              <input placeholder="New Reminder" type="text" value="" />
+              <small>Reminder date</small>
+              <input placeholder="New Reminder" type="text" value="" />
+              <button className="btn-admin">Add </button>
+            </div>
+          </div>
         </div>
       </div>{" "}
     </>
