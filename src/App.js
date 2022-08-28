@@ -21,6 +21,7 @@ import { Dashboard } from "./pages/admin/dashboard/Dashboard";
 import { Editor } from "./pages/admin/editor/Editor";
 import { Login } from "./pages/admin/login/Login";
 import { SideMenu } from "./components/SideMenu/SideMenu";
+
 function App() {
   return (
     <SiteContextProvider>
@@ -45,11 +46,12 @@ function App() {
               <Route path="/overview" element={<Overview />} />
               <Route path="/my-work" element={<Works />} />
               <Route path="/blogs" element={<Blogs />} />
+              
               <Route path="/login" element={<Login />} />
 
               <Route element={<ProtectedRoutes />}>
                 <Route path="/profile" element={<Dashboard />} />
-                <Route path="/post" element={<Editor />} />
+                {/* <Route path="/login" element={<Login />} /> */}
               </Route>
             </Routes>
           </ScrollToTop>

@@ -47,9 +47,6 @@ export const Contact = () => {
         email: "",
         messageText: "",
       });
-
-      // retrieve
-      // redirect to main page
     } catch (error) {
       console.log(error);
     }

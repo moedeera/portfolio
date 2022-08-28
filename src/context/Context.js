@@ -3,21 +3,33 @@ import { useProjects } from "../Hooks/useProjects";
 import { useArticles } from "../Hooks/useArticles";
 import { useSideBar } from "../Hooks/useSideBar";
 import { useEffect } from "react";
+import { useProfile } from "../Hooks/useProfile";
 
 export const SiteContext = createContext({});
-
+// Manages user authentication
 const LoadUser = async () => {
+  const dummyUser = {
+    logged: true,
+    user: "Admin",
+  };
+
   if (localStorage.getItem("token")) {
     let User = JSON.parse(localStorage.getItem("token"));
     return User;
-  } else return { logged: false, user: null };
+  } else return dummyUser;
 };
 
 export const SiteContextProvider = ({ children }) => {
+  //Project Storage
   const { projects, setProject } = useProjects();
+  //Blog Article Storage
   const { articlesList } = useArticles();
+  // SideBar Toggle
   const { show, toggleShow } = useSideBar();
+  // Profile storage
+  const { profile, setProfile } = useProfile();
 
+  //Fetches specific project information [offline]
   const getProjectInformation = (id) => {
     let projectInfo = null;
     const match = projects.some((project) => project.title === id);
@@ -46,6 +58,7 @@ export const SiteContextProvider = ({ children }) => {
     };
   };
 
+  //Fetches specific article information [offline]
   const getArticle = (id) => {
     let article = null;
 
@@ -79,17 +92,23 @@ export const SiteContextProvider = ({ children }) => {
     };
   };
 
-  const [user, setUser] = useState();
+  //Fetches specific profile information [online]
 
+  //Declaring a user variable for Administrator
+  const [user, setUser] = useState(null);
+
+  // Hook loads once to fetch the state of log (logged in or out)
   useEffect(() => {
     const getUser = async () => {
       const newUser = await LoadUser();
       setUser(newUser);
+      console.log("it happened", newUser);
     };
 
     getUser().catch(console.error);
   }, []);
 
+  //
   return (
     <SiteContext.Provider
       value={{

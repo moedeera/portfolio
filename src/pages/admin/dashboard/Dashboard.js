@@ -98,7 +98,7 @@ export const Dashboard = () => {
                     <img src={notification} alt="logo" />
                   </div>
                 </div>
-                <div className="content-message">4 Unpublished Cases</div>
+                <div className="content-message">4 Unpublished Posts</div>
                 <div className="content-avatars">
                   <img
                     src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
@@ -124,7 +124,7 @@ export const Dashboard = () => {
                     <img src={notification} alt="logo" />
                   </div>
                 </div>
-                <div className="content-message">4 Pending Requests</div>
+                <div className="content-message">4 Pending Comments</div>
                 <div className="content-avatars">
                   <img
                     src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
@@ -143,7 +143,7 @@ export const Dashboard = () => {
               <div className="content">
                 {" "}
                 <div className="content-icons"></div>
-                <div className="content-message">5 Articles</div>
+                <div className="content-message">5 To-dos</div>
                 <div className="content-avatars">
                   <img
                     src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
