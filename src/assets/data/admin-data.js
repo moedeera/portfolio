@@ -43,6 +43,7 @@ const profiles = [
     id: 1,
     name: "Dave Jones",
     type: "editor",
+    dashboard: [1, 1, 1, 1],
     messages: [],
     requests: [],
     comments: [],
@@ -53,6 +54,7 @@ const profiles = [
     id: 2,
     name: "Kent Walker",
     type: "author",
+    dashboard: [1, 1, 1, 1],
     messages: [],
     requests: [],
     comments: [],
@@ -62,6 +64,7 @@ const profiles = [
     id: 3,
     name: "Guest 567",
     type: "user",
+    dashboard: [1, 1, 1, 1],
     messages: [],
     requests: [],
     comments: [],
@@ -105,19 +108,15 @@ const content = [
 ];
 
 const messages = [
-
   {
-    id: '',
-    message: '',
-    status: '',
-    to: '',
-    from: '',
-    subject: '',
-    date:''
-
-},
-
-]
-
+    id: "",
+    message: "",
+    status: "",
+    to: "",
+    from: "",
+    subject: "",
+    date: "",
+  },
+];
 
 module.exports = { usersBase, requestLog, contentBase, profiles, content };
