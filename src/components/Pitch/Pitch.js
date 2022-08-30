@@ -6,7 +6,7 @@ import { Zoom } from "react-reveal";
 import { Link } from "react-router-dom";
 
 export const Pitch = () => {
-  const [hover, setHover] = useState("none");
+  const [hover, setHover] = useState("");
 
   return (
     <div className="pitch">
@@ -19,7 +19,13 @@ export const Pitch = () => {
           <Fade left>
             <div className="up-text-section">
               <div>
-                <h1>Professional Quality Guaranteed</h1>
+                <h2>
+                  Professional Quality{" "}
+                  <span style={{ fontWeight: "300", color: "goldenrod" }}>
+                    |
+                  </span>{" "}
+                  Guaranteed
+                </h2>
                 <p>
                   Contact me today for a free consultation, Once We finish up
                   the details, a quality website is waiting for you.
@@ -28,7 +34,7 @@ export const Pitch = () => {
               <div className="upt-cta">
                 <Link to="/contact">
                   <button
-                    className="btn btn-secondary"
+                    className="btn-pitch"
                     onMouseEnter={() => {
                       setHover("contact");
                     }}
@@ -37,7 +43,7 @@ export const Pitch = () => {
                     }}
                     style={
                       hover === "contact"
-                        ? { color: "var(--alternate-color)" }
+                        ? { color: "black", backgroundColor: "white" }
                         : { color: "white" }
                     }
                   >
@@ -55,10 +61,10 @@ export const Pitch = () => {
                     }}
                     style={
                       hover === "read-more"
-                        ? { color: "var(--alternate-color)" }
+                        ? { color: "black", backgroundColor: "white" }
                         : { color: "white" }
                     }
-                    className="btn btn-secondary"
+                    className="btn-pitch"
                   >
                     {" "}
                     Read more
@@ -76,24 +82,33 @@ export const Pitch = () => {
         <div className="lower-pitch">
           <Fade left>
             <div className="lp-tagline">
-              <h1> Many skills, Many Services, One Goal.</h1>
+              <h2>
+                {" "}
+                Many skills{" "}
+                <span style={{ fontWeight: "300", color: "goldenrod" }}>
+                  |
+                </span>{" "}
+                Many Services{" "}
+                <span style={{ fontWeight: "300", color: "goldenrod" }}>|</span>{" "}
+                One Goal.
+              </h2>
+              <div className="lp-text">
+                <p>
+                  While I do have knowledge in many different frameworks and
+                  coding languages, I believe it is more important to master
+                  each tool and know what is appropriate for any given client.
+                </p>
+              </div>
             </div>
           </Fade>
           <Fade right>
             <div className="lp-text">
-              <p>
-                While I do have knowledge in many different frameworks and
-                coding languages, I believe it is more important to master each
-                tool and know what is appropriate for any given client.
-              </p>
-            </div>
-          </Fade>
-          <Fade up>
-            <div className="lp-logos">
-              <i className="fa fa-jsfiddle"></i>
-              <i className="fa fa-github"></i>
-              <i className="fa fa-html5" aria-hidden="true"></i>
-              <i className="fa fa-joomla" aria-hidden="true"></i>
+              <div className="lp-logos">
+                <i className="fab fa-react"></i>
+                <i className="fab fa-wordpress"></i>
+                <i className="fa fa-html5" aria-hidden="true"></i>
+                <i className="fab fa-node-js"></i>
+              </div>
             </div>
           </Fade>
         </div>
