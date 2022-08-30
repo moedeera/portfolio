@@ -149,7 +149,7 @@ const projectsList = [
     id: 7,
     orientation: "Web Application",
     tagline: "Radiology Archives Website",
-    recent: true,
+    recent: false,
     completed: false,
     title: "crm-site",
     icons: ["react", "css", "html"],
@@ -166,7 +166,7 @@ const projectsList = [
 
     information:
       "A Design oriented website built as a theme for a coding bootcamp. It was built using CSS, JavaScript and HTML.\n The focus of the website is to experiment with new design trends involving landing page lottie animations and bubbly 3d illustrations.\n It also uses a landing page countdown timer that visually channels urgency in a potential customer.",
-  }
+  },
 ];
 
 module.exports = { projectsList };
