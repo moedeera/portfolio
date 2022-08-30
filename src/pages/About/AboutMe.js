@@ -8,9 +8,6 @@ export const AboutMe = () => {
   return (
     <Fade>
       <div className="about-me-page">
-        {/* <div className="contact-header-container">
-            <PageHeader tagline={"Contact"} header={"Get In touch"} />
-          </div> */}
         <div className="container-abm">
           <div className="upper-header">
             <div className="uh-text">
