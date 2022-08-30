@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 
 export const Skills = ({ page }) => {
   return (
-    <Fade up>
+    <Fade>
       <div className="ft-services">
         <h1>Services</h1>
 
