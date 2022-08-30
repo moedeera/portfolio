@@ -38,7 +38,10 @@ export const AboutMe = () => {
                       what you know{" "}
                     </span>
                   </span>
-                  <span> what you solve</span>
+                  <span style={{ textDecoration: "underline" }}>
+                    {" "}
+                    what you solve
+                  </span>
                 </h1>
               </div>
               <div className="abm-text-summary">
@@ -62,9 +65,35 @@ export const AboutMe = () => {
                 </div>
               </div>
               <div className="abm-icons">
-                <i className="fab fa-github"></i>
-                <i className="fab fa-linkedin"></i>
-                <i className="fab fa-medium"></i>
+                <a
+                  href={"https://github.com/moedeera"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#bb342f" }}
+                >
+                  {" "}
+                  <i className="fab fa-github"></i>
+                </a>
+
+                <a
+                  href={"https://www.linkedin.com/in/moe-deera-ab94a723a/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#bb342f" }}
+                >
+                  {" "}
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href={"https://medium.com/@deeramoe"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#bb342f" }}
+                >
+                  {" "}
+                  <i className="fab fa-medium"></i>
+                </a>
+
                 <i className="fa fa-twitter"></i>
               </div>
               <div className="abm-text-cta">

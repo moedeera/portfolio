@@ -27,7 +27,10 @@ export const About = () => {
                   what you know{" "}
                 </span>
               </span>
-              <span> what can you solve'</span>
+              <span style={{ textDecoration: "underline" }}>
+                {" "}
+                what can you solve'
+              </span>
             </h1>
           </div>
         </Fade>
@@ -58,54 +61,9 @@ export const About = () => {
             </p>
           </div>
         </Fade>
-        {/* <Fade up>
-          <div className="about-images">
-            <img
-              src={
-                "https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              }
-              alt=""
-            />
-          </div>
-        </Fade> */}
+
         <Fade>
-          <div className="about-skills">
-            {/* <div className="skills-grid">
-              <i className="fa fa-wordpress"></i>
-
-              <i className="fab fa-css3-alt"></i>
-              <i className="fa fa-html5"></i>
-              <i className="fab fa-react"></i>
-
-              <i className="fab fa-js-square"></i>
-              <i className="fab fa-node"></i>
-              <i className="fab fa-monero"></i>
-              <i className="fab fa-weebly"></i>
-              <i className="fab fa-figma"></i>
-            </div> */}
-            {/* <div className="skills-text">
-              <h3>Skills</h3>
-              <p> I work mainly with the following technologies</p>
-              <ul>
-                <li>WordPress</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>JavaScript</li>
-                <li>ReactJS</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>WebFlow</li>
-                <li>Figma</li>
-              </ul>
-              <div className="about-contact">
-                <Link to="/contact">
-                  <button className="btn btn-alternate contact-me">
-                    Contact
-                  </button>
-                </Link>
-              </div>
-            </div> */}
-          </div>
+          <div className="about-skills"></div>
         </Fade>
       </div>
     </div>
