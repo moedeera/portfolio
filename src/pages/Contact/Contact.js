@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import pic1 from "./saly-28.png";
+import pic2 from "./contact1.jpg";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { Fade } from "react-reveal";
 import axios from "axios";
@@ -68,14 +69,33 @@ export const Contact = () => {
         <div className="contact-form">
           <Fade>
             <div className="contact-form-text">
-              <h3>
-                Send me any inquiries regarding services or potential employment
-              </h3>
-              <p>
-                Need to contact me for a a job or employment purposes? just send
-                me a quick message and I should respond to you as soon as
-                possible.
-              </p>
+              <div>
+                <h3>
+                  Send me any inquiries regarding services or potential
+                  employment
+                </h3>
+                <p>
+                  Need to contact me for a a job or employment purposes? just
+                  send me a quick message and I should respond to you as soon as
+                  possible.
+                </p>
+
+                <h3>Platforms </h3>
+                <h3 style={{ color: "black" }}>
+                  <i
+                    className="fa fa-github-square fa-2x"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    className="fa fa-linkedin-square fa-2x"
+                    aria-hidden="true"
+                  ></i>
+
+                  <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
+
+                  <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                </h3>
+              </div>
             </div>
           </Fade>
           <Fade>

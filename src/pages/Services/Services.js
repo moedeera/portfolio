@@ -7,7 +7,7 @@ import pic4 from "./apps.png";
 import pic5 from "./code.png";
 import pic6 from "./sites.png";
 import web1 from "./web1.jpg";
-import web2 from "./web2.jpg";
+import web2 from "./web20.jpg";
 import web3 from "./web3.jpg";
 import { Link } from "react-router-dom";
 import { Skills } from "../../components/Skills/Skills";

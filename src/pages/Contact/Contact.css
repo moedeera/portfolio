@@ -11,7 +11,12 @@
   margin: 0 auto;
   /* border: 1px solid green; */
 }
+.contact-page h3 {
+  display: flex;
+  align-items: center;
 
+  justify-content: space-between;
+}
 .contact-page-container {
   width: 100%;
   max-width: 1300px;
@@ -72,7 +77,22 @@
   border-radius: 2px;
   border: none;
 }
-
+.about-page-lower {
+  height: 100%;
+  max-height: none;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.about-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.8;
+}
 .cf-form textarea {
   height: 200px;
 }
@@ -82,7 +102,7 @@
 }
 .btn-contacts {
   width: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding: 15px 25px;
   background-color: var(--primary-color);
   color: white;
