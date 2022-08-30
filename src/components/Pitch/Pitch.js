@@ -97,6 +97,9 @@ export const Pitch = () => {
                   While I do have knowledge in many different frameworks and
                   coding languages, I believe it is more important to master
                   each tool and know what is appropriate for any given client.
+                  As a result, I deploy a more specialized approach using
+                  platforms and services I know and trust to build quality
+                  websites.{" "}
                 </p>
               </div>
             </div>
