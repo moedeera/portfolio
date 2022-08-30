@@ -45,6 +45,7 @@ const template2 = {
   pictures: [],
   picCaption: [],
   videos: [],
+  code: [],
   comments: [],
   mapper: [0, 1, 2, 3, 4, 5],
   feature: "",
@@ -53,6 +54,91 @@ const template2 = {
 const articles = [
   {
     id: 0,
+    title: "4-css-techniques",
+    icons: [],
+    pic: "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+    topic: "Educational",
+    link: "",
+    header: "4 Important CSS concepts explained with buttons",
+    abstract: "4 important CSS concepts that I a am always using",
+    abstractLG:
+      "These are my 5 go-to CSS techniques when I am working on design or recreating websites",
+    abstractSM: "5 CSS Techniques",
+    created: "August 2022",
+    updated: "August 2022",
+    readTime: "3",
+    headers: [
+      null,
+      "1.Transition property.",
+      null,
+      null,
+      null,
+      "2.Calc() function",
+      null,
+      "3.Shadow property",
+
+      null,
+      "4.Translate method (2D)",
+      null,
+      null,
+      null,
+    ],
+    paragraphs: [
+      "I am a firm believer in showing the practical use of something before explaining it. Unfortunately, so many new developers are used to learning theoretical or non-applicable concepts that they don’t learn web design effectively. This has to do with many tutorials showing to-do lists or calculator apps. These videos show a lot of good concepts but in a manner you will never use them for. No client  is going to pay you to design or build a to-do list. No employer will ask you to build a JavasScript calculator. In today’s blog I will explain my top 4 most used CSS properties and/or methods  in a component everyone uses; buttons. So here are the top 4.",
+      "This is an essential property in every design. The transition property controls the time it takes for a component or div to animate from one state to another. This is the difference between a glitchy animation versus a smooth one. You have the ability to control any aspect of the animation. You can set the transition time to anything you consider fit. I generally advise that you set the same transition time for all animations on a specific component or html tag",
+      "The syntax for transition is as follows:",
+      "To see in action, try out this hover effect on the button,",
+      `The 400ms refers to the time. The ‘ease-in-out' refers to the rate of change. ‘Ease-in-out’ is my most commonly used rate control.. All it does is just dictate that the animation start and end slow but speed up in the middle.`,
+      `This is a really handy function for developers who want smooth mobile responsiveness in their design. Sometimes adjusting height, width, or font-size for all devices  is very daunting. You will end up with a solution that is less than ideal by relying simply on media queries. The CSS calc() function allows you to dynamically adjust the size of anything using viewport width(vw) or viewport-height(vh). Working with it is easy. Just start with the lowest pixel sizes you want for any given item in your html. You then add an appropriate dynamic variable (usually vw) to expand the size when it's viewed on higher devices. 
+      `,
+      "Here is an example below with the same button, shrink your browser or rotate your mobile device to see the difference. ",
+      `Shadows are a very under-appreciated aspect of web design. Adding a shadow can be the difference between looking professional or amatuer.  Just make sure you add the proper amount of under-shade. Also make sure to be consistent with shadows. To add a shadow to your design simply type the following`,
+      `The numbers and color are applied the same way margins and padding are. Experiment with them to see what works for your design but I would strongly suggest looking into already existing designs if you want to see what works.`,
+      `This is something to go with a hover effect. Of course you could use it for other purposes but I mainly use it for hovers. The property is ‘transform 'but the method  is' translate’. When you apply a  translation in any direction it moves your html component in that specific direction. I use this most when I am applying hover effects to buttons. But I also use it for general divs as well.`,
+      `The syntax is as follows`,
+      `to see it in action apply the hover effect on the button`,
+    ],
+    pictures: [],
+    code: [
+      null,
+      null,
+      `button {
+        transition:all 400ms ease-in-out;
+        }
+        `,
+      `.button:hover{
+        background: gray;
+        }
+        `,
+      null,
+      null,
+      `button {
+        font-size: calc(8px + 1vw);
+        }
+        `,
+      `button{
+        shadow:0px 8px 15px rgba(0, 0, 0, 0.1)
+        }
+        `,
+      null,
+      null,
+      `button:hover{
+        transform:translateX(-10)
+        }
+        `,
+      `button:hover{
+      transform:translateX(-10)
+      }
+      `,
+    ],
+    picCaption: [],
+    videos: [],
+    comments: [],
+    mapper: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    feature: "https://www.youtube.com/watch?v=1PnVor36_40",
+  },
+  {
+    id: 1,
     title: "css-tips",
     icons: [],
     pic: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -85,6 +171,7 @@ const articles = [
       `These are just some of the main tips I have for beginners. I will post another Blog detailing more technical details I think beginners should understand. In the meantime, make sure you don’t make the same mistakes I did.`,
     ],
     pictures: [],
+    code: [],
     picCaption: [],
     videos: [],
     comments: [],
@@ -92,7 +179,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=1PnVor36_40",
   },
   {
-    id: 1,
+    id: 2,
     title: "mass-layoffs",
     icons: [],
     pic: "https://images.pexels.com/photos/7277906/pexels-photo-7277906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -123,6 +210,7 @@ const articles = [
       "Despite the concerns, developers getting into the industry should not worry. The tech sector is not going away as the demand for technology and digitization is always growing. So while  the short term may mean a lot of layoffs, we are nowhere near a point to start worrying about the sector as a whole. The demand for skilled developers is still greater than the supply. And so as long as that is the case, this industry will go on strong",
     ],
     pictures: [],
+    code: [],
     picCaption: [],
     videos: [],
     comments: [],
@@ -130,7 +218,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=gCg47n_TlFc&t=499s",
   },
   {
-    id: 2,
+    id: 3,
     title: "codingjourney",
     icons: [],
     pic: "https://images.pexels.com/photos/614484/pexels-photo-614484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -155,6 +243,7 @@ const articles = [
       "Becoming successful in anything will come with sacrifice. Programming is no different.  Despite some of the hurdles, this has overall been a positive journey that I plan to continue. The key factor in all of this is having a genuine love for what you are doing. Once you have that, everything else falls into place",
     ],
     pictures: [],
+    code: [],
     picCaption: [],
     videos: [],
     comments: [],
@@ -163,7 +252,7 @@ const articles = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "upcoming-recession",
     pic: "https://images.pexels.com/photos/5717791/pexels-photo-5717791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     icons: [],
@@ -185,6 +274,7 @@ const articles = [
       "Will there be a repeat this time around? Only time will tell. However, one thing is certain, developers that keep improving are always In a better position when the jobs return. Junior developers should look at this as an opportunity to bolster their skills. In times of a boom, there is a tendency to focus more on trying to get work as oppose to more learning. But now that the job market has cooled off, there is a lot less pressure to get a position right away. Ultimately, this is a gold opportunity for the developers who are willing to put the extra effort to separate themselves from the rest.",
     ],
     pictures: [],
+    code: [],
     picCaption: [],
     videos: [],
     comments: [],
@@ -192,7 +282,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=UmnRxymgtJs",
   },
   {
-    id: 4,
+    id: 5,
     title: "webflow",
     icons: [],
     pic: "https://images.unsplash.com/photo-1629195968955-e1a2a92b0c5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -218,6 +308,7 @@ const articles = [
       "Webflow ultimately is suited for developers coming from platforms like WordPress who dislike having to constantly download plugins and pay for premium features, but at the same time don't want to start coding websites from scratch. It may or may not suit people beyond that, but for that group its a powerful tool. Like I said, this is just my initial impression of Webflow and will change with more use.  ",
     ],
     pictures: [],
+    code: [],
     picCaption: [],
     videos: [],
     comments: [],
@@ -225,7 +316,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=OI5M9lRiNI4",
   },
   {
-    id: 5,
+    id: 6,
     title: "design-skills",
     icons: [],
     pic: "https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -247,6 +338,7 @@ const articles = [
       "For me, I spend at least 15 minutes a day looking into different websites to find inspiration for my next project. In fact, I never start a website unless I have a design inspiration bookmarked on my browser. For any new developer out there, I strongly suggest you do the same. Because ultimately, it does not matter how good your coding skills are if you package them in websites from the early 2000s.",
     ],
     pictures: [],
+    code: [],
     picCaption: [],
     videos: [],
     comments: [],
@@ -254,7 +346,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=fyaBtRiqUWI&t=1010s",
   },
   {
-    id: 6,
+    id: 7,
     title: "importance-progress",
     icons: [],
     pic: "https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -276,6 +368,7 @@ const articles = [
       "My biggest suggestion would be to write down the things you get stuck on in a list and spend an hour a day searching for answers on either stackoverflow.com or reddit's developer threads. Another advice is to improve your early projects as soon as you learn new concepts.  Your first and second projects don’t have to be the worst on your portfolio. Constantly build on them and improve the code and UI. But make sure to keep the old versions saved in some fashion for you to look back on.  This will help you see your progress and visualize how much closer you are in getting to your goal.",
     ],
     pictures: [1, 0, 2],
+    code: [],
     picCaption: [
       "My first Portfolio website",
       "My Second Portfolio website",
@@ -288,7 +381,7 @@ const articles = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "programming-buddies",
     icons: [],
     pic: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -319,6 +412,7 @@ const articles = [
       "Ultimately partnerships are a useful tool when done properly. But being in a situation that does not foster improvement will hinder your growth in the long term. So, make sure you do it right to avoid wasting time",
     ],
     pictures: [],
+    code: [],
     picCaption: [],
     videos: [],
     comments: [],
@@ -326,7 +420,7 @@ const articles = [
     feature: "https://www.youtube.com/watch?v=EqzUcMzfV1w&t=2624s",
   },
   {
-    id: 8,
+    id: 9,
     title: "PHP-undervalued",
     icons: [],
     pic: "https://images.pexels.com/photos/11035390/pexels-photo-11035390.jpeg",
@@ -351,6 +445,7 @@ const articles = [
     pictures: [null, null, 6],
     picCaption: [],
     videos: [],
+    code: [],
     comments: [],
     mapper: [0, 1, 2, 3, 4],
     feature: "https://www.youtube.com/watch?v=GeJDaXuc5NY",

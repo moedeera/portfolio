@@ -46,9 +46,12 @@
   /* background-color: rgba(0, 0, 0, 0.775); */
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   transition: all 400ms ease-in-out;
-  align-items: center;
+  /* align-items: center; */
   cursor: pointer;
   font-family: "Merriweather Sans", sans-serif !important;
 }
@@ -80,7 +83,9 @@
 }
 .blogs-topic {
   background-color: darkgrey;
-  width: 80px;
+  width: 100%;
+  max-width: 120px;
+
   color: var(--secondary-color);
   color: var(--alt-color);
   font-weight: 900;
@@ -239,7 +244,7 @@
 }
 .bl-item-topic small {
   color: grey;
-
+  width: 100%;
   gap: 5px;
 
   font-weight: 400;

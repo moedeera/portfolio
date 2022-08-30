@@ -88,7 +88,7 @@ export const Blogs = () => {
             {articlesList.map(
               (article, key) =>
                 3 < key &&
-                key < 9 && (
+                key < 10 && (
                   <Link to={`/blogs/${article.title}`} key={article.id}>
                     <div className="bl-item">
                       <div

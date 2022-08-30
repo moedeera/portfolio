@@ -21,7 +21,6 @@ export const NavBarModal = ({
           : { transform: "translateY(-120%)" }
       }
     >
-     
       <div className="navbar-mobile">
         <div className="n-m">
           {/* <div className="nm-link" id="nm1"></div> */}
@@ -55,7 +54,6 @@ export const NavBarModal = ({
             <div className="nm-link">Portfolio</div>
           </Link>
 
-
           <Link
             to={"/about"}
             onClick={() => {
@@ -65,8 +63,6 @@ export const NavBarModal = ({
           >
             <div className="nm-link">About</div>
           </Link>
-
-
 
           <Link
             to={"/blog"}
