@@ -5,7 +5,7 @@ export const PageHeader = ({ tagline, header }) => {
   return (
     <>
       {" "}
-      <div className="pp-upper-circles-dec">
+      {/* <div className="pp-upper-circles-dec">
         <div className="pp-dot pp-up"></div>
         <div className="pp-dot pp-up"></div>
         <div className="pp-dot pp-up"></div>
@@ -35,7 +35,7 @@ export const PageHeader = ({ tagline, header }) => {
         <div className="pp-dot pp-up col1"></div>
         <div className="pp-dot pp-up col1"></div>
         <div className="pp-dot pp-up col1"></div>
-      </div>
+      </div> */}
       <div className="pp-upper">
         <div className="pp-upper-container">
           <div className="pp-upper-text">

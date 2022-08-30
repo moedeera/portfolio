@@ -2,17 +2,20 @@ import React from "react";
 import "./AboutMe.css";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
 
 export const AboutMe = () => {
   return (
     <Fade>
       <div className="about-me-page">
+        {/* <div className="contact-header-container">
+            <PageHeader tagline={"Contact"} header={"Get In touch"} />
+          </div> */}
         <div className="container-abm">
           <div className="upper-header">
             <div className="uh-text">
               <h1>About Me</h1>
             </div>
-
             <div className="uh-text-line"></div>
           </div>
           <div className="upper-abm">
