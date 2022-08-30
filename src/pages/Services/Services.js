@@ -6,6 +6,9 @@ import pic3 from "./Saly-7.png";
 import pic4 from "./apps.png";
 import pic5 from "./code.png";
 import pic6 from "./sites.png";
+import web1 from "./web1.jpg";
+import web2 from "./web2.jpg";
+import web3 from "./web3.jpg";
 import { Link } from "react-router-dom";
 import { Skills } from "../../components/Skills/Skills";
 
@@ -97,13 +100,11 @@ export const Services = () => {
                     <button className="btn btn-about">contact now</button>
                   </Link>
                 </div>
-                <div className="about-intro-image">
-                  <img
-                    src={pic1}
-                    alt=""
-                    style={{ animation: "var(--animation-slow)" }}
-                  />
-                  <div className="image-circle ic-4"></div>
+                <div
+                  className="about-intro-image"
+                  style={{ backgroundImage: `url(${web2})` }}
+                >
+                  <div className="img-overlay"></div>
                 </div>
               </div>
             </section>{" "}
@@ -111,13 +112,11 @@ export const Services = () => {
           <Fade left>
             <section className="about-intro-container" id="webapps">
               <div className="about-intro sm2">
-                <div className="about-intro-image">
-                  <img
-                    src={pic2}
-                    alt=""
-                    style={{ animation: "var(--animation-slow)" }}
-                  />
-                  <div className="image-circle ic-3"></div>
+                <div
+                  className="about-intro-image"
+                  style={{ backgroundImage: `url(${web3})` }}
+                >
+                  <div className="img-overlay"></div>
                 </div>
 
                 <div className="about-intro-text">
@@ -174,10 +173,11 @@ export const Services = () => {
                     <button className="btn btn-about">contact now</button>
                   </Link>
                 </div>
-                <div className="about-intro-image">
-                  <img src={pic3} alt="" />
-                  <div className="image-circle ic-1"></div>
-                  <div className="image-circle ic-2"></div>
+                <div
+                  className="about-intro-image"
+                  style={{ backgroundImage: `url(${web1})` }}
+                >
+                  <div className="img-overlay"></div>
                 </div>
               </div>
             </section>{" "}
