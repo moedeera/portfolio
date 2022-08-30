@@ -150,11 +150,13 @@
 }
 .blogs-features-item {
   max-width: 350px;
+
   transition: 400ms ease-in-out;
 }
 .bf-image {
   height: 100%;
   width: 100%;
+  min-width: 180px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
