@@ -9,24 +9,24 @@ import axios from "axios";
 export const Contact = () => {
   const [count, setCount] = useState(1);
   const [sent, setSent] = useState(false);
-  const [message, setMessage] = useState({
+  const [msg, setMessage] = useState({
     name: "",
     email: "",
-    messageText: "",
+    message: "",
   });
 
   const onChangeHandler = (e, type) => {
     if (type === "name") {
-      setMessage({ ...message, name: e.target.value });
+      setMessage({ ...msg, name: e.target.value });
     } else if (type === "email") {
-      setMessage({ ...message, email: e.target.value });
+      setMessage({ ...msg, email: e.target.value });
     } else if (type === "message") {
-      setMessage({ ...message, messageText: e.target.value });
+      setMessage({ ...msg, message: e.target.value });
     }
   };
 
   const onSubmit = async () => {
-    console.log(message);
+    console.log(msg);
 
     try {
       const config = {
@@ -34,7 +34,7 @@ export const Contact = () => {
           "Content-Type": "application/json",
         },
       };
-      const body = JSON.stringify(message);
+      const body = JSON.stringify(msg);
       const res = await axios.post(
         "https://auction-website89.herokuapp.com/bids/message",
         body,
@@ -46,7 +46,7 @@ export const Contact = () => {
       setMessage({
         name: "",
         email: "",
-        messageText: "",
+        message: "",
       });
     } catch (error) {
       console.log(error);
@@ -107,7 +107,7 @@ export const Contact = () => {
                   placeholder="Enter Name"
                   name="name"
                   type="text"
-                  value={message.name}
+                  value={msg.name}
                   onChange={(e) => {
                     onChangeHandler(e, "name");
                   }}
@@ -116,7 +116,7 @@ export const Contact = () => {
                   placeholder="Enter Email"
                   name="email"
                   type="email"
-                  value={message.email}
+                  value={msg.email}
                   onChange={(e) => {
                     onChangeHandler(e, "email");
                   }}
@@ -125,7 +125,7 @@ export const Contact = () => {
                   placeholder="Enter Message"
                   name="message"
                   type="text"
-                  value={message.messageText}
+                  value={msg.message}
                   onChange={(e) => {
                     onChangeHandler(e, "message");
                   }}
