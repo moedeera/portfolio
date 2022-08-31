@@ -9,10 +9,11 @@ import users from "./users.png";
 import board from "./board.png";
 import bulletin from "./bulletin.png";
 import news from "./news.png";
+import { profiles } from "../../assets/data/admin-data";
 
 export const SideMenu = ({ state }) => {
   let location = useLocation();
-  const { show, toggleShow } = useContext(SiteContext);
+  const { show, toggleShow, articlesList } = useContext(SiteContext);
 
   if (location.pathname !== "/profile") {
     return null;
@@ -50,12 +51,12 @@ export const SideMenu = ({ state }) => {
               </div>
               <div className="sm-count">
                 {" "}
-                <div>5</div>
+                <div>{profiles[0].messages.length}</div>
               </div>
             </div>
             <div className="SM-menu-item">
               <img src={cases} alt="" style={{ width: "28px" }} />
-              Cases
+              Posts
             </div>
             <div className="SM-menu-item">
               <img src={users} alt="" style={{ width: "28px" }} />
