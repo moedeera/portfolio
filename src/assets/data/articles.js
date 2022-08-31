@@ -69,7 +69,7 @@ const articles = [
     readTime: "3",
     headers: [
       null,
-      "1.Transition property.",
+      "1.Transition property",
       null,
       null,
       null,
@@ -84,16 +84,16 @@ const articles = [
       null,
     ],
     paragraphs: [
-      "I am a firm believer in showing the practical use of something before explaining it. Unfortunately, so many new developers are used to learning theoretical or non-applicable concepts that they don’t learn web design effectively. This has to do with many tutorials showing to-do lists or calculator apps. These videos show a lot of good concepts but in a manner you will never use them for. No client  is going to pay you to design or build a to-do list. No employer will ask you to build a JavasScript calculator. In today’s blog I will explain my top 4 most used CSS properties and/or methods  in a component everyone uses; buttons. So here are the top 4.",
-      "This is an essential property in every design. The transition property controls the time it takes for a component or div to animate from one state to another. This is the difference between a glitchy animation versus a smooth one. You have the ability to control any aspect of the animation. You can set the transition time to anything you consider fit. I generally advise that you set the same transition time for all animations on a specific component or html tag",
+      "I am a firm believer in showing the practical use of something before explaining it. Unfortunately, so many new developers are used to learning theoretical or non-applicable concepts that they don’t learn web design effectively. This has to do with so many tutorials showing to-do lists or calculator apps. These videos show a lot of good concepts but in a manner you will never use them for. No client  is going to pay you to design or build a to-do list. No employer will ask you to build a JavasScript calculator. In today’s blog I will explain my top 4 most used CSS properties and methods in a component everyone uses: buttons. So here are the top 4.",
+      "This is an essential property in every design. The transition property controls the time it takes for a component or div to animate from one state to another. This is the difference between a glitchy animation versus a smooth one. You have the ability to control any aspect of the animation. You can set the transition time to anything you consider fit. You can also give different animations their own timing. I generally advise however, that you set the same transition time for all animations on a specific component or html tag",
       "The syntax for transition is as follows:",
-      "To see in action, try out this hover effect on the button,",
-      `The 400ms refers to the time. The ‘ease-in-out' refers to the rate of change. ‘Ease-in-out’ is my most commonly used rate control.. All it does is just dictate that the animation start and end slow but speed up in the middle.`,
+      "To see in action, copy and try out this hover effect on a button,",
+      `The 400ms refers to the total time of the transition. The ‘ease-in-out' refers to the rate of change. ‘Ease-in-out’ is my most used rate-of-change control. 'Ease-in-out" just dictates that the animation start and end slow but speed up in the middle.`,
       `This is a really handy function for developers who want smooth mobile responsiveness in their design. Sometimes adjusting height, width, or font-size for all devices  is very daunting. You will end up with a solution that is less than ideal by relying simply on media queries. The CSS calc() function allows you to dynamically adjust the size of anything using viewport width(vw) or viewport-height(vh). Working with it is easy. Just start with the lowest pixel sizes you want for any given item in your html. You then add an appropriate dynamic variable (usually vw) to expand the size when it's viewed on higher devices. 
       `,
-      "Here is an example below with the same button, shrink your browser or rotate your mobile device to see the difference. ",
-      `Shadows are a very under-appreciated aspect of web design. Adding a shadow can be the difference between looking professional or amatuer.  Just make sure you add the proper amount of under-shade. Also make sure to be consistent with shadows. To add a shadow to your design simply type the following`,
-      `The numbers and color are applied the same way margins and padding are. Experiment with them to see what works for your design but I would strongly suggest looking into already existing designs if you want to see what works.`,
+      "Here is an example below with the same button, copy and paste this and then shrink your browser or rotate your mobile device to see the difference. ",
+      `Shadows are a very under-appreciated aspect of web design. Adding a shadow can be the difference between looking professional or bland.  Just make sure you add the proper amount of it. Also make sure to be consistent with shadows. To add a shadow to your design simply type the following`,
+      `The numbers and color are applied the same way margins and paddings are. Experiment with them to see what works for your design but I would strongly suggest looking into already existing designs if you want to see what works.`,
       `This is something to go with a hover effect. Of course you could use it for other purposes but I mainly use it for hovers. The property is ‘transform 'but the method  is' translate’. When you apply a  translation in any direction it moves your html component in that specific direction. I use this most when I am applying hover effects to buttons. But I also use it for general divs as well.`,
       `The syntax is as follows`,
       `to see it in action apply the hover effect on the button`,
@@ -106,7 +106,7 @@ const articles = [
         transition:all 400ms ease-in-out;
         }
         `,
-      `.button:hover{
+      `button:hover{
         background: gray;
         }
         `,
@@ -117,17 +117,17 @@ const articles = [
         }
         `,
       `button{
-        shadow:0px 8px 15px rgba(0, 0, 0, 0.1)
+        box-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
         }
         `,
       null,
       null,
       `button:hover{
-        transform:translateX(-10)
+        transform:translateX(-10px)
         }
         `,
       `button:hover{
-      transform:translateX(-10)
+      transform:translateX(-10px)
       }
       `,
     ],
