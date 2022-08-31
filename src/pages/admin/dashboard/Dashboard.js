@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { SiteContext } from "../../../context/Context";
 import "../Admin.css";
 import "./Dashboard.css";
@@ -11,9 +11,35 @@ import shield from "./icons/shield.png";
 import { profiles } from "../../../assets/data/admin-data";
 import { Messages } from "./Messages/Messages";
 import { Posts } from "./Posts/Posts";
+import axios from "axios";
 
 export const Dashboard = () => {
   const { toggleShow, show, message } = useContext(SiteContext);
+  // fetch date
+  const [inbox, setInbox] = useState("");
+  const onFetch = async () => {
+    try {
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+
+      const res = await axios.get(
+        "https://auction-website89.herokuapp.com/bids/message",
+        config
+      );
+      console.log(res.data);
+
+      setInbox(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    onFetch();
+  }, []);
 
   //toggle view
 
