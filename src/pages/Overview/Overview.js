@@ -67,7 +67,7 @@ export const Overview = ({ count }) => {
                 </div>
               </div>
               <div className="op-showcase-image">
-                <img src={img2} alt="" style={{ maxWidth: "200px" }} />
+                <img src={pic2} alt="" style={{ maxWidth: "400px" }} />
               </div>
             </div>
           </div>
