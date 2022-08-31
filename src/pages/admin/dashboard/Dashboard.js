@@ -10,6 +10,7 @@ import request from "./icons/request.png";
 import shield from "./icons/shield.png";
 import { profiles } from "../../../assets/data/admin-data";
 import { Messages } from "./Messages/Messages";
+import { Posts } from "./Posts/Posts";
 
 export const Dashboard = () => {
   const { toggleShow, show, message } = useContext(SiteContext);
@@ -192,8 +193,11 @@ export const Dashboard = () => {
               <div className="bottom-overview-header">
                 <h3>Recent</h3>{" "}
               </div>
-
-              <Messages profile={profiles[0]} />
+              {view === 1 ? (
+                <Messages profile={profiles[0]} />
+              ) : (
+                <Posts profile={articles} />
+              )}
             </div>
           </div>
         </div>

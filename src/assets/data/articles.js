@@ -122,8 +122,8 @@ const articles = [
         `,
       null,
       null,
-      `button:hover{
-        transform:translateX(-10px)
+      `button{
+        transform:translateX(-5px)
         }
         `,
       `button:hover{
@@ -136,6 +136,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     feature: "https://www.youtube.com/watch?v=1PnVor36_40",
+    status: true,
   },
   {
     id: 1,
@@ -177,6 +178,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2, 3, 4, 5, 6],
     feature: "https://www.youtube.com/watch?v=1PnVor36_40",
+    status: true,
   },
   {
     id: 2,
@@ -216,6 +218,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2, 3, 4, 5],
     feature: "https://www.youtube.com/watch?v=gCg47n_TlFc&t=499s",
+    status: true,
   },
   {
     id: 3,
@@ -249,6 +252,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2, 3, 4, 5],
     feature: "https://www.youtube.com/watch?v=H_pBvUFPceA",
+    status: true,
   },
 
   {
@@ -280,6 +284,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2],
     feature: "https://www.youtube.com/watch?v=UmnRxymgtJs",
+    status: true,
   },
   {
     id: 5,
@@ -314,6 +319,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2, 3, 4, 5],
     feature: "https://www.youtube.com/watch?v=OI5M9lRiNI4",
+    status: true,
   },
   {
     id: 6,
@@ -344,6 +350,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2],
     feature: "https://www.youtube.com/watch?v=fyaBtRiqUWI&t=1010s",
+    status: true,
   },
   {
     id: 7,
@@ -378,6 +385,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2],
     feature: "https://www.youtube.com/watch?v=ueXjGMrmn8k",
+    status: true,
   },
 
   {
@@ -418,6 +426,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2, 3, 4, 5],
     feature: "https://www.youtube.com/watch?v=EqzUcMzfV1w&t=2624s",
+    status: true,
   },
   {
     id: 9,
@@ -449,6 +458,7 @@ const articles = [
     comments: [],
     mapper: [0, 1, 2, 3, 4],
     feature: "https://www.youtube.com/watch?v=GeJDaXuc5NY",
+    status: true,
   },
 ];
 
