@@ -4,6 +4,8 @@ import { useArticles } from "../Hooks/useArticles";
 import { useSideBar } from "../Hooks/useSideBar";
 import { useEffect } from "react";
 import { useProfile } from "../Hooks/useProfile";
+import { useMessages } from "../Hooks/useMessages";
+import { profiles } from "../assets/data/admin-data";
 
 export const SiteContext = createContext({});
 // Manages user authentication
@@ -26,9 +28,13 @@ export const SiteContextProvider = ({ children }) => {
   const { articlesList } = useArticles();
   // SideBar Toggle
   const { show, toggleShow } = useSideBar();
+  //User Storage
+  //Declaring a user variable for Administrator
+  const [user, setUser] = useState(null);
   // Profile storage
   const { profile, setProfile } = useProfile();
-
+  // Message Fetch storage
+  const { messages, setMessages } = useMessages();
   //Fetches specific project information [offline]
   const getProjectInformation = (id) => {
     let projectInfo = null;
@@ -94,14 +100,12 @@ export const SiteContextProvider = ({ children }) => {
 
   //Fetches specific profile information [online]
 
-  //Declaring a user variable for Administrator
-  const [user, setUser] = useState(null);
-
   // Hook loads once to fetch the state of log (logged in or out)
   useEffect(() => {
     const getUser = async () => {
       const newUser = await LoadUser();
       setUser(newUser);
+      setProfile(profiles);
       console.log("it happened", newUser);
     };
 

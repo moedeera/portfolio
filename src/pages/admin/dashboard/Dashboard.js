@@ -1,17 +1,24 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { SiteContext } from "../../../context/Context";
 import "../Admin.css";
 import "./Dashboard.css";
 import messages from "./icons/messages.png";
-
+import { articles } from "../../../assets/data/articles";
 import notification from "./icons/notification.png";
 import cases from "./icons/case.png";
 import request from "./icons/request.png";
 import shield from "./icons/shield.png";
-// import case from "../../../components/SideMenu/cases.png";
+import { profiles } from "../../../assets/data/admin-data";
+import { Messages } from "./Messages/Messages";
 
 export const Dashboard = () => {
-  const { toggleShow, show } = useContext(SiteContext);
+  const { toggleShow, show, message } = useContext(SiteContext);
+
+  //toggle view
+
+  const [view, setView] = useState(1);
+
+  console.log(profiles[0]);
   return (
     <>
       <div className="menuTopBar">
@@ -48,7 +55,7 @@ export const Dashboard = () => {
         <div className="dashboard-main">
           <div className="dashboard-header-block">
             <div className="dashboard-header-name">
-              <h3>Hi John !</h3>
+              <h3>Hi {profiles[0].name} !</h3>
             </div>
             <div className="progress-bar-container">
               {" "}
@@ -72,16 +79,13 @@ export const Dashboard = () => {
                     <img src={notification} alt="logo" />
                   </div>
                 </div>
-                <div className="content-message">3 Unread messages</div>
+                <div className="content-message">
+                  {profiles[0].messages.length} messages
+                </div>
                 <div className="content-avatars">
-                  <img
-                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                    alt="avatar-pic"
-                  />
-                  <img
-                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                    alt="avatar-pic"
-                  />
+                  {profiles[0].messages.map((msg) => (
+                    <img src={msg.avatar} alt="avatar-pic" />
+                  ))}
                 </div>
               </div>
             </div>
@@ -98,16 +102,12 @@ export const Dashboard = () => {
                     <img src={notification} alt="logo" />
                   </div>
                 </div>
-                <div className="content-message">4 Unpublished Posts</div>
+                <div className="content-message"> {articles.length} Posts</div>
                 <div className="content-avatars">
-                  <img
-                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                    alt="avatar-pic"
-                  />
-                  <img
-                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                    alt="avatar-pic"
-                  />
+                  {articles.map(
+                    (post, index) =>
+                      index < 7 && <img src={post.pic} alt="avatar-pic" />
+                  )}
                 </div>
               </div>
             </div>
@@ -161,9 +161,30 @@ export const Dashboard = () => {
             <div className="lower-upper">
               <div className="lower-upper-sort">
                 {" "}
-                <div className="selected-option">Cases</div>
-                <div>Articles</div>
-                <div>Messages</div>
+                <div
+                  className={view === 1 ? "selected-option" : ""}
+                  onClick={() => {
+                    setView(1);
+                  }}
+                >
+                  Messages
+                </div>
+                <div
+                  className={view === 2 ? "selected-option" : ""}
+                  onClick={() => {
+                    setView(2);
+                  }}
+                >
+                  Posts
+                </div>
+                <div
+                  className={view === 3 ? "selected-option" : ""}
+                  onClick={() => {
+                    setView(3);
+                  }}
+                >
+                  Requests
+                </div>
               </div>
               <div className="dashboard-search">Search</div>
             </div>
@@ -171,172 +192,8 @@ export const Dashboard = () => {
               <div className="bottom-overview-header">
                 <h3>Recent</h3>{" "}
               </div>
-              <div className="overview-box-container">
-                <div className="overview-box-item">
-                  <div className="overview-item-main">
-                    <div className="overview-item-icon">
-                      <img src={messages} alt="" />
-                    </div>
-                    <div className="overview-item-details">
-                      <h3>Re:Pending Article needs edit</h3>
-                      <small>
-                        Hey can you allow us to edit the impending article to
-                        correct errors?
-                      </small>
-                    </div>
-                  </div>
-                  <div className="overview-item-images">
-                    {" "}
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                  </div>
-                </div>
 
-                <div className="overview-box-item">
-                  <div className="overview-item-main">
-                    <div
-                      className="overview-item-icon"
-                      style={{ backgroundColor: "crimson" }}
-                    >
-                      <img src={notification} alt="" />
-                    </div>
-                    <div className="overview-item-details">
-                      <h3>Article Pending for publication</h3>
-                      <small>
-                        Hey can you allow us to edit the impending article to
-                        correct errors?
-                      </small>
-                    </div>
-                  </div>
-                  <div className="overview-item-images">
-                    {" "}
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                  </div>
-                </div>
-
-                <div className="overview-box-item">
-                  <div className="overview-item-main">
-                    <div
-                      className="overview-item-icon"
-                      style={{ backgroundColor: "goldenrod" }}
-                    >
-                      <img src={shield} alt="" />
-                    </div>
-                    <div className="overview-item-details">
-                      <h3>Permission Upgrade Request</h3>
-                      <small>
-                        Hey can you allow us to edit the impending article to
-                        correct errors?
-                      </small>
-                    </div>
-                  </div>
-                  <div className="overview-item-images">
-                    {" "}
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                  </div>
-                </div>
-
-                <div className="overview-box-item">
-                  <div className="overview-item-main">
-                    <div className="overview-item-icon">
-                      <img src={messages} alt="" />
-                    </div>
-                    <div className="overview-item-details">
-                      <h3>Meeting for this month</h3>
-                      <small>
-                        Hey can you allow us to edit the impending article to
-                        correct errors?
-                      </small>
-                    </div>
-                  </div>
-                  <div className="overview-item-images">
-                    {" "}
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-overview-header">
-                <h3>Upcoming</h3>{" "}
-              </div>
-              <div className="overview-box-container">
-                <div className="overview-box-item">
-                  <div className="overview-item-main">
-                    <div
-                      className="overview-item-icon"
-                      style={{ backgroundColor: "green" }}
-                    >
-                      <img src={cases} alt="" />
-                    </div>
-                    <div className="overview-item-details">
-                      <h3>Case 456-B Pending Publish</h3>
-                      <small>
-                        Hey can you allow us to edit the impending article to
-                        correct errors?
-                      </small>
-                    </div>
-                  </div>
-                  <div className="overview-item-images">
-                    {" "}
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                  </div>
-                </div>
-
-                <div className="overview-box-item">
-                  <div className="overview-item-main">
-                    <div className="overview-item-icon">
-                      <img src={cases} alt="" />
-                    </div>
-                    <div className="overview-item-details">
-                      <h3>Case 103-Z Pending Edit</h3>
-                      <small>
-                        Hey can you allow us to edit the impending article to
-                        correct errors?
-                      </small>
-                    </div>
-                  </div>
-                  <div className="overview-item-images">
-                    {" "}
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                      alt="avatar-pic"
-                    />
-                  </div>
-                </div>
-              </div>
+              <Messages profile={profiles[0]} />
             </div>
           </div>
         </div>

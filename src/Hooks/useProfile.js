@@ -1,8 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
+import { profiles } from "../assets/data/admin-data";
 
 export const useProfile = () => {
-  const [profile, setProfile] = useState(null);
+  const [profile, setProfile] = useState(profiles);
 
   const LogIn = async (info) => {
     // console.log(message);

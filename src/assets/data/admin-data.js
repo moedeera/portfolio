@@ -1,3 +1,56 @@
+const msgOverview = [
+  {
+    id: 0,
+    message: "I need you to publish my article",
+    status: "unread",
+    from: "joe",
+    subject: "First Message",
+    date: "August 29",
+    avatar:
+      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+  },
+  {
+    id: 1,
+    message: "Hey there",
+    status: "read",
+    from: "jackie",
+    subject: "Follow up",
+    date: "July 27",
+    avatar:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+  },
+  {
+    id: 2,
+    message: "Hey there",
+    status: "read",
+    from: "Micheal",
+    subject: "Permissions",
+    date: "July 17",
+    avatar:
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+  },
+  {
+    id: "3",
+    message: "I don't know",
+    status: "sent",
+    from: "you",
+    subject: "Hey",
+    date: "July 18",
+    avatar:
+      "https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg",
+  },
+  {
+    id: "4",
+    message: "I don't know",
+    status: "draft",
+    from: "you",
+    subject: "...",
+    date: "July 18",
+    avatar:
+      "https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg",
+  },
+];
+
 const usersBase = [
   { id: 0, type: "Admin", username: "admin", password: "123" },
   { id: 1, type: "Editor", username: "editor", password: "123" },
@@ -17,7 +70,6 @@ const requestLog = [
     id: 0,
     date: "August 9",
     type: "post",
-    identifier: "",
     user: 1,
     status: "edit",
   },
@@ -33,8 +85,8 @@ const profiles = [
     name: "John Smith",
     type: "admin",
     dashboard: [1, 1, 1, 1],
-    messages: [],
-    requests: [],
+    messages: msgOverview,
+    requests: requestLog,
     comments: [],
     cases: [],
     posts: [],
@@ -109,14 +161,48 @@ const content = [
 
 const messages = [
   {
-    id: "",
-    message: "",
-    status: "",
-    to: "",
-    from: "",
-    subject: "",
-    date: "",
+    id: 0,
+    message: "I need you to publish my article",
+    status: "unread",
+    to: "you",
+    from: "joeblow",
+    subject: "First Message",
+    date: "August 29",
+  },
+  {
+    id: 1,
+    message: "Hey there",
+    status: "read",
+    to: "you",
+    from: "jackie",
+    subject: "Follow up",
+    date: "July 27",
+  },
+  {
+    id: 2,
+    message: "Hey there",
+    status: "read",
+    to: "you",
+    from: "M",
+    subject: "Permissions",
+    date: "July 17",
+  },
+  {
+    id: "3",
+    message: "I don't know",
+    status: "sent",
+    to: "Mark",
+    from: "you",
+    subject: "Hey",
+    date: "July 18",
   },
 ];
 
-module.exports = { usersBase, requestLog, contentBase, profiles, content };
+module.exports = {
+  usersBase,
+  requestLog,
+  contentBase,
+  profiles,
+  content,
+  messages,
+};
