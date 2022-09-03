@@ -34,8 +34,10 @@ const projectsList = [
     repository: "https://github.com/moedeera/FED-HT-website-design",
     link: "https://deercoded.com/",
     header: "DeerCoded.com",
-    Intro: "UI Design for a coding bootcamp",
-
+    Intro: "UI Design for a coding Bootcamp",
+    backstory: "A full website design using basic HTML, CSS , and JavaScript.",
+    planning: "",
+    maintenance: "",
     information:
       "A Design oriented website built as a theme for a coding bootcamp. It was built using CSS, JavaScript and HTML.\n The focus of the website is to experiment with new design trends involving landing page lottie animations and bubbly 3d illustrations.\n It also uses a landing page countdown timer that visually channels urgency in a potential customer.",
   },
@@ -79,7 +81,7 @@ const projectsList = [
     header: "Librum-Reader.com",
     Intro: "Pending software launch",
     information:
-      " Created for a software launch by a group of university students in Berlin, Germany. It was built using React and hosted on Netlify. The design was meant to convey a theme of youth and imagination. \n The front end phase of the website was completed last month. Currently, I am waiting for more intel from the clients to start developing the backend server. ",
+      " Created for the Librum reader by a group of university students in Berlin, Germany. It was built using React and hosted on Netlify. The design was meant to convey a theme of youth and imagination. \n The front end phase of the website was completed in March 2022. Currently, I am waiting for more intel from the clients to start developing the backend server. ",
   },
   {
     id: 4,
@@ -143,7 +145,7 @@ const projectsList = [
     header: "Deeracode.ca",
     Intro: "Web Design community",
     information:
-      "Built using WordPress, It was meant to work as a website to serve web design enthusiasts. It was build with wordpress using the elementor. \n The effects and layouts were built using mainly free plugins from Stratum and HappyAddons. The website was inspired by dribbble designs and follows a trend of using animations and a bright theme to convey a welcoming theme",
+      "Built using WordPress, It was meant to work as a website to serve web design enthusiasts. It was built with wordpress using the elementor. \n The effects and layouts were built using mainly plugins from Stratum and HappyAddons. The website was inspired by dribbble designs and follows a trend of using animations and a bright theme to convey a welcoming tone",
   },
   {
     id: 7,
@@ -160,12 +162,11 @@ const projectsList = [
     pic3: "",
     purpose: "Client",
     repository: "https://github.com/moedeera/FED-HT-website-design",
-    link: "https://deercoded.com/",
+    link: "https://calgaryradiologymanuel.herokuapp.com/",
     header: "Calgary Radiology Manual",
     Intro: "Website for Radiology Residents",
 
-    information:
-      "A Design oriented website built as a theme for a coding bootcamp. It was built using CSS, JavaScript and HTML.\n The focus of the website is to experiment with new design trends involving landing page lottie animations and bubbly 3d illustrations.\n It also uses a landing page countdown timer that visually channels urgency in a potential customer.",
+    information: "Coming soon",
   },
 ];
 
