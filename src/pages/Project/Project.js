@@ -4,18 +4,11 @@ import { useParams } from "react-router-dom";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { useContext } from "react";
 import { SiteContext } from "../../context/Context";
-import pic1 from "./Group3.png";
-import pic2 from "./deercoded-mockup2.png";
-import pic3 from "./superdonair-mockup.png";
-import pic4 from "./ereader-mockup.png";
-import pic5 from "./bluebear-mockup.png";
-import pic6 from "./greenframe.png";
-import pic7 from "./deeracode-mockup.png";
+
 import firebase from "./firebase.png";
 import linkicon from "./link.png";
-import error from "./error.jpeg";
 
-const images = [error, pic2, pic3, pic4, pic5, pic6, pic7];
+import { portfolioImages } from "../../assets/data/images/index.js";
 
 export const Project = () => {
   const [hover, setHover] = useState(false);
@@ -25,7 +18,7 @@ export const Project = () => {
   const projectData = useMemo(() => {
     return getProjectInformation(id);
   }, [id, getProjectInformation]);
-
+  console.log(projectData);
   return (
     <div>
       <div className="project-page-container">
@@ -116,7 +109,11 @@ export const Project = () => {
         <div className="pp-lower">
           <div className="pp-image">
             {" "}
-            <img src={images[projectData.pic1]} alt="" />
+            {projectData.id ? (
+              <img src={portfolioImages[projectData.pics[0]]} alt="" />
+            ) : (
+              <img src={require("./error.jpeg")} alt="" />
+            )}
           </div>
           <div className="pp-summary">
             <div className="pp-summary-header">

@@ -39,17 +39,18 @@ export const SiteContextProvider = ({ children }) => {
   const getProjectInformation = (id) => {
     let projectInfo = null;
     const match = projects.some((project) => project.title === id);
-    console.log(match);
+
     if (match) {
       projectInfo = projects.find((project) => project.title === id);
       console.log(projectInfo);
       return projectInfo;
     }
     return {
-      id: 0,
+      id: null,
       orientation: "error",
       title: "error",
       icons: [],
+      pics: [require("../pages/Project/error.jpeg")],
       pic1: 0,
       pic2: "",
       pic3: "",

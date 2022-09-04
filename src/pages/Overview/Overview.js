@@ -1,25 +1,15 @@
 import React, { useContext } from "react";
 import "./Overview.css";
-import { Context } from "react";
+
 import { SiteContext } from "../../context/Context";
-import img1 from "./ereader-mockup.png";
-import img2 from "./img2.png";
+
 import img3 from "./responsive.png";
-import img4 from "./UI-UX.png";
-import img5 from "./code.png";
+
 import img6 from "./customizable.png";
-import { articles } from "../../assets/data/articles";
+
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
-
-import pic1 from "../Project/Group3.png";
-import pic2 from "../Project/deercoded-mockup2.png";
-import pic3 from "../Project/superdonair-mockup.png";
-import pic4 from "../Project/ereader-mockup.png";
-import pic5 from "../Project/bluebear-mockup.png";
-import pic6 from "../Project/greenframe.png";
-import pic7 from "../Project/deeracode-mockup.png";
-const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7];
+import { portfolioImages } from "../../assets/data/images/index.js";
 
 export const Overview = ({ count }) => {
   const { projects } = useContext(SiteContext);
@@ -29,7 +19,7 @@ export const Overview = ({ count }) => {
         <Fade>
           <div
             style={{
-              background: `url(${images[projects[0].pic1]})
+              background: `url(${portfolioImages[projects[0].pics[0]]})
           center
           
             `,
@@ -67,7 +57,11 @@ export const Overview = ({ count }) => {
                 </div>
               </div>
               <div className="op-showcase-image">
-                <img src={pic2} alt="" style={{ maxWidth: "400px" }} />
+                <img
+                  src={portfolioImages[projects[0].pics[0]]}
+                  alt=""
+                  style={{ maxWidth: "400px" }}
+                />
               </div>
             </div>
           </div>
@@ -82,7 +76,7 @@ export const Overview = ({ count }) => {
                   <div
                     className="overview-project"
                     style={{
-                      background: `url(${images[project.pic1]})
+                      background: `url(${portfolioImages[project.pics[0]]})
                     center
                     
                       `,
@@ -100,7 +94,7 @@ export const Overview = ({ count }) => {
                       </div>
                       <Fade right>
                         <div className="ovp-image">
-                          <img src={images[project.pic1]} alt="" />
+                          <img src={portfolioImages[project.pics[0]]} alt="" />
                         </div>
                       </Fade>
                     </div>

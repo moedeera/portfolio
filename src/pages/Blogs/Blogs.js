@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { SiteContext } from "../../context/Context";
 import "./Blogs.css";
 import icon from "./blogsIcon.png";
+import { blogImages } from "../../assets/data/images/index.js";
 
 export const Blogs = () => {
   const { articlesList } = useContext(SiteContext);
@@ -18,7 +19,7 @@ export const Blogs = () => {
           <Link to={`./${articlesList[0].title}`}>
             <div
               className="blogs-headliner"
-              style={{ backgroundImage: `url(${articlesList[0].pic})` }}
+              style={{ backgroundImage: `url(${blogImages[0].main})` }}
             >
               <div className="blogs-overlay">
                 <div className="blogs-container">
@@ -60,7 +61,9 @@ export const Blogs = () => {
                       <div className="blogs-features-item" key={index}>
                         <div
                           className="bf-image"
-                          style={{ backgroundImage: `url(${article.pic})` }}
+                          style={{
+                            backgroundImage: `url(${blogImages[index].article})`,
+                          }}
                         ></div>
                         <div className="bf-item">
                           <div>
@@ -93,7 +96,11 @@ export const Blogs = () => {
                     <div className="bl-item">
                       <div
                         className="bl-item-image"
-                        style={{ backgroundImage: `url(${article.pic})` }}
+                        style={{
+                          backgroundImage: `url(${
+                            blogImages[article.id].article
+                          })`,
+                        }}
                       ></div>
                       <div className="bl-item-text">
                         <div className="bl-item-topic">
