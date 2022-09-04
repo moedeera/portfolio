@@ -46,8 +46,9 @@ function App() {
               <Route path="/overview" element={<Overview />} />
               <Route path="/my-work" element={<Works />} />
               <Route path="/blogs" element={<Blogs />} />
-              
+
               <Route path="/login" element={<Login />} />
+              <Route path="/signin" element={<Login />} />
 
               <Route element={<ProtectedRoutes />}>
                 <Route path="/profile" element={<Dashboard />} />

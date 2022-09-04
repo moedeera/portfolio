@@ -87,6 +87,7 @@ export const SiteContextProvider = ({ children }) => {
 
       title: "error",
       icons: [],
+      pics: [],
       pic1: "https://images.pexels.com/photos/2882552/pexels-photo-2882552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       pic2: "",
       pic3: "",
@@ -107,7 +108,7 @@ export const SiteContextProvider = ({ children }) => {
       const newUser = await LoadUser();
       setUser(newUser);
       setProfile(profiles);
-      console.log("it happened", newUser);
+      // console.log("it happened", newUser);
     };
 
     getUser().catch(console.error);

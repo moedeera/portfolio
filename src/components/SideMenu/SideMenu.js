@@ -13,9 +13,10 @@ import { profiles } from "../../assets/data/admin-data";
 
 export const SideMenu = ({ state }) => {
   let location = useLocation();
-  const { show, toggleShow, articlesList } = useContext(SiteContext);
 
-  if (location.pathname !== "/profile") {
+  const { show, toggleShow, articlesList, user } = useContext(SiteContext);
+
+  if (location.pathname !== "/profile" || !user?.logged) {
     return null;
   }
 

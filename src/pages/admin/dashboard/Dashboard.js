@@ -45,7 +45,6 @@ export const Dashboard = () => {
 
   const [view, setView] = useState(1);
 
-  console.log(profiles[0]);
   return (
     <>
       <div className="menuTopBar">
@@ -111,7 +110,11 @@ export const Dashboard = () => {
                 </div>
                 <div className="content-avatars">
                   {profiles[0].messages.map((msg) => (
-                    <img src={msg.avatar} alt="avatar-pic" />
+                    <img
+                      src={msg.avatar}
+                      alt="avatar-pic"
+                      key={profiles[0].messages.id}
+                    />
                   ))}
                 </div>
               </div>
@@ -133,8 +136,11 @@ export const Dashboard = () => {
                 <div className="content-avatars">
                   {articles.map(
                     (post, index) =>
-                      index < 7 && <img src={post.pic} alt="avatar-pic" />
+                      index < 5 && (
+                        <img key={post.id} src={post.pic} alt="avatar-pic" />
+                      )
                   )}
+                  <i className="fa fa-plus" aria-hidden="true"></i>
                 </div>
               </div>
             </div>

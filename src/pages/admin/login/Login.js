@@ -9,6 +9,7 @@ export const Login = () => {
   const { user } = useContext(SiteContext);
 
   useEffect(() => {
+    console.log(user);
     if (!user?.logged) {
       navigate("/profile");
     }
