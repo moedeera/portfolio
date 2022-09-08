@@ -5,6 +5,27 @@ import { profiles } from "../assets/data/admin-data";
 export const useProfile = () => {
   const [profile, setProfile] = useState(profiles);
 
+  const fetchProfile = async (token) => {
+    // console.log(message);
+
+    try {
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+
+      const res = await axios.post(
+        "https://auction-website89.herokuapp.com/content/fetch",
+        token,
+        config
+      );
+      console.log(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const LogIn = async (info) => {
     // console.log(message);
 
@@ -29,5 +50,6 @@ export const useProfile = () => {
   return {
     profile,
     setProfile,
+    fetchProfile,
   };
 };

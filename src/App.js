@@ -18,7 +18,6 @@ import { Works } from "./pages/Works/Works";
 import { Blogs } from "./pages/Blogs/Blogs";
 import { ProtectedRoutes } from "./components/ProtectedRoutes/ProtectedRoutes";
 import { Dashboard } from "./pages/admin/dashboard/Dashboard";
-import { Editor } from "./pages/admin/editor/Editor";
 import { Login } from "./pages/admin/login/Login";
 import { SideMenu } from "./components/SideMenu/SideMenu";
 

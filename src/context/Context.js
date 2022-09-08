@@ -6,18 +6,36 @@ import { useEffect } from "react";
 import { useProfile } from "../Hooks/useProfile";
 import { useMessages } from "../Hooks/useMessages";
 import { profiles } from "../assets/data/admin-data";
+import axios from "axios";
 
 export const SiteContext = createContext({});
 // Manages user authentication
 const LoadUser = async () => {
   const dummyUser = {
-    logged: true,
-    user: "Admin",
+    logged: false,
+    name: null,
   };
 
   if (localStorage.getItem("token")) {
-    let User = JSON.parse(localStorage.getItem("token"));
-    return User;
+    let token = JSON.parse(localStorage.getItem("token"));
+    try {
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+
+      const res = await axios.post(
+        "https://auction-website89.herokuapp.com/content/fetch",
+        token,
+        config
+      );
+      console.log(res.data);
+      let User = res.data;
+      return User;
+    } catch (error) {
+      console.log(error);
+    }
   } else return dummyUser;
 };
 

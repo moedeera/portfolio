@@ -5,5 +5,5 @@ import { Login } from "../../pages/admin/login/Login";
 
 export const ProtectedRoutes = () => {
   const { user } = useContext(SiteContext);
-  return user?.logged ? <Outlet /> : <Login />;
+  return user?.name ? <Outlet /> : <Login />;
 };

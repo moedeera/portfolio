@@ -16,7 +16,7 @@ export const SideMenu = ({ state }) => {
 
   const { show, toggleShow, articlesList, user } = useContext(SiteContext);
 
-  if (location.pathname !== "/profile" || !user?.logged) {
+  if (location.pathname !== "/profile" || !user?.name) {
     return null;
   }
 
