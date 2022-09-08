@@ -1,12 +1,14 @@
 import { useState } from "react";
 import axios from "axios";
+import { useMemo } from "react";
 import { profiles } from "../assets/data/admin-data";
 
 export const useProfile = () => {
-  const [profile, setProfile] = useState(profiles);
+  const [profile, setProfile] = useState(null);
+  const [loadingProfile, setLoadingProgile] = useState(false);
 
   const fetchProfile = async (token) => {
-    // console.log(message);
+    console.log(token);
 
     try {
       const config = {
@@ -14,15 +16,20 @@ export const useProfile = () => {
           "Content-Type": "application/json",
         },
       };
-
+      const body = JSON.stringify({
+        token,
+      });
+      console.log(body);
       const res = await axios.post(
         "https://auction-website89.herokuapp.com/content/fetch",
-        token,
+        body,
         config
       );
       console.log(res.data);
+      return res.data;
     } catch (error) {
       console.log(error);
+      return null;
     }
   };
 

@@ -7,35 +7,22 @@ import { useProfile } from "../Hooks/useProfile";
 import { useMessages } from "../Hooks/useMessages";
 import { profiles } from "../assets/data/admin-data";
 import axios from "axios";
+import { useMemo } from "react";
 
 export const SiteContext = createContext({});
-// Manages user authentication
+// Checks for a token in local storage
 const LoadUser = async () => {
   const dummyUser = {
     logged: false,
-    name: null,
+    token: null,
   };
 
   if (localStorage.getItem("token")) {
     let token = JSON.parse(localStorage.getItem("token"));
-    try {
-      const config = {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      };
-
-      const res = await axios.post(
-        "https://auction-website89.herokuapp.com/content/fetch",
-        token,
-        config
-      );
-      console.log(res.data);
-      let User = res.data;
-      return User;
-    } catch (error) {
-      console.log(error);
-    }
+    return {
+      logged: true,
+      token,
+    };
   } else return dummyUser;
 };
 
@@ -50,7 +37,7 @@ export const SiteContextProvider = ({ children }) => {
   //Declaring a user variable for Administrator
   const [user, setUser] = useState(null);
   // Profile storage
-  const { profile, setProfile } = useProfile();
+  const { profile, setProfile, fetchProfile } = useProfile();
   // Message Fetch storage
   const { messages, setMessages } = useMessages();
   //Fetches specific project information [offline]
@@ -119,20 +106,23 @@ export const SiteContextProvider = ({ children }) => {
   };
 
   //Fetches specific profile information [online]
-
+  const fetchedProfile = useMemo(
+    () => fetchProfile(user?.token),
+    [user?.token]
+  );
   // Hook loads once to fetch the state of log (logged in or out)
   useEffect(() => {
     const getUser = async () => {
       const newUser = await LoadUser();
       setUser(newUser);
-      setProfile(profiles);
-      // console.log("it happened", newUser);
+      console.log("it happened", newUser);
     };
 
     getUser().catch(console.error);
   }, []);
 
   //
+
   return (
     <SiteContext.Provider
       value={{
@@ -143,8 +133,11 @@ export const SiteContextProvider = ({ children }) => {
         articlesList,
         user,
         setUser,
+        profile,
+        setProfile,
         show,
         toggleShow,
+        fetchedProfile,
       }}
     >
       {children}

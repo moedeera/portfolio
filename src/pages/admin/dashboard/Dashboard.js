@@ -7,40 +7,30 @@ import { articles } from "../../../assets/data/articles";
 import notification from "./icons/notification.png";
 import cases from "./icons/case.png";
 import request from "./icons/request.png";
-import shield from "./icons/shield.png";
+
 import { profiles } from "../../../assets/data/admin-data";
 import { Messages } from "./Messages/Messages";
 import { Posts } from "./Posts/Posts";
 import axios from "axios";
 
 export const Dashboard = () => {
-  const { toggleShow, show, message } = useContext(SiteContext);
-  // fetch date
-  const [inbox, setInbox] = useState("");
-  const onFetch = async () => {
-    try {
-      const config = {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      };
+  const {
+    toggleShow,
+    show,
+    message,
+    user,
+    profile,
+    setProfile,
+    fetchedProfile,
+  } = useContext(SiteContext);
+  //alert()
+  const [count, setCount] = useState(0);
 
-      const res = await axios.get(
-        "https://auction-website89.herokuapp.com/bids/message",
-        config
-      );
-      console.log(res.data);
+  console.log(profile);
+  console.log(user.logged, user.token);
+  // const [inbox, setInbox] = useState("");
 
-      setInbox(res.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    onFetch();
-  }, []);
-
+  console.log(fetchedProfile);
   //toggle view
 
   const [view, setView] = useState(1);
@@ -71,17 +61,14 @@ export const Dashboard = () => {
         </div>
 
         <div className="SM-avatar">
-          <img
-            src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-            alt="avatar-pic"
-          />
+          <img src={profile?.avatar} alt="avatar-pic" />
         </div>
       </div>
       <div className="dashboard-container">
         <div className="dashboard-main">
           <div className="dashboard-header-block">
             <div className="dashboard-header-name">
-              <h3>Hi {profiles[0].name} !</h3>
+              <h3>Hi {profile?.name} !</h3>
             </div>
             <div className="progress-bar-container">
               {" "}
@@ -342,9 +329,9 @@ export const Dashboard = () => {
               </div>
 
               <small>Reminder title</small>
-              <input placeholder="New Reminder" type="text" value="" />
+              <input placeholder="New Reminder" type="text" />
               <small>Reminder date</small>
-              <input placeholder="New Reminder" type="text" value="" />
+              <input placeholder="New Reminder" type="text" />
               <button className="btn-admin">Add </button>
             </div>
           </div>

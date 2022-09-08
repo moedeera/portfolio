@@ -10,7 +10,6 @@ export const Login = () => {
   const { user, setUser } = useContext(SiteContext);
 
   useEffect(() => {
-    console.log(user);
     if (!user?.name) {
       navigate("/profile");
     }
@@ -51,15 +50,13 @@ export const Login = () => {
 
       console.log(res.data);
       setStatus(true);
-      setUser({
-        name: form.name,
-      });
-      setCount(count + 1);
-      setForm({
-        name: "",
-        password: "",
-      });
-      localStorage.setItem("token", res.token);
+      let fetchedUser = {
+        token: res.data.token,
+        logged: true,
+      };
+      setUser(fetchedUser);
+      localStorage.setItem("token", JSON.stringify(res.data.token));
+      navigate("./profile");
     } catch (error) {
       console.log(error);
     }

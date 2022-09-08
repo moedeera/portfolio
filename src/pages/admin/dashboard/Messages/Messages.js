@@ -8,7 +8,7 @@ export const Messages = ({ profile }) => {
         {" "}
         {profile.messages.map((msg) =>
           msg.status === "unread" || msg.status === "read" ? (
-            <div className="overview-box-item">
+            <div key={msg.id} className="overview-box-item">
               <div className="overview-item-main">
                 <div
                   className="overview-item-icon"
@@ -43,7 +43,7 @@ export const Messages = ({ profile }) => {
         {profile.messages.map(
           (msg) =>
             (msg.status === "sent" || msg.status === "draft") && (
-              <div className="overview-box-item">
+              <div key={msg.id} className="overview-box-item">
                 <div className="overview-item-main">
                   <div
                     className="overview-item-icon"
