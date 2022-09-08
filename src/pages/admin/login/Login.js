@@ -10,10 +10,10 @@ export const Login = () => {
   const { user, setUser } = useContext(SiteContext);
 
   useEffect(() => {
-    if (!user?.name) {
+    if (user) {
       navigate("/profile");
     }
-  }, []);
+  }, [user]);
 
   const [count, setCount] = useState(1);
   const [status, setStatus] = useState(false);

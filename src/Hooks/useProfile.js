@@ -26,7 +26,7 @@ export const useProfile = () => {
         config
       );
       console.log(res.data);
-      return res.data;
+      setProfile(res.data);
     } catch (error) {
       console.log(error);
       return null;

@@ -106,10 +106,7 @@ export const SiteContextProvider = ({ children }) => {
   };
 
   //Fetches specific profile information [online]
-  const fetchedProfile = useMemo(
-    () => fetchProfile(user?.token),
-    [user?.token]
-  );
+
   // Hook loads once to fetch the state of log (logged in or out)
   useEffect(() => {
     const getUser = async () => {
@@ -137,7 +134,7 @@ export const SiteContextProvider = ({ children }) => {
         setProfile,
         show,
         toggleShow,
-        fetchedProfile,
+        fetchProfile,
       }}
     >
       {children}

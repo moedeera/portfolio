@@ -14,23 +14,18 @@ import { Posts } from "./Posts/Posts";
 import axios from "axios";
 
 export const Dashboard = () => {
-  const {
-    toggleShow,
-    show,
-    message,
-    user,
-    profile,
-    setProfile,
-    fetchedProfile,
-  } = useContext(SiteContext);
+  const { toggleShow, show, message, user, profile, setProfile, fetchProfile } =
+    useContext(SiteContext);
   //alert()
   const [count, setCount] = useState(0);
 
-  console.log(profile);
-  console.log(user.logged, user.token);
-  // const [inbox, setInbox] = useState("");
+  useEffect(() => {
+    if (user?.token) {
+      fetchProfile(user?.token);
+    }
+  }, [user?.token]);
 
-  console.log(fetchedProfile);
+  console.log(profile);
   //toggle view
 
   const [view, setView] = useState(1);
