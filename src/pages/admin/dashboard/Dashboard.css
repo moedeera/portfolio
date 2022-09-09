@@ -23,7 +23,6 @@
   display: none;
 }
 .dashboard-main {
-  border: 1px solid crimson;
   padding: 0 calc(2vw - 5px);
 }
 /*Header-block*/
@@ -194,7 +193,6 @@
 
 #articles {
   background-color: #06d6a0;
-  background-color: ;
 }
 
 /**/
