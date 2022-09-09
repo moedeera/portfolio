@@ -7,31 +7,47 @@ import cases from "./cases.png";
 import overview from "./overview.png";
 import users from "./users.png";
 import board from "./board.png";
+import logout from "./logout.png";
 import bulletin from "./bulletin.png";
 import news from "./news.png";
 import { profiles } from "../../assets/data/admin-data";
+import { useEffect } from "react";
 
 export const SideMenu = ({ state }) => {
   let location = useLocation();
 
-  const { show, toggleShow, articlesList, user } = useContext(SiteContext);
+  const {
+    show,
+    toggleShow,
+    articlesList,
+    profile,
+    user,
+    sideBarView,
+    setSideBarView,
+    fetchProfile,
+  } = useContext(SiteContext);
+
+  useEffect(() => {
+    if (user?.token) {
+      fetchProfile(user?.token);
+    }
+  }, [user?.token]);
 
   if (location.pathname !== "/profile" || !user?.logged) {
     return null;
   }
+
+  console.log(profile);
 
   return (
     <div className={show ? "SideMenu sm-small-show" : "SideMenu sm-small-hide"}>
       <div className="SideMenu-options">
         <div className="SM-profile-info">
           <div className="SM-avatar">
-            <img
-              src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-              alt="avatar-pic"
-            />
+            <img src={profile.avatar} alt="avatar-pic" />
           </div>
           <div className="SM-details">
-            <div className="SM-Name">John Smith</div>
+            <div className="SM-Name">{profile.name}</div>
             <div className="SM-permission">
               <small>Admin</small>
             </div>
@@ -40,7 +56,7 @@ export const SideMenu = ({ state }) => {
         <div className="SM Menu">
           <h3>Menu</h3>
           <div className="SM-menu">
-            <div className="SM-menu-item">
+            <div className="SM-menu-item sm-selected">
               <img src={overview} alt="" style={{ width: "28px" }} />
               Overview
             </div>
@@ -52,20 +68,25 @@ export const SideMenu = ({ state }) => {
               </div>
               <div className="sm-count">
                 {" "}
-                <div>{profiles[0].messages.length}</div>
+                <div>{profile.messages.length}</div>
               </div>
             </div>
-            <div className="SM-menu-item">
+            <div className="SM-menu-item ">
               <img src={cases} alt="" style={{ width: "28px" }} />
               Posts
             </div>
             <div className="SM-menu-item">
               <img src={users} alt="" style={{ width: "28px" }} />
-              Users
+              Account
             </div>
             <div className="SM-menu-item">
               <img src={board} alt="" style={{ width: "28px" }} />
               Board
+            </div>
+
+            <div className="SM-menu-item">
+              <img src={logout} alt="" style={{ width: "28px" }} />
+              Logout
             </div>
           </div>
         </div>

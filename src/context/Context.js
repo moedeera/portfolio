@@ -32,7 +32,8 @@ export const SiteContextProvider = ({ children }) => {
   //Blog Article Storage
   const { articlesList } = useArticles();
   // SideBar Toggle
-  const { show, toggleShow } = useSideBar();
+  const { show, toggleShow, sideBarView, setSideBarView } = useSideBar();
+
   //User Storage
   //Declaring a user variable for Administrator
   const [user, setUser] = useState(null);
@@ -134,6 +135,8 @@ export const SiteContextProvider = ({ children }) => {
         show,
         toggleShow,
         fetchProfile,
+        sideBarView,
+        setSideBarView,
       }}
     >
       {children}

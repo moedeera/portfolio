@@ -8,8 +8,6 @@ export const useProfile = () => {
   const [loadingProfile, setLoadingProgile] = useState(false);
 
   const fetchProfile = async (token) => {
-    console.log(token);
-
     try {
       const config = {
         headers: {
@@ -25,7 +23,7 @@ export const useProfile = () => {
         body,
         config
       );
-      console.log(res.data);
+
       setProfile(res.data);
     } catch (error) {
       console.log(error);

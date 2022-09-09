@@ -26,11 +26,7 @@ export const UpperBlock = ({ view }) => {
             {profiles[0].messages.map(
               (msg, index) =>
                 index < 4 && (
-                  <img
-                    src={msg.avatar}
-                    alt="avatar-pic"
-                    key={profiles[0].messages.id}
-                  />
+                  <img src={msg.avatar} alt="avatar-pic" key={msg.id} />
                 )
             )}
           </div>

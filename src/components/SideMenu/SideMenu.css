@@ -37,7 +37,7 @@
   padding: 15px 0;
 }
 .SideMenu-options > div {
-  padding-left: 20px;
+  padding-left: 7px;
 }
 
 /*Avatar area*/
@@ -100,11 +100,12 @@
   align-items: center;
   cursor: pointer;
 
-  padding: 15px 5px;
+  padding: 15px 0px 15px 10px;
 
   min-width: 280px;
   transition: all 400ms ease-in-out;
-  /* border: 1px solid red; */
+  border-bottom: 1px solid rgba(128, 128, 128, 0.232);
+  border-top: 1px solid rgba(128, 128, 128, 0.232);
 }
 .SM-menu-list i {
   color: grey;
@@ -114,6 +115,9 @@
   gap: 20px;
   justify-content: space-between;
   width: 95%;
+}
+.sm-selected {
+  border-left: 3px solid crimson;
 }
 .message-text {
   display: flex;

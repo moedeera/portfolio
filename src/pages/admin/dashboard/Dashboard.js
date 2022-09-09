@@ -17,7 +17,6 @@ export const Dashboard = () => {
     }
   }, [user?.token]);
 
-  console.log(profile);
   //toggle view
 
   return (
