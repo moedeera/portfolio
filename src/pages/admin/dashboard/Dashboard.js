@@ -1,17 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { SiteContext } from "../../../context/Context";
 import "../Admin.css";
 import "./Dashboard.css";
-import messages from "./icons/messages.png";
-import { articles } from "../../../assets/data/articles";
-import notification from "./icons/notification.png";
-import cases from "./icons/case.png";
-import request from "./icons/request.png";
 
-import { profiles } from "../../../assets/data/admin-data";
-import { Messages } from "./Messages/Messages";
-import { Posts } from "./Posts/Posts";
-import axios from "axios";
+import { UpperBlock } from "./View/UpperBlock";
+
+import { LowerBlock } from "./View/LowerBlock";
 
 export const Dashboard = () => {
   const { toggleShow, show, user, profile, fetchProfile } =
@@ -25,8 +19,6 @@ export const Dashboard = () => {
 
   console.log(profile);
   //toggle view
-
-  const [view, setView] = useState(1);
 
   return (
     <>
@@ -72,126 +64,9 @@ export const Dashboard = () => {
             </div>
           </div>
 
-          <div className="upper-block">
-            <div className="single-block" id="messages">
-              <div className="content">
-                {" "}
-                <div className="content-icons">
-                  <div>
-                    <img src={messages} alt="logo" />
-                  </div>
-                </div>
-                <div className="content-message">
-                  {profiles[0].messages.length} messages
-                </div>
-                <div className="content-avatars">
-                  {profiles[0].messages.map(
-                    (msg, index) =>
-                      index < 4 && (
-                        <img
-                          src={msg.avatar}
-                          alt="avatar-pic"
-                          key={profiles[0].messages.id}
-                        />
-                      )
-                  )}
-                </div>
-              </div>
-            </div>
+          <UpperBlock view={"overview"} />
 
-            <div className="single-block" id="cases">
-              <div className="content">
-                {" "}
-                <div className="content-icons">
-                  <div>
-                    <img src={cases} alt="logo" />
-                  </div>
-                </div>
-                <div className="content-message">
-                  <>{articles.length} Posts</>
-                  <small>10 Published</small>
-                  <small>1 Draft</small>
-                </div>
-              </div>
-            </div>
-
-            <div className="single-block" id="requests">
-              <div className="content">
-                {" "}
-                <div className="content-icons">
-                  <div>
-                    <img src={notification} alt="logo" />
-                  </div>
-                </div>
-                <div className="content-message">
-                  <>4 Pending Items</>
-                  <small>2 Comments</small>
-                  <small>1 Post approval</small>
-                </div>
-              </div>
-            </div>
-
-            <div className="single-block" id="articles">
-              <div className="content">
-                {" "}
-                <div className="content-icons"></div>
-                <div className="content-message">5 To-dos</div>
-                <div className="content-avatars">
-                  <img
-                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                    alt="avatar-pic"
-                  />
-                  <img
-                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                    alt="avatar-pic"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="lower-block">
-            <div className="lower-upper">
-              <div className="lower-upper-sort">
-                {" "}
-                <div
-                  className={view === 1 ? "selected-option" : ""}
-                  onClick={() => {
-                    setView(1);
-                  }}
-                >
-                  Messages
-                </div>
-                <div
-                  className={view === 2 ? "selected-option" : ""}
-                  onClick={() => {
-                    setView(2);
-                  }}
-                >
-                  Posts
-                </div>
-                <div
-                  className={view === 3 ? "selected-option" : ""}
-                  onClick={() => {
-                    setView(3);
-                  }}
-                >
-                  Requests
-                </div>
-              </div>
-              <div className="dashboard-search">Search</div>
-            </div>
-            <div className="lower-bottom">
-              <div className="bottom-overview-header">
-                <h3>Recent</h3>{" "}
-              </div>
-              {view === 1 ? (
-                <Messages profile={profiles[0]} />
-              ) : (
-                <Posts profile={articles} />
-              )}
-            </div>
-          </div>
+          <LowerBlock />
         </div>
 
         <div className="dashboard-side">

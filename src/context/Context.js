@@ -112,7 +112,6 @@ export const SiteContextProvider = ({ children }) => {
     const getUser = async () => {
       const newUser = await LoadUser();
       setUser(newUser);
-      console.log("it happened", newUser);
     };
 
     getUser().catch(console.error);
