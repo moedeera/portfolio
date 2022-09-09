@@ -25,6 +25,7 @@ export const SideMenu = ({ state }) => {
     sideBarView,
     setSideBarView,
     fetchProfile,
+    setUser,
   } = useContext(SiteContext);
 
   useEffect(() => {
@@ -56,11 +57,29 @@ export const SideMenu = ({ state }) => {
         <div className="SM Menu">
           <h3>Menu</h3>
           <div className="SM-menu">
-            <div className="SM-menu-item sm-selected">
+            <div
+              onClick={() => {
+                setSideBarView("overview");
+              }}
+              className={
+                sideBarView === "overview"
+                  ? "SM-menu-item sm-selected"
+                  : "SM-menu-item"
+              }
+            >
               <img src={overview} alt="" style={{ width: "28px" }} />
               Overview
             </div>
-            <div className="SM-menu-item sm-messages">
+            <div
+              onClick={() => {
+                setSideBarView("messages");
+              }}
+              className={
+                sideBarView === "messages"
+                  ? "SM-menu-item sm-selected"
+                  : "SM-menu-item"
+              }
+            >
               <div className="message-text">
                 {" "}
                 <img src={messages} alt="" style={{ width: "28px" }} />
@@ -71,20 +90,53 @@ export const SideMenu = ({ state }) => {
                 <div>{profile.messages.length}</div>
               </div>
             </div>
-            <div className="SM-menu-item ">
+            <div
+              onClick={() => {
+                setSideBarView("posts");
+              }}
+              className={
+                sideBarView === "posts"
+                  ? "SM-menu-item sm-selected"
+                  : "SM-menu-item"
+              }
+            >
               <img src={cases} alt="" style={{ width: "28px" }} />
               Posts
             </div>
-            <div className="SM-menu-item">
+            <div
+              onClick={() => {
+                setSideBarView("account");
+              }}
+              className={
+                sideBarView === "account"
+                  ? "SM-menu-item sm-selected"
+                  : "SM-menu-item"
+              }
+            >
               <img src={users} alt="" style={{ width: "28px" }} />
               Account
             </div>
-            <div className="SM-menu-item">
+            <div
+              onClick={() => {
+                setSideBarView("board");
+              }}
+              className={
+                sideBarView === "board"
+                  ? "SM-menu-item sm-selected"
+                  : "SM-menu-item"
+              }
+            >
               <img src={board} alt="" style={{ width: "28px" }} />
               Board
             </div>
 
-            <div className="SM-menu-item">
+            <div
+              onClick={() => {
+                localStorage.removeItem("token");
+                setUser(null);
+              }}
+              className="SM-menu-item"
+            >
               <img src={logout} alt="" style={{ width: "28px" }} />
               Logout
             </div>
