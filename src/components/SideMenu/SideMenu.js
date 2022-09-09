@@ -45,12 +45,12 @@ export const SideMenu = ({ state }) => {
       <div className="SideMenu-options">
         <div className="SM-profile-info">
           <div className="SM-avatar">
-            <img src={profile.avatar} alt="avatar-pic" />
+            <img src={profile?.avatar} alt="avatar-pic" />
           </div>
           <div className="SM-details">
-            <div className="SM-Name">{profile.name}</div>
+            <div className="SM-Name">{profile?.name}</div>
             <div className="SM-permission">
-              <small>Admin</small>
+              <small>{profile?.type}</small>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export const SideMenu = ({ state }) => {
               </div>
               <div className="sm-count">
                 {" "}
-                <div>{profile.messages.length}</div>
+                <div>{profile?.messages.length}</div>
               </div>
             </div>
             <div

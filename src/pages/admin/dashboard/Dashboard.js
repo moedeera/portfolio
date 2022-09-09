@@ -8,7 +8,7 @@ import { UpperBlock } from "./View/UpperBlock";
 import { LowerBlock } from "./View/LowerBlock";
 
 export const Dashboard = () => {
-  const { toggleShow, show, user, profile, fetchProfile } =
+  const { toggleShow, show, user, profile, fetchProfile, sideBarView } =
     useContext(SiteContext);
 
   useEffect(() => {
@@ -63,7 +63,7 @@ export const Dashboard = () => {
             </div>
           </div>
 
-          <UpperBlock view={"overview"} />
+          <UpperBlock view={sideBarView} profile={profile} />
 
           <LowerBlock />
         </div>

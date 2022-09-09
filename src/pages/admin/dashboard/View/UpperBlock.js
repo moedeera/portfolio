@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { SiteContext } from "../../../../context/Context";
 
-export const UpperBlock = ({ view }) => {
+export const UpperBlock = ({ view, profile }) => {
   return (
     <div className="upper-block">
       <div className="single-block" id="messages">
@@ -20,7 +20,14 @@ export const UpperBlock = ({ view }) => {
             </div>
           </div>
           <div className="content-message">
-            {profiles[0].messages.length} messages
+            {profile?.messages.length}
+            {view === "overview"
+              ? " Messages"
+              : view === "messages"
+              ? " New messages"
+              : view === "posts"
+              ? " New posts"
+              : ""}
           </div>
           <div className="content-avatars">
             {profiles[0].messages.map(
