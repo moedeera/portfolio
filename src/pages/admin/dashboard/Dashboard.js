@@ -14,10 +14,8 @@ import { Posts } from "./Posts/Posts";
 import axios from "axios";
 
 export const Dashboard = () => {
-  const { toggleShow, show, message, user, profile, setProfile, fetchProfile } =
+  const { toggleShow, show, user, profile, fetchProfile } =
     useContext(SiteContext);
-  //alert()
-  const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (user?.token) {
@@ -76,85 +74,64 @@ export const Dashboard = () => {
 
           <div className="upper-block">
             <div className="single-block" id="messages">
-              <div className="curve first-curve"></div>
               <div className="content">
                 {" "}
                 <div className="content-icons">
                   <div>
                     <img src={messages} alt="logo" />
                   </div>
-                  <div>
-                    <img src={notification} alt="logo" />
-                  </div>
                 </div>
                 <div className="content-message">
                   {profiles[0].messages.length} messages
                 </div>
                 <div className="content-avatars">
-                  {profiles[0].messages.map((msg) => (
-                    <img
-                      src={msg.avatar}
-                      alt="avatar-pic"
-                      key={profiles[0].messages.id}
-                    />
-                  ))}
+                  {profiles[0].messages.map(
+                    (msg, index) =>
+                      index < 4 && (
+                        <img
+                          src={msg.avatar}
+                          alt="avatar-pic"
+                          key={profiles[0].messages.id}
+                        />
+                      )
+                  )}
                 </div>
               </div>
             </div>
 
             <div className="single-block" id="cases">
-              <div className="curve second-curve"></div>
               <div className="content">
                 {" "}
                 <div className="content-icons">
                   <div>
                     <img src={cases} alt="logo" />
                   </div>
-                  <div>
-                    <img src={notification} alt="logo" />
-                  </div>
                 </div>
-                <div className="content-message"> {articles.length} Posts</div>
-                <div className="content-avatars">
-                  {articles.map(
-                    (post, index) =>
-                      index < 5 && (
-                        <img key={post.id} src={post.pic} alt="avatar-pic" />
-                      )
-                  )}
-                  <i className="fa fa-plus" aria-hidden="true"></i>
+                <div className="content-message">
+                  <>{articles.length} Posts</>
+                  <small>10 Published</small>
+                  <small>1 Draft</small>
                 </div>
               </div>
             </div>
 
             <div className="single-block" id="requests">
-              <div className="curve third-curve"></div>
               <div className="content">
                 {" "}
                 <div className="content-icons">
                   <div>
-                    <img src={request} alt="logo" />
-                  </div>
-                  <div>
                     <img src={notification} alt="logo" />
                   </div>
                 </div>
-                <div className="content-message">4 Pending Comments</div>
-                <div className="content-avatars">
-                  <img
-                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                    alt="avatar-pic"
-                  />
-                  <img
-                    src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
-                    alt="avatar-pic"
-                  />
+                <div className="content-message">
+                  <>4 Pending Items</>
+                  <small>2 Comments</small>
+                  <small>1 Post approval</small>
                 </div>
               </div>
             </div>
 
             <div className="single-block" id="articles">
-              <div className="curve fourth-curve"></div>
               <div className="content">
                 {" "}
                 <div className="content-icons"></div>
@@ -172,6 +149,7 @@ export const Dashboard = () => {
               </div>
             </div>
           </div>
+
           <div className="lower-block">
             <div className="lower-upper">
               <div className="lower-upper-sort">

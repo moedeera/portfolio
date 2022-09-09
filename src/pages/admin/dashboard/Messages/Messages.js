@@ -10,6 +10,12 @@ export const Messages = ({ profile }) => {
           msg.status === "unread" || msg.status === "read" ? (
             <div key={msg.id} className="overview-box-item">
               <div className="overview-item-main">
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  name="vehicle1"
+                  value="Bike"
+                />
                 <div
                   className="overview-item-icon"
                   style={
@@ -27,6 +33,9 @@ export const Messages = ({ profile }) => {
               </div>
               <div className="overview-item-images">
                 {" "}
+                <div className="overview-item-details">
+                  <small> September {10 - msg.id}th</small>
+                </div>
                 <img src={msg.avatar} alt={`${msg.subject}`} />
               </div>
             </div>
@@ -45,6 +54,12 @@ export const Messages = ({ profile }) => {
             (msg.status === "sent" || msg.status === "draft") && (
               <div key={msg.id} className="overview-box-item">
                 <div className="overview-item-main">
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="vehicle1"
+                    value="Bike"
+                  />
                   <div
                     className="overview-item-icon"
                     style={
@@ -66,7 +81,12 @@ export const Messages = ({ profile }) => {
                   </div>
                 </div>
                 <div className="overview-item-images">
-                  {" "}
+                  <div className="overview-item-details">
+                    <h3>
+                      {" "}
+                      {msg.status === "draft" && `Sept 6th `} {msg.subject}
+                    </h3>
+                  </div>{" "}
                   <img
                     src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
                     alt="avatar-pic"

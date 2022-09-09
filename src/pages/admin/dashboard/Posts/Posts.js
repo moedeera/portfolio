@@ -11,6 +11,12 @@ export const Posts = ({ profile }) => {
             post.status && (
               <div className="overview-box-item">
                 <div className="overview-item-main">
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="vehicle1"
+                    value="Bike"
+                  />
                   <div
                     className="overview-item-icon"
                     style={
@@ -31,7 +37,9 @@ export const Posts = ({ profile }) => {
                   </div>
                 </div>
                 <div className="overview-item-images">
-                  {" "}
+                  <div className="overview-item-details">
+                    <small> {post.created}</small>
+                  </div>{" "}
                   <img src={post.pic} alt={`${post.header}`} />
                 </div>
               </div>
