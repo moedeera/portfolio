@@ -15,7 +15,7 @@ import { useEffect } from "react";
 
 export const SideMenu = ({ state }) => {
   let location = useLocation();
-
+  console.log(profiles[0].contentSettings);
   const {
     show,
     toggleShow,
@@ -90,19 +90,26 @@ export const SideMenu = ({ state }) => {
                 <div>{profile?.messages.length}</div>
               </div>
             </div>
-            <div
-              onClick={() => {
-                setSideBarView("posts");
-              }}
-              className={
-                sideBarView === "posts"
-                  ? "SM-menu-item sm-selected"
-                  : "SM-menu-item"
-              }
-            >
-              <img src={cases} alt="" style={{ width: "28px" }} />
-              Posts
-            </div>
+            {profiles[0].contentSettings.map((content) => (
+              <div
+                onClick={() => {
+                  setSideBarView(`${content.contentName}`);
+                }}
+                className={
+                  sideBarView === `${content.contentName}`
+                    ? "SM-menu-item sm-selected"
+                    : "SM-menu-item"
+                }
+              >
+                <img
+                  src={content.contentName === "post" ? cases : news}
+                  alt=""
+                  style={{ width: "28px" }}
+                />
+                {content.contentName}
+              </div>
+            ))}
+
             <div
               onClick={() => {
                 setSideBarView("account");

@@ -87,6 +87,15 @@ const profiles = [
     dashboard: [1, 1, 1, 1],
     messages: msgOverview,
     requests: requestLog,
+    contentSettings: [
+      {
+        contentName: "post",
+        type: "String",
+      },
+      { contentName: "article", type: "String" },
+      { contentName: "cases", type: "String" },
+    ],
+
     comments: [],
     cases: [],
     posts: [],
