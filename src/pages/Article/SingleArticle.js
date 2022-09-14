@@ -9,17 +9,6 @@ import { Videoplayer } from "../../components/videoplayer/videoplayer";
 import { TwitterShareButton } from "react-twitter-embed";
 import { blogImages } from "../../assets/data/images/index.js";
 
-import pic1 from "../Blog/recession.jpg";
-import pic2 from "../Blog/webflow.jpg";
-import pic3 from "../Blog/design.jpg";
-import pic4 from "../Blog/progress.jpg";
-import pic5 from "../Blog/pbuddies.jpg";
-import pic6 from "../Blog/php.jpg";
-import pic7 from "../Blog/MERN.jpg";
-import pic9 from "../Blog/codingjourney.jpg";
-import pic10 from "../Blog/layoffs.jpg";
-import pic11 from "../Blog/csstips.jpg";
-import pic12 from "../Blog/5-css.jpg";
 import pic01 from "../Blog/portfolio-v1.png";
 import pic02 from "../Blog/portfolio-v2.5.png";
 import pic03 from "../Blog/portfolio-v3.png";
@@ -30,19 +19,6 @@ import pic07 from "../Blog/php-meme.jpg";
 
 import avatar from "./avatar.png";
 
-const images = [
-  pic12,
-  pic11,
-  pic10,
-  pic9,
-  pic1,
-  pic2,
-  pic3,
-  pic4,
-  pic5,
-  pic6,
-  pic7,
-];
 const articleImages = [pic02, pic01, pic03, pic04, pic05, pic06, pic07];
 
 export const SingleArticle = () => {
