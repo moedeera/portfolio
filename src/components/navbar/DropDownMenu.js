@@ -12,6 +12,7 @@ import design from "./images/design.png";
 import business from "./images/business.png";
 import consult from "./images/chat.png";
 import { Link } from "react-router-dom";
+import { blogImages } from "../../assets/data/images/index.js";
 import { SiteContext } from "../../context/Context";
 
 const images = [null, bootcamp, superdonair, ereader];
@@ -141,10 +142,7 @@ export const DropDownMenu = ({
                   <h3>Latest Blog</h3>
                   <div className="br-lower">
                     <div className="blog-image">
-                      <img
-                        src={articlesList[0].pic}
-                        alt=""
-                      />
+                      <img src={blogImages[0].article} alt="" />
                     </div>
                     <div className="blog-text">
                       <p>{articlesList[0].header}</p>
@@ -259,10 +257,8 @@ export const DropDownMenu = ({
                   </div>
                 </div>
               </Link>
-              
             </div>
           )}
-          
         </div>
       </div>
     </div>

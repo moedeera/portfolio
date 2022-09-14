@@ -47,7 +47,13 @@ export const SingleArticle = () => {
       <div className="article-container">
         <div className="article-page-container">
           <div className="articles-header">
-            <h5>{article.topic}</h5>
+            <h5>
+              {" "}
+              <Link to={"../blog"}>
+                <span style={{ color: "black" }}>Blog ></span>
+              </Link>{" "}
+              {article.topic}
+            </h5>
             <h1>{article.header}</h1>
             <p>{article.abstract}</p>
             <div className="article-time">
