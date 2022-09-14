@@ -70,6 +70,15 @@
   margin: 10px;
   justify-content: space-between;
 }
+.upper-block.alternate,
+.upper-block.messages {
+  justify-content: flex-start;
+}
+.upper-block.alternate > div,
+.upper-block.messages > div {
+  width: 100%;
+}
+
 .single-block {
   width: 25%;
   max-width: 300px;
@@ -478,6 +487,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .single-block {
     width: 100%;
   }

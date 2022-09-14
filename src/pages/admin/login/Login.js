@@ -9,8 +9,17 @@ export const Login = () => {
   const navigate = useNavigate();
   const { user, setUser } = useContext(SiteContext);
 
+  const [error, setError] = useState();
+  const [loading, setLoading] = useState();
+
   useEffect(() => {
-    if (user) {
+    setTimeout(() => {
+      setError(false);
+    }, 3000);
+  }, [error]);
+
+  useEffect(() => {
+    if (user?.logged) {
       navigate("/profile");
     }
   }, [user]);
@@ -34,7 +43,7 @@ export const Login = () => {
 
   const onSubmit = async () => {
     console.log(form);
-
+    setLoading(true);
     try {
       const config = {
         headers: {
@@ -55,9 +64,12 @@ export const Login = () => {
         logged: true,
       };
       setUser(fetchedUser);
+      setLoading(false);
       localStorage.setItem("token", JSON.stringify(res.data.token));
-      navigate("./profile");
+      navigate("../profile");
     } catch (error) {
+      setError(true);
+      setLoading(false);
       console.log(error);
     }
   };
@@ -102,6 +114,9 @@ export const Login = () => {
           >
             Login
           </button>
+
+          {error ? "Incorrect username or password" : ""}
+          {loading ? "loading" : ""}
           {/* <h3>or</h3>
           <button className="btn-admin">Register</button> */}
         </div>

@@ -9,7 +9,7 @@ import { useContext } from "react";
 import { SiteContext } from "../../../../context/Context";
 
 export const UpperBlock = ({ view, profile }) => {
-  return (
+  return view === "overview" ? (
     <div className="upper-block">
       <div className="single-block" id="messages">
         <div className="content">
@@ -86,6 +86,137 @@ export const UpperBlock = ({ view, profile }) => {
               src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg"
               alt="avatar-pic"
             />
+          </div>
+        </div>
+      </div>
+    </div>
+  ) : view === "messages" ? (
+    <div className="upper-block messages">
+      <div
+        style={{
+          backgroundColor: `goldenrod`,
+        }}
+        className="single-block "
+      >
+        <div className="content">
+          {" "}
+          <div className="content-icons">
+            <div>
+              <img src={messages} alt="logo" />
+            </div>
+          </div>
+          <div className="content-message">
+            {profile?.messages.length}
+            {" New "}
+            {view}s
+          </div>
+          <div className="content-avatars">
+            {profiles[0].messages.map(
+              (msg, index) =>
+                index < 4 && (
+                  <img src={msg.avatar} alt="avatar-pic" key={msg.id} />
+                )
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="single-block"
+        style={{
+          backgroundColor: `${profiles[0].contentSettings[1].contentColor2}`,
+        }}
+      >
+        <div className="content">
+          {" "}
+          <div className="content-icons">
+            <div>
+              <img src={cases} alt="logo" />
+            </div>
+          </div>
+          <div className="content-message">
+            <>
+              {articles.length} {view}s
+            </>
+            <small>10 Published</small>
+            <small>1 Draft</small>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="single-block"
+        style={{
+          backgroundColor: `navy`,
+        }}
+      >
+        <div className="content">
+          {" "}
+          <div className="content-icons">
+            <div>
+              <img src={cases} alt="logo" />
+            </div>
+          </div>
+          <div className="content-message">
+            <>
+              {articles.length} {view}s
+            </>
+            <small>10 Published</small>
+            <small>1 Draft</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  ) : (
+    <div className="upper-block alternate">
+      <div
+        style={{
+          backgroundColor: `${profiles[0].contentSettings[1].contentColor1}`,
+        }}
+        className="single-block "
+      >
+        <div className="content">
+          {" "}
+          <div className="content-icons">
+            <div>
+              <img src={messages} alt="logo" />
+            </div>
+          </div>
+          <div className="content-message">
+            {profile?.messages.length}
+            {" New "}
+            {view}s
+          </div>
+          <div className="content-avatars">
+            {profiles[0].messages.map(
+              (msg, index) =>
+                index < 4 && (
+                  <img src={msg.avatar} alt="avatar-pic" key={msg.id} />
+                )
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="single-block"
+        style={{
+          backgroundColor: `${profiles[0].contentSettings[1].contentColor2}`,
+        }}
+      >
+        <div className="content">
+          {" "}
+          <div className="content-icons">
+            <div>
+              <img src={cases} alt="logo" />
+            </div>
+          </div>
+          <div className="content-message">
+            <>
+              {articles.length} {view}s
+            </>
+            <small>10 Published</small>
+            <small>1 Draft</small>
           </div>
         </div>
       </div>

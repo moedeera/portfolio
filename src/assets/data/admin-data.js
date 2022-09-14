@@ -87,6 +87,30 @@ const profiles = [
     dashboard: [1, 1, 1, 1],
     messages: msgOverview,
     requests: requestLog,
+    contentSettings: [
+      {
+        contentName: "post",
+        type: "String",
+        contentColor1: "#505ce4",
+        contentColor2: "#256eff",
+        contentColor3: "#f04770",
+        contentColor4: "#14bdeb",
+      },
+      {
+        contentName: "article",
+        type: "String",
+
+        contentColor1: "#173753",
+        contentColor2: "#006989",
+      },
+      {
+        contentName: "cases",
+        type: "String",
+        contentColor1: "#7E78D2",
+        contentColor2: "#EF233C",
+      },
+    ],
+
     comments: [],
     cases: [],
     posts: [],
