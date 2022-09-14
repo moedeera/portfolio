@@ -50,7 +50,7 @@ export const SingleArticle = () => {
             <h5>
               {" "}
               <Link to={"../blog"}>
-                <span style={{ color: "black" }}>Blog ></span>
+                <span style={{ color: "black" }}>Blog {`>`}</span>
               </Link>{" "}
               {article.topic}
             </h5>
