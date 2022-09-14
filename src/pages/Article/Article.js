@@ -4,18 +4,8 @@ import { SiteContext } from "../../context/Context";
 import "./Article.css";
 import { Link } from "react-router-dom";
 import { Videoplayer } from "../../components/videoplayer/videoplayer";
-import {
-  TwitterTimelineEmbed,
-  TwitterShareButton,
-  TwitterFollowButton,
-  TwitterHashtagButton,
-  TwitterMentionButton,
-  TwitterTweetEmbed,
-  TwitterMomentShare,
-  TwitterDMButton,
-  TwitterVideoEmbed,
-  TwitterOnAirButton,
-} from "react-twitter-embed";
+import { TwitterShareButton } from "react-twitter-embed";
+import { blogImages } from "../../assets/data/images/index.js";
 
 import pic1 from "../Blog/recession.jpg";
 import pic2 from "../Blog/webflow.jpg";
@@ -61,7 +51,7 @@ export const Article = () => {
             </div>
           </div>
           <div className="articles-image">
-            <img src={images[article.id]} alt="" />
+            <img src={blogImages[article.id]} alt="" />
             <div className="article-details">
               <div className="avatar-pic">
                 <img src={avatar} alt="" />
@@ -183,15 +173,7 @@ export const Article = () => {
                 <button className="btn-follow">Contact</button>{" "}
               </Link>
             </div>
-            {/* <iframe
-              dth="100%"
-              height="400px"
-              src="https://www.youtube.com/embed/1oNwhhNkcEM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe> */}
+
             <div className="sidebar-posts">
               <h2> Featured Video</h2>
 
@@ -209,7 +191,7 @@ export const Article = () => {
                           <Link to={`../blog/${post.title}`}>
                             <img
                               alt=""
-                              src={images[post.id]}
+                              src={blogImages[post.id]}
                               style={{
                                 width: "150px",
                                 // maxWidth: "150px",
@@ -240,7 +222,7 @@ export const Article = () => {
               <div>Jobs</div>
               <div>Media</div>
             </div>
-            
+
             <div className="sidebar-categories"></div>
           </div>
         </div>

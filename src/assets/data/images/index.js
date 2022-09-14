@@ -15,6 +15,14 @@ const portfolioImages = [
 
 const blogImages = [
   {
+    article: require("./blogs/3-reasons-fail.jpg"),
+    main: require("./blogs/3-reasons-fail.jpg"),
+  },
+  {
+    article: require("./blogs/cryptoboom.jpg"),
+    main: require("./blogs/cryptoboom.jpg"),
+  },
+  {
     article: require("./blogs/5-css.jpg"),
     main: require("./blogs/5-css.jpg"),
   },

@@ -7,6 +7,7 @@ import MetaTags from "react-meta-tags";
 
 import { Videoplayer } from "../../components/videoplayer/videoplayer";
 import { TwitterShareButton } from "react-twitter-embed";
+import { blogImages } from "../../assets/data/images/index.js";
 
 import pic1 from "../Blog/recession.jpg";
 import pic2 from "../Blog/webflow.jpg";
@@ -64,7 +65,7 @@ export const SingleArticle = () => {
         <meta property="og:image" content="path/to/image.jpg" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content={article.header} />
-        <meta property="twitter:image" content={articleImages[article.id]} />
+        <meta property="twitter:image" content={blogImages[article.id]} />
       </MetaTags>
 
       <div className="article-container">
@@ -82,7 +83,7 @@ export const SingleArticle = () => {
             </div>
           </div>
           <div className="articles-image">
-            <img src={images[article.id]} alt="" />
+            <img src={blogImages[article.id].article} alt="" />
             <div className="article-details">
               <div className="avatar-pic">
                 <img src={avatar} alt="" />
@@ -184,7 +185,7 @@ ${article.code[map]}
                           <Link to={`../blog/${post.title}`}>
                             <img
                               alt=""
-                              src={images[post.id]}
+                              src={blogImages[post.id].article}
                               style={{
                                 width: "150px",
                                 // maxWidth: "150px",
