@@ -134,6 +134,8 @@ const articles = [
       export const SiteContext = createContext({});
       
       export const SiteContextProvider = ({ children }) => {
+
+        const [user, setUser] = useState(null);
         useEffect(() => {
           const fetchUser = async () => {
             try {
