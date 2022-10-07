@@ -161,7 +161,7 @@ ${article.code[map]}
                 {articlesList.map(
                   (post, index) =>
                     post.id !== article?.id &&
-                    index < 8 && (
+                    index < post.id + 4 && (
                       <div className="sidebar-post" key={`55-${index}`}>
                         <div className="sidebar-post-image">
                           <Link to={`../blog/${post.title}`}>
