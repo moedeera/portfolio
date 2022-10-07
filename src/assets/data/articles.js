@@ -194,7 +194,7 @@ const articles = [
     topic: "General",
     link: "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     header: "What I learned from my first interview",
-    abstract: "My first interview was stressful, but a good learning lessons",
+    abstract: "My first interview was stressful, but a good learning lesson.",
     abstractLG:
       "Things I learned from my first interview. Avoid making the mistakes I made",
     abstractSM: "4 Lessons from my first Interview",
