@@ -54,6 +54,185 @@ const template2 = {
 const articles = [
   {
     id: 0,
+    title: "reactcontext",
+    icons: [],
+    pic: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    topic: "Educational",
+    link: "",
+    header: "User information using Context Provider and Axios",
+    abstract: "Asynchronous user data using React Context Provider ",
+    abstractLG:
+      "How to use React Context Provider and Axios to fetch and store user information",
+    abstractSM: "User information using Context Provider and Axios",
+    created: "October 2022",
+    updated: "October 2022",
+    readTime: "4",
+    headers: [
+      ``,
+      `What's the Purpose?`,
+      `Management of data in react context-provider`,
+      `While this is all nice to have, the question that matters is how does this work when connecting to a server and fetching data?`,
+      `Fetching data in a context- provider`,
+      ` `,
+      ``,
+    ],
+    paragraphs: [
+      `Today I wanted to dive into a few concepts involving React user authentication via context provider. This is something I have not seen in any tutorial I am aware of. Much of that has to do with react-redux being the go-to for most online tutorials when it comes to authentication. Ben Awad from youtube has done a video explaining it on a basic level. To see that, check out the featured video for this blog`,
+      `Before I go any further lets Unpack this whole concept of authentication via a context provider. Why look into this concept? There are a few reasons but the main one being that it is much simpler and involves less dependencies than using react-redux. But the question then is how would React context provider manage user information when it is coming from a server?`,
+      `React context is a built-in tool inside react that just needs to be imported. It allows data to be stored on the top of the hierarchy. This allows all components access to  hooks, constant variables, and functions.  You can also have a useEffect hook inside the Context provider. This is very handy when you are dealing with multi-layered data that is constantly being updated. To initiate it, all you do is create a Context.js file and paste the following code. `,
+      `Fetching data in the Context folder is easy. Fetching the data immediately on load on the other hand is a little trickier. To Fetch data all you have to do is install axios and write up a basic fetch function. Then export that function from the Context Provider. If you want it to load up immediately, put it inside a useEffect hook.`,
+      `However there is a problem you will run up to When you generate a user on the top level. That is that the rendering of the hook that contains the user might not load up in time. Take for instance  you declare this hook to store a user`,
+      `You then create this function to fetch the user on first render`,
+      `you then place the function inside a useEffect hook like this`,
+      `Now your context should look like this`,
+      `And this is the component that fetches the user`,
+      `You will eventually realize that this leads to an error because useEffect does not take in asynchronous functions directly, to overcome this define the function inside the useEffect hook and call it immediately`,
+      `To overcome this, you simply redefine the function inside the useEffect hook like this`,
+      `This will solve the issue and allow you to fetch your use (or any data) from the context without having to use any react library. This is ideal for small projects that don't need sophisticated data management. For medium size projects(that require authentication) you can you something like custom hooks to add an extra layer of organization to your app. But that will be something I will get into on another blog. Hopefully this was helpful.`,
+    ],
+    pictures: [],
+    picCaption: [],
+    videos: [`https://www.youtube.com/watch?v=lhMKvyLRWo0&t=433s`],
+    code: [
+      null,
+      null,
+      `import { createContext, useState } from "react";
+
+    export const SiteContext = createContext({});
+       
+    export const SiteContextProvider = ({ children }) => {
+    
+    
+     <SiteContext.Provider
+          value={{
+     data
+          }}
+        >
+          {children}
+        </SiteContext.Provider>
+    };
+    `,
+      null,
+      ` const [user, setUser] = useState(null);`,
+      `   const fetchUser = async () => {
+        try {
+          const res = await axios.get(
+            "https://link-to-my-app/api/user"
+          );
+           setUser(res.data);
+        } catch (error) {
+          console.log(error);
+        }
+      };`,
+      `  useEffect(() => {
+         fetchUser();
+      }, []);`,
+
+      `import { createContext, useState } from "react";
+
+      export const SiteContext = createContext({});
+      
+      export const SiteContextProvider = ({ children }) => {
+        useEffect(() => {
+          const fetchUser = async () => {
+            try {
+              const res = await axios.get("https://link-to-my-app/api/user");
+      
+              setUser(res.data);
+            } catch (error) {
+              console.log(error);
+            }
+          };
+          fetchUser();
+        }, []);
+      
+        <SiteContext.Provider
+          value={{
+            user,
+            setUser,
+          }}
+        >
+          {children}
+        </SiteContext.Provider>;
+      };
+      `,
+      `import { useContext, useState } from "react";
+      import { SiteContext } from "../../context/Context";
+
+
+      const { user } = useContext(SiteContext);
+      export const HelloUser = () => {
+        return (
+          <div>Hello {user}</div>
+        )
+      }
+      
+      `,
+      `  useEffect(() => {
+        const fetchUser = async () => {
+          try {
+            const res = await axios.get(
+              "https://link-to-my-app/api/user"
+            );
+           setUser(res.data);
+          } catch (error) {
+            console.log(error);
+          }};
+    
+        fetchUser();
+      }, []);`,
+    ],
+    comments: [],
+    mapper: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    feature: "https://www.youtube.com/watch?v=lhMKvyLRWo0&t=433s",
+  },
+  {
+    id: 1,
+    title: "lessons-from-first-interview",
+    icons: [],
+    pic: "",
+    topic: "General",
+    link: "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    header: "What I learned from my first interview",
+    abstract: "My first interview was stressful, but a good learning lessons",
+    abstractLG:
+      "Things I learned from my first interview. Avoid making the mistakes I made",
+    abstractSM: "4 Lessons from my first Interview",
+    created: "October 2022",
+    updated: "October 2022",
+    readTime: "3",
+    headers: [
+      ``,
+      `Portfolio website is major`,
+      `Junior developers are expected to be good`,
+      `Prepare for the unexpected`,
+      `Do research on the company, extensive research `,
+      ``,
+    ],
+    paragraphs: [
+      `
+      So a couple of weeks back, I finally had my first interview after a few months of applying and here is what Iearnt.`,
+      `The main praise that I got from the interviewer was about my portfolio website. He asked me questions about how I built it, what I used and how I came up with the design. Good design always sticks out and gives you an edge when it comes to recruitment. But make sure everything is up and running.  Sometimes your website might have few blemishes here or there. In my case, there was a bug in the contact form that caused it to omit the actual message (but not the email luckily). So be sure to clear up any bugs that may stick out.`,
+      `Junior developers are expected to be job ready to a large degree. While this may vary from company to company, it is mostly prevalent in smaller companies. So the ability to work with different technologies, services and platforms is crucial. It is good to have projects that demonstrate that you can learn to use different services. Being a Junior developer for a lot of companies means no prior work experience, not no prior experience at all.
+      `,
+      `Interviews don’t follow any template. Mine was on a conference video call with the manager and the lead engineer. I was notified 2 hours beforehand about the interview and since I did not have anything going on for that day, I agreed. In hindsight it would have been better to ask for a little more time to prepare. During the interview, I was not asked any overly technical questions. I was mainly asked general questions. One of them was about a software I had limited experience with. I wish I had looked it up more. Now keep in mind I was not expecting this interview so I did not have time to prepare. But this goes to show the unpredictable nature of job interviews and how you have to be mentally ready for anything. 
+      `,
+      `When you are applying for junior developer jobs, it can be easy to forget the job descriptions of the companies you apply for. The odds of getting an interview from any single company is small so you tend to not focus much on each company. But when you get an interview, that has to change. Granted I did do research the first time around but after not getting a callback for two weeks, much of the information faded from my memory. It also could have been the stress of the interview which made me forget a lot of the things I should have remembered. But that’s why you should do the research rigorously. It is true many companies don’t give juniors heavy responsibilities early on. But you still have to show that you are knowledgeable of what they do and are able to articulate that.
+      `,
+      `
+      Ultimately it was a good experience. Hopefully there will be more to come. In the meantime, make sure to not make the same mistakes I did.  
+      `,
+    ],
+    pictures: [],
+    picCaption: [],
+    videos: [],
+    code: [],
+    comments: [],
+    mapper: [0, 1, 2, 3, 4, 5],
+    feature: "https://www.youtube.com/watch?v=cTatCDnvGBY",
+  },
+  {
+    id: 2,
     title: "3-reasons-self-taught-fail",
     icons: [],
     pic: "",
@@ -98,7 +277,7 @@ To address this, do some research. Find out what you would like to learn. Then f
     feature: "https://www.youtube.com/watch?v=ueXjGMrmn8k&t=4s",
   },
   {
-    id: 1,
+    id: 3,
     title: "crypto-boom",
     icons: [],
     pic: "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -137,7 +316,7 @@ To address this, do some research. Find out what you would like to learn. Then f
     feature: "https://www.youtube.com/watch?v=P87pLayUD8c",
   },
   {
-    id: 2,
+    id: 4,
     title: "4-css-techniques",
     icons: [],
     pic: "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
@@ -223,7 +402,7 @@ To address this, do some research. Find out what you would like to learn. Then f
     status: true,
   },
   {
-    id: 3,
+    id: 5,
     title: "css-tips",
     icons: [],
     pic: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -265,7 +444,7 @@ To address this, do some research. Find out what you would like to learn. Then f
     status: true,
   },
   {
-    id: 4,
+    id: 6,
     title: "mass-layoffs",
     icons: [],
     pic: "https://images.pexels.com/photos/7277906/pexels-photo-7277906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -305,7 +484,7 @@ To address this, do some research. Find out what you would like to learn. Then f
     status: true,
   },
   {
-    id: 5,
+    id: 7,
     title: "codingjourney",
     icons: [],
     pic: "https://images.pexels.com/photos/614484/pexels-photo-614484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -340,7 +519,7 @@ To address this, do some research. Find out what you would like to learn. Then f
   },
 
   {
-    id: 6,
+    id: 8,
     title: "upcoming-recession",
     pic: "https://images.pexels.com/photos/5717791/pexels-photo-5717791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     icons: [],
@@ -371,7 +550,7 @@ To address this, do some research. Find out what you would like to learn. Then f
     status: true,
   },
   {
-    id: 7,
+    id: 9,
     title: "webflow",
     icons: [],
     pic: "https://images.unsplash.com/photo-1629195968955-e1a2a92b0c5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -406,7 +585,7 @@ To address this, do some research. Find out what you would like to learn. Then f
     status: true,
   },
   {
-    id: 8,
+    id: 10,
     title: "design-skills",
     icons: [],
     pic: "https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -437,7 +616,7 @@ To address this, do some research. Find out what you would like to learn. Then f
     status: true,
   },
   {
-    id: 9,
+    id: 11,
     title: "importance-progress",
     icons: [],
     pic: "https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -473,7 +652,7 @@ To address this, do some research. Find out what you would like to learn. Then f
   },
 
   {
-    id: 10,
+    id: 12,
     title: "programming-buddies",
     icons: [],
     pic: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -513,7 +692,7 @@ To address this, do some research. Find out what you would like to learn. Then f
     status: true,
   },
   {
-    id: 11,
+    id: 13,
     title: "PHP-undervalued",
     icons: [],
     pic: "https://images.pexels.com/photos/11035390/pexels-photo-11035390.jpeg",

@@ -222,7 +222,7 @@
   background-color: #081b4b;
   font-family: "Roboto Mono", monospace;
   color: white;
-  min-height: 200px;
+  min-height: 100px;
   padding: 14px;
   white-space: pre-line;
 }

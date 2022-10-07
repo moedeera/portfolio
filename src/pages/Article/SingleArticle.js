@@ -15,11 +15,10 @@ import pic03 from "../Blog/portfolio-v3.png";
 import pic04 from "../Blog/server0.png";
 import pic05 from "../Blog/server1.png";
 import pic06 from "../Blog/server2.png";
-import pic07 from "../Blog/php-meme.jpg";
 
 import avatar from "./avatar.png";
 
-const articleImages = [pic02, pic01, pic03, pic04, pic05, pic06, pic07];
+const articleImages = [pic02, pic01, pic03, pic04, pic05, pic06];
 
 export const SingleArticle = () => {
   const { post } = useParams();
@@ -107,9 +106,9 @@ export const SingleArticle = () => {
                     </div>
                   )}
 
-                  {article.videos.length > 1 && (
-                    <Videoplayer link={article.videos[map]} />
-                  )}
+                  {/* {article.videos.length > 0 && (
+                    <Videoplayer link={article.videos[m]} />
+                  )} */}
 
                   {article.code[map] && article.code[map] !== null && (
                     <div className="code">
@@ -160,14 +159,15 @@ ${article.code[map]}
               <h2> See Also</h2>
               <div className="sidebar-posts-list">
                 {articlesList.map(
-                  (post) =>
-                    post.id !== article.id && (
-                      <div className="sidebar-post">
+                  (post, index) =>
+                    post.id !== article?.id &&
+                    index < 8 && (
+                      <div className="sidebar-post" key={`55-${index}`}>
                         <div className="sidebar-post-image">
                           <Link to={`../blog/${post.title}`}>
                             <img
                               alt=""
-                              src={blogImages[post.id].article}
+                              src={blogImages[post.id]?.article}
                               style={{
                                 width: "150px",
                                 // maxWidth: "150px",

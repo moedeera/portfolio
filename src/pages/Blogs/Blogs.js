@@ -91,7 +91,7 @@ export const Blogs = () => {
             {articlesList.map(
               (article, key) =>
                 3 < key &&
-                key < 12 && (
+                key < 14 && (
                   <Link to={`/blogs/${article.title}`} key={article.id}>
                     <div className="bl-item">
                       <div
@@ -125,6 +125,19 @@ export const Blogs = () => {
                   </Link>
                 )
             )}
+
+            {/* {articlesList.length > articlesList.length && (
+          <button
+            onClick={() => {
+              if (articlesList.length > paginIndex) {
+                setPaginIndex(paginIndex + 7);
+              }
+            }}
+            className="btn-follow"
+          >
+            Load more
+          </button>
+        )} */}
           </div>
         </div>
       </div>

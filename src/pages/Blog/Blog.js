@@ -12,15 +12,26 @@ import pic7 from "./MERN.jpg";
 import pic8 from "./php-meme.jpg";
 import pic9 from "./codingjourney.jpg";
 import pic10 from "./layoffs.jpg";
-import pic11 from "./csstips.jpg"
+import pic11 from "./csstips.jpg";
 import { SiteContext } from "../../context/Context";
 
-const images = [pic11,pic10, pic9, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
+const images = [
+  pic11,
+  pic10,
+  pic9,
+  pic1,
+  pic2,
+  pic3,
+  pic4,
+  pic5,
+  pic6,
+  pic7,
+  pic8,
+];
 export const Blog = () => {
   const { articlesList } = useContext(SiteContext);
 
-const [paginIndex, setPaginIndex] = useState(7)
-
+  const [paginIndex, setPaginIndex] = useState(7);
 
   return (
     <div className="blog-page">
@@ -29,7 +40,6 @@ const [paginIndex, setPaginIndex] = useState(7)
           <h1>The Blog</h1>
         </div>
         <div className="blog-headline-container">
-       
           <div className="blog-headline-image">
             <Link to={`./${articlesList[0].title}`}>
               <img src={images[articlesList[0].id]} alt="" />
@@ -37,7 +47,7 @@ const [paginIndex, setPaginIndex] = useState(7)
           </div>
 
           <div className="blog-headline-text">
-          {/* <div className="blog-article-main">
+            {/* <div className="blog-article-main">
                   <h3>{articlesList[0].topic}</h3>
                   </div> */}
             <div>
@@ -62,13 +72,13 @@ const [paginIndex, setPaginIndex] = useState(7)
           <h3>Previous Articles</h3>
         </div>
         <div className="blog-articles-container">
-
           {articlesList.map(
             (article, key) =>
-              key !== 0 && key < paginIndex  && (
+              key !== 0 &&
+              key < paginIndex && (
                 <div className="blog-article">
                   <div className="blog-article-main">
-                  <h3>{article.topic}</h3>
+                    <h3>{article.topic}</h3>
                   </div>
                   <div className="blog-article-image">
                     <Link to={`./${article.title}`}>
@@ -76,8 +86,13 @@ const [paginIndex, setPaginIndex] = useState(7)
                     </Link>
                   </div>
                   <div className="blog-article-date">
-                   <small className="blog-article-read"><i className="fas fa-clock"></i>{article.readTime} minute read </small> 
-                   <small><i className="fas fa-calendar"></i> {article.created}</small>
+                    <small className="blog-article-read">
+                      <i className="fas fa-clock"></i>
+                      {article.readTime} minute read{" "}
+                    </small>
+                    <small>
+                      <i className="fas fa-calendar"></i> {article.created}
+                    </small>
                   </div>
                   <div className="blog-article-title">
                     <h3> {article.header}</h3>
@@ -93,20 +108,21 @@ const [paginIndex, setPaginIndex] = useState(7)
                 </div>
               )
           )}
-
-
         </div>
-       
 
-        {articlesList.length> paginIndex && 
-         <button 
-         onClick={() => {
-          if (articlesList.length > paginIndex) {
- setPaginIndex(paginIndex + 7)}}} 
- className="btn-follow">Load more</button>}
-
+        {articlesList.length > paginIndex && (
+          <button
+            onClick={() => {
+              if (articlesList.length > paginIndex) {
+                setPaginIndex(paginIndex + 7);
+              }
+            }}
+            className="btn-follow"
+          >
+            Load more
+          </button>
+        )}
       </div>
-      
     </div>
   );
 };
