@@ -72,7 +72,7 @@ const articles = [
       `What's the Purpose?`,
       `Management of data in react context-provider`,
       `While this is all nice to have, the question that matters is how does this work when connecting to a server and fetching data?`,
-      `Fetching data in a context- provider`,
+      `The problem `,
       ` `,
       ``,
     ],
@@ -129,6 +129,7 @@ const articles = [
       }, []);`,
 
       `import { createContext, useState } from "react";
+      import axios from 'axios'              // after typing npm install axios //
 
       export const SiteContext = createContext({});
       
