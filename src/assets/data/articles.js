@@ -218,6 +218,9 @@ const articles = [
       `You are not selling yourself as a developer, you are selling yourself as an asset.
       `,
       ``,
+      ``,
+
+      `Conclusion`,
     ],
     paragraphs: [
       `So a couple of weeks back, I finally had my first interview. It was the first job I applied for after doing some major changes on my portfolio and it paid off. After an initial chat on the phone, I got called back 2 weeks later for a full interview.  Here is what I learned`,
