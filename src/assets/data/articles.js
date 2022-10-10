@@ -212,7 +212,7 @@ const articles = [
     readTime: "3",
     headers: [
       ``,
-      `Portfolio website is major`,
+      `Having good portfolio website is not everything. But without it, nothing else matters,`,
       `Junior developers are expected to be good`,
       `Prepare to be uncomfortable`,
       `You are not selling yourself as a developer, you are selling yourself as an asset.
