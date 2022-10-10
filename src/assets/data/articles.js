@@ -136,16 +136,22 @@ const articles = [
       export const SiteContextProvider = ({ children }) => {
 
         const [user, setUser] = useState(null);
+
+    const fetchUser = async () => {
+      try {
+          const res = await axios.get(
+            "https://link-to-my-app/api/user"
+          );
+           setUser(res.data);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+
+
         useEffect(() => {
-          const fetchUser = async () => {
-            try {
-              const res = await axios.get("https://link-to-my-app/api/user");
-      
-              setUser(res.data);
-            } catch (error) {
-              console.log(error);
-            }
-          };
+         
           fetchUser();
         }, []);
       
@@ -208,30 +214,27 @@ const articles = [
       ``,
       `Portfolio website is major`,
       `Junior developers are expected to be good`,
-      `Prepare for the unexpected`,
-      `Do research on the company, extensive research `,
+      `Prepare to be uncomfortable`,
+      `You are not selling yourself as a developer, you are selling yourself as an asset.
+      `,
       ``,
     ],
     paragraphs: [
-      `
-      So a couple of weeks back, I finally had my first interview after a few months of applying and here is what Iearnt.`,
-      `The main praise that I got from the interviewer was about my portfolio website. He asked me questions about how I built it, what I used and how I came up with the design. Good design always sticks out and gives you an edge when it comes to recruitment. But make sure everything is up and running.  Sometimes your website might have few blemishes here or there. In my case, there was a bug in the contact form that caused it to omit the actual message (but not the email luckily). So be sure to clear up any bugs that may stick out.`,
-      `Junior developers are expected to be job ready to a large degree. While this may vary from company to company, it is mostly prevalent in smaller companies. So the ability to work with different technologies, services and platforms is crucial. It is good to have projects that demonstrate that you can learn to use different services. Being a Junior developer for a lot of companies means no prior work experience, not no prior experience at all.
-      `,
-      `Interviews don’t follow any template. Mine was on a conference video call with the manager and the lead engineer. I was notified 2 hours beforehand about the interview and since I did not have anything going on for that day, I agreed. In hindsight it would have been better to ask for a little more time to prepare. During the interview, I was not asked any overly technical questions. I was mainly asked general questions. One of them was about a software I had limited experience with. I wish I had looked it up more. Now keep in mind I was not expecting this interview so I did not have time to prepare. But this goes to show the unpredictable nature of job interviews and how you have to be mentally ready for anything. 
-      `,
-      `When you are applying for junior developer jobs, it can be easy to forget the job descriptions of the companies you apply for. The odds of getting an interview from any single company is small so you tend to not focus much on each company. But when you get an interview, that has to change. Granted I did do research the first time around but after not getting a callback for two weeks, much of the information faded from my memory. It also could have been the stress of the interview which made me forget a lot of the things I should have remembered. But that’s why you should do the research rigorously. It is true many companies don’t give juniors heavy responsibilities early on. But you still have to show that you are knowledgeable of what they do and are able to articulate that.
-      `,
-      `
-      Ultimately it was a good experience. Hopefully there will be more to come. In the meantime, make sure to not make the same mistakes I did.  
-      `,
+      `So a couple of weeks back, I finally had my first interview. It was the first job I applied for after doing some major changes on my portfolio and it paid off. After an initial chat on the phone, I got called back 2 weeks later for a full interview.  Here is what I learned`,
+      `The main praise that I got from the interviewer was about my portfolio website. Not the projects but the website itself. He asked me questions about how I built it, what I used, and how I came up with the design. Good design always sticks out and gives you an edge when it comes to recruitment. But make sure everything is up and running.  Sometimes your website might have few blemishes here or there. In my case, there was a bug in the contact form that caused it to omit the actual message (but not the email luckily). So be sure to clear up any bugs that may stick out.`,
+      `Junior developers are expected to be job ready to a large degree. While this may vary from company to company, it is mostly prevalent in smaller companies. So the ability to work with different technologies, services, and platforms is crucial. It is good to have projects that demonstrate you can learn different skills. Being a Junior developer for a lot of companies just means no prior work experience, not no experience at all.`,
+      `Interviews don’t follow any template. Mine was on a conference video call with the manager and the lead engineer. I was notified 2 hours beforehand about the interview. Since I did not have anything going on for that day, I agreed to it. In hindsight it would have been better to ask for a little more time to prepare. During the interview, I was not asked anything overly technical. Despite that, I still started to get nervous and forgot basic things about my own projects and coding. The short notice for this interview caught me off guard so I did not have time to prepare mentally. I was anxious and sweating throughout most of the interview but managed to keep calm. This goes to show the unpredictable nature of job interviews and how you have to be ready for anything. `,
+      `When you are applying for junior developer jobs, it can be easy to forget the job descriptions of the companies you apply for. All you see is ‘junior developer title’ and you apply. The odds of getting an interview are so small that you tend to not focus much on each application.`,
+      `But when you get an interview, that has to change. Employers are ultimately looking for an asset to their business. Someone that understands their operation and goals. Someone that has both broad and specific skills that apply to the company.`,
+      `I did do research the first time around but after not getting a callback for two weeks (after an initial phone call with the lead developer), much of the information faded from my memory. It also could have been the stress of the interview which made me forget a lot of the things I should have remembered. But that’s why you should do the research rigorously. It is true that many companies don’t give juniors heavy responsibilities early on. But you still have to show that you are knowledgeable of what they do. Remember this is a business at the end of the day. So don’t just show your potential, show that you have skills that can help in a meaningful way right now.`,
+      `Ultimately it was a good experience. Hopefully there will be more to come. In the meantime, make sure to not make the same mistakes I did.`,
     ],
     pictures: [],
     picCaption: [],
     videos: [],
     code: [],
     comments: [],
-    mapper: [0, 1, 2, 3, 4, 5],
+    mapper: [0, 1, 2, 3, 4, 5, 6, 7],
     feature: "https://www.youtube.com/watch?v=cTatCDnvGBY",
   },
   {
