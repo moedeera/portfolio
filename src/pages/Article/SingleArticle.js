@@ -8,6 +8,7 @@ import MetaTags from "react-meta-tags";
 import { Videoplayer } from "../../components/videoplayer/videoplayer";
 import { TwitterShareButton } from "react-twitter-embed";
 import { blogImages } from "../../assets/data/images/index.js";
+import ReactEmbedGist from "react-embed-gist";
 
 import pic01 from "../Blog/portfolio-v1.png";
 import pic02 from "../Blog/portfolio-v2.5.png";
@@ -132,6 +133,16 @@ ${article.code[map]}
               ))}
             </div>
           </div>
+
+          {/* <ReactEmbedGist
+            gist="moedeera/f8f66fa9e61cc17c454c583aa09dba4c"
+            wrapperClass="gist__bash"
+            loadingClass="loading__screen"
+            titleClass="gist__title"
+            errorClass="gist__error"
+            contentClass="gist__content"
+            // file=".bash_profile.sh"
+          /> */}
 
           <Link style={{ color: "black" }} to="../blog">
             <div className="go-back">
