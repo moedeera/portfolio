@@ -20,6 +20,7 @@ import { ProtectedRoutes } from "./components/ProtectedRoutes/ProtectedRoutes";
 import { Dashboard } from "./pages/admin/dashboard/Dashboard";
 import { Login } from "./pages/admin/login/Login";
 import { SideMenu } from "./components/SideMenu/SideMenu";
+import { Article } from "./pages/Article/Article.js";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
               <Route path="/overview" element={<Overview />} />
               <Route path="/my-work" element={<Works />} />
               <Route path="/blogs" element={<Blogs />} />
+              <Route path="/blogs/test" element={<Article />} />
 
               <Route path="/login" element={<Login />} />
               <Route path="/signin" element={<Login />} />
