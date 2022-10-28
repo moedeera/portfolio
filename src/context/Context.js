@@ -5,9 +5,6 @@ import { useSideBar } from "../Hooks/useSideBar";
 import { useEffect } from "react";
 import { useProfile } from "../Hooks/useProfile";
 import { useMessages } from "../Hooks/useMessages";
-import { profiles } from "../assets/data/admin-data";
-import axios from "axios";
-import { useMemo } from "react";
 
 export const SiteContext = createContext({});
 // Checks for a token in local storage
@@ -33,7 +30,8 @@ export const SiteContextProvider = ({ children }) => {
   const { articlesList } = useArticles();
   // SideBar Toggle
   const { show, toggleShow, sideBarView, setSideBarView } = useSideBar();
-
+  //Footer Toggle
+  const [footer, showFooter] = useState(true);
   //User Storage
   //Declaring a user variable for Administrator
   const [user, setUser] = useState(null);
@@ -137,6 +135,8 @@ export const SiteContextProvider = ({ children }) => {
         fetchProfile,
         sideBarView,
         setSideBarView,
+        footer,
+        showFooter,
       }}
     >
       {children}
