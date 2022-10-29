@@ -47,7 +47,7 @@
   }
 
   .right {
-    right: 0px;
+    right: 0;
     width: calc(160px + 14vw);
     display: flex;
     flex-direction: column;
@@ -132,8 +132,8 @@
     max-width: 250px;
   }
   .sr-suggestion {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
     color: var(--primary-color);
     margin-bottom: 25px;
     gap: 5px;
@@ -147,7 +147,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid rgba(128, 128, 128, 0.5);
+    /* border: 1px solid rgba(128, 128, 128, 0.5); */
   }
 }
 

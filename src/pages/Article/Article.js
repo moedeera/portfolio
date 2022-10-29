@@ -160,77 +160,32 @@ ${article.code[map]}
         </div> */}
         <div className="sr-suggestions">
           <h3>See Also</h3>
-          <div className="sr-suggestion">
-            <div className="sr-suggestion-text">
-              <small className="sr-suggestion-date"></small>
-              <h3>8 Must have CSS tricks</h3>
-              <small>
-                Lorem ipsum dolor sit amet. Et delectus ullam ab sunt
-                consequatur et eveniet maxime.
-              </small>
-            </div>
-            <div
-              style={{
-                backgroundImage:
-                  "url(https://images.pexels.com/photos/264905/pexels-photo-264905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-              }}
-              className="suggestions-image"
-            ></div>
-          </div>
 
-          <div className="sr-suggestion">
-            <div className="sr-suggestion-text">
-              <small className="sr-suggestion-date"></small>
-              <h3>3 Ways to Authenticate in react</h3>
-              <small>
-                Lorem ipsum dolor sit amet. Et delectus ullam ab sunt
-                consequatur et eveniet maxime.
-              </small>
-            </div>
-            <div
-              style={{
-                backgroundImage:
-                  "url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-              }}
-              className="suggestions-image"
-            ></div>
-          </div>
+          {articlesList.map(
+            (post, index) =>
+              post.id !== article?.id &&
+              index < post.id + 4 && (
+                <div className="sr-suggestion" key={`55-${index}`}>
+                  <Link style={{ color: "black" }} to={`../blog/${post.title}`}>
+                    <div className="sr-suggestion-text">
+                      <small className="sr-suggestion-date"></small>
+                      <h5>{post.header}</h5>
+                      <small>{post.abstractSM}</small>
+                    </div>
+                  </Link>
 
-          <div className="sr-suggestion">
-            <div className="sr-suggestion-text">
-              <small className="sr-suggestion-date"></small>
-              <h3>Lessons from my first Interview</h3>
-              <small>
-                Lorem ipsum dolor sit amet. Et delectus ullam ab sunt
-                consequatur et eveniet maxime.
-              </small>
-            </div>
-            <div
-              style={{
-                backgroundImage:
-                  "url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-              }}
-              className="suggestions-image"
-            ></div>
-          </div>
-
-          <div className="sr-suggestion">
-            <div className="sr-suggestion-text">
-              <small className="sr-suggestion-date"></small>
-              <h3>Lessons from my first Interview</h3>
-              <small>
-                Lorem ipsum dolor sit amet. Et delectus ullam ab sunt
-                consequatur et eveniet maxime.
-              </small>
-            </div>
-            <div
-              style={{
-                backgroundImage:
-                  "url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-              }}
-              className="suggestions-image"
-            ></div>
-          </div>
+                  <Link to={`../blog/${post.title}`}>
+                    <div className="suggestions-image">
+                      <img
+                        style={{ width: "100%" }}
+                        src={blogImages[post.id]?.article}
+                        alt=""
+                      />
+                    </div>
+                  </Link>
+                </div>
+              )
+          )}
         </div>
 
         <div className="search-input">
