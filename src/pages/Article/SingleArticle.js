@@ -104,7 +104,6 @@ export const SingleArticle = () => {
                       <small>{article.picCaption[map]}</small>
                     </div>
                   )}
-
                   {article.code[map] && article.code[map] !== null && (
                     <div className="code">
                       <div className="code-upper"></div>
@@ -117,6 +116,16 @@ ${article.code[map]}
                       </div>
                     </div>
                   )}
+                  Hello?
+                  <ReactEmbedGist
+                    gist="msaracevic/5d757e2fc72482a9a4a439969500c2eb"
+                    wrapperClass="gist__bash"
+                    loadingClass="loading__screen"
+                    titleClass="gist__title"
+                    errorClass="gist__error"
+                    contentClass="gist__content"
+                    file=".bash_profile.sh"
+                  />
                 </div>
               ))}
             </div>

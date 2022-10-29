@@ -15,6 +15,7 @@ import { TwitterShareButton } from "react-twitter-embed";
 import { blogImages } from "../../assets/data/images/index.js";
 
 import avatar from "./avatar.jpg";
+import ReactEmbedGist from "react-embed-gist";
 const articleImages = [pic02, pic01, pic03, pic04, pic05, pic06];
 export const Article = () => {
   const { id } = useParams();
@@ -99,6 +100,15 @@ ${article.code[map]}
 
 `}
                       </div>
+
+                      {/* <ReactEmbedGist
+                        gist="msaracevic/5d757e2fc72482a9a4a439969500c2eb"
+                        wrapperClass="gist__bash"
+                        loadingClass="loading__screen"
+                        titleClass="gist__title"
+                        errorClass="gist__error"
+                        contentClass="gist__content"
+                      /> */}
                     </div>
                   )}
                 </div>
