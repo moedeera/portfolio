@@ -30,8 +30,6 @@ export const SingleArticle = () => {
     return getArticle(post);
   }, [post, getArticle]);
 
-  console.log(articlesList);
-  console.log(article.code);
   return (
     <div className="article-page">
       <MetaTags>
@@ -107,25 +105,15 @@ export const SingleArticle = () => {
                     </div>
                   )}
 
-                  {/* {article.videos.length > 0 && (
-                    <Videoplayer link={article.videos[m]} />
-                  )} */}
-
                   {article.code[map] && article.code[map] !== null && (
                     <div className="code">
-                      <div className="code-upper">
-                        {/* <button>Copy</button>
-                    <button>
-                      JS fiddle <i className="fab fa-jsfiddle"></i>
-                    </button> */}
-                      </div>
+                      <div className="code-upper"></div>
 
                       <div className="code-container">
                         {`
 ${article.code[map]}
 
 `}
-                        {/* <span style={{color:'yellow'}}>{`<styles>`}</span>  */}
                       </div>
                     </div>
                   )}
@@ -133,16 +121,6 @@ ${article.code[map]}
               ))}
             </div>
           </div>
-
-          {/* <ReactEmbedGist
-            gist="moedeera/f8f66fa9e61cc17c454c583aa09dba4c"
-            wrapperClass="gist__bash"
-            loadingClass="loading__screen"
-            titleClass="gist__title"
-            errorClass="gist__error"
-            contentClass="gist__content"
-            // file=".bash_profile.sh"
-          /> */}
 
           <Link style={{ color: "black" }} to="../blog">
             <div className="go-back">
@@ -181,7 +159,6 @@ ${article.code[map]}
                               src={blogImages[post.id]?.article}
                               style={{
                                 width: "150px",
-                                // maxWidth: "150px",
                               }}
                             />
                           </Link>

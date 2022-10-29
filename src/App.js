@@ -39,14 +39,14 @@ function App() {
               <Route path="/portfolio/:id" element={<Project />} />
               <Route path="/blog" element={<Blogs />} />
               <Route path="/admin" element={<Admin />} />
-              <Route path="/blog/:post" element={<SingleArticle />} />
-              <Route path="/blogs/:post" element={<SingleArticle />} />
+              <Route path="/blog/:id" element={<Article />} />
+              <Route path="/blogs/:id" element={<Article />} />
               <Route path="/case/:id" element={<SingleCase />} />
               <Route path="/about" element={<AboutMe />} />
               <Route path="/overview" element={<Overview />} />
               <Route path="/my-work" element={<Works />} />
               <Route path="/blogs" element={<Blogs />} />
-              <Route path="/blogs/test" element={<Article />} />
+              <Route path="/blogs/test/:id" element={<Article />} />
 
               <Route path="/login" element={<Login />} />
               <Route path="/signin" element={<Login />} />
