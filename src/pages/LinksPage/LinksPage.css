@@ -1,0 +1,22 @@
+.linkspage-container {
+  background: wheat;
+  min-height: 50vh;
+  border: 1px solid black;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.link-unit {
+  border: 1px solid grey;
+
+  margin: 20px auto;
+  padding: 10px 20px;
+  max-width: 900px;
+  overflow-x: scroll;
+  background-color: aliceblue;
+  padding: 15px;
+  border-radius: 5px;
+}
