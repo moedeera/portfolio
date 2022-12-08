@@ -20,20 +20,76 @@ export const LinksPage = () => {
 
   return (
     <div className="linkspage-container">
-      {Neighborhoods.map((hood) =>
-        hood.map((area) => (
-          <>
-            <h3>{area.area}</h3>
-            <div className="link-unit">{`${linkOpener}${area.link}`}</div>
-            <button
-              className="btn btn-primary"
-              onClick={() => copyTextToClipboard(`${linkOpener}${area.link}`)}
-            >
-              Copy
-            </button>
-          </>
-        ))
-      )}
+      <h1>Revelstoke</h1>
+      {Neighborhoods[0].map((area) => (
+        <>
+          <h3>{area.area}</h3>
+          <div className="link-unit">{`${linkOpener}${area.link}`}</div>
+          <button
+            className="btn btn-primary"
+            onClick={() =>
+              copyTextToClipboard(
+                `<li><a href="${linkOpener}${area.link}">${area.area}<span class="arrow-icon">&#10142;</span></a></li>`
+              )
+            }
+          >
+            Copy
+          </button>
+        </>
+      ))}
+      <h1>Sicamous</h1>
+      {Neighborhoods[1].map((area) => (
+        <>
+          <h3>{area.area}</h3>
+          <div className="link-unit">{`${linkOpener}${area.link}`}</div>
+          <button
+            className="btn btn-primary"
+            onClick={() =>
+              copyTextToClipboard(
+                `<li><a href="${linkOpener}${area.link}">${area.area}<span class="arrow-icon">&#10142;</span></a></li>`
+              )
+            }
+          >
+            Copy
+          </button>
+        </>
+      ))}
+
+      <h1>Vernon</h1>
+      {Neighborhoods[2].map((area) => (
+        <>
+          <h3>{area.area}</h3>
+          <div className="link-unit">{`${linkOpener}${area.link}`}</div>
+          <button
+            className="btn btn-primary"
+            onClick={() =>
+              copyTextToClipboard(
+                `<li><a href="${linkOpener}${area.link}">${area.area}<span class="arrow-icon">&#10142;</span></a></li>`
+              )
+            }
+          >
+            Copy
+          </button>
+        </>
+      ))}
+
+      <h1>Salmon Arm</h1>
+      {Neighborhoods[3].map((area) => (
+        <>
+          <h3>{area.area}</h3>
+          <div className="link-unit">{`${linkOpener}${area.link}`}</div>
+          <button
+            className="btn btn-primary"
+            onClick={() =>
+              copyTextToClipboard(
+                `<li><a href="${linkOpener}${area.link}">${area.area}<span class="arrow-icon">&#10142;</span></a></li>`
+              )
+            }
+          >
+            Copy
+          </button>
+        </>
+      ))}
     </div>
   );
 };

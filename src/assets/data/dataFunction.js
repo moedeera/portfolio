@@ -191,7 +191,7 @@ const SalmonArm = [
   {
     id: 2,
     area: "North West ",
-    link: "",
+    link: "/search/#status=active&sold_days=180&ls_conversion=acres&location_search_field=Salmon%20Arm%2C%20BC&drive_time=09%3A00&drive_duration=15&drive_avoid_ferry=1&drive_departure=1&ss_locale=en-CA&ss_description=Salmon%20Arm%2C%20BC%2C%20Canada&ss_email_freq=40&ss_send_zero_result=1&bounds_north=50.88846755779719&bounds_east=-119.06584917824544&bounds_south=50.515770751289644&bounds_west=-119.50118243019857&center_lat=50.7001034&center_lon=-119.2838443&center_lat_pan=50.70248942705626&center_lon_pan=-119.283515804222&geotype=PopulatedPlace&user_lat=50.7001034&user_lon=-119.2838443&pgsize=20&startidx=0&zoom=11&sort_by=11&company_uuid=3341197&commute=0&buffer_miles=0.25&geospatial=true&agent_uuid=389f433d-052c-4cf1-a9c7-d81a7bbdb93b&ptype=1%2C9%2C4%2C3%2C5%2C7%2C2%2C8&searchType=criteria&pstatus=1%2C2%2C11&omit_hidden=true&currency=CAD",
   },
   //3
   {
@@ -202,32 +202,32 @@ const SalmonArm = [
   //4
   {
     id: 4,
-    area: "",
-    link: "",
+    area: "Shuswap",
+    link: "https://executivesrealty.c21.ca/search/#status=active&sold_days=180&pstatus=1%2C11&ls_conversion=acres&company_only=1&location_search_field=Shuswap%2C%20BC&drive_time=09%3A00&drive_duration=15&drive_avoid_ferry=1&drive_departure=1&ss_locale=en-CA&ss_description=Shuswap%20Lake%2C%20Columbia-Shuswap%2C%20BC%2C%20Canada&ss_email_freq=40&ss_send_zero_result=1&bounds_north=51.22922821890991&bounds_east=-118.85326141903886&bounds_south=50.48632736701023&bounds_west=-119.72392792294511&center_lat=50.9465204&center_lon=-119.2586177&center_lat_pan=50.85925721237203&center_lon_pan=-119.28859467099198&geotype=Neighborhood&user_lat=50.9465204&user_lon=-119.2586177&pgsize=20&startidx=0&zoom=10&sort_by=11&company_uuid=3341197&commute=0&buffer_miles=0.25&geospatial=true&agent_uuid=389f433d-052c-4cf1-a9c7-d81a7bbdb93b&ptype=1%2C2%2C8%2C9%2C4%2C3%2C5%2C7&searchType=criteria&omit_hidden=true&ex_pend=true&currency=CAD",
   },
   //5
   {
     id: 5,
-    area: "",
-    link: "",
+    area: "Sorrento",
+    link: "https://executivesrealty.c21.ca/search/#status=active&sold_days=180&pstatus=1%2C11&ls_conversion=acres&company_only=1&location_search_field=Sorrento%2C%20BC&drive_time=09%3A00&drive_duration=15&drive_avoid_ferry=1&drive_departure=1&ss_locale=en-CA&ss_description=Sorrento%2C%20BC%20V0E%200C6%2C%20Canada&ss_email_freq=40&ss_send_zero_result=1&bounds_north=51.22922821890991&bounds_east=-118.85326141903886&bounds_south=50.48632736701023&bounds_west=-119.72392792294511&center_lat=50.87686000000001&center_lon=-119.469938&center_lat_pan=50.85925721237203&center_lon_pan=-119.28859467099198&geotype=PopulatedPlace&user_lat=50.87686000000001&user_lon=-119.469938&pgsize=20&startidx=0&zoom=10&sort_by=11&company_uuid=3341197&commute=0&buffer_miles=0.25&geospatial=true&agent_uuid=389f433d-052c-4cf1-a9c7-d81a7bbdb93b&ptype=1%2C2%2C8%2C9%2C4%2C3%2C5%2C7&searchType=criteria&omit_hidden=true&ex_pend=true&currency=CAD",
   },
   //6
   {
     id: 6,
-    area: "",
-    link: "",
+    area: "Tappen",
+    link: "/search/#status=active&sold_days=180&pstatus=1%2C11&ls_conversion=acres&company_only=1&location_search_field=Tappen%2C%20BC&drive_time=09%3A00&drive_duration=15&drive_avoid_ferry=1&drive_departure=1&ss_locale=en-CA&ss_description=Tappen%2C%20BC%20V0E%202X0%2C%20Canada&ss_email_freq=40&ss_send_zero_result=1&bounds_north=50.829043966455124&bounds_east=-119.26838306891536&bounds_south=50.736029030973995&bounds_west=-119.37721638190364&center_lat=50.782998&center_lon=-119.334404&center_lat_pan=50.78255962767538&center_lon_pan=-119.3227997254095&geotype=PopulatedPlace&user_lat=50.782998&user_lon=-119.334404&pgsize=20&startidx=0&zoom=13&sort_by=11&company_uuid=3341197&commute=0&buffer_miles=0.25&geospatial=true&agent_uuid=389f433d-052c-4cf1-a9c7-d81a7bbdb93b&ptype=1%2C2%2C8%2C9%2C4%2C3%2C5%2C7&searchType=criteria&omit_hidden=true&ex_pend=true&currency=CAD",
   },
   //7
   {
     id: 7,
-    area: "",
-    link: "",
+    area: "North East",
+    link: "/search/#status=active&sold_days=180&ls_conversion=acres&location_search_field=Salmon%20Arm%2C%20BC&drive_time=09%3A00&drive_duration=15&drive_avoid_ferry=1&drive_departure=1&ss_locale=en-CA&ss_description=Salmon%20Arm%2C%20BC%2C%20Canada&ss_email_freq=40&ss_send_zero_result=1&bounds_north=50.88846755779719&bounds_east=-119.06584917824544&bounds_south=50.515770751289644&bounds_west=-119.50118243019857&center_lat=50.7001034&center_lon=-119.2838443&center_lat_pan=50.70248942705626&center_lon_pan=-119.283515804222&geotype=PopulatedPlace&user_lat=50.7001034&user_lon=-119.2838443&pgsize=20&startidx=0&zoom=11&sort_by=11&company_uuid=3341197&commute=0&buffer_miles=0.25&geospatial=true&agent_uuid=389f433d-052c-4cf1-a9c7-d81a7bbdb93b&ptype=1%2C9%2C4%2C3%2C5%2C7%2C2%2C8&searchType=criteria&pstatus=1%2C2%2C11&omit_hidden=true&currency=CAD",
   },
   //8
   {
     id: 8,
-    area: "",
-    link: "",
+    area: "Canoe",
+    link: "/search/#status=active&sold_days=180&pstatus=1%2C11&ls_conversion=acres&company_only=1&location_search_field=Canoe%2C%20BC&drive_time=09%3A00&drive_duration=15&drive_avoid_ferry=1&drive_departure=1&ss_locale=en-CA&ss_description=Canoe%2C%20BC%20V0E%201K0%2C%20Canada&ss_email_freq=40&ss_send_zero_result=1&bounds_north=50.88846755779719&bounds_east=-119.06584917824544&bounds_south=50.515770751289644&bounds_west=-119.50118243019857&center_lat=50.750796&center_lon=-119.227433&center_lat_pan=50.70248942705626&center_lon_pan=-119.283515804222&geotype=PopulatedPlace&user_lat=50.750796&user_lon=-119.227433&pgsize=20&startidx=0&zoom=11&sort_by=11&company_uuid=3341197&commute=0&buffer_miles=0.25&geospatial=true&agent_uuid=389f433d-052c-4cf1-a9c7-d81a7bbdb93b&ptype=1%2C2%2C8%2C9%2C4%2C3%2C5%2C7&searchType=criteria&omit_hidden=true&ex_pend=true&currency=CAD",
   },
   //9
   {
