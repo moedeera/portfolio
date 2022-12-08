@@ -6,17 +6,21 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1100px;
+  padding: 5px;
+  padding-top: 150px;
 }
 
 .link-unit {
   border: 1px solid grey;
 
-  margin: 20px auto;
+  margin: 20px 0;
   padding: 10px 20px;
   max-width: 900px;
+  height: 5rem;
   overflow-x: scroll;
   background-color: aliceblue;
   padding: 15px;
   border-radius: 5px;
+  overflow: hidden;
 }
