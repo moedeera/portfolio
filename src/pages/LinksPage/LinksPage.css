@@ -36,3 +36,12 @@
   gap: 5px;
   padding: 20px 10px;
 }
+
+.links-page-pop-up {
+  border: 1px solid green;
+  font-size: 10px;
+  max-width: 600px;
+  overflow: hidden;
+  max-height: 600px;
+  overflow-y: scroll;
+}

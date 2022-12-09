@@ -345,77 +345,73 @@ export const LinksPage = () => {
     },
   ];
 
-  const Template2 = [
-    //1
-    {
-      id: 1,
-      area: "",
-      link: "",
-    },
-    //2
-    {
-      id: 2,
-      area: "",
-      link: "",
-    },
-    //3
-    {
-      id: 3,
-      area: "",
-      link: "",
-    },
-    //4
-    {
-      id: 4,
-      area: "",
-      link: "",
-    },
-    //5
-    {
-      id: 5,
-      area: "",
-      link: "",
-    },
-    //6
-    {
-      id: 6,
-      area: "",
-      link: "",
-    },
-    //7
-    {
-      id: 7,
-      area: "",
-      link: "",
-    },
-    //8
-    {
-      id: 8,
-      area: "",
-      link: "",
-    },
-    //9
-    {
-      id: 9,
-      area: "",
-      link: "",
-    },
-    // 10
-    {
-      id: 10,
-      area: "",
-      link: "",
-    },
-  ];
-
   const Neighborhoods = [Revelstoke, Sicamous, Vernon, SalmonArm, Kamploops];
   return (
     <div className="linkspage-container">
       <div>
         {" "}
+        <h3>Revelstoke</h3>
+        <div className="links-page-pop-up">
+          {Neighborhoods[0].map((area) => (
+            <div>
+              {`<li><a href="${linkOpener}${area.link}">${area.area}<span class="arrow-icon">&#10142;</span></a></li>`}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        {" "}
+        <h3>Sicamous</h3>
+        <div className="links-page-pop-up">
+          {Neighborhoods[1].map((area) => (
+            <div>
+              {`<li><a href="${linkOpener}${area.link}">${area.area}<span class="arrow-icon">&#10142;</span></a></li>`}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        {" "}
+        <h3>Vernon</h3>
+        <div className="links-page-pop-up">
+          {Neighborhoods[2].map((area) => (
+            <div>
+              {`<li><a href="${linkOpener}${area.link}">${area.area}<span class="arrow-icon">&#10142;</span></a></li>`}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        {" "}
+        <h3>Salmon Arm</h3>
+        <div className="links-page-pop-up">
+          {Neighborhoods[3].map((area) => (
+            <div>
+              {`<li><a href="${linkOpener}${area.link}">${area.area}<span class="arrow-icon">&#10142;</span></a></li>`}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        {" "}
+        <h3>Kamploops</h3>
+        <div className="links-page-pop-up">
+          {Neighborhoods[4].map((area) => (
+            <div>
+              {`<li><a href="${linkOpener}${area.link}">${area.area}<span class="arrow-icon">&#10142;</span></a></li>`}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        {" "}
         {/* <LinksPageButton Neighborhood={Neighborhoods[0]} /> */}
         <h1>Revelstoke</h1>
-        <button></button>
         {Neighborhoods[0].map((area) => (
           <>
             <h3>{area.area}</h3>
