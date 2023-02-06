@@ -49,7 +49,6 @@ function App() {
               <Route path="/blogs" element={<Blogs />} />
               {/* <Route path="/links" element={<LinksPage />} /> */}
               <Route path="/blogs/test/:id" element={<Article />} />
-
               <Route path="/login" element={<Login />} />
               <Route path="/signin" element={<Login />} />
 
