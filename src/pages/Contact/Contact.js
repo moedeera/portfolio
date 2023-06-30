@@ -5,10 +5,13 @@ import pic2 from "./contact1.jpg";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { Fade } from "react-reveal";
 import axios from "axios";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../config/firebase";
 
 export const Contact = () => {
   const [count, setCount] = useState(1);
   const [sent, setSent] = useState(false);
+  const messageData = collection(db, "messages");
   const [msg, setMessage] = useState({
     name: "",
     email: "",
@@ -26,21 +29,37 @@ export const Contact = () => {
   };
 
   const onSubmit = async () => {
-    console.log(msg);
+    // console.log(msg);
 
+    // try {
+    //   const config = {
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //   };
+    //   const body = JSON.stringify(msg);
+    //   const res = await axios.post(
+    //     "https://auction-website89.herokuapp.com/bids/message",
+    //     body,
+    //     config
+    //   );
+    //   console.log(res.data);
+    //   setSent(true);
+    //   setCount(count + 1);
+    //   setMessage({
+    //     name: "",
+    //     email: "",
+    //     message: "",
+    //   });
+    // } catch (error) {
+    //   console.log(error);
+    // }
     try {
-      const config = {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      };
-      const body = JSON.stringify(msg);
-      const res = await axios.post(
-        "https://auction-website89.herokuapp.com/bids/message",
-        body,
-        config
-      );
-      console.log(res.data);
+      await addDoc(messageData, {
+        name: msg.name,
+        message: msg.message,
+        email: msg.email,
+      });
       setSent(true);
       setCount(count + 1);
       setMessage({

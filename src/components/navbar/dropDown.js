@@ -29,10 +29,6 @@ export const DropDown = ({ selection }) => {
         <div className="menu-list">
           <div className="dd-menu-item">
             <i className="fab fa-react"></i>
-            AuctionaX
-          </div>
-          <div className="dd-menu-item">
-            <i className="fab fa-react"></i>
             DeerCoded
           </div>
         </div>

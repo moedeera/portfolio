@@ -37,20 +37,14 @@ export const About = () => {
         <Fade right>
           <div className="about-text">
             <h3>
-              If you look into my Github page you understand that Web
+              ? If you look into my Github page you understand that Web
               Development is not just a hobby or a job for me, It's my passion.
             </h3>
             <p>
               {" "}
               My name is Moe and I decided to learn coding in 2020 and
               immediately fell in love with it. I chose early on that I wanted
-              to focus on Web Development with an emphasis on web design. Unable
-              to attend school due to working full time, I dedicated a minimum
-              of 2 hours a day to learning.
-              <br />
-              <br />
-              CSS, HTML and JavaScript were the first skills I learned. I
-              followed that up with ReactJS, Express, and MongoDB.
+              to focus on Web Development with an emphasis on web design.
               <br />
               After looking into the market a little more deeply, I realized
               their was a lot of demand for design/brand oriented websites so I

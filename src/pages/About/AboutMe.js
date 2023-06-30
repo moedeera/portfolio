@@ -48,20 +48,23 @@ export const AboutMe = () => {
                 <div>
                   <p>
                     {" "}
-                    Hello there! My name is Moe. I started learning coding back
-                    in 2020 and immediately fell in love with it. I chose early
-                    on that I wanted to focus on Web Development with an
-                    emphasis on Design. Unable to attend school due to working
-                    full time, I dedicated of 2-4 hours a day to learning.{" "}
+                    "Hello there! My name is Moe. I started learning coding back
+                    in 2020 and immediately fell in love with it. Early on, I
+                    decided to focus on web development with an emphasis on
+                    design.
+                    <br />
+                    After conducting thorough market research, I discovered a
+                    high demand for design-oriented websites. To enhance my
+                    design skills, I delved into WordPress, WebFlow, and Figma.
                   </p>
                 </div>
                 <div>
                   {" "}
-                  After looking into the market a little more deeply, I realized
-                  their was a lot of demand for design/brand oriented websites
-                  so I leaned WordPress, WebFlow and Figma to boost my design
-                  skills. My goal is to establish a career in the web
-                  Development field and provide reliable quality websites.
+                  After a few months of submitting applications, I secured a
+                  contract position with a digital marketing company as a web
+                  developer. This opportunity provided me with firsthand
+                  experience in using technologies such as React, Shopify,
+                  SquareSpace, Adobe Illustrator, and ChatGPT.
                 </div>
               </div>
               <div className="abm-icons">
@@ -85,7 +88,7 @@ export const AboutMe = () => {
                   <i className="fab fa-linkedin"></i>
                 </a>
                 <a
-                  href={"https://medium.com/@deeramoe"}
+                  href={"https://medium.com/@mdcoding"}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: "#bb342f" }}

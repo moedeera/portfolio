@@ -22,6 +22,7 @@ import { Login } from "./pages/admin/login/Login";
 import { SideMenu } from "./components/SideMenu/SideMenu";
 import { Article } from "./pages/Article/Article.js";
 import { LinksPage } from "./pages/LinksPage/LinksPage";
+import { Messages } from "./pages/Messages/Messages";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
               <Route path="/blogs/test/:id" element={<Article />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signin" element={<Login />} />
+              <Route path="/messages3356" element={<Messages />} />
 
               <Route element={<ProtectedRoutes />}>
                 <Route path="/profile" element={<Dashboard />} />

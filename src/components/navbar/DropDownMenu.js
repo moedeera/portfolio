@@ -116,15 +116,6 @@ export const DropDownMenu = ({
                   >
                     <div className="sub-list-item">Calgary Radiology SA</div>
                   </Link>
-                  <Link
-                    to="/portfolio/auctionax"
-                    onClick={() => {
-                      show(false);
-                      setDropDownContent("none");
-                    }}
-                  >
-                    <div className="sub-list-item">AuctionaX</div>
-                  </Link>
                 </div>
               </div>
 
