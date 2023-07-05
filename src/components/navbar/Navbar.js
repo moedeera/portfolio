@@ -6,7 +6,7 @@ import { DropDownMenu } from "./DropDownMenu";
 import image1 from "./menu.png";
 import image2 from "./close.png";
 
-import OutsideClickHandler from "react-outside-click-handler";
+// import OutsideClickHandler from "react-outside-click-handler";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -29,12 +29,13 @@ export const Navbar = () => {
     return null;
   }
   return (
-    <OutsideClickHandler
-      onOutsideClick={() => {
-        showDropDown(false);
-        setDropDownContent("none");
-      }}
-    >
+    // <OutsideClickHandler
+    //   onOutsideClick={() => {
+    //     showDropDown(false);
+    //     setDropDownContent("none");
+    //   }}
+    // >
+    <>
       <div className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
           <Link to="/">
@@ -221,6 +222,7 @@ export const Navbar = () => {
         dropDownContent={dropDownContent}
         setDropDownContent={setDropDownContent}
       />
-    </OutsideClickHandler>
+    </>
+    // </OutsideClickHandler>
   );
 };

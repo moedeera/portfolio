@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { SiteContext } from "../../context/Context";
 import "./Article.css";
 import { Link } from "react-router-dom";
-import MetaTags from "react-meta-tags";
+// import MetaTags from "react-meta-tags";
 
 import { Videoplayer } from "../../components/videoplayer/videoplayer";
 import { TwitterShareButton } from "react-twitter-embed";
@@ -32,7 +32,7 @@ export const SingleArticle = () => {
 
   return (
     <div className="article-page">
-      <MetaTags>
+      {/* <MetaTags>
         <title>{article.header}</title>
         <meta name="description" content="Some description." />
         <meta property="og:title" content="MyApp" />
@@ -40,7 +40,7 @@ export const SingleArticle = () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content={article.header} />
         <meta property="twitter:image" content={blogImages[article.id]} />
-      </MetaTags>
+      </MetaTags> */}
 
       <div className="article-container">
         <div className="article-page-container">
