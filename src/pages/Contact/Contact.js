@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css";
-import pic1 from "./saly-28.png";
-import pic2 from "./contact1.jpg";
+
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { Fade } from "react-reveal";
-import axios from "axios";
+
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../config/firebase";
 
