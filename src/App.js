@@ -10,7 +10,7 @@ import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
 import { SiteContextProvider } from "./context/Context";
 import ScrollToTop from "./Scroll/Scroll";
-import { SingleArticle } from "./pages/Article/SingleArticle";
+
 import { SingleCase } from "./pages/SingleCase/SIngleCase";
 import { AboutMe } from "./pages/About/AboutMe";
 import { Overview } from "./pages/Overview/Overview";
@@ -21,7 +21,7 @@ import { Dashboard } from "./pages/admin/dashboard/Dashboard";
 import { Login } from "./pages/admin/login/Login";
 import { SideMenu } from "./components/SideMenu/SideMenu";
 import { Article } from "./pages/Article/Article.js";
-import { LinksPage } from "./pages/LinksPage/LinksPage";
+
 import { Messages } from "./pages/Messages/Messages";
 
 function App() {
@@ -36,7 +36,6 @@ function App() {
               <Route path="/" element={<Homepage />} />
               <Route path="/portfolio" element={<Works />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/aboutme" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/portfolio/:id" element={<Project />} />
               <Route path="/blog" element={<Blogs />} />
@@ -48,12 +47,9 @@ function App() {
               <Route path="/overview" element={<Overview />} />
               <Route path="/my-work" element={<Works />} />
               <Route path="/blogs" element={<Blogs />} />
-              {/* <Route path="/links" element={<LinksPage />} /> */}
               <Route path="/blogs/test/:id" element={<Article />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/signin" element={<Login />} />
               <Route path="/messages3356" element={<Messages />} />
-
               <Route element={<ProtectedRoutes />}>
                 <Route path="/profile" element={<Dashboard />} />
                 {/* <Route path="/login" element={<Login />} /> */}
