@@ -53,8 +53,8 @@ export const Article = () => {
               <div className="avatar-pic">
                 <img src={avatar} alt="" />
                 <div className="articles-author">
-                  <h3>Moe Deera</h3>
-                  <small style={{ color: "steelblue" }}>@deeracode</small>
+                  <h3>Moe </h3>
+                  <small style={{ color: "steelblue" }}>@mdcoding</small>
                 </div>
               </div>
 
@@ -145,7 +145,7 @@ ${article.code[map]}
           <div className="sr-bio-name">
             <img src={avatar} alt="" />
             <div className="sr-bio-text">
-              <h3> Moe Deera</h3>
+            
               <p>Junior Web Developer</p>
               <small>Coding Enthusiast</small>
             </div>
